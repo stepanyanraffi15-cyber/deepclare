@@ -6,8 +6,8 @@ filing and to read one back, and splitting it guarantees the two copies drift ap
 Four rules come from what real filed declarations actually contain, and each of them is
 the difference between reading a document and reading only our own output:
 
-* **Locate by local element name, never by prefix.** Prefixes are per-document and two
-  filed files carry the address block under a different prefix from everywhere else. A
+* **Locate by local element name, never by prefix.** Prefixes are per-document and the
+  wider corpus carries the address block under a different prefix from everywhere else. A
   name-plus-namespace-keyed consumer silently drops those addresses.
 * **Resolve by parent.** `Rate` is a decimal tariff rate in one block and a two-letter
   code in another.
@@ -20,12 +20,11 @@ the difference between reading a document and reading only our own output:
   idiom: a second net weight is filed as a numerically-suffixed sibling rather than a
   repeated element, and a name-keyed consumer misses it entirely.
 
-Containers are identified by **what they contain**, not by what they are called. The
-specification names every leaf of the filed format and only some of its containers, so a
-name-keyed reader could read nothing but this repository's own output. Identifying a
-goods block as "the child that has a `GoodsNumeric` in it" reads a real accepted filing,
-which is the one piece of evidence that would confirm the names `contract` has to guess —
-`ParsedFiling.census` is there to be read straight off such a file.
+Blocks are located by the names `contract` takes from the evidence base, which settled
+what an earlier revision of this reader had to work around. It identified a goods block
+as "the child with a `GoodsNumeric` in it" because the specification named the leaves and
+not their containers; 71 ground-truth declarations name every container, so the reader
+asks for the container it wants and reports anything it did not consume.
 """
 
 from __future__ import annotations
@@ -37,7 +36,6 @@ from xml.etree import ElementTree
 from pydantic import BaseModel, ConfigDict
 
 from deepclare.domain.declaration import (
-    BorderOffice,
     CodedValue,
     Consignment,
     Declaration,
@@ -50,7 +48,6 @@ from deepclare.domain.declaration import (
     PostalAddress,
     SupplementaryQuantity,
     TransportBlock,
-    TransportMeansRecord,
 )
 from deepclare.domain.documents import DocumentRole
 from deepclare.domain.provenance import Confidence, Provenance, Traced, ValueOrigin
@@ -79,8 +76,7 @@ class ParsedFiling(BaseModel):
     declaration: Declaration
     unread: tuple[UnreadElement, ...]
     census: dict[str, int]
-    """Every element name in the file and how many times it occurs. Reading it off a real
-    accepted filing is how the container names this adapter has to guess get settled."""
+    """Every local element name in the file and how many times it occurs."""
 
 
 def read_declaration(xml: str | bytes, filing_id: str) -> ParsedFiling:
@@ -131,6 +127,11 @@ class _FilingReader:
                 return child
         return None
 
+    def _children(
+        self, parent: ElementTree.Element, name: str
+    ) -> list[ElementTree.Element]:
+        return [child for child in parent if _local(child.tag) == name]
+
     def _take(self, node: ElementTree.Element, reason: str) -> None:
         """Consume a whole sub-tree that carries nothing new, saying why once."""
         self._malformed.append(
@@ -143,11 +144,6 @@ class _FilingReader:
         )
         for element in node.iter():
             self._consumed.add(id(element))
-
-    def _has(self, parent: ElementTree.Element, name: str) -> bool:
-        """A node with no children is falsey in ElementTree, so presence is asked for
-        explicitly everywhere rather than by truth-testing the node."""
-        return self._child(parent, name) is not None
 
     def _text(self, parent: ElementTree.Element, name: str) -> str | None:
         child = self._child(parent, name)
@@ -240,60 +236,66 @@ class _FilingReader:
     def read(self) -> ParsedFiling:
         self._consumed.add(id(self._root))
 
-        total_goods = self._integer(self._root, c.TOTAL_GOODS_NUMBER)
+        shipment = self._child(self._root, c.SHIPMENT)
+        if shipment is None:
+            raise MalformedFiledDocument(
+                f"the document carries no {c.SHIPMENT}; everything but the two header "
+                "codes and the filler sits inside it"
+            )
+        self._consumed.add(id(shipment))
+
+        total_goods = self._integer(shipment, c.TOTAL_GOODS_NUMBER)
         if total_goods is None:
             raise MalformedFiledDocument(
                 f"the document carries no {c.TOTAL_GOODS_NUMBER}"
             )
 
-        parties = [
-            child for child in self._root if self._has(child, c.ORGANIZATION_NAME)
-        ]
-        importers = [p for p in parties if self._descendant(p, c.TAX_CODE) is not None]
-        consignors = [p for p in parties if p not in importers]
         # Boxes 8, 9 and 14 are one company written three times, byte-identical in every
-        # filing. Reading the first is reading all three.
-        for duplicate in importers[1:]:
-            self._take(
-                duplicate,
-                "the importer is filed identically in boxes 8, 9 and 14; read once",
-            )
-        for duplicate in consignors[1:]:
-            self._take(duplicate, "a second consignor block; the declaration carries one")
+        # filing in the evidence base. Reading the first is reading all three.
+        importer_block = self._child(shipment, c.CONSIGNEE)
+        for role in (c.RESPONSIBLE_PERSON, c.DECLARANT):
+            duplicate = self._child(shipment, role)
+            if duplicate is not None:
+                self._take(
+                    duplicate,
+                    "the importer is filed identically in boxes 8, 9 and 14; read once",
+                )
+
+        consignor_block = self._child(shipment, c.CONSIGNOR)
 
         declaration = Declaration(
-            origin_country_name=self._string(self._root, c.ORIGIN_COUNTRY_NAME_SHIPMENT),
+            origin_country_name=self._string(shipment, c.ORIGIN_COUNTRY_NAME_SHIPMENT),
             total_goods_number=total_goods,
-            total_package_number=self._decimal(self._root, c.TOTAL_PACKAGE_NUMBER),
-            consignor=self._organization(consignors[0]) if consignors else None,
-            importer=self._organization(importers[0]) if importers else None,
-            goods_location=self._goods_location(),
-            consignment=self._consignment(),
-            goods=tuple(self._goods_item(block) for block in self._goods_blocks()),
+            total_package_number=self._decimal(shipment, c.TOTAL_PACKAGE_NUMBER),
+            consignor=(
+                self._organization(consignor_block) if consignor_block is not None else None
+            ),
+            importer=(
+                self._organization(importer_block) if importer_block is not None else None
+            ),
+            goods_location=self._goods_location(shipment),
+            consignment=self._consignment(shipment),
+            goods=tuple(
+                self._goods_item(block) for block in self._children(shipment, c.GOODS_ITEM)
+            ),
             filler=self._filler(),
         )
 
         # The header constants carry no domain choice and are checked rather than read.
-        for name in (
-            c.CUSTOMS_PROCEDURE,
-            c.CUSTOMS_MODE_CODE,
-            c.SPECIFICATION_NUMBER,
-            c.SPECIFICATION_LIST_NUMBER,
-            c.TOTAL_SHEET_NUMBER,
+        for parent, name in (
+            (self._root, c.CUSTOMS_PROCEDURE),
+            (self._root, c.CUSTOMS_MODE_CODE),
+            (shipment, c.SPECIFICATION_NUMBER),
+            (shipment, c.SPECIFICATION_LIST_NUMBER),
+            (shipment, c.TOTAL_SHEET_NUMBER),
         ):
-            self._text(self._root, name)
+            self._text(parent, name)
 
         return ParsedFiling(
             declaration=declaration,
             unread=tuple(self._malformed) + self._leftovers(),
             census=self._census(),
         )
-
-    def _descendant(self, node: ElementTree.Element, name: str) -> ElementTree.Element | None:
-        for child in node.iter():
-            if child is not node and _local(child.tag) == name:
-                return child
-        return None
 
     def _organization(self, block: ElementTree.Element) -> Organization:
         self._consumed.add(id(block))
@@ -309,44 +311,30 @@ class _FilingReader:
         address = None
         if address_block is not None:
             self._consumed.add(id(address_block))
-            address = PostalAddress(
-                country=self._pair(address_block, c.COUNTRY_CODE, c.COUNTRY_NAME),
-                street_house=self._string(address_block, c.STREET_HOUSE),
-            )
+            country = self._pair(address_block, c.COUNTRY_CODE, c.COUNTRY_NAME)
+            street = self._string(address_block, c.STREET_HOUSE)
+            # An address block with nothing in it is not an address. Two of the 71 ground
+            # truths carry one; reading it as a value would make the write direction
+            # reproduce an empty container the contract has no rule for.
+            if country is not None or street is not None:
+                address = PostalAddress(country=country, street_house=street)
         return Organization(name=name, tax_code=tax_code, address=address)
 
-    def _goods_location(self) -> GoodsLocation | None:
-        block = next(
-            (
-                child
-                for child in self._root
-                if self._has(child, c.GOODS_LOCATION_INFORMATION_TYPE)
-                or _local(child.tag) == c.GOODS_LOCATION
-            ),
-            None,
-        )
+    def _goods_location(self, shipment: ElementTree.Element) -> GoodsLocation | None:
+        block = self._child(shipment, c.GOODS_LOCATION)
         if block is None:
             return None
         self._consumed.add(id(block))
         information_type = self._string(block, c.GOODS_LOCATION_INFORMATION_TYPE)
-        office = self._string(block, c.GOODS_LOCATION_OFFICE_CODE)
+        office = self._string(block, c.GOODS_LOCATION_OFFICE)
         country = self._string(block, c.GOODS_LOCATION_COUNTRY_CODE)
         if information_type is None or office is None or country is None:
             return None
-        zone_block = self._child(block, c.CUSTOMS_ZONE)
-        zone = None
-        if zone_block is not None:
-            self._consumed.add(id(zone_block))
-            zone = self._string(zone_block, c.CUSTOMS_ZONE_NUMBER)
         return GoodsLocation(
             information_type_code=information_type,
             customs_office_code=office,
             country_code=country,
-            customs_zone_number=zone,
         )
-
-    def _goods_blocks(self) -> list[ElementTree.Element]:
-        return [child for child in self._root if self._has(child, c.GOODS_NUMERIC)]
 
     def _goods_item(self, block: ElementTree.Element) -> GoodsItem:
         self._consumed.add(id(block))
@@ -404,88 +392,49 @@ class _FilingReader:
             packing_quantity=packing_quantity,
         )
 
-    def _consignment(self) -> Consignment:
-        block = next(
-            (child for child in self._root if _local(child.tag) == c.CONSIGNMENT), None
-        )
-        if block is None:
+    def _consignment(self, shipment: ElementTree.Element) -> Consignment:
+        """Box 19 and the two transport blocks, plus the contract terms that sit beside
+        them rather than inside them. One domain record spans both containers."""
+        block = self._child(shipment, c.CONSIGNMENT)
+        terms_block = self._child(shipment, c.CONTRACT_TERMS)
+        if block is None and terms_block is None:
             return Consignment()
-        self._consumed.add(id(block))
-        transports = [child for child in block if self._has(child, c.TRANSPORT_MODE_CODE)]
-        terms_block = next(
-            (
-                child
-                for child in block
-                if self._has(child, c.CONTRACT_CURRENCY_CODE)
-                or self._has(child, c.TOTAL_INVOICE_AMOUNT)
-                or self._has(child, c.DELIVERY_TERMS)
-            ),
-            None,
-        )
-        if terms_block is not None:
-            self._consumed.add(id(terms_block))
+        indicator = None
+        departure = None
+        border = None
+        if block is not None:
+            self._consumed.add(id(block))
+            indicator = self._boolean(block, c.CONTAINER_INDICATOR)
+            departure = self._transport(block, c.DEPARTURE_TRANSPORT)
+            border = self._transport(block, c.BORDER_TRANSPORT)
+        if terms_block is None:
+            return Consignment(
+                container_indicator=indicator,
+                departure_transport=departure,
+                border_transport=border,
+            )
+        self._consumed.add(id(terms_block))
         return Consignment(
-            container_indicator=self._boolean(block, c.CONTAINER_INDICATOR),
-            dispatch_country=self._pair(
-                block, c.DISPATCH_COUNTRY_CODE, c.DISPATCH_COUNTRY_NAME
-            ),
-            border_office=self._border_office(block),
-            departure_transport=self._transport(transports[0]) if transports else None,
-            border_transport=self._transport(transports[1]) if len(transports) > 1 else None,
-            currency_code=self._string(terms_block, c.CONTRACT_CURRENCY_CODE)
-            if terms_block is not None
-            else None,
-            total_invoice_amount=self._decimal(terms_block, c.TOTAL_INVOICE_AMOUNT)
-            if terms_block is not None
-            else None,
-            trade_country_code=self._string(terms_block, c.TRADE_COUNTRY_CODE)
-            if terms_block is not None
-            else None,
-            delivery_terms=self._delivery_terms(terms_block)
-            if terms_block is not None
-            else None,
+            container_indicator=indicator,
+            departure_transport=departure,
+            border_transport=border,
+            currency_code=self._string(terms_block, c.CONTRACT_CURRENCY_CODE),
+            total_invoice_amount=self._decimal(terms_block, c.TOTAL_INVOICE_AMOUNT),
+            trade_country_code=self._string(terms_block, c.TRADE_COUNTRY_CODE),
+            delivery_terms=self._delivery_terms(terms_block),
         )
 
-    def _border_office(self, block: ElementTree.Element) -> BorderOffice | None:
-        office = self._child(block, c.BORDER_OFFICE)
-        if office is None:
+    def _transport(
+        self, block: ElementTree.Element, name: str
+    ) -> TransportBlock | None:
+        leg = self._child(block, name)
+        if leg is None:
             return None
-        self._consumed.add(id(office))
-        code = self._string(office, c.BORDER_OFFICE_CODE)
-        if code is None:
-            return None
-        return BorderOffice(
-            code=code,
-            name=self._string(office, c.BORDER_OFFICE_NAME),
-            country_code=self._string(office, c.BORDER_OFFICE_COUNTRY_CODE),
-        )
-
-    def _transport(self, block: ElementTree.Element) -> TransportBlock | None:
-        self._consumed.add(id(block))
-        mode = self._string(block, c.TRANSPORT_MODE_CODE)
+        self._consumed.add(id(leg))
+        mode = self._string(leg, c.TRANSPORT_MODE_CODE)
         if mode is None:
             return None
-        vehicles: list[TransportMeansRecord] = []
-        for means in block:
-            if _local(means.tag) != c.TRANSPORT_MEANS:
-                continue
-            self._consumed.add(id(means))
-            identifier = self._string(means, c.TRANSPORT_IDENTIFIER)
-            if identifier is None:
-                continue
-            vehicles.append(
-                TransportMeansRecord(
-                    identifier=identifier,
-                    nationality_country_code=self._string(
-                        means, c.TRANSPORT_NATIONALITY_CODE
-                    ),
-                )
-            )
-        return TransportBlock(
-            mode_code=mode,
-            vehicles=tuple(vehicles),
-            vehicle_quantity=self._integer(block, c.TRANSPORT_MEANS_QUANTITY),
-        )
+        return TransportBlock(mode_code=mode)
 
     def _delivery_terms(self, block: ElementTree.Element) -> DeliveryTerms | None:
         terms = self._child(block, c.DELIVERY_TERMS)
@@ -493,21 +442,13 @@ class _FilingReader:
             return None
         self._consumed.add(id(terms))
         code = self._string(terms, c.DELIVERY_TERMS_CODE)
-        place = self._string(terms, c.DELIVERY_PLACE)
-        if code is None and place is None:
+        if code is None:
             return None
-        return DeliveryTerms(terms_code=code, place=place)
+        return DeliveryTerms(terms_code=code)
 
     def _filler(self) -> FillerPerson | None:
-        block = next(
-            (
-                child
-                for child in self._root
-                if self._descendant(child, c.FILLER_EMAIL) is not None
-                or _local(child.tag) == c.FILLER
-            ),
-            None,
-        )
+        """Box 54 sits at root level, outside the shipment."""
+        block = self._child(self._root, c.FILLER)
         if block is None:
             return None
         self._consumed.add(id(block))
@@ -515,16 +456,7 @@ class _FilingReader:
         given_name = self._string(block, c.FILLER_GIVEN_NAME)
         if surname is None or given_name is None:
             return None
-        contact = self._child(block, c.FILLER_CONTACT)
-        phone = None
-        email = None
-        if contact is not None:
-            self._consumed.add(id(contact))
-            phone = self._string(contact, c.FILLER_PHONE)
-            email = self._string(contact, c.FILLER_EMAIL)
-        return FillerPerson(
-            surname=surname, given_name=given_name, phone=phone, email=email
-        )
+        return FillerPerson(surname=surname, given_name=given_name)
 
     # --- accounting -------------------------------------------------------------------
 

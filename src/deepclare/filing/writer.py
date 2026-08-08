@@ -4,16 +4,27 @@ Dossier 10 §3 M12. This module knows how a value is written and nothing about h
 produced — no model, no stage, no tenancy, no reference data. It receives values that are
 already correct and decides only their expression.
 
-Three of its rules exist because breaking them broke real imports:
+Every element name, every namespace prefix and every child sequence used here comes from
+`contract`, which takes them from `observed`, which is generated from the ground-truth
+declarations. Nothing below names an element the corpus does not attest, and `_element`
+and `_block` resolve each element's prefix from the same table rather than from anything
+this module decides.
+
+Four of its rules exist because breaking them broke real imports:
 
 * **Absence is omission.** Never an empty element, never a self-closing one, never a
-  placeholder in a typed leaf. Two organization-name leaves may carry `-` and nothing
-  else may.
+  placeholder in a typed leaf. The four party organization-name leaves may carry `-` and
+  nothing else may.
 * **Code and name are atomic.** A name written without its code imports successfully and
   the value is simply gone afterwards, with no message — the contract's quietest failure.
 * **Order is fixed even for optional siblings.** Children are appended in the contract's
   sequence and never conditionally reordered, which is why every block below reads as one
   straight list.
+* **A value the attested contract has nowhere to put is reported, not dropped.** The
+  domain model carries vehicle plates, a crossing office, a delivery place, a customs
+  zone and the filler's contact details; no filing in the evidence base carries an
+  element for any of them. Writing an invented element would reject the file, so they
+  become review items naming what could not be filed.
 
 Everything this module cannot supply becomes a review item keyed by domain concept, so
 the operator learns what to fill in on the portal rather than discovering a blank later.
@@ -26,7 +37,6 @@ from decimal import Decimal
 from pydantic import BaseModel, ConfigDict
 
 from deepclare.domain.declaration import (
-    BorderOffice,
     CodedValue,
     Consignment,
     Declaration,
@@ -62,7 +72,8 @@ class FiledDocument(BaseModel):
 
     review_items: tuple[ReviewItem, ...]
     """Only the items the contract itself forced — a truncation, an omission for want of
-    a schema-valid value. Everything assembly already knew about arrives separately."""
+    a schema-valid value, a value the filed format has no element for. Everything
+    assembly already knew about arrives separately."""
 
     conformance: ConformanceResult
 
@@ -80,38 +91,64 @@ def write_declaration(declaration: Declaration) -> FiledDocument:
     )
 
 
-# --- shipment level -------------------------------------------------------------------
+# --- element construction -------------------------------------------------------------
+
+
+def _element(name: str, text: str | None) -> Element | None:
+    """One leaf, under the prefix the evidence puts it in."""
+    return leaf(name, text, prefix=c.prefix_for(name))
+
+
+def _block(name: str, children: list[Element | None]) -> Element | None:
+    """One container, under the prefix the evidence puts it in."""
+    return container(name, children, prefix=c.prefix_for(name))
+
+
+def _unfilable(concept: str, detail: str, review: list[ReviewItem]) -> None:
+    """Record a value the attested contract has no element for."""
+    review.append(ReviewItem(kind=ReviewKind.OMITTED, concept=concept, detail=detail))
+
+
+# --- document -------------------------------------------------------------------------
 
 
 def _root(declaration: Declaration, review: list[ReviewItem]) -> Element:
+    """Procedure, mode, the whole shipment, and the person who filled it in.
+
+    The shipment container wraps everything except the two header codes and the filler.
+    Its absence was the single defect that made every earlier emitted file unimportable,
+    and no leaf inside it moves without it.
+    """
+    root = _block(
+        c.ROOT,
+        [
+            _element(c.CUSTOMS_PROCEDURE, c.PROCEDURE_IMPORT),
+            _element(c.CUSTOMS_MODE_CODE, c.MODE_CODE_HOME_USE),
+            _shipment(declaration, review),
+            _filler(declaration.filler, review),
+        ],
+    )
+    if root is None:  # pragma: no cover - a declaration always has goods and constants
+        raise ValueError("a declaration produced no elements at all")
+    return root.model_copy(update={"attributes": c.ROOT_ATTRIBUTES})
+
+
+def _shipment(declaration: Declaration, review: list[ReviewItem]) -> Element | None:
     children: list[Element | None] = [
-        leaf(c.CUSTOMS_PROCEDURE, c.PROCEDURE_IMPORT),
-        leaf(c.CUSTOMS_MODE_CODE, c.MODE_CODE_HOME_USE),
         _origin_country_name(declaration, review),
-        leaf(c.SPECIFICATION_NUMBER, c.SINGLE_SPECIFICATION),
-        leaf(c.SPECIFICATION_LIST_NUMBER, c.SINGLE_SPECIFICATION),
-        leaf(c.TOTAL_GOODS_NUMBER, integer_text(declaration.total_goods_number.value)),
+        _element(c.SPECIFICATION_NUMBER, c.SINGLE_SPECIFICATION),
+        _element(c.SPECIFICATION_LIST_NUMBER, c.SINGLE_SPECIFICATION),
+        _element(c.TOTAL_GOODS_NUMBER, integer_text(declaration.total_goods_number.value)),
         _total_packages(declaration, review),
-        leaf(c.TOTAL_SHEET_NUMBER, c.SINGLE_SHEET),
+        _element(c.TOTAL_SHEET_NUMBER, c.SINGLE_SHEET),
         _consignor(declaration.consignor, review),
     ]
     children.extend(_importer_trio(declaration.importer, review))
     children.append(_goods_location(declaration.goods_location, review))
-    children.extend(_goods_item(item, review) for item in declaration.goods)
     children.append(_consignment(declaration.consignment, review))
-    children.append(_filler(declaration.filler, review))
-
-    root = container(c.ROOT, children)
-    if root is None:  # pragma: no cover - a declaration always has goods and constants
-        raise ValueError("a declaration produced no elements at all")
-    return root.model_copy(
-        update={
-            "attributes": (
-                ("xmlns", c.NAMESPACE_URI),
-                ("DocumentModeID", c.DOCUMENT_MODE_ID),
-            )
-        }
-    )
+    children.append(_contract_terms(declaration.consignment, review))
+    children.extend(_goods_item(item, review) for item in declaration.goods)
+    return _block(c.SHIPMENT, children)
 
 
 def _origin_country_name(
@@ -123,12 +160,12 @@ def _origin_country_name(
             ReviewItem(
                 kind=ReviewKind.OMITTED,
                 concept="shipment origin country",
-                detail="No origin country was resolved, so box 16 was left out. Every "
-                "accepted filing carries it; fill it on the portal.",
+                detail="No origin country was resolved, so box 16 was left out. 69 of the "
+                "71 ground truths carry it; fill it on the portal.",
             )
         )
         return None
-    return leaf(c.ORIGIN_COUNTRY_NAME_SHIPMENT, declaration.origin_country_name.value)
+    return _element(c.ORIGIN_COUNTRY_NAME_SHIPMENT, declaration.origin_country_name.value)
 
 
 def _total_packages(declaration: Declaration, review: list[ReviewItem]) -> Element | None:
@@ -142,7 +179,9 @@ def _total_packages(declaration: Declaration, review: list[ReviewItem]) -> Eleme
             )
         )
         return None
-    return leaf(c.TOTAL_PACKAGE_NUMBER, decimal_text(declaration.total_package_number.value))
+    return _element(
+        c.TOTAL_PACKAGE_NUMBER, decimal_text(declaration.total_package_number.value)
+    )
 
 
 # --- parties --------------------------------------------------------------------------
@@ -155,25 +194,25 @@ def _organization_name(
     if organization is not None and organization.name is not None:
         written = organization.name.value.strip()
         if written:
-            return leaf(c.ORGANIZATION_NAME, written)
+            return _element(c.ORGANIZATION_NAME, written)
     review.append(
         ReviewItem(
             kind=ReviewKind.PLACEHOLDER,
             concept=concept,
             detail=f"No name was read for this party, so `{c.ABSENT_ORGANIZATION_NAME}` "
-            "was filed. This is a free-text leaf and one of only two elements in the "
+            "was filed. This is a free-text leaf and one of only four elements in the "
             "document permitted to carry a placeholder.",
             remedy="The party's name on the invoice or the consignment note.",
         )
     )
-    return leaf(c.ORGANIZATION_NAME, c.ABSENT_ORGANIZATION_NAME)
+    return _element(c.ORGANIZATION_NAME, c.ABSENT_ORGANIZATION_NAME)
 
 
 def _consignor(organization: Organization | None, review: list[ReviewItem]) -> Element | None:
     """Box 2 — the foreign seller or shipper. Free text with no tax code anywhere."""
     address = None
     if organization is not None and organization.address is not None:
-        address = container(
+        address = _block(
             c.ADDRESS, _country_pair(organization.address.country, "consignor country", review)
         )
     elif organization is not None:
@@ -187,7 +226,7 @@ def _consignor(organization: Organization | None, review: list[ReviewItem]) -> E
             )
         )
     name = _organization_name(organization, "consignor name", review)
-    return container(c.CONSIGNOR, [name, address])
+    return _block(c.CONSIGNOR, [name, address])
 
 
 def _importer_trio(
@@ -198,8 +237,8 @@ def _importer_trio(
     Dossier 03 §5.3 records that the portal discards all three wholesale and re-fills
     them from the state register via its own tax-code lookup, so their content is an
     import preview rather than filed data. They are written anyway: the deciding
-    experiment — a tax code matching the authenticated account — was never run, and the
-    corpus files them in every declaration.
+    experiment — a tax code matching the authenticated account — was never run, and all
+    71 ground truths file the three blocks byte for byte identically.
     """
     if organization is None:
         review.append(
@@ -217,7 +256,7 @@ def _importer_trio(
     features = _tax_code(organization, review)
     address = _importer_address(organization, review)
     return [
-        container(role, [name, features, address])
+        _block(role, [name, features, address])
         for role in (c.CONSIGNEE, c.RESPONSIBLE_PERSON, c.DECLARANT)
     ]
 
@@ -249,7 +288,7 @@ def _tax_code(organization: Organization, review: list[ReviewItem]) -> Element |
             )
         )
         return None
-    return container(c.ORGANIZATION_FEATURES, [leaf(c.TAX_CODE, code_text(digits))])
+    return _block(c.ORGANIZATION_FEATURES, [_element(c.TAX_CODE, code_text(digits))])
 
 
 def _importer_address(organization: Organization, review: list[ReviewItem]) -> Element | None:
@@ -268,12 +307,12 @@ def _importer_address(organization: Organization, review: list[ReviewItem]) -> E
                     "the account, so the filed value is only an import preview.",
                 )
             )
-        street = leaf(c.STREET_HOUSE, written)
-    return container(
+        street = _element(c.STREET_HOUSE, written)
+    return _block(
         c.ADDRESS,
         [
-            leaf(c.COUNTRY_CODE, c.DOMESTIC_COUNTRY_CODE),
-            leaf(c.COUNTRY_NAME, c.DOMESTIC_COUNTRY_NAME),
+            _element(c.COUNTRY_CODE, c.DOMESTIC_COUNTRY_CODE),
+            _element(c.COUNTRY_NAME, c.DOMESTIC_COUNTRY_NAME),
             street,
         ],
     )
@@ -294,8 +333,8 @@ def _country_pair(
         )
         return [None, None]
     return [
-        leaf(c.COUNTRY_CODE, code_text(country.code.value)),
-        leaf(c.COUNTRY_NAME, country.name.value),
+        _element(c.COUNTRY_CODE, code_text(country.code.value)),
+        _element(c.COUNTRY_NAME, country.name.value),
     ]
 
 
@@ -305,7 +344,7 @@ def _country_pair(
 def _goods_location(
     location: GoodsLocation | None, review: list[ReviewItem]
 ) -> Element | None:
-    """Box 30 — present in every accepted filing, and derivable from no document."""
+    """Box 30 — present in every ground truth, and derivable from no document."""
     if location is None:
         review.append(
             ReviewItem(
@@ -313,53 +352,220 @@ def _goods_location(
                 concept="goods location",
                 detail="No declarant profile supplied a goods location, so box 30 was "
                 "left out. It is a property of where this importer clears, not of the "
-                "shipment, and every accepted filing carries it.",
-                remedy="The importer's warehouse information type, customs office and "
-                "customs zone.",
+                "shipment, and all 71 ground truths carry it.",
+                remedy="The importer's warehouse information type and customs office.",
             )
         )
         return None
-    zone = None
-    if location.customs_zone_number is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="customs zone number",
-                detail="The profile carries no customs zone, so that sub-block was left "
-                "out of box 30.",
-            )
+    if location.customs_zone_number is not None:
+        _unfilable(
+            "customs zone number",
+            "A customs zone was supplied and none of the 71 ground truths carries an "
+            "element for it, so it was not filed. Set it on the portal if box 30 needs it.",
+            review,
         )
-    else:
-        zone = container(
-            c.CUSTOMS_ZONE,
-            [leaf(c.CUSTOMS_ZONE_NUMBER, code_text(location.customs_zone_number.value))],
-        )
-    return container(
+    return _block(
         c.GOODS_LOCATION,
         [
-            leaf(
+            _element(
                 c.GOODS_LOCATION_INFORMATION_TYPE,
                 code_text(location.information_type_code.value),
             ),
-            leaf(c.GOODS_LOCATION_OFFICE_CODE, code_text(location.customs_office_code.value)),
-            leaf(c.GOODS_LOCATION_COUNTRY_CODE, code_text(location.country_code.value)),
-            zone,
+            _element(c.GOODS_LOCATION_OFFICE, code_text(location.customs_office_code.value)),
+            _element(c.GOODS_LOCATION_COUNTRY_CODE, code_text(location.country_code.value)),
         ],
     )
+
+
+# --- consignment and contract terms ----------------------------------------------------
+
+
+def _consignment(consignment: Consignment, review: list[ReviewItem]) -> Element | None:
+    """Boxes 19, 17 and 25 — and nothing else. The crossing office and the vehicle
+    records have no element in any filing in the evidence base."""
+    indicator = None
+    if consignment.container_indicator is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept="container indicator",
+                detail="No container indicator reached the adapter, so box 19 was left "
+                "out. Assembly defaults it to false when there is no consignment note.",
+            )
+        )
+    else:
+        indicator = _element(
+            c.CONTAINER_INDICATOR, boolean_text(consignment.container_indicator.value)
+        )
+
+    if consignment.dispatch_country is not None:
+        _unfilable(
+            "dispatch country",
+            "A dispatch country was resolved and no filing in the evidence base carries "
+            "a dispatch-country element, so it was not filed.",
+            review,
+        )
+    if consignment.border_office is not None:
+        _unfilable(
+            "border crossing office",
+            "A crossing office was resolved and no filing in the evidence base carries a "
+            "border-office block, so it was not filed. Box 12 is filled on the portal.",
+            review,
+        )
+
+    return _block(
+        c.CONSIGNMENT,
+        [
+            indicator,
+            _element(c.DESTINATION_COUNTRY_CODE, c.DOMESTIC_COUNTRY_CODE),
+            _element(c.DESTINATION_COUNTRY_NAME, c.DOMESTIC_COUNTRY_NAME),
+            _transport(
+                c.DEPARTURE_TRANSPORT,
+                consignment.departure_transport,
+                "arrival transport",
+                review,
+            ),
+            _transport(
+                c.BORDER_TRANSPORT,
+                consignment.border_transport,
+                "border transport",
+                review,
+            ),
+        ],
+    )
+
+
+def _transport(
+    element_name: str,
+    block: TransportBlock | None,
+    concept: str,
+    review: list[ReviewItem],
+) -> Element | None:
+    """One transport block: the mode code, and only the mode code.
+
+    All 71 ground truths carry exactly one child here. The vehicle plates and the vehicle
+    count the domain model holds have no element anywhere in the evidence base, so they
+    are reported rather than written — the alternative is inventing an element name,
+    which rejects the file with no field named.
+    """
+    if block is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept=concept,
+                detail="No transport was resolved, so the block was left out.",
+            )
+        )
+        return None
+    if block.vehicles or block.vehicle_quantity is not None:
+        _unfilable(
+            f"{concept} vehicles",
+            f"{len(block.vehicles)} vehicle record(s) were read and no filing in the "
+            "evidence base carries a transport-means element, so the plates were not "
+            "filed. Box 18 and box 21 are filled on the portal.",
+            review,
+        )
+    return _block(
+        element_name, [_element(c.TRANSPORT_MODE_CODE, code_text(block.mode_code.value))]
+    )
+
+
+def _contract_terms(consignment: Consignment, review: list[ReviewItem]) -> Element | None:
+    """Currency, total, trade country and Incoterms — a sibling of the consignment block,
+    not a child of it.
+
+    The currency rate is never written. The invoice rarely carries one and the portal
+    fills it, so filing a guessed rate would put a wrong exchange rate on a legal document
+    to save a field the portal supplies anyway.
+    """
+    currency = None
+    if consignment.currency_code is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept="contract currency",
+                detail="The invoice stated no currency, so the element was left out.",
+            )
+        )
+    else:
+        currency = _element(c.CONTRACT_CURRENCY_CODE, code_text(consignment.currency_code.value))
+
+    total = None
+    if consignment.total_invoice_amount is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept="total invoice amount",
+                detail="No line totals summed and the invoice printed no goods total, so "
+                "box 22 was left out.",
+            )
+        )
+    else:
+        total = _element(
+            c.TOTAL_INVOICE_AMOUNT, decimal_text(consignment.total_invoice_amount.value)
+        )
+
+    trade_country = None
+    if consignment.trade_country_code is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept="trade country",
+                detail="Trade-country detection found nothing in the seller's address or "
+                "name, so box 11 was left out. 69 of the 71 ground truths carry it.",
+            )
+        )
+    else:
+        trade_country = _element(
+            c.TRADE_COUNTRY_CODE, code_text(consignment.trade_country_code.value)
+        )
+
+    return _block(
+        c.CONTRACT_TERMS,
+        [currency, total, trade_country, _delivery_terms(consignment.delivery_terms, review)],
+    )
+
+
+def _delivery_terms(terms: DeliveryTerms | None, review: list[ReviewItem]) -> Element | None:
+    """Box 20 — the Incoterms code alone. No filing in the evidence base carries a place."""
+    if terms is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept="delivery terms",
+                detail="The invoice stated no Incoterms, so the block was left out "
+                "entirely rather than written as an empty container.",
+            )
+        )
+        return None
+    if terms.place is not None:
+        _unfilable(
+            "delivery place",
+            "An Incoterms place was read and no filing in the evidence base carries a "
+            "delivery-place element, so it was not filed.",
+            review,
+        )
+    if terms.terms_code is None:
+        review.append(
+            ReviewItem(
+                kind=ReviewKind.OMITTED,
+                concept="delivery terms code",
+                detail="No Incoterms code was read, so the block was left out; it is the "
+                "block's only child.",
+            )
+        )
+        return None
+    return _block(c.DELIVERY_TERMS, [_element(c.DELIVERY_TERMS_CODE, terms.terms_code.value)])
 
 
 # --- goods items ----------------------------------------------------------------------
 
 
 def _goods_item(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
-    """One goods block, children in the contract's order.
-
-    The additional-sign slot sits between the commodity code and the origin country and
-    is never written: it appears on 17% of filed goods items as a single Cyrillic letter
-    and nothing records what triggers it.
-    """
+    """One goods block, children in the contract's order. The only repeatable element in
+    the document."""
     children: list[Element | None] = [
-        leaf(c.GOODS_NUMERIC, integer_text(item.item_number)),
+        _element(c.GOODS_NUMERIC, integer_text(item.item_number)),
         _description(item, review),
         _optional_decimal(c.GROSS_WEIGHT, item.gross_weight, "line gross weight", item, review),
         _optional_decimal(c.NET_WEIGHT, item.net_weight, "line net weight", item, review),
@@ -372,7 +578,7 @@ def _goods_item(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
     children.append(_supplementary_quantity(item, review))
     children.append(_packaging(item, review))
     children.append(_goods_procedure())
-    return container(c.GOODS_ITEM, children)
+    return _block(c.GOODS_ITEM, children)
 
 
 def _description(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
@@ -383,12 +589,13 @@ def _description(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
                 kind=ReviewKind.OMITTED,
                 concept="line goods description",
                 detail="The line reached the filing adapter with an empty description, "
-                "so box 31 was left out. Every accepted filing carries one on every line.",
+                "so box 31 was left out. All 2842 goods items in the evidence base carry "
+                "one.",
                 line_id=item.line_id,
             )
         )
         return None
-    return leaf(c.GOODS_DESCRIPTION, written)
+    return _element(c.GOODS_DESCRIPTION, written)
 
 
 def _optional_decimal(
@@ -409,7 +616,7 @@ def _optional_decimal(
             )
         )
         return None
-    return leaf(element_name, decimal_text(value.value))
+    return _element(element_name, decimal_text(value.value))
 
 
 def _commodity_code(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
@@ -428,7 +635,7 @@ def _commodity_code(item: GoodsItem, review: list[ReviewItem]) -> Element | None
             )
         )
         return None
-    return leaf(c.COMMODITY_CODE, code_text(item.commodity_code.value))
+    return _element(c.COMMODITY_CODE, code_text(item.commodity_code.value))
 
 
 def _origin_pair(item: GoodsItem, review: list[ReviewItem]) -> list[Element | None]:
@@ -445,8 +652,8 @@ def _origin_pair(item: GoodsItem, review: list[ReviewItem]) -> list[Element | No
         )
         return [None, None]
     return [
-        leaf(c.ORIGIN_COUNTRY_CODE, code_text(item.origin_country.code.value)),
-        leaf(c.ORIGIN_COUNTRY_NAME, item.origin_country.name.value),
+        _element(c.ORIGIN_COUNTRY_CODE, code_text(item.origin_country.code.value)),
+        _element(c.ORIGIN_COUNTRY_NAME, item.origin_country.name.value),
     ]
 
 
@@ -463,7 +670,7 @@ def _customs_cost_method(item: GoodsItem, review: list[ReviewItem]) -> Element |
             )
         )
         return None
-    return leaf(c.CUSTOMS_COST_METHOD, code_text(item.customs_cost_method.value))
+    return _element(c.CUSTOMS_COST_METHOD, code_text(item.customs_cost_method.value))
 
 
 def _preferences() -> Element | None:
@@ -474,18 +681,18 @@ def _preferences() -> Element | None:
     Claiming one the goods do not qualify for under-declares duty, which is legally
     consequential; this marker merely over-declares and is corrected on the portal.
     """
-    return container(
+    return _block(
         c.PREFERENCES,
         [
-            leaf(c.PREFERENCE_TAX, c.NO_PREFERENCE),
-            leaf(c.PREFERENCE_DUTY, c.NO_PREFERENCE),
-            leaf(c.PREFERENCE_RATE, c.NO_PREFERENCE),
+            _element(c.PREFERENCE_TAX, c.NO_PREFERENCE),
+            _element(c.PREFERENCE_DUTY, c.NO_PREFERENCE),
+            _element(c.PREFERENCE_RATE, c.NO_PREFERENCE),
         ],
     )
 
 
 def _supplementary_quantity(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
-    """Box 41 — a figure, its unit name and its zero-padded unit code.
+    """Box 41 — a figure, its unit name and its zero-padded unit code, in that order.
 
     A line without this block hangs the portal's import at 100% with no message at all.
     The fallback that keeps it populated is a cross-field rule and belongs to assembly,
@@ -507,12 +714,12 @@ def _supplementary_quantity(item: GoodsItem, review: list[ReviewItem]) -> Elemen
         )
         return None
     quantity = item.supplementary_quantity
-    return container(
+    return _block(
         c.SUPPLEMENTARY_QUANTITY,
         [
-            leaf(c.GOODS_QUANTITY, decimal_text(quantity.quantity.value)),
-            leaf(c.MEASURE_UNIT_NAME, quantity.unit_name.value),
-            leaf(c.MEASURE_UNIT_CODE, code_text(quantity.unit_code.value)),
+            _element(c.GOODS_QUANTITY, decimal_text(quantity.quantity.value)),
+            _element(c.MEASURE_UNIT_NAME, quantity.unit_name.value),
+            _element(c.MEASURE_UNIT_CODE, code_text(quantity.unit_code.value)),
         ],
     )
 
@@ -536,7 +743,7 @@ def _packaging(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
             )
         )
     else:
-        count = leaf(c.PACKAGE_QUANTITY, decimal_text(packaging.package_count.value))
+        count = _element(c.PACKAGE_QUANTITY, decimal_text(packaging.package_count.value))
 
     type_code = None
     if packaging.package_type_code is None:
@@ -551,271 +758,42 @@ def _packaging(item: GoodsItem, review: list[ReviewItem]) -> Element | None:
             )
         )
     else:
-        type_code = leaf(c.PACKAGE_TYPE_CODE, code_text(packaging.package_type_code.value))
+        type_code = _element(c.PACKAGE_TYPE_CODE, code_text(packaging.package_type_code.value))
 
     packing = None
     if packaging.packing_code is not None:
-        packing = container(
+        packing = _block(
             c.PACKING_INFORMATION,
             [
-                leaf(c.PACKING_CODE, code_text(packaging.packing_code.value)),
-                leaf(c.PACKING_QUANTITY, decimal_text(packaging.packing_quantity.value))
+                _element(c.PACKING_CODE, code_text(packaging.packing_code.value)),
+                _element(c.PACKING_QUANTITY, decimal_text(packaging.packing_quantity.value))
                 if packaging.packing_quantity is not None
                 else None,
             ],
         )
 
-    return container(c.GOODS_PACKAGING, [count, type_code, packing])
+    return _block(c.GOODS_PACKAGING, [count, type_code, packing])
 
 
 def _goods_procedure() -> Element | None:
     """Boxes 37 and 1 — three zero-padded fixed-width tokens whose widths are contract."""
-    return container(
+    return _block(
         c.GOODS_PROCEDURE,
         [
-            leaf(c.MAIN_MODE_CODE, c.MODE_CODE_HOME_USE),
-            leaf(c.PRECEDING_MODE_CODE, c.PRECEDING_MODE_NONE),
-            leaf(c.GOODS_TRANSFER_FEATURE, c.TRANSFER_FEATURE_NONE),
+            _element(c.MAIN_MODE_CODE, c.MODE_CODE_HOME_USE),
+            _element(c.PRECEDING_MODE_CODE, c.PRECEDING_MODE_NONE),
+            _element(c.GOODS_TRANSFER_FEATURE, c.TRANSFER_FEATURE_NONE),
         ],
     )
-
-
-# --- consignment ----------------------------------------------------------------------
-
-
-def _consignment(consignment: Consignment, review: list[ReviewItem]) -> Element | None:
-    indicator = None
-    if consignment.container_indicator is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="container indicator",
-                detail="No container indicator reached the adapter, so box 19 was left "
-                "out. Assembly defaults it to false when there is no consignment note.",
-            )
-        )
-    else:
-        indicator = leaf(
-            c.CONTAINER_INDICATOR, boolean_text(consignment.container_indicator.value)
-        )
-    children: list[Element | None] = [indicator]
-    children.extend(
-        _named_country_pair(
-            consignment.dispatch_country,
-            c.DISPATCH_COUNTRY_CODE,
-            c.DISPATCH_COUNTRY_NAME,
-            "dispatch country",
-            review,
-        )
-    )
-    children.append(leaf(c.DESTINATION_COUNTRY_CODE, c.DOMESTIC_COUNTRY_CODE))
-    children.append(leaf(c.DESTINATION_COUNTRY_NAME, c.DOMESTIC_COUNTRY_NAME))
-    children.append(_border_office(consignment.border_office, review))
-    children.append(
-        _transport(c.DEPARTURE_TRANSPORT, consignment.departure_transport, "arrival transport", review)
-    )
-    children.append(
-        _transport(c.BORDER_TRANSPORT, consignment.border_transport, "border transport", review)
-    )
-    children.append(_contract_terms(consignment, review))
-    return container(c.CONSIGNMENT, children)
-
-
-def _named_country_pair(
-    country: CodedValue | None,
-    code_element: str,
-    name_element: str,
-    concept: str,
-    review: list[ReviewItem],
-) -> list[Element | None]:
-    if country is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept=concept,
-                detail="No country resolved, so the code and the name were both left out.",
-            )
-        )
-        return [None, None]
-    return [
-        leaf(code_element, code_text(country.code.value)),
-        leaf(name_element, country.name.value),
-    ]
-
-
-def _border_office(office: BorderOffice | None, review: list[ReviewItem]) -> Element | None:
-    """Box 12. The code is required once the block exists, so an unmapped route omits all
-    of it rather than filing a block the schema cannot accept."""
-    if office is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="border crossing office",
-                detail="The dispatch country mapped to no crossing office, so the whole "
-                "block was left out. Its code leaf is required once the block exists.",
-            )
-        )
-        return None
-    return container(
-        c.BORDER_OFFICE,
-        [
-            leaf(c.BORDER_OFFICE_CODE, code_text(office.code.value)),
-            leaf(c.BORDER_OFFICE_NAME, office.name.value) if office.name else None,
-            leaf(c.BORDER_OFFICE_COUNTRY_CODE, code_text(office.country_code.value))
-            if office.country_code
-            else None,
-        ],
-    )
-
-
-def _transport(
-    element_name: str,
-    block: TransportBlock | None,
-    concept: str,
-    review: list[ReviewItem],
-) -> Element | None:
-    """One transport block. Departure/arrival and border carry identical content.
-
-    A plate-less run writes no transport-means element at all: a meaningless placeholder
-    identifier is worse than absence, because it would file a vehicle that does not exist.
-    """
-    if block is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept=concept,
-                detail="No transport was resolved, so the block was left out.",
-            )
-        )
-        return None
-    if not block.vehicles:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept=f"{concept} vehicles",
-                detail="No vehicle plate was read, so no transport-means element was "
-                "written. A placeholder identifier would file a vehicle that does not "
-                "exist.",
-                remedy="The plates from box 25 of the consignment note.",
-            )
-        )
-    children: list[Element | None] = [
-        leaf(c.TRANSPORT_MODE_CODE, code_text(block.mode_code.value)),
-        leaf(c.TRANSPORT_MEANS_QUANTITY, integer_text(block.vehicle_quantity.value))
-        if block.vehicle_quantity is not None
-        else None,
-    ]
-    children.extend(
-        container(
-            c.TRANSPORT_MEANS,
-            [
-                leaf(c.TRANSPORT_IDENTIFIER, vehicle.identifier.value),
-                leaf(c.TRANSPORT_NATIONALITY_CODE, code_text(vehicle.nationality_country_code.value))
-                if vehicle.nationality_country_code is not None
-                else None,
-            ],
-        )
-        for vehicle in block.vehicles
-    )
-    return container(element_name, children)
-
-
-def _contract_terms(consignment: Consignment, review: list[ReviewItem]) -> Element | None:
-    """Currency, total, trade country and Incoterms.
-
-    The currency rate is never written. The invoice rarely carries one and the portal
-    fills it, so filing a guessed rate would put a wrong exchange rate on a legal document
-    to save a field the portal supplies anyway.
-    """
-    currency = None
-    if consignment.currency_code is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="contract currency",
-                detail="The invoice stated no currency, so the element was left out.",
-            )
-        )
-    else:
-        currency = leaf(c.CONTRACT_CURRENCY_CODE, code_text(consignment.currency_code.value))
-
-    total = None
-    if consignment.total_invoice_amount is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="total invoice amount",
-                detail="No line totals summed and the invoice printed no goods total, so "
-                "box 22 was left out.",
-            )
-        )
-    else:
-        total = leaf(c.TOTAL_INVOICE_AMOUNT, decimal_text(consignment.total_invoice_amount.value))
-
-    trade_country = None
-    if consignment.trade_country_code is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="trade country",
-                detail="Trade-country detection found nothing in the seller's address or "
-                "name, so box 11 was left out.",
-            )
-        )
-    else:
-        trade_country = leaf(c.TRADE_COUNTRY_CODE, code_text(consignment.trade_country_code.value))
-
-    return container(
-        c.CONTRACT_TERMS,
-        [currency, total, trade_country, _delivery_terms(consignment.delivery_terms, review)],
-    )
-
-
-def _delivery_terms(terms: DeliveryTerms | None, review: list[ReviewItem]) -> Element | None:
-    """Box 20. Each half is omitted on its own — this is not a code+name pair."""
-    if terms is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="delivery terms",
-                detail="The invoice stated no Incoterms, so the block was left out "
-                "entirely rather than written as an empty container.",
-            )
-        )
-        return None
-    code_leaf = None
-    if terms.terms_code is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="delivery terms code",
-                detail="No Incoterms code was read, so that leaf was left out.",
-            )
-        )
-    else:
-        code_leaf = leaf(c.DELIVERY_TERMS_CODE, terms.terms_code.value)
-
-    place_leaf = None
-    if terms.place is None:
-        review.append(
-            ReviewItem(
-                kind=ReviewKind.OMITTED,
-                concept="delivery place",
-                detail="No Incoterms place was read, so that leaf was left out.",
-            )
-        )
-    else:
-        place_leaf = leaf(c.DELIVERY_PLACE, terms.place.value)
-
-    return container(c.DELIVERY_TERMS, [code_leaf, place_leaf])
 
 
 # --- filler ---------------------------------------------------------------------------
 
 
 def _filler(filler: FillerPerson | None, review: list[ReviewItem]) -> Element | None:
-    """Box 54. No profile means no block — a placeholder name is semantically empty and
-    risks the surname's own string facet, and the portal fills the filler from the session."""
+    """Box 54, at root level and outside the shipment. Surname and given name, and no
+    contact block: no filing in the evidence base carries a phone or an address for the
+    filler."""
     if filler is None:
         review.append(
             ReviewItem(
@@ -826,18 +804,17 @@ def _filler(filler: FillerPerson | None, review: list[ReviewItem]) -> Element | 
             )
         )
         return None
-    contact = container(
-        c.FILLER_CONTACT,
-        [
-            leaf(c.FILLER_PHONE, filler.phone.value) if filler.phone is not None else None,
-            leaf(c.FILLER_EMAIL, filler.email.value) if filler.email is not None else None,
-        ],
-    )
-    return container(
+    if filler.phone is not None or filler.email is not None:
+        _unfilable(
+            "filler contact details",
+            "A phone or e-mail address was supplied and no filing in the evidence base "
+            "carries a contact element under the filler, so neither was filed.",
+            review,
+        )
+    return _block(
         c.FILLER,
         [
-            leaf(c.FILLER_SURNAME, filler.surname.value),
-            leaf(c.FILLER_GIVEN_NAME, filler.given_name.value),
-            contact,
+            _element(c.FILLER_SURNAME, filler.surname.value),
+            _element(c.FILLER_GIVEN_NAME, filler.given_name.value),
         ],
     )

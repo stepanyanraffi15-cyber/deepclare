@@ -15,10 +15,11 @@ and field-blind — a wrong-format rejection naming no field, a hang partway thr
 with no message, and silent value drop where the import succeeds and the value is simply
 gone — so conformance is enforced here, before writing, never discovered on filing.
 
-Read `contract` before changing anything: the misspellings are contract, the child order
-is enforced even for optional siblings, and a set of container names the specification
-never states are placeholders that make every document it writes *not filable* until a
-real accepted filing settles them.
+Read `contract` before changing anything, and read `observed` before that. Every element
+name, every namespace prefix and every child sequence is generated from the ground-truth
+declarations in the evaluation corpus and is not written by hand anywhere: the
+misspellings are contract, the child order is enforced even for optional siblings, and
+the three namespace prefixes are assigned per element with no rule behind them.
 """
 
 from deepclare.filing.conformance import (
@@ -28,6 +29,7 @@ from deepclare.filing.conformance import (
     RuleStatus,
     check,
 )
+from deepclare.filing.document import Element, parse_document
 from deepclare.filing.errors import (
     FilingContractError,
     MalformedFiledDocument,
@@ -38,6 +40,7 @@ from deepclare.filing.writer import FiledDocument, write_declaration
 
 __all__ = [
     "ConformanceResult",
+    "Element",
     "FiledDocument",
     "FilingContractError",
     "Finding",
@@ -48,6 +51,7 @@ __all__ = [
     "UnreadElement",
     "UnrepresentableValue",
     "check",
+    "parse_document",
     "read_declaration",
     "write_declaration",
 ]

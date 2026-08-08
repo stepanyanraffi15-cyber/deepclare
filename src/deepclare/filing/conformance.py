@@ -6,19 +6,20 @@ response, which is why every check that can be made offline is made here.
 
 This is deliberately **not** schema validation. The vendored schema set is version 5.0.7
 and the documents the portal accepts are 5.10.0: standard validation against it produces
-false errors on genuinely valid files, and the emitter legitimately writes elements the
-vendored schema does not define. The schemas transfer as a facet dictionary and a
-structural reference, never as an acceptance oracle. So this module checks the leaf-type
-facets that are stable across versions — integer, decimal, date, length, pattern — plus
-the ordering, pairing and representation rules the specification states outright.
+false errors on genuinely valid files. What replaces it is the evidence: `observed` gives
+every element name, the namespace prefix each one is written under, the child order of
+every container and the one element that may repeat, all read off 71 ground-truth
+declarations. Those four rules are decided against the evidence, not against a schema and
+not against a reading of prose.
 
-The result is **per rule**, not a verdict. A bare pass/fail cannot express the thing that
-matters most here: several rules are neither satisfied nor violated but *unverifiable*,
-because the evidence that would settle them is a corpus of real accepted filings that did
-not transfer. Those come back as `UNCONFIRMED`, and a document is only `filable` when
-nothing is failing **and** nothing is unconfirmed.
+The result is **per rule**, not a verdict. A bare pass/fail cannot express the one thing
+that matters here: a rule can be neither satisfied nor violated but *unverifiable*.
+Exactly one rule is in that position now — the empty-container question dossier 03 §6
+records as unknown and the evidence base leaves open, carrying two such containers in 71
+filings. Everything the specification once left unconfirmed about names, sequences and
+namespaces is now attested, and those rules decide.
 
-Five blind spots are inherited from the predecessor's version of this check as explicit
+Six blind spots are inherited from the predecessor's version of this check as explicit
 requirements, each one a measured weakness:
 
 * an empty or whitespace-only element is checked, not exempted;
@@ -27,10 +28,9 @@ requirements, each one a measured weakness:
 * a finding carries the element's **path and value**, so tolerating one occurrence never
   tolerates every occurrence of that name forever;
 * elements sharing a name at different paths are resolved **by parent** — `Rate` is a
-  decimal in one place and a two-letter code in another.
-
-And the sixth, which is why several rules below count what they examined: **"nothing to
-check" fails.** A rule that found no subjects has not passed.
+  decimal in one place and a two-letter code in another;
+* **"nothing to check" fails.** A rule that found no subjects has not passed, which is
+  why several rules below count what they examined.
 """
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ from deepclare.filing.document import INDENT, PROLOG, Element, Located, walk
 _INTEGER_TEXT = re.compile(r"^(0|[1-9][0-9]*)$")
 _DECIMAL_TEXT = re.compile(r"^(0|[1-9][0-9]*)(\.[0-9]*[1-9])?$")
 _DATE_TEXT = re.compile(r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")
-_SELF_CLOSING = re.compile(r"<[^<>]*/>")
+_OPENS_ELEMENT = re.compile(r"^ *<")
 
 
 class RuleStatus(StrEnum):
@@ -105,8 +105,7 @@ class ConformanceResult(BaseModel):
 
     @property
     def filable(self) -> bool:
-        """Nothing failing and nothing unverified. Today this is never true — see
-        `contract`'s docstring on the element names the specification never states."""
+        """Nothing failing and nothing unverified."""
         return self.conforms and not self.unconfirmed
 
     def report(self) -> str:
@@ -115,7 +114,7 @@ class ConformanceResult(BaseModel):
         for outcome in self.outcomes:
             lines.append(
                 f"[{outcome.status.value:>13}] {outcome.rule:<24} "
-                f"checked={outcome.checked:<4} {outcome.detail}"
+                f"checked={outcome.checked:<5} {outcome.detail}"
             )
             for finding in outcome.findings:
                 value = "" if finding.value is None else f" = {finding.value!r}"
@@ -124,25 +123,30 @@ class ConformanceResult(BaseModel):
 
 
 def check(root: Element, xml: str) -> ConformanceResult:
-    """Judge one emitted document against every rule this module knows."""
+    """Judge one document against every rule this module knows.
+
+    Works on any filed declaration, not only one this repository wrote: `document`'s
+    parser produces the same tree from a file read off disk, which is what makes a real
+    accepted filing checkable against the same rules as our own output.
+    """
     located = list(walk(root))
     return ConformanceResult(
         outcomes=(
-            _element_name_evidence(located),
-            _namespace_assignment(root),
+            _element_names(located),
+            _namespace_prefixes(located),
+            _document_envelope(root),
             _child_order(located),
-            _child_order_evidence(located),
-            _no_empty_elements(located),
+            _element_repetition(located),
+            _no_empty_leaves(located),
+            _empty_containers(located),
             _placeholder_confinement(located),
             _leaf_facets(located),
             _fixed_width_codes(located),
             _preference_marker(located),
             _code_name_pairing(located),
             _goods_quantity_present(located),
-            _goods_numbering(root, located),
-            _never_emitted(located),
-            _description_length(located),
-            _shipment_cost_elements(located),
+            _goods_numbering(located),
+            _advisory_lengths(located),
             _nesting_depth(located),
             _serialization_shape(xml),
             _file_size(xml),
@@ -154,48 +158,127 @@ def _leaves(located: list[Located]) -> list[Located]:
     return [item for item in located if not item.element.children]
 
 
-def _element_name_evidence(located: list[Located]) -> RuleOutcome:
+# --- the evidence rules ---------------------------------------------------------------
+
+
+def _element_names(located: list[Located]) -> RuleOutcome:
+    """Every element name is one a real filing carries.
+
+    An element the importer does not know is rejected as wrong format, naming nothing.
+    The evidence base holds 68 names and this document may use no other.
+    """
     findings = tuple(
         Finding(
             path=item.path,
-            value=None,
-            detail="the specification never states this element's name",
+            value=item.element.text,
+            detail=f"no filing in the evidence base carries an element named "
+            f"{item.element.name!r}",
         )
         for item in located
-        if item.element.name in c.UNCONFIRMED_ELEMENT_NAMES
+        if item.element.name not in c.NAMESPACE_PREFIX_BY_NAME
     )
-    if not findings:
-        return RuleOutcome(
-            rule="element-name-evidence",
-            status=RuleStatus.PASS,
-            detail="every element name is one the specification states verbatim",
-            checked=len(located),
-        )
-    distinct = sorted({f.path.rsplit("/", 1)[-1] for f in findings})
+    status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
-        rule="element-name-evidence",
-        status=RuleStatus.UNCONFIRMED,
-        detail=f"{len(distinct)} element names are placeholders, not contract: "
-        f"{', '.join(distinct)}. Settled by one real accepted filing, or by the "
-        "authority's 5.10.0 schema set.",
+        rule="element-names",
+        status=status,
+        detail=f"every name is one of the {len(c.NAMESPACE_PREFIX_BY_NAME)} the "
+        f"{c.EVIDENCE_CASE_COUNT} ground-truth declarations attest",
         checked=len(located),
         findings=findings,
     )
 
 
-def _namespace_assignment(root: Element) -> RuleOutcome:
-    declared = dict(root.attributes).get("xmlns")
+def _namespace_prefixes(located: list[Located]) -> RuleOutcome:
+    """The prefix is per element and is not derivable from the element's meaning.
+
+    `SupplementaryGoodsQuantity` sits under the root schema's prefix and all three of its
+    children sit under the common-types prefix. Each name appears under exactly one
+    prefix across the whole evidence base, so this is decidable element by element.
+    """
+    findings: list[Finding] = []
+    checked = 0
+    for item in located:
+        expected = c.NAMESPACE_PREFIX_BY_NAME.get(item.element.name)
+        if expected is None:
+            continue  # reported by element-names; nothing to compare against
+        checked += 1
+        if item.element.prefix != expected:
+            findings.append(
+                Finding(
+                    path=item.path,
+                    value=item.element.prefix,
+                    detail=f"is written under {item.element.prefix!r} and every filing in "
+                    f"the evidence base writes it under {expected!r}",
+                )
+            )
+    if checked == 0:
+        return RuleOutcome(
+            rule="namespace-prefixes",
+            status=RuleStatus.FAIL,
+            detail="no element could be resolved to a prefix at all",
+            checked=0,
+        )
+    status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
-        rule="namespace-assignment",
-        status=RuleStatus.UNCONFIRMED,
-        detail=f"the whole document is written in one default namespace ({declared}). "
-        "Filed declarations carry three distinct prefixes and nothing records which "
-        "elements sit in which namespace. Settled by one real accepted filing.",
-        checked=1,
+        rule="namespace-prefixes",
+        status=status,
+        detail="each element sits under the one prefix the evidence base puts it under",
+        checked=checked,
+        findings=tuple(findings),
+    )
+
+
+def _document_envelope(root: Element) -> RuleOutcome:
+    """The root element and its attributes, as the ground truths write them."""
+    findings: list[Finding] = []
+    if root.name != c.ROOT or root.prefix != c.prefix_for(c.ROOT):
+        findings.append(
+            Finding(
+                path=root.qualified_name,
+                value=None,
+                detail=f"the root element must be {c.prefix_for(c.ROOT)}:{c.ROOT}",
+            )
+        )
+    written = dict(root.attributes)
+    for name, value in c.ROOT_ATTRIBUTES:
+        if name not in written:
+            findings.append(
+                Finding(path=f"{root.name}/@{name}", value=None, detail="is not declared")
+            )
+        elif written[name] != value:
+            findings.append(
+                Finding(
+                    path=f"{root.name}/@{name}",
+                    value=written[name],
+                    detail=f"must be {value!r}",
+                )
+            )
+    surplus = sorted(set(written) - {name for name, _ in c.ROOT_ATTRIBUTES})
+    findings.extend(
+        Finding(
+            path=f"{root.name}/@{name}",
+            value=written[name],
+            detail="no filing in the evidence base carries this root attribute",
+        )
+        for name in surplus
+    )
+    status = RuleStatus.FAIL if findings else RuleStatus.PASS
+    return RuleOutcome(
+        rule="document-envelope",
+        status=status,
+        detail="three namespace declarations, the schema-instance declaration, the "
+        "document mode identifier and the schema location",
+        checked=len(c.ROOT_ATTRIBUTES) + 1,
+        findings=tuple(findings),
     )
 
 
 def _child_order(located: list[Located]) -> RuleOutcome:
+    """A wrong child order is rejected as wrong format, with no element named.
+
+    Optionality does not relax order: a child may be absent, and the ones present must
+    still run in the evidence's sequence.
+    """
     findings: list[Finding] = []
     checked = 0
     for item in located:
@@ -207,7 +290,8 @@ def _child_order(located: list[Located]) -> RuleOutcome:
                 Finding(
                     path=item.path,
                     value=None,
-                    detail="no child sequence is declared for this container",
+                    detail="no filing in the evidence base carries children under this "
+                    "element, so no order is attested for it",
                 )
             )
             continue
@@ -219,7 +303,7 @@ def _child_order(located: list[Located]) -> RuleOutcome:
                     Finding(
                         path=f"{item.path}/{child.name}",
                         value=None,
-                        detail=f"not a declared child of {item.element.name}",
+                        detail=f"no filing carries it as a child of {item.element.name}",
                     )
                 )
                 continue
@@ -241,64 +325,113 @@ def _child_order(located: list[Located]) -> RuleOutcome:
             checked=0,
             findings=tuple(findings),
         )
-    if findings:
-        return RuleOutcome(
-            rule="child-order",
-            status=RuleStatus.FAIL,
-            detail="a wrong child order is rejected as wrong format with no field named",
-            checked=checked,
-            findings=tuple(findings),
-        )
+    status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
         rule="child-order",
-        status=RuleStatus.PASS,
-        detail="every container's children follow the declared sequence",
+        status=status,
+        detail=f"every container follows the sequence the {c.EVIDENCE_CASE_COUNT} ground "
+        "truths agree on",
         checked=checked,
+        findings=tuple(findings),
     )
 
 
-def _child_order_evidence(located: list[Located]) -> RuleOutcome:
-    inferred = sorted(
-        {
-            item.element.name
-            for item in located
-            if item.element.children and item.element.name in c.UNCONFIRMED_SEQUENCES
-        }
-    )
-    if not inferred:
-        return RuleOutcome(
-            rule="child-order-evidence",
-            status=RuleStatus.PASS,
-            detail="every sequence used is one the specification states outright",
-            checked=len(located),
-        )
+def _element_repetition(located: list[Located]) -> RuleOutcome:
+    """One element repeats legitimately. Everything else twice under one parent is a bug.
+
+    The idiom that makes this worth checking is repetition by renaming: a second value is
+    filed as a numerically-suffixed sibling rather than a repeated element, so a genuine
+    repeat is the exception and not the pattern.
+    """
+    findings: list[Finding] = []
+    checked = 0
+    for item in located:
+        if not item.element.children:
+            continue
+        checked += 1
+        counts = Counter(child.name for child in item.element.children)
+        for name, count in counts.items():
+            if count > 1 and name not in c.REPEATABLE:
+                findings.append(
+                    Finding(
+                        path=f"{item.path}/{name}",
+                        value=str(count),
+                        detail=f"appears {count} times under one {item.element.name}; the "
+                        f"evidence base repeats only {', '.join(sorted(c.REPEATABLE))}",
+                    )
+                )
+    status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
-        rule="child-order-evidence",
-        status=RuleStatus.UNCONFIRMED,
-        detail=f"{len(inferred)} sequences are read off the specification's section and "
-        f"table order rather than stated as an order: {', '.join(inferred)}. The goods "
-        "item, its packaging, preferences and procedure are stated and are not among "
-        "them.",
-        checked=len(located),
+        rule="element-repetition",
+        status=status,
+        detail=f"only {', '.join(sorted(c.REPEATABLE))} appears more than once under one "
+        "parent",
+        checked=checked,
+        findings=tuple(findings),
     )
 
 
-def _no_empty_elements(located: list[Located]) -> RuleOutcome:
+# --- representation rules -------------------------------------------------------------
+
+
+def _no_empty_leaves(located: list[Located]) -> RuleOutcome:
+    """A leaf present and blank is a third state the contract does not have."""
     findings = tuple(
         Finding(
             path=item.path,
             value=item.element.text,
-            detail="an element with no children and no content; absence is expressed by "
-            "omitting the element",
+            detail="a value element with no content; absence is expressed by omitting "
+            "the element",
         )
         for item in located
-        if not item.element.children and not (item.element.text or "").strip()
+        if not item.element.children
+        and item.element.name not in c.CONTAINERS
+        and not (item.element.text or "").strip()
     )
     status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
-        rule="no-empty-elements",
+        rule="no-empty-leaves",
         status=status,
-        detail="all 311 accepted filings contain zero empty and zero self-closing elements",
+        detail=f"zero of the {c.EVIDENCE_CASE_COUNT} ground truths carry an empty value "
+        "element",
+        checked=len(located),
+        findings=findings,
+    )
+
+
+def _empty_containers(located: list[Located]) -> RuleOutcome:
+    """The one question the evidence leaves open.
+
+    Dossier 03 §6 states that absence is always omission and records self-closing empty
+    containers as unattested and as the predecessor's highest-risk unexamined behaviour.
+    Two of the 71 ground truths carry an empty consignor address, so the evidence base
+    neither confirms the prohibition nor establishes that the importer tolerates one.
+    This adapter writes none — `container` returns nothing when every child is absent —
+    and reports one it reads rather than deciding a question the evidence does not settle.
+    """
+    findings = tuple(
+        Finding(
+            path=item.path,
+            value=None,
+            detail="a container with no children; it serializes self-closing and dossier "
+            "03 §9 records importer tolerance of that as unknown",
+        )
+        for item in located
+        if not item.element.children and item.element.name in c.CONTAINERS
+    )
+    if not findings:
+        return RuleOutcome(
+            rule="empty-containers",
+            status=RuleStatus.PASS,
+            detail="no container was written empty",
+            checked=len(located),
+        )
+    return RuleOutcome(
+        rule="empty-containers",
+        status=RuleStatus.UNCONFIRMED,
+        detail=f"{len(findings)} container(s) carry no children. 2 of the "
+        f"{c.EVIDENCE_CASE_COUNT} ground truths do the same, so this is neither ruled "
+        "out nor established. Settled by a filing rejected or accepted on this alone.",
         checked=len(located),
         findings=findings,
     )
@@ -309,7 +442,7 @@ def _placeholder_confinement(located: list[Located]) -> RuleOutcome:
         Finding(
             path=item.path,
             value=item.element.text,
-            detail="a placeholder in a leaf that is not one of the two permitted "
+            detail="a placeholder in a leaf that is not one of the four permitted "
             "organization names; a typed leaf carrying it rejects the whole file",
         )
         for item in located
@@ -320,7 +453,7 @@ def _placeholder_confinement(located: list[Located]) -> RuleOutcome:
     return RuleOutcome(
         rule="placeholder-confinement",
         status=status,
-        detail="exactly two elements in the document may carry a placeholder",
+        detail="exactly four elements in the document may carry a placeholder",
         checked=len(located),
         findings=findings,
     )
@@ -328,7 +461,7 @@ def _placeholder_confinement(located: list[Located]) -> RuleOutcome:
 
 def _leaf_facets(located: list[Located]) -> RuleOutcome:
     findings: list[Finding] = []
-    leaves = _leaves(located)
+    leaves = [item for item in _leaves(located) if item.element.name not in c.CONTAINERS]
     for item in leaves:
         facet = c.facet_for(item.parent_name, item.element.name)
         text = item.element.text or ""
@@ -396,6 +529,7 @@ def _fixed_width_codes(located: list[Located]) -> RuleOutcome:
 
     Nothing but literal discipline holds these widths: a code that has been through an
     integer arrives with its padding gone, and `055` becomes `55` with no error anywhere.
+    The evidence base carries `055` on 23 goods items.
     """
     findings: list[Finding] = []
     checked = 0
@@ -503,7 +637,8 @@ def _code_name_pairing(located: list[Located]) -> RuleOutcome:
     return RuleOutcome(
         rule="code-name-pairing",
         status=status,
-        detail="six code and name pairs are emitted together or not at all",
+        detail=f"{len(c.CODE_NAME_PAIRS)} code and name pairs are emitted together or not "
+        "at all",
         checked=checked,
         findings=tuple(findings),
     )
@@ -516,7 +651,11 @@ def _goods_quantity_present(located: list[Located]) -> RuleOutcome:
     items = [item for item in located if item.element.name == c.GOODS_ITEM]
     for item in items:
         block = next(
-            (child for child in item.element.children if child.name == c.SUPPLEMENTARY_QUANTITY),
+            (
+                child
+                for child in item.element.children
+                if child.name == c.SUPPLEMENTARY_QUANTITY
+            ),
             None,
         )
         if block is None:
@@ -554,13 +693,14 @@ def _goods_quantity_present(located: list[Located]) -> RuleOutcome:
     )
 
 
-def _goods_numbering(root: Element, located: list[Located]) -> RuleOutcome:
+def _goods_numbering(located: list[Located]) -> RuleOutcome:
     """Item numbers run 1..N and the shipment's own count agrees with them."""
     findings: list[Finding] = []
     items = [item for item in located if item.element.name == c.GOODS_ITEM]
     for position, item in enumerate(items, start=1):
         numeric = next(
-            (child for child in item.element.children if child.name == c.GOODS_NUMERIC), None
+            (child for child in item.element.children if child.name == c.GOODS_NUMERIC),
+            None,
         )
         written = None if numeric is None else numeric.text
         if written != str(position):
@@ -571,13 +711,23 @@ def _goods_numbering(root: Element, located: list[Located]) -> RuleOutcome:
                     detail=f"goods items must be numbered 1..N in order; expected {position}",
                 )
             )
-    total = next(
-        (child.text for child in root.children if child.name == c.TOTAL_GOODS_NUMBER), None
+    shipment = next(
+        (item for item in located if item.element.name == c.SHIPMENT), None
     )
+    total = None
+    if shipment is not None:
+        total = next(
+            (
+                child.text
+                for child in shipment.element.children
+                if child.name == c.TOTAL_GOODS_NUMBER
+            ),
+            None,
+        )
     if total != str(len(items)):
         findings.append(
             Finding(
-                path=f"{c.ROOT}/{c.TOTAL_GOODS_NUMBER}",
+                path=f"{c.ROOT}/{c.SHIPMENT}/{c.TOTAL_GOODS_NUMBER}",
                 value=total,
                 detail=f"disagrees with the {len(items)} goods blocks in the document",
             )
@@ -588,6 +738,7 @@ def _goods_numbering(root: Element, located: list[Located]) -> RuleOutcome:
             status=RuleStatus.FAIL,
             detail="the document carries no goods item at all",
             checked=0,
+            findings=tuple(findings),
         )
     status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
@@ -599,29 +750,13 @@ def _goods_numbering(root: Element, located: list[Located]) -> RuleOutcome:
     )
 
 
-def _never_emitted(located: list[Located]) -> RuleOutcome:
-    findings = tuple(
-        Finding(
-            path=item.path,
-            value=item.element.text,
-            detail="this element is assigned by the portal, unresolved, or a post-filing "
-            "artifact; nothing here writes it",
-        )
-        for item in located
-        if item.element.name in c.NEVER_EMITTED
-    )
-    status = RuleStatus.FAIL if findings else RuleStatus.PASS
-    return RuleOutcome(
-        rule="never-emitted",
-        status=status,
-        detail="elements the portal owns are left to the portal",
-        checked=len(located),
-        findings=findings,
-    )
+def _advisory_lengths(located: list[Located]) -> RuleOutcome:
+    """Caps the schema states that no filing in the evidence base has yet overrun.
 
-
-def _description_length(located: list[Located]) -> RuleOutcome:
-    """The 250-character cap the schema states and real accepted filings exceed."""
+    The goods description is deliberately not among them any more: the schema states 250
+    and the evidence base carries 603 in an accepted-shaped filing, so carrying it as a
+    cap would fail a real declaration.
+    """
     findings: list[Finding] = []
     checked = 0
     for item in _leaves(located):
@@ -649,32 +784,10 @@ def _description_length(located: list[Located]) -> RuleOutcome:
     return RuleOutcome(
         rule="advisory-lengths",
         status=RuleStatus.UNCONFIRMED,
-        detail="filed declarations do overrun these caps and were accepted, and the "
-        "schema permits a split across siblings that nothing here performs. Whether the "
-        "live importer enforces them is undetermined.",
+        detail="the schema states these caps and nothing in the evidence base overruns "
+        "them, so whether the live importer enforces them is undetermined.",
         checked=checked,
         findings=tuple(findings),
-    )
-
-
-def _shipment_cost_elements(located: list[Located]) -> RuleOutcome:
-    """The two elements present in every accepted filing and never written here."""
-    written = {item.element.name for item in located}
-    missing = sorted({"TotalCustCost", "CustCostCurrencyCode"} - written)
-    if not missing:
-        return RuleOutcome(
-            rule="shipment-cost-elements",
-            status=RuleStatus.PASS,
-            detail="both shipment-level cost elements are present",
-            checked=2,
-        )
-    return RuleOutcome(
-        rule="shipment-cost-elements",
-        status=RuleStatus.UNCONFIRMED,
-        detail=f"{', '.join(missing)} are nominally optional, present in 311 of 311 "
-        "accepted filings, and not written. Whether their absence is tolerated is the "
-        "strongest untested importer requirement in the corpus.",
-        checked=2,
     )
 
 
@@ -689,17 +802,23 @@ def _nesting_depth(located: list[Located]) -> RuleOutcome:
     return RuleOutcome(
         rule="nesting-depth",
         status=status,
-        detail=f"deepest element is at level {deepest}; the format nests five deep",
+        detail=f"deepest element is at level {deepest}; the evidence base nests "
+        f"{c.MAX_NESTING_DEPTH} deep",
         checked=len(located),
         findings=findings,
     )
 
 
 def _serialization_shape(xml: str) -> RuleOutcome:
-    """The physical form of the file, which no XML library produces by default."""
+    """The physical form of the file, which no XML library produces by default.
+
+    Line checks apply to lines that open an element. A goods description may carry a
+    literal line break — 130 leaves in the evidence base do — and its continuation lines
+    are text, not markup, so indenting them would change the value.
+    """
     findings: list[Finding] = []
     lines = xml.split("\n")
-    if not xml.startswith(f"{PROLOG}<{c.ROOT}"):
+    if not xml.startswith(f"{PROLOG}<"):
         findings.append(
             Finding(
                 path="(file)",
@@ -708,21 +827,25 @@ def _serialization_shape(xml: str) -> RuleOutcome:
                 "root element must open on the same physical line",
             )
         )
-    if not xml.endswith("\n"):
+    if xml.endswith("\n"):
         findings.append(
-            Finding(path="(file)", value=None, detail="the file does not end in a newline")
+            Finding(
+                path="(file)",
+                value=None,
+                detail="the file ends in a newline; every ground truth ends at the root's "
+                "closing bracket",
+            )
         )
     for number, line in enumerate(lines[1:], start=2):
-        if not line:
+        if not line or not _OPENS_ELEMENT.match(line):
             continue
         indent = len(line) - len(line.lstrip())
-        if indent % len(INDENT) or line[:indent] != " " * indent:
+        if indent % len(INDENT):
             findings.append(
                 Finding(
                     path=f"(line {number})",
                     value=line[:80],
-                    detail="indentation must be a whole number of two-space steps, and "
-                    "spaces only",
+                    detail="indentation must be a whole number of two-space steps",
                 )
             )
         if line.count("<") > 2:
@@ -733,19 +856,12 @@ def _serialization_shape(xml: str) -> RuleOutcome:
                     detail="more than one element on a line",
                 )
             )
-        if _SELF_CLOSING.search(line):
-            findings.append(
-                Finding(
-                    path=f"(line {number})",
-                    value=line[:80],
-                    detail="self-closing syntax appears in zero filed declarations",
-                )
-            )
     status = RuleStatus.FAIL if findings else RuleStatus.PASS
     return RuleOutcome(
         rule="serialization-shape",
         status=status,
-        detail=f"{len(lines) - 1} lines, one element each, two-space indent",
+        detail=f"{len(lines)} lines, one element each, two-space indent, no trailing "
+        "newline",
         checked=len(lines),
         findings=tuple(findings),
     )
@@ -763,6 +879,5 @@ def _file_size(xml: str) -> RuleOutcome:
 
 
 def element_census(root: Element) -> Counter[str]:
-    """How many of each element the document carries. For diffing against a real filing,
-    which is the one thing that would confirm the names this module has to guess."""
+    """How many of each element the document carries, by local name."""
     return Counter(item.element.name for item in walk(root))
