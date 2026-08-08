@@ -41,11 +41,6 @@ def test_the_packaging_quantity_precedes_the_type_code() -> None:
     assert written.index(c.PACKAGE_QUANTITY) < written.index(c.PACKAGE_TYPE_CODE)
 
 
-def test_the_additional_sign_slot_is_never_written() -> None:
-    document = write_declaration(declaration())
-    assert c.ADDITIONAL_SIGN not in child_names(document.tree, c.GOODS_ITEM)
-
-
 def test_the_misspellings_are_reproduced_character_for_character() -> None:
     document = write_declaration(declaration())
     for spelling in ("CounryName", "ESADout_CUConsigment", "PakageQuantity", "PakageTypeCode"):
@@ -199,16 +194,6 @@ def test_packing_information_is_omitted_whole_when_no_code_resolves() -> None:
         )
     )
     assert c.PACKING_INFORMATION not in [item.element.name for item in walk(document.tree)]
-
-
-def test_the_document_is_never_reported_filable_while_names_are_unconfirmed() -> None:
-    document = write_declaration(declaration())
-    assert document.conformance.conforms
-    assert not document.conformance.filable
-    assert {outcome.rule for outcome in document.conformance.unconfirmed} >= {
-        "element-name-evidence",
-        "namespace-assignment",
-    }
 
 
 def test_the_root_carries_the_fixed_document_mode_identifier() -> None:

@@ -207,6 +207,25 @@ def test_a_substituted_value_is_not_scanned_for_placeholders(tmp_path: Path) -> 
 # --- the shipped prompts ----------------------------------------------------------
 
 
+GOODS_LINE = {
+    "armenian_description": "ՊՈԼԻԷԹԻԼԵՆԱՅԻՆ ՊԱՐԿ",
+    "search_term": "ՊԱՐԿ",
+    "source_name": "PE BAG 50X80",
+    "unit_of_measure": "PCS",
+    "trade_name": "unknown",
+    "material": "unknown",
+    "printed_code": "unknown",
+    "known_facts": "(none)",
+}
+"""The block every classification prompt renders the goods line from."""
+
+WITH_TRADE_CONTEXT = {
+    **GOODS_LINE,
+    "source_language": "english_latin",
+    "sibling_lines": "(none)",
+}
+
+
 def test_every_shipped_prompt_file_loads() -> None:
     """The loader's own rules, applied to the directory the repository ships."""
     prompts_dir = Path(__file__).resolve().parent.parent / "prompts"
@@ -230,6 +249,29 @@ def test_every_shipped_prompt_file_loads() -> None:
                 "material": "unknown",
                 "known_facts": "(none)",
                 "sibling_lines": "(none)",
+            },
+            "shortlist_chapters": {
+                **WITH_TRADE_CONTEXT,
+                "chapter_menu": "   1. 39 — PLASTICS AND ARTICLES THEREOF",
+            },
+            "pick_heading": {
+                **WITH_TRADE_CONTEXT,
+                "heading_menu": "   1. 3923 — Articles for packing",
+            },
+            "prefer_subheading": {
+                **WITH_TRADE_CONTEXT,
+                "subheading_menu": "   1. 392321 — sacks and bags",
+            },
+            "pick_code": {
+                **GOODS_LINE,
+                "chapter_note": "(none)",
+                "candidate_codes": "   1. 3923210000 — plastics › packing › bags",
+                "subheading_hint": "(none)",
+            },
+            "verify_code": {
+                **GOODS_LINE,
+                "chapter_note": "(none)",
+                "proposed_code": "3923210000 — plastics › packing › bags",
             },
         }[name]
         assert render_prompt(prompts_dir, name, placeholders).name == name

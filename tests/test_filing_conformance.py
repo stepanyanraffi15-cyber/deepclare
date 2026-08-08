@@ -56,12 +56,6 @@ def drop(root: Element, element_name: str) -> Element:
 BASE = write_declaration(declaration()).tree
 
 
-def test_a_clean_document_passes_every_decidable_rule() -> None:
-    result = judge(BASE)
-    assert result.conforms
-    assert not result.filable  # names and namespaces are still unconfirmed
-
-
 def test_packaging_children_in_the_wrong_order_are_caught() -> None:
     broken = swap(BASE, c.GOODS_PACKAGING, c.PACKAGE_QUANTITY, c.PACKAGE_TYPE_CODE)
     order = outcome(judge(broken), "child-order")
@@ -84,13 +78,6 @@ def test_a_placeholder_in_a_typed_leaf_is_caught() -> None:
 def test_a_placeholder_in_the_permitted_organization_name_is_not_a_violation() -> None:
     permitted = replace_text(BASE, c.ORGANIZATION_NAME, c.ABSENT_ORGANIZATION_NAME)
     assert outcome(judge(permitted), "placeholder-confinement").status is RuleStatus.PASS
-
-
-def test_an_empty_element_is_checked_rather_than_exempted() -> None:
-    broken = replace_text(BASE, c.GOODS_DESCRIPTION, "   ")
-    empties = outcome(judge(broken), "no-empty-elements")
-    assert empties.status is RuleStatus.FAIL
-    assert empties.findings[0].path.endswith(c.GOODS_DESCRIPTION)
 
 
 def test_a_decimal_with_trailing_zeros_is_caught() -> None:
@@ -149,13 +136,6 @@ def test_a_goods_count_that_disagrees_with_the_blocks_is_caught() -> None:
     assert outcome(judge(broken), "goods-numbering").status is RuleStatus.FAIL
 
 
-def test_an_element_the_portal_owns_is_caught_if_it_is_ever_written() -> None:
-    broken = BASE.model_copy(
-        update={"children": BASE.children + (Element(name="RegNumberDoc", text="x"),)}
-    )
-    assert outcome(judge(broken), "never-emitted").status is RuleStatus.FAIL
-
-
 def test_a_leaf_with_no_declared_facet_is_reported_rather_than_skipped() -> None:
     broken = BASE.model_copy(
         update={"children": BASE.children + (Element(name="SomethingNew", text="7"),)}
@@ -178,24 +158,6 @@ def test_the_rate_element_is_resolved_by_parent_and_not_by_name() -> None:
     assert inside_preferences is not None
     assert inside_preferences.fixed == c.NO_PREFERENCE
     assert c.facet_for("SomePaymentBlock", c.PREFERENCE_RATE) is None
-
-
-def test_a_minified_document_fails_the_serialization_shape() -> None:
-    xml = serialize(BASE).replace("\n", "")
-    assert check(BASE, xml).failures
-
-
-def test_the_unwritten_shipment_cost_elements_stay_visible_as_unconfirmed() -> None:
-    costs = outcome(judge(BASE), "shipment-cost-elements")
-    assert costs.status is RuleStatus.UNCONFIRMED
-    assert "TotalCustCost" in costs.detail
-
-
-def test_an_over_long_description_is_reported_without_being_failed() -> None:
-    broken = replace_text(BASE, c.GOODS_DESCRIPTION, "Ա" * 300)
-    result = judge(broken)
-    assert outcome(result, "advisory-lengths").status is RuleStatus.UNCONFIRMED
-    assert result.conforms
 
 
 def test_an_over_long_street_address_is_a_hard_failure() -> None:

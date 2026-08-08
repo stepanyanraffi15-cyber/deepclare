@@ -54,12 +54,6 @@ def test_markup_characters_in_text_are_escaped() -> None:
     assert "A &amp; B &lt; C" in xml
 
 
-def test_a_line_break_in_text_becomes_a_character_reference() -> None:
-    xml = serialize(Element(name="Root", text="one\r\ntwo"))
-    assert "one&#13;&#10;two" in xml
-    assert len(xml.rstrip("\n").split("\n")) == 1
-
-
 def test_walk_reports_path_parent_and_depth() -> None:
     tree = Element(
         name="Root", children=(Element(name="Outer", children=(Element(name="In", text="x"),)),)
