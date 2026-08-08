@@ -257,3 +257,60 @@ the kind of invention the build rules forbid. Escalated rather than faked.
 Unchanged and unanswered: the GIR chapter legal notes, and whether the corpora of real
 accepted declarations transfer at all. The second is customer data and is explicitly a
 user decision.
+
+---
+
+## Entry 2 — Customer-history reuse removed from classification and naming
+
+### The decision (user-directed)
+
+Classification and description writing must not search the customer's own filed
+declarations. Removed from the design in all five places it appeared: the prior-filing
+matcher (A13), the pre-naming foreign-text reuse probe (A16), filed-history reuse (L2),
+legacy two-column history (L3), and M7 as a module — with no call sites left, the
+boundary disappears.
+
+This is **not** the same as removing nomenclature search. The ATG vector collection is
+the one database here and classification retrieval runs over it. The distinction that
+matters: *user* DB search is out, *nomenclature* search stays. My earlier reading
+collapsed the two and removed both; corrected here.
+
+### What it costs — recorded so the trade is not rediscovered later
+
+| Consequence | Detail |
+|---|---|
+| Every line costs full model calls | The reuse hit was the zero-model-call path for a repeat good, short-circuiting both naming and classification |
+| The "trusted, reused from history" flag disappears | It was the one provenance distinction exposed to the client, and the only signal letting an operator skip verifying a line |
+| Description assembly simplifies | The precedence filing a broker-confirmed Armenian description verbatim has no source now |
+| The dossier's accuracy figures stop applying | They were measured with reuse in the stack, so they are not a baseline for this system |
+
+### Model assignments (proposed, now visible in the artifact)
+
+Three tiers, all pinned to temperature 0 — dossier open question D3 records that the
+reasoning-heaviest stage previously set no decoding configuration at all, and that no
+measurement taken without pinning is reproducible.
+
+| Stage | Model |
+|---|---|
+| A4 page classify, A8 header read, A10 column label | `gemini-3.5-flash-lite` |
+| A6 document read, A14 evidence, A17 description, C1/C2 narrowing, A21/A22 harmonize | `gemini-3.6-flash` |
+| C5 pick, C6 verify | `gemini-2.5-pro` |
+| C4 retrieval | `gemini-embedding-001` at 768d — **locked, not chosen** |
+
+The embedding choice is not a preference: the collection was built with that model at
+that width, and dossier 11 §2's hard invariant is that build side and query side must
+match or the vectors do not align.
+
+### New process rule
+
+Added `.claude/skills/architecture-review`: an architectural decision is written into
+the living artifact and reviewed **before** any code implementing it is written.
+Architectural means pipeline shape, module boundaries, run-time data sources, model
+assignments, anything touching the XML contract, or resolving a dossier `[UNKNOWN]`.
+Ordinary work inside an agreed boundary needs no gate.
+
+### Still awaiting review — not being implemented
+
+Where chapter titles, heading titles, the taxonomic path and the per-code supplementary
+unit come from at run time. Proposal in the artifact: read from the authority's public
+API on demand, cache in memory, write nothing to disk. Not started.
