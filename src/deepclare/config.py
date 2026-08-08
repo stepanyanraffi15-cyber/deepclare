@@ -47,7 +47,23 @@ class Settings(BaseSettings):
     # --- prompts ------------------------------------------------------------
     prompts_dir: Path
 
-    @field_validator("genai_api_base")
+    # --- reference data -----------------------------------------------------
+    # The vector collection and the tree that gives its codes meaning. Both are large
+    # derived objects no checkout reproduces, so their absence must be a startup
+    # failure rather than a runtime where every classification quietly returns nothing.
+    qdrant_path: Path
+    qdrant_collection: str = Field(min_length=1)
+    reference_dir: Path
+    reference_snapshot_dir: Path
+
+    # The authority the tree is acquired from. Enumerated by node id: the paged listing
+    # endpoint silently caps at 10,000 rows against an id space past 21,000, so anything
+    # built on it is missing most of the tree with no error anywhere.
+    nomenclature_api_base: str = Field(min_length=1)
+    nomenclature_max_node_id: int = Field(gt=0)
+    nomenclature_crawl_workers: int = Field(gt=0)
+
+    @field_validator("genai_api_base", "nomenclature_api_base")
     @classmethod
     def _strip_trailing_slash(cls, value: str) -> str:
         return value.rstrip("/")

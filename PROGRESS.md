@@ -437,3 +437,69 @@ a consumer can check — not just a build timestamp, but an identifier a run can
 report, so that "is this the right build" is answerable by the machine rather than by
 asking a human. The specification already requires runs to pin the nomenclature vintage
 for exactly this reason; this incident shows a timestamp alone does not satisfy it.
+
+---
+
+## Entry 4 — The tree now carries its group levels, in all three languages
+
+### The decision (user-directed)
+
+Two things were asked for and both are done:
+
+1. **Keep the group levels.** "Other" is not a wrong name — it is a name *relative to a
+   parent*. Discarding the parents is what made it useless. As the user put it:
+   specifying a code as "other" without its parents makes it impossible to do anything.
+2. **Put the full fields on the collection** — names in Armenian, English and Russian,
+   plus the supplementary unit — rather than codes and prefixes alone.
+
+### What was built
+
+- `reference/authority.py` — id enumeration of the authority tree, retaining **every**
+  node including the 6-digit, 8-digit and code-less folder levels. The paged listing
+  endpoint is never used; measured live, it reports `totalRoots = 10000` regardless of
+  filters against an id space past 21,000, and a build on it silently omits most of the
+  tree. Any id unresolved after its retries fails the whole acquisition.
+- `reference/tree.py` — resolves each filable code's ancestry through the authority's own
+  parent links rather than by code prefix, because the levels that matter carry no code
+  to derive a prefix from. Cycle-guarded.
+- `reference/enrich.py` — writes the entries artifact and attaches the text to the
+  points that already exist. **Vectors are never touched**, so nothing here changes what
+  is retrieved or invalidates the model-and-dimensionality pairing the vectors were built
+  under. Reversible by clearing the seven added keys.
+
+### Measured result
+
+| | before | after |
+|---|---|---|
+| nodes acquired | 14,332 kept of an unknown total | **21,185** (215 id gaps, 0 failures) |
+| payload fields | `code, level, p2, p4, p6, p8` | + `name_en/hy/ru`, `path_en/hy/ru`, `supplementary_unit` |
+| leaves named only "other" | 3,921 (29.5%) | **3,704 of them (94.5%) now carry a distinguishing intermediate level** |
+| genuinely catch-all | — | 217, where the authority truly has nothing between |
+| names per language | none in the collection | 13,279 / 13,279 / 13,279 |
+
+Points enriched: 14,332. Unmatched: **0** — the vectors and the tree agree exactly.
+
+Verified on the case that exposed the problem. Four leaves that all read "other" now
+read, in English and Armenian: *bottles, flasks → not exceeding 2 L*; *bags and sacks
+(including cones) → of other plastics*; *bottles, flasks → exceeding 2 L*; and one that
+is genuinely a catch-all. A small bottle, a plastic bag, a large bottle, and a true
+"other" — now distinguishable, which is the difference between a model choosing and a
+model guessing.
+
+### Decisions taken
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-07 | Section headers are dropped from the rendered path | They sit above chapters and add length without adding discrimination |
+| D-08 | Trailing colons are stripped from each path segment | Authority text ends in a colon, which reads badly mid-path |
+| D-09 | Ancestry walks parent links, not code prefixes | The folder levels carry no code, so there is no prefix to walk |
+| D-10 | Payload enrichment rather than a second store | Keeps one database, touches no vector, and is reversible |
+
+### Where I am least confident
+
+**Path length against the prompt budget.** Median rendered path is 276 characters, but
+the 95th percentile is 627 and the longest is 1,114. Ten candidates at the 95th
+percentile is roughly 6,000 characters of candidate list alone, before the goods line and
+the chapter note. The final pick may need the path truncated from the left — keeping the
+specific end, which is what discriminates — rather than the whole chain. Not yet
+measured against real classification accuracy, so not yet implemented.
