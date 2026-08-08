@@ -503,3 +503,95 @@ percentile is roughly 6,000 characters of candidate list alone, before the goods
 the chapter note. The final pick may need the path truncated from the left — keeping the
 specific end, which is what discriminates — rather than the whole chain. Not yet
 measured against real classification accuracy, so not yet implemented.
+
+---
+
+## Entry 5 — M13 Review Surface
+
+`src/deepclare/review/` — the human-facing account of a run. It depends on the domain
+vocabulary and on nothing else, which is what the dependency graph says (M13 requires M1
+only), so it is complete before any of the producers it will consume exist.
+
+### What it does
+
+Two inputs, both produced elsewhere: the review items every module raised, and the values
+those modules produced with the provenance and the three confidences attached to each.
+`build_report(items, values)` groups them by goods line, joins each item to the value it
+concerns, orders everything, tallies the kinds, and computes the per-line flags.
+`render_report(report)` prints it. Nothing in the module produces a value, and nothing
+re-checks a rule — a review surface that can disagree with the declaration is a second
+implementation of the declaration.
+
+### The ordering rule, stated once
+
+In `review/ordering.py`, and printed at the head of every rendered report so the operator
+can see why the report is in the order it is in. Four keys:
+
+1. **Scope** — shipment level before any goods line, because a shipment-level value is
+   wrong for every line at once.
+2. **Consequence to the filed document** — placeholder, omitted, needs review, guess. The
+   four kinds are distinct operator actions rather than severity levels, so the rank is
+   not read out of them; it comes from the governing asymmetry, *wrong is worse than
+   missing*. A stand-in is a wrong value in the document; an omission is work left for a
+   human. A line inherits the rank of its most consequential item, so lines with no items
+   sort last.
+3. **Weakest confidence first** on the value the item concerns. An unassessed value sorts
+   after the assessed ones: nothing known is not the same as known to be poor.
+4. **Concept name**, so the same findings always print the same report.
+
+### Two producer contracts, checked and surfaced rather than repaired
+
+`review/defects.py`. Neither is fixable here, so both become entries in a defects section
+printed before the report proper, naming the producing stage; the item or value is still
+shown, because the operator still has to act on it.
+
+- **A value whose origin promises a confidence and carries none.** The mapping is
+  explicit and covers all six origins: extracted → extraction, derived and generated →
+  derivation, and supplied, constant and reused → nothing, because there is no reading
+  and no inference to assess. Filling in a default would turn a producer's bug into a
+  confident-looking line in a document a human trusts.
+- **A concept that is an element name.** Any concept containing whitespace is accepted
+  without question — domain concepts are prose. What remains is a single run-together
+  token, flagged if it has an internal case boundary (`GoodsTNVEDCode`) or path,
+  namespace or attribute punctuation (`GoodsItem/GoodsTNVEDCode`). Deliberately not
+  "contains a capital", so `CMR` is a word and not an accusation: a false accusation in a
+  report a human trusts is worse than a missed leak.
+
+### Decisions taken where the spec was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-11 | Items and values join on *(domain concept, goods line)* | It is the only key both sides can hold. It also makes the keying rule load-bearing rather than a matter of taste: an item named after an element could not be joined to anything |
+| D-12 | The two summary flags are projections of the two inputs, not a third input channel | "Inferred weight" is the gross-weight value saying its origin is derived; the abstention rationale is the detail of the omitted item. Neither needs a producer to restate it, and a flag that is a copy of an input can disagree with it |
+| D-13 | `inferred` names every computed or generated concept on the line, not the weight alone | The predecessor's flag was weight-specific because weight was the one distributed value; the general form costs nothing and needs no canonical concept name legislated here |
+| D-14 | Defects are surfaced in the report, never raised | The module's contract is to present what it was given. A report that refuses to render because one producer misbehaved hides the other twenty items an operator could still act on |
+| D-15 | Both the structured report and a plain-text rendering | The structured report is the client interface; the text exists so a run can be read by a person with no client. The renderer decides nothing |
+| D-16 | No reused-from-history flag | It was the predecessor's one exposed provenance distinction, and this product has no reuse path. The `reused` origin stays in the domain vocabulary and the renderer can print it, but no flag asserts it |
+
+### Verified
+
+`tests/test_review_report.py` — 18 tests, no network: kind order, confidence order,
+unassessed-last, shipment-first, line order by worst item then by *number* (so line 10
+does not precede line 2), the join and its miss, each origin against what it promises,
+the element-name leak and the wording that must not be accused of it, the flags, the
+tallies including the zeros, and the empty run.
+
+`tests/check_review_report.py` builds a realistic mixed run — an unreadable seller block
+filed as a stand-in, a weight distributed from the consignment-note total, a
+material-split abstention on line 2, a `шт`-versus-kilogram unit conflict, a kilogram
+default, plus two deliberately malformed inputs — and prints the report. Run it with
+`.venv/bin/python tests/check_review_report.py`.
+
+### Where I am least confident
+
+**The element-name heuristic is a heuristic.** It cannot catch a leak spelled with
+spaces, and it is tuned to miss rather than to over-report. If the filing adapter's
+review items ever arrive keyed by anything but prose, this check is the wrong place to
+find out — the right fix is that the adapter maps back to concepts before it hands items
+up.
+
+**Group ordering puts a line with a placeholder above a line with only a guess**, which
+means the report is not in invoice order. That is what "most consequential first" asks
+for, and a client rendering flags beside lines is unaffected, but an operator checking
+line by line against a paper invoice may want the other order. It is one sort key, in one
+place, if that turns out to be wrong.
