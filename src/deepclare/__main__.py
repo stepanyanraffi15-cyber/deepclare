@@ -1,4 +1,13 @@
-"""Command-line entry point."""
+"""Command-line entry point.
+
+The delivery edge, and the only place in the process that reads the environment. Its three
+commands are the three things this build can do: draft a declaration from a submission,
+rebuild the nomenclature tree, and rebuild the vector collection over it.
+
+Nothing below decides anything about a declaration. It parses arguments, loads settings
+once, builds the ports, runs the chain and writes what came back — which is what keeps the
+run itself executable with no command line, no filesystem and no network present.
+"""
 
 from __future__ import annotations
 
@@ -6,8 +15,17 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from deepclare.config import ConfigurationError, Settings, load_settings
+
+if TYPE_CHECKING:
+    from deepclare.domain import DocumentRole
+    from deepclare.intake import SubmittedFile
+
+DEFAULT_OUTPUT_DIR = "out"
+DECLARATION_FILE = "declaration.xml"
+REVIEW_FILE = "review.txt"
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -18,6 +36,33 @@ def main(argv: list[str] | None = None) -> int:
         "run", help="Produce a declaration draft from a submission"
     )
     run.add_argument("document", help="Path to the commercial invoice")
+    run.add_argument(
+        "--consignment-note",
+        metavar="PATH",
+        help="Path to the CMR or other consignment note, if there is one",
+    )
+    run.add_argument(
+        "--out",
+        metavar="DIR",
+        default=DEFAULT_OUTPUT_DIR,
+        help=f"Where to write the declaration and the review report (default: "
+        f"./{DEFAULT_OUTPUT_DIR})",
+    )
+    run.add_argument(
+        "--no-page-classifier",
+        action="store_true",
+        help="Skip page classification; every page keeps its source file's role",
+    )
+    run.add_argument(
+        "--no-consistency",
+        action="store_true",
+        help="Skip the cross-line reconciliation pass",
+    )
+    run.add_argument(
+        "--show-chain",
+        action="store_true",
+        help="Print the chain and its branch conditions before running",
+    )
 
     build = subcommands.add_parser(
         "build-reference",
@@ -34,6 +79,17 @@ def main(argv: list[str] | None = None) -> int:
         help="Write the entries artifact but leave the vector payloads untouched",
     )
 
+    index = subcommands.add_parser(
+        "build-index",
+        help="Embed every filable code and write the vector collection",
+    )
+    index.add_argument(
+        "--recreate",
+        action="store_true",
+        help="Drop and recreate the collection first. Required the first time, and "
+        "whenever the embedding model or width changes",
+    )
+
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
@@ -46,15 +102,106 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "build-reference":
         return _build_reference(settings, args.reacquire, args.entries_only)
 
+    if args.command == "build-index":
+        return _build_index(settings, args.recreate)
+
     if args.command == "run":
-        raise NotImplementedError(
-            "The run pipeline is not built yet. Missing, in build order: the page-type "
-            "classifier intake injects, the spreadsheet reading path (M6 reads pages, "
-            "not workbooks), classification (M9), declaration assembly (M11), and the "
-            "filing format adapter (M12)."
+        return _run(
+            settings,
+            invoice=Path(args.document),
+            consignment_note=(
+                Path(args.consignment_note) if args.consignment_note else None
+            ),
+            out=Path(args.out),
+            classify_pages=not args.no_page_classifier,
+            reconcile_lines=not args.no_consistency,
+            show_chain=args.show_chain,
         )
 
     return 1
+
+
+# --- run ------------------------------------------------------------------------------
+
+
+def _run(
+    settings: Settings,
+    *,
+    invoice: Path,
+    consignment_note: Path | None,
+    out: Path,
+    classify_pages: bool,
+    reconcile_lines: bool,
+    show_chain: bool,
+) -> int:
+    """Draft one declaration and write it, plus the account of what needs a human."""
+    from deepclare.domain import DocumentRole
+    from deepclare.review import render_report
+    from deepclare.run import (
+        RunInput,
+        describe_chain,
+        execute,
+        format_summary,
+        open_ports,
+    )
+
+    files = [_submitted(invoice, DocumentRole.INVOICE)]
+    if consignment_note is not None:
+        files.append(_submitted(consignment_note, DocumentRole.CONSIGNMENT_NOTE))
+
+    if show_chain:
+        print(describe_chain())
+        print()
+
+    run_input = RunInput(files=tuple(files))
+    with open_ports(
+        settings,
+        features=run_input.options.classification_features,
+        classify_pages=classify_pages,
+        reconcile_lines=reconcile_lines,
+    ) as ports:
+        state = execute(run_input, ports)
+
+    out.mkdir(parents=True, exist_ok=True)
+    declaration_path = out / DECLARATION_FILE
+    review_path = out / REVIEW_FILE
+    declaration_path.write_text(state.require_filed().xml, encoding="utf-8")
+    review_path.write_text(
+        render_report(state.require_report()), encoding="utf-8"
+    )
+
+    print()
+    print("=" * 78)
+    print("RUN SUMMARY")
+    print("=" * 78)
+    print(format_summary(state))
+    print()
+    print(f"declaration   {declaration_path}")
+    print(f"review report {review_path}")
+    print()
+    print(
+        "This is a draft. Nothing here is filed, and every item in the review report is "
+        "something a human confirms before it is."
+    )
+    return 0
+
+
+def _submitted(path: Path, role: "DocumentRole") -> "SubmittedFile":
+    """One uploaded file, read off disk exactly as it is.
+
+    The role is declared rather than inferred from the name: the caller named the file on
+    the command line, and a declared role is a stronger hint than a guess at a filename.
+    """
+    from deepclare.intake import SubmittedFile
+
+    if not path.is_file():
+        raise SystemExit(f"no such file: {path}")
+    return SubmittedFile(
+        file_name=path.name, content=path.read_bytes(), declared_role=role
+    )
+
+
+# --- reference data -------------------------------------------------------------------
 
 
 def _build_reference(settings: Settings, reacquire: bool, entries_only: bool) -> int:
@@ -89,15 +236,56 @@ def _build_reference(settings: Settings, reacquire: bool, entries_only: bool) ->
         return 0
 
     client = QdrantClient(path=str(settings.qdrant_path))
-    updated, unmatched = enrich_collection(
-        client, settings.qdrant_collection, entries
-    )
+    try:
+        updated, unmatched = enrich_collection(
+            client, settings.qdrant_collection, entries
+        )
+    finally:
+        client.close()
     print(f"\npoints enriched   {updated}")
     if unmatched:
         print(
             f"points with no matching code: {unmatched} — the vectors and the tree "
             f"disagree and one of them is stale"
         )
+    return 0
+
+
+def _build_index(settings: Settings, recreate: bool) -> int:
+    """Embed every filable code and write the vector collection.
+
+    One embedding call per code — 14,000-odd of them — so this is minutes and real money.
+    The collection is normally copied rather than rebuilt; this exists so a clone with
+    neither half of the reference layer can reach a working state.
+    """
+    from qdrant_client import QdrantClient
+
+    from deepclare.embedding import GeminiEmbedder
+    from deepclare.reference.enrich import read_entries
+    from deepclare.reference.index import build_index
+
+    entries = read_entries(Path(settings.reference_dir))
+    print(f"entries to embed  {len(entries)}")
+    print(
+        f"embedding model   {settings.classify_embedding_model} at "
+        f"{settings.classify_embedding_dim} dimensions"
+    )
+
+    embedder = GeminiEmbedder(settings)
+    client = QdrantClient(path=str(settings.qdrant_path))
+    try:
+        written = build_index(
+            entries=entries,
+            embed_documents=embedder.embed_documents,
+            qdrant_client=client,
+            collection=settings.qdrant_collection,
+            dimensions=settings.classify_embedding_dim,
+            recreate=recreate,
+        )
+    finally:
+        embedder.close()
+        client.close()
+    print(f"\npoints written    {written}")
     return 0
 
 

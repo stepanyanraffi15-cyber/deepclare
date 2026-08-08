@@ -48,6 +48,26 @@ def write_entries(directory: Path, entries: list[TreeEntry]) -> Path:
     return path
 
 
+def read_entries(directory: Path) -> list[TreeEntry]:
+    """Read the entries artifact back, in the order it was written.
+
+    The inverse of `write_entries`, and it lives beside it so the two cannot drift. The
+    vector build reads this rather than re-acquiring the authority: enumerating 21,400
+    node ids to embed a tree that is already on disk is minutes of somebody else's API
+    for no new information.
+    """
+    path = directory / "entries.jsonl"
+    if not path.exists():
+        raise FileNotFoundError(
+            f"no entries artifact at {path}. Build the tree first:  "
+            f"python -m deepclare build-reference"
+        )
+    with path.open(encoding="utf-8") as handle:
+        return [
+            TreeEntry.model_validate_json(line) for line in handle if line.strip()
+        ]
+
+
 def enrich_collection(
     client: QdrantClient, collection: str, entries: list[TreeEntry]
 ) -> tuple[int, int]:

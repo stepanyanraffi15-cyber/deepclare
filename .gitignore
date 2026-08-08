@@ -23,6 +23,9 @@ __pycache__/
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
 
+# Run output: a drafted declaration is a document about somebody's shipment.
+out/
+
 # Build artifacts
 *.sqlite
 *.db
