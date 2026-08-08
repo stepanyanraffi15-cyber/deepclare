@@ -377,3 +377,35 @@ Installed at `data/reference/nomenclature_exim/` (gitignored, like the collectio
 - 957 of the 1,228 headings are embedded as vectors, but the heading *menu* is built
   from `headings.json` and is complete. Retrieval runs at leaf level, so this costs
   nothing.
+
+### Correctness audit of the supplied artifact
+
+Run before trusting it. Every check passed.
+
+**Structure** — 14,332 rows, 0 duplicate codes, 0 non-numeric codes, 0 level/code-length
+disagreements, 0 `parent_code` values that are not a prefix of their own code, 0 leaf
+chapters without a chapter entry. Notably **0 all-zero filler codes** and **0 Cyrillic
+homoglyphs in Latin text** — both are defects the dossier records in other copies of
+this tree, and neither is present here.
+
+**Vector-to-metadata alignment** — the check that mattered most, because a mismatch
+would corrupt every retrieval silently and forever. Embedding each entry's own canonical
+`chapter — heading — leaf` text and searching for it: **11 of 14 return themselves at
+rank 1, all 14 within the top 10**, at similarities of 0.88–0.93. This confirms two
+things at once: the vectors are attached to the correct codes, and the text they were
+built from really is the canonical broad→specific English structure. Combined with the
+earlier 0/0 set difference in both directions, the pair is coherent.
+
+**Fidelity to the authority** — 40 randomly sampled leaves checked live: 40 present, **0
+English-name differences, 0 supplementary-unit differences**.
+
+**Completeness** — 300 random ids sampled from the authority's own id space yielded 196
+classifiable codes, of which **196 are present (100%)**. The crawl did not suffer the
+paged-listing truncation the dossier warns about; it is a genuine complete
+id-enumeration.
+
+Remaining observations are properties of the source, not defects: one entry (heading
+9005) carries an Armenian name in place of English, out of 14,332; 641 of 1,228 headings
+contain repeated leaf names, which is the "other" phenomenon inherent to HS; and the
+leaf count of 13,279 sits 10 below the published active total, while sampling shows full
+coverage.
