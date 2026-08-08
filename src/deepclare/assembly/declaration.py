@@ -125,7 +125,11 @@ def _country_by_alias(printed: str, tables: ReferenceTables):
 
 
 def _total_packages(goods, note, review: Review) -> Traced[Decimal] | None:
-    counted = [item.package_quantity for item in goods if item.package_quantity]
+    counted = [
+        item.packaging.package_count
+        for item in goods
+        if item.packaging.package_count is not None
+    ]
     if counted:
         return derived(
             sum((c.value for c in counted), Decimal(0)),
