@@ -11,4 +11,4 @@ from __future__ import annotations
 
 
 class ReadingError(RuntimeError):
-    """A logical document could not be read. The stage failed and the run stops."""
+    """A page could not be read or sorted. The stage failed and the run stops."""

@@ -17,7 +17,7 @@ Everything else is attached by the stage that made the call.
 from __future__ import annotations
 
 from decimal import Decimal
-from typing import Annotated
+from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, WithJsonSchema
 
@@ -27,8 +27,9 @@ from pydantic import BaseModel, ConfigDict, Field, WithJsonSchema
 # arrives as a JSON number; saying so plainly is both accurate and portable.
 Number = Annotated[Decimal, WithJsonSchema({"type": "number"})]
 
-# The 1-based position of the attached image the value was read from, which is the
-# logical page number of the document, not any number printed on the paper.
+# The 1-based position of the attached image, never a number printed on the paper. On a
+# document read that is the logical page number of the document; on a page-type verdict it
+# is the position in the batch that was presented.
 Page = Annotated[int, Field(ge=1)]
 
 # The model's own probability that what it transcribed is character-for-character what is
@@ -119,6 +120,27 @@ class ReadInvoice(BaseModel):
     total_amount: ReadNumber | None = None
     service_charges: list[ReadServiceCharge] = []
     goods_lines: list[ReadGoodsLine] = []
+
+
+# A literal union rather than the domain's PageClass: an enumeration's class docstring
+# becomes the schema's description, and what each of these three labels means is stated in
+# classify_page_type.md. The values match PageClass so the mapping is total.
+PageTypeLabel = Literal["invoice", "consignment_note", "other"]
+
+
+class ClassifiedPage(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    page: Page
+    page_type: PageTypeLabel
+
+
+# Required rather than defaulted to an empty list: every batch has pages, so an answer
+# that names none of them is a malformed answer and not a batch of unclassified pages.
+class ClassifyPageType(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    verdicts: list[ClassifiedPage]
 
 
 class ReadConsignmentNote(BaseModel):

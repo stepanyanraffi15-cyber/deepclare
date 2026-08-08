@@ -506,6 +506,126 @@ measured against real classification accuracy, so not yet implemented.
 
 ---
 
+## Entry 5 — The page-type classifier, and the seam for documents that have no pages
+
+Two gaps in step 2 closed. Nothing about classification or the reference layer changed.
+
+### The page classifier (A4) now exists
+
+`prompts/classify_page_type.md` was written and orphaned: nothing rendered it and its
+`{{page_manifest}}` placeholder had no producer. It has both now.
+
+- `src/deepclare/reading/page_types.py` — `VisionPageTypeClassifier`, satisfying the
+  `PageTypeClassifier` port intake declares. One call for the whole batch at the cheap
+  tier, images ahead of the instruction, answer bound to a typed schema, no retry.
+- `page_manifest(pages)` — the producer for the placeholder. It states each page's
+  **batch position** and the role hint of the file it came from. Batch position, not the
+  page number inside a source file: that is what a verdict means and what the grouper
+  indexes by, and two files whose first pages are both page 1 are positions 1 and 2.
+- `ClassifyPageType` in `reading/schemas.py` — the provider answer shape, prose-free.
+  `page_type` is a `Literal` union rather than the domain `PageClass` because an
+  enumeration's class docstring becomes the JSON schema's `description`, which is prompt
+  text, and prompt text lives in the prompt files. `verdicts_from_answer` maps it onto
+  the port's `PageVerdict`. Asserted by a test: the rendered schema contains no
+  `description` key anywhere.
+
+**The implementation does not repair the answer.** A missing verdict, a page answered for
+twice and a page numbered outside the batch all come back untouched. That is not
+laziness: the grouper resolves all three identically — the page stays on its source
+file's role hint, whose default is invoice — so padding the list would replace a real
+signal with a fabricated one and change nothing about where the page lands. The
+over-inclusion policy is what makes it safe, and it is now exercised end to end rather
+than only in the grouper's own tests.
+
+**Verified against a real model call.** `tests/make_synthetic_bundle.py` generates a
+fictitious two-page PDF — page 1 a commercial invoice, page 2 a CMR consignment note —
+uploaded as *one* file with no declared role, so both pages carry the hint `invoice` and
+the classifier has to move page 2 on content alone. `tests/check_page_classification.py`
+runs it:
+
+```
+rendered : 2 page(s), hints ['invoice', 'invoice']
+=== VERDICTS ===
+  page 1: invoice
+  page 2: consignment_note
+=== GROUPED ===
+  invoice          : 1 page(s)
+  consignment note : 1 page(s)
+    invoice           <- source page 1, verdict invoice, hint invoice
+    consignment_note  <- source page 2, verdict consignment_note, hint invoice
+```
+
+That is the failure the stage exists to prevent: without it the consignee in box 2 of the
+note is read as a party of the invoice.
+
+### Documents with no pages no longer fall out of the run
+
+A workbook or an XML is never rasterized, so grouping never saw it, so it was absent from
+`GroupedSubmission` — the router held it and nothing connected the two. A supplied
+supplier catalogue simply disappeared, silently, which is the page-loss failure this
+module is built around, one scale up.
+
+The seam is grouping itself. `group_pages` now takes the `RoutedSubmission` alongside the
+pages, so it cannot lose a document rather than merely being asked not to:
+
+- `RoutedSubmission.page_bearing_documents()` and `.page_less_documents()` partition the
+  submission over the one existing ordering. What the rasterizer renders, and what goes
+  straight to its own reader.
+- `GroupedSubmission.page_less` carries the second partition through whole — the
+  `RoutedDocument` as the router described it, bytes included, which is already the
+  currency `read_workbook_invoice` takes.
+- `group_pages` refuses a batch that does not account for exactly the page-bearing
+  documents. A missing one would be dropped in silence; a page from a document the router
+  never saw means the two describe different runs. Both are caller mistakes, so both
+  raise rather than reject.
+- A **page-less invoice** is refused by name. It bypasses grouping entirely — a workbook
+  has no pages to pool, so it is unambiguously the invoice and is read directly — and
+  before this it produced the *wrong* rejection: "no page reads as an invoice", when the
+  invoice was simply not made of pages.
+
+Demonstrated on a two-document submission (PDF bundle + a supplier catalogue whose bytes
+carry the workbook signature):
+
+```
+routed documents      : [('doc1','bundle.pdf','invoice','pdf'),
+                         ('doc2','supplier_catalogue.xlsx','catalog_spec','workbook')]
+page-bearing          : ['doc1']
+page-less             : ['doc2']
+grouped invoice pages : 1
+grouped note pages    : 1
+grouped page_less     : [('supplier_catalogue.xlsx','catalog_spec','workbook')]
+```
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-11 | The classifier implementation lives in M6 `reading`, not in a module of its own | It is a vision call over page images, which is what M6 owns, and M6's ignorance rules — codes, nomenclature, the filing contract, the review vocabulary, the arithmetic — are all satisfied by a page classifier. The dependency runs M6 → M5, the direction file 10's table already sanctions; the reverse is what M5 forbids. A package for one call would put a boundary where no second implementation exists. **It does widen M6's stated input by one shape** — rendered pages, not only logical documents — and that is the part worth reviewing |
+| D-12 | The seam for page-less documents is `group_pages`, which takes the whole `RoutedSubmission` | Passing the page-less documents as a separate argument would work and would still be forgettable. Taking the submission makes losing a document impossible rather than discouraged, and it is also what lets the page-less-invoice case be refused accurately instead of as a missing invoice page |
+| D-13 | The batch's *order* is not checked, only its coverage | Grouping cannot see the batch the classifier was actually shown, so an order check would assert something it cannot verify. Coverage it can verify, and coverage is what stops a document disappearing |
+
+### Where this is weakest
+
+- **No trace of the classifier call.** `generate_from_pages` returns the `ModelCall` —
+  tier, model id and version, prompt version, decoding, token usage — and the port's
+  return type has nowhere to put it, so it is dropped. Every other model call in the
+  system carries its account onto the record it produced. When M17 exists the port has to
+  widen; until then a page verdict cannot say what produced it.
+- **No page cap and no batching**, on a call that sends every page of the submission at
+  once. The recorded corpus has a filed declaration with 554 goods lines. Left visible
+  rather than hidden behind a chunking rule, because a page split into its own chunk is
+  judged without the pages around it and a continuation page is exactly the page that
+  needs them.
+- **One label, one measurement, one document.** The verdicts above are a single run on a
+  single synthetic bundle. Nothing here measures how the classifier behaves on a
+  continuation page, on a packing list, or on a scan where the two documents share a
+  page — and the third of those has no representation in the vocabulary at all.
+- **`reading` now holds a call that runs before a logical document exists**, which is a
+  real widening of that module's charter even though every ignorance rule still holds.
+  Recorded as D-11 rather than left to be discovered.
+
+---
+
 ## Entry 5 — M13 Review Surface
 
 `src/deepclare/review/` — the human-facing account of a run. It depends on the domain
