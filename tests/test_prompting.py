@@ -283,6 +283,13 @@ def test_every_shipped_prompt_file_loads() -> None:
                 "candidate_codes": "   1. 3923210000 — plastics › packing › bags",
                 "subheading_hint": "(none)",
             },
+            "pick_code_shared_path": {
+                **GOODS_LINE,
+                "chapter_note": "(none)",
+                "shared_path": "plastics › packing",
+                "candidate_codes": "   1. 3923210000 — bags",
+                "subheading_hint": "(none)",
+            },
             "verify_code": {
                 **GOODS_LINE,
                 "chapter_note": "(none)",

@@ -1882,3 +1882,161 @@ trims the buffer to the 1,848 cells that hold anything.
   `pick_code_shared_path.md` — a prompt added concurrently by other work whose placeholder
   entry is missing from that test's table. The two prompts added here are entered and
   render.
+
+---
+
+## Entry 13 — Two retrieval questions the corpus can now settle: depth, and the repeated path prefix
+
+`scripts/measure_retrieval_depth.py`. A measurement, not a change: **no production default
+was touched**, and the two recommendations below are recommendations.
+
+Both questions are asked of the same 25 corpus goods lines, drawn reproducibly (seed
+`20260808`) from the 2,097 distinct goods names whose ground-truth code resolves as a leaf
+of this tree — one line per distinct expected code, at most two per case, which comes out
+at 14 chapters. Each line runs the real description writer, the real chapter shortlist and
+the real heading-and-query call, then **one** retrieval at the deepest setting. The ranked
+list is truncated for each arm, so within a line every arm is the same search and the only
+thing that varies is how much of it the model was shown. 84 pick calls, 359k prompt tokens.
+
+Retrieval is deliberately **not** scoped to the correct heading. The earlier recall
+measurement was, and it had to be; but a list assembled from a mis-narrowed heading is part
+of what deeper retrieval has to survive, and scoping it away would answer an easier
+question than the one asked.
+
+### The finding that reframes both questions: a depth is a ceiling, not a length
+
+Retrieval is scoped to the one or two chosen headings, and the median heading in this tree
+holds **five** leaves. 93.8% of headings hold thirty or fewer.
+
+| lines whose scoped search returned at least… | 10 | 30 | 50 |
+|---|---|---|---|
+| | 23/25 (92%) | 12/25 (48%) | 7/25 (28%) |
+
+Median candidates actually retrieved: **28**. So `candidate_limit` is inert on half the
+sample, and raising it above 30 can only reach the 11 lines whose scoped list was longer
+than 30.
+
+### Question 1 — depth beyond 30 changes nothing here, and depth below 30 costs a lot
+
+| depth | exact at 10 digits | agrees at 6 digits | abstained | prompt tokens |
+|---|---|---|---|---|
+| 10 | 8/25 · 32.0% | 10/25 · 40.0% | 7/25 | 3,023 avg |
+| **30** | **11/25 · 44.0%** | **14/25 · 56.0%** | 4/25 | 4,407 avg |
+| 50 | 11/25 · 44.0% | 14/25 · 56.0% | 4/25 | 5,288 avg |
+
+Recall on the same lines: 64.0% @10, 88.0% @30, 92.0% @50 — the same shape entry 6 measured,
+reproduced through a different query path.
+
+**30 against 50 is not a tie that needs interpreting. On all eleven lines whose list
+genuinely got longer, the model returned the byte-identical code at both depths.** Not the
+same verdict category — the same ten digits, every time. The one line the extra twenty rows
+newly reached (expected code at rank 34) still abstained. Deeper retrieval bought four
+points of ceiling and zero points of outcome.
+
+**10 against 30 is a real gain, and it is not only recall.** Three lines went from
+abstention to the exact code and none went the other way; at six digits it is four gained
+and none lost. Two of the three were pure recall — the code sat at rank 26 and 28 and could
+not be seen at ten. The third is the interesting one: `Surface active wetting and leveling
+agent`, expected code at **rank 3**, abstained at k=10 ("unclear whether this is a single
+organic surface-active substance…") and chose it exactly at k=30. The extra rows were not
+where the answer was; they were the neighbourhood that let the model tell it apart.
+
+So does depth degrade the pick? On the 14 lines whose expected code was already inside the
+top ten — where every arm holds the answer and only the noise around it grows — accuracy
+went **6/14 → 7/14 → 7/14**. No degradation is visible at this sample size.
+
+One line did degrade, and it is worth naming because it is the failure the specification
+warns about, observed once. `Primegrout G.60 cementitious grout` abstained at k=10 saying
+outright that the only 3824.50 candidate offered was ready-to-pour concrete; at k=30 the
+residual `3824509000` appeared and it took it. Wrong either way (expected `3214101009`, and
+the model never went to chapter 32), but a wrong code where there had been an honest
+abstention. One line balanced against three going the other way.
+
+And one line improved in the way that matters most: `Childrens sand art coloring album`
+picked the toy code `9503007000` at k=10 and abstained at its full 21 candidates, naming the
+real question — printed album, or a retail set that includes the sand.
+
+**Recommendation: keep `candidate_limit = 30`. Do not raise it to 50.** Fifty costs ~880
+prompt tokens a line on the strongest tier and changed not one code. If depth is revisited,
+the thing to measure is not the number — it is that two shortlisted headings share one
+top-k, so a large heading can consume the whole budget (entry 8 records this). Retrieving
+per heading and merging is the change that would make a larger k mean something.
+
+### Question 2 — factoring out the shared prefix: within noise, and the saving is smaller than it looks
+
+Compared at k=30, same lines, same retrieval. The factored arm states the common opening of
+every path once and gives each row only its own tail; it is a second prompt file
+(`prompts/pick_code_shared_path.md`) because different prompt text is a different file.
+
+| rendering | exact at 10 | agrees at 6 | abstained | prompt tokens | candidate-block chars |
+|---|---|---|---|---|---|
+| full path | 11/25 · 44.0% | 14/25 · 56.0% | 4/25 | 4,407 avg | 9,596 avg |
+| shared path | 9/25 · 36.0% | 12/25 · 48.0% | 4/25 | **3,779 avg (−14.2%)** | 6,411 avg (−33%) |
+
+**That 8-point gap is not a result and I am not reporting it as one.** The two arms
+disagreed on 5 of 25 lines. At ten digits exactly two of those are discordant and both
+favour the full path — a sign test on two pairs cannot distinguish that from a coin
+(p = 0.5). At six digits it is three to one (p = 0.63). At n = 25 one line is four
+percentage points; this difference is two lines.
+
+What *is* solid is the cost side, and it undercuts the premise:
+
+- The 167-character, 32%-of-the-list figure was measured on **one** heading. Production
+  shortlists **two** by design — the second chapter and the second heading are the safety
+  net against the worst failure in the system — and two headings cut the shared opening back
+  to the chapter title alone. Twenty of the 25 lines had two headings.
+- Median saving on the candidate block: **12.4%**, not 32%. On **8 of 25 lines the two
+  headings sat in different chapters and there was no shared opening at all** — the
+  factored rendering was byte-identical to the current one.
+- The block is not the prompt. 33% off the block is 14% off the call, because the chapter
+  note, the instructions and the goods line do not shrink.
+
+The qualitative read of the five disagreements is worth one line, and no more than one: the
+factored arm abstained on two lines the full arm got exactly right, and on
+`Childrens sand art coloring album` it confidently filed `9503007000` where the full arm had
+abstained on the genuine ambiguity. Three of five went the wrong way for the product's
+governing asymmetry. That is a shape, not a measurement.
+
+**Recommendation: do not adopt it.** Not because it was shown to hurt — it was not — but
+because on this evidence it is a coin-flip on the highest-stakes call in the system, bought
+for 14% of one prompt. The prompt file stays in `prompts/`, referenced only by the script,
+so re-measuring it at a sample size that could actually separate the arms is a flag rather
+than a rebuild.
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-50 | One retrieval per line, truncated per arm, rather than one retrieval per arm | The question is about the length of the list, not about the variance of the search. Truncating the one ranked list makes the arms differ in exactly the one thing being measured |
+| D-51 | The real narrowing runs; retrieval is not scoped to the correct heading | A candidate list built on a mis-picked heading is part of what a deeper list has to survive. Scoping it away measures a system that does not exist |
+| D-52 | Two depths that truncate to the same list are one prompt, and are paid for once | Half the sample never reaches 30 candidates. Re-sending an identical prompt would buy nothing but this model's run-to-run variance, and PROGRESS entry 8 already records that variance as real |
+| D-53 | The lines' Armenian text is written by the real description writer, not taken from the corpus | The corpus's own `armenian_desc` is a ground-truth artifact. Writing it makes the input a genuine pipeline artifact, and the same text is used by every arm so no comparison is affected |
+| D-54 | The corpus's OKEI unit code is rendered as the abbreviation an invoice prints | The corpus states `166`/`796`; a document states `KG`/`PCS`, which is what the reading stage would hand the pipeline. Five codes, mapped in the script and consumed nowhere else |
+| D-55 | A code the factored arm names that was not retrieved is scored as an abstention | That is what the production node does — it abstains rather than substituting a candidate. Scoring a never-retrieved code as a hit would measure a different system |
+
+### Where this is weakest
+
+- **n = 25, and one line is four percentage points.** Every number here is a direction. The
+  30-versus-50 result is the only one I would call settled, and only because its evidence is
+  eleven identical codes rather than an aggregate — an aggregate at this n could not have
+  carried it.
+- **The corpus is synthetic, so a hit is agreement with its generator, not customs
+  correctness.** Entry 6 already records one line where the classifier's pick looked more
+  defensible than the label. Every arm is scored against the same labels, so the comparisons
+  survive this; the absolute 44% does not mean 44% of declarations would be right.
+- **One run of each arm.** Entry 8 records that this model does not return the same answer
+  twice on pinned decoding. A repeat of the whole thing would move some of these cells, and
+  the two-line gap in question 2 is exactly the size of that movement.
+- **The two arms of question 2 differ in their framing sentence as well as their list.**
+  Stating a shared prefix requires telling the model there is one, so the intervention is
+  the paragraph *and* the rendering, and the measurement cannot separate them. It is
+  unavoidable, but it is a confound.
+- **Three of the 25 lines never had their expected code retrieved at any depth**, and two of
+  those are heading mis-picks inside the correct chapter — plastic drainage channel narrowed
+  to 3925/3917 when the corpus says 3922, IXPE floor underlay narrowed to 3921/3925 when the
+  corpus says 3918. No candidate count reaches those. That is where the remaining ceiling
+  is, and it is a narrowing problem, not a depth problem.
+- **`prompts/pick_code_shared_path.md` is a prompt no production path calls.** It is
+  entered in `tests/test_prompting.py` so the shipped-prompt check passes, and it is
+  reachable only from the script. An unused prompt in that directory is a small
+  inconsistency with "one file per model call"; the alternative was prompt text in Python.
