@@ -47,6 +47,12 @@ class Settings(BaseSettings):
     # --- prompts ------------------------------------------------------------
     prompts_dir: Path
 
+    # --- curated lookup tables ----------------------------------------------
+    # Units, countries, packing codes and the Armenian nouns that count packages. Small,
+    # hand-curated and tracked in git, unlike the reference-data layer below — but still
+    # a path, and a path is environment-specific.
+    reference_tables_dir: Path
+
     # --- embeddings: the symmetry contract ----------------------------------
     # The build side and the query side must use the same model and the same width or
     # the vectors do not align. Configuration rather than constants, so a run can pin
@@ -75,7 +81,7 @@ class Settings(BaseSettings):
     def _strip_trailing_slash(cls, value: str) -> str:
         return value.rstrip("/")
 
-    @field_validator("prompts_dir")
+    @field_validator("prompts_dir", "reference_tables_dir")
     @classmethod
     def _must_be_an_existing_directory(cls, value: Path) -> Path:
         resolved = value.expanduser().resolve()

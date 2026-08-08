@@ -67,6 +67,7 @@ def settings(prompts_dir: Path) -> Settings:
         genai_max_output_tokens=1024,
         genai_timeout_seconds=30.0,
         prompts_dir=prompts_dir,
+        reference_tables_dir=prompts_dir,
         qdrant_path=prompts_dir,
         qdrant_collection="codes",
         reference_dir=prompts_dir,
