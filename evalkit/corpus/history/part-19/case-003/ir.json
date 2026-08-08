@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Natural gas supply service",
+   "trade_name": null,
+   "armenian_desc": "ԲՆԱԿԱՆ ԳԱԶ/ ՄԱՏԱԿԱՐԱՐՈՒՄ 01․12․2025Թ ՄԻՆՉԵՎ 31․12․2025Թ",
+   "hs_code": "27112100000",
+   "unit": "113",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 27705247.7,
+   "net_weight": 27705247.7,
+   "gross_weight": 27705247.7,
+   "unit_price": 14.2761,
+   "package_count": 1108209,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Qin Plus transmission oil",
+   "trade_name": "BYD BOT-384/L",
+   "armenian_desc": "<BYD> QIN PLUS ՄԱՐԴԱՏԱՐ ԱՎՏՈՄԵՔԵՆԱՆԵՐԻ ՀԱՄԱՐ ՆԱԽԱՏԵՍՎԱԾ ՓՈԽԱՆՑՄԱՆ ՏՈՒՓԻ ՅՈՒՂ BOT-384/L /13479184-00",
+   "hs_code": "27101988000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 120.7,
+   "net_weight": 120.7,
+   "gross_weight": 125.5,
+   "unit_price": 8.283,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Electric energy supply",
+   "trade_name": null,
+   "armenian_desc": "ԷԼԵԿՏՐԱԷՆԵՐԳԻԱ - 145950 ԿՎՏԺ / ՄԱՏԱԿԱՐԱՐՈՒՄ 01․11․2025Թ․-ԻՑ ՄԻՆՉԵՎ 30․11․2025Թ",
+   "hs_code": "27160000000",
+   "unit": "246",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 1.0632,
+   "package_count": 100,
+   "package_type": "BAG"
+  }
+ ]
+}

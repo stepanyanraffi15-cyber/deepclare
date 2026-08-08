@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "BYD Song Plus ABS Brake Pump",
+   "trade_name": "BYD TA-3568010C-K8",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ABS ԱՐԳԵԼԱԿՄԱՆ ՀԱՄԱԿԱՐԳԻ ՊՈՄՊ , TA-3568010C-K8",
+   "hs_code": "87083091090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 12.1,
+   "net_weight": 12.1,
+   "gross_weight": 12.1,
+   "unit_price": 36.1138,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Sealion 06 Front Brake Disc",
+   "trade_name": "BYD UDEA-3501111S",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԱՌՋԵՎԻ ԱՐԳԵԼԱԿՄԱՆ ՍԿԱՎԱՌԱԿ , UDEA-3501111S",
+   "hs_code": "87083091090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 19.9,
+   "net_weight": 19.9,
+   "gross_weight": 19.9,
+   "unit_price": 32.7791,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Trunk cover for BYD Tai 3",
+   "trade_name": "BYD URE-6301010/70",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԲԵՌՆԱԽՑԻԿԻ ԾԱԾԿՈՑ , URE-6301010/70",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 20.8,
+   "net_weight": 20.8,
+   "gross_weight": 31.0,
+   "unit_price": 21.3189,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

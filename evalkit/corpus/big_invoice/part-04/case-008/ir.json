@@ -1,0 +1,76 @@
+{
+ "case_id": "case-008",
+ "seller": {
+  "name": "CASPIAN LTD",
+  "address": "100 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 12, Երևան",
+  "country": "AM",
+  "tax_id": "34970864"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "30 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-5370",
+ "date": "2026-01-23",
+ "goods": [
+  {
+   "source_name": "metal display case",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԽԱՂԱԼԻՔ ՄԵՏԱՂԱԿԱՆ ՑՈՒՑԱՓԱՅՏ  / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 1500 ՀԱՏ",
+   "hs_code": "95030099090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 1581.0,
+   "net_weight": 48.4,
+   "gross_weight": 50.6,
+   "unit_price": 0.0889,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "mosaic",
+   "trade_name": null,
+   "armenian_desc": "ԽԱՂԱԼԻՔԻ ՀԱՎԱՔԱԾՈՒ ՝  ՊԼԱՍՏԻԿ ՔԱՐԵՐՈՎ ՄՈԶԱՅԿԱ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "95030070000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 191.0,
+   "net_weight": 83.6,
+   "gross_weight": 89.1,
+   "unit_price": 1.3152,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "mosaic",
+   "trade_name": null,
+   "armenian_desc": "ԽԱՂԱԼԻՔԻ ՀԱՎԱՔԱԾՈՒ ՝  ՊԼԱՍՏԻԿ ՔԱՐԵՐՈՎ ՄՈԶԱՅԿԱ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "95030070000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 250.5,
+   "net_weight": 84.4,
+   "gross_weight": 89.1,
+   "unit_price": 0.7462,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

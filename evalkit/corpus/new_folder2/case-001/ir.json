@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "DEFOAMER ADDITIVE BASED ON MINERAL OIL",
+   "trade_name": "DERFOAM LDR",
+   "armenian_desc": "ՀԱՆՔԱՅԻՆ ՅՈՒՂԻ ՀԻՄՔՈՎ ՀԱԿԱՓՓՐԱՑՆՈՂ ՀԱՎԵԼՈՒՄ, DERFOAM LDR, ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐՈՒՄ, ՇԻՆԱՐԱՐԱԿԱՆ ԱՅԼ ԽԱՌՆՈՒՐԴՆԵՐՈՒՄ ՓՓՈՒՐԻ ԱՌԱՋԱՑՈՒՄԸ ԿԱՆԽԵԼՈՒ ՀԱՄԱՐ, 2 ՏԱՐԱ",
+   "hs_code": "34029010080",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "DERFOAM",
+   "material": null,
+   "quantity": 418.8,
+   "net_weight": 418.8,
+   "gross_weight": 471.1,
+   "unit_price": 3.1968,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BIOCIDE PRESERVATIVE",
+   "trade_name": "ACTICIDE LA 1209",
+   "armenian_desc": "ԲԻՈՑԻԴԱՅԻՆ ՊԱՀՊԱՆԻՉ ՆՅՈՒԹ, ACTICIDE LA 1209, ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐԻ, ՍՈՍԻՆՁՆԵՐԻ, ԱՅԼ ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ԲԱԿՏԵՐԻԱՆԵՐԻ ԵՎ ՍՆԿԵՐԻ ԱՃԸ ԿԱՆԽԵԼՈՒ ՀԱՄԱՐ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ԱՆԱՍՆԱԲՈՒԺԱԿԱՆ ԴԵՂԱՄԻՋՈՑ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՊԵՍՏԻՑԻԴ ԵՎ ԱԳՐՈՔԻՄԻԿԱՏ",
+   "hs_code": "38089480000",
+   "unit": "166",
+   "origin": "GB",
+   "brand": "ACTICIDE",
+   "material": null,
+   "quantity": 76.6,
+   "net_weight": 76.6,
+   "gross_weight": 84.3,
+   "unit_price": 6.188,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "CELLULOSE ETHER",
+   "trade_name": "MEILOSE GMC 3112D",
+   "armenian_desc": "ՑԵԼՅՈՒԼՈԶԱՅԻՆ ԵԹԵՐ, MEILOSE GMC 3112D, ՓՈՇԵՆՄԱՆ ՏԵՍՔՈՎ, ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ՀԱՄԱՐ, 120 ՊԱՐԿ",
+   "hs_code": "39123985000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "MEILOSE",
+   "material": null,
+   "quantity": 3468.0,
+   "net_weight": 3468.0,
+   "gross_weight": 3583.6,
+   "unit_price": 4.4786,
+   "package_count": 5,
+   "package_type": "BAG"
+  }
+ ]
+}

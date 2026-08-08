@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "TEXANOL",
+   "trade_name": "TEXANOL",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "DOWANOL",
+   "trade_name": "DOWANOL",
+   "material": null
+  }
+ ]
+}

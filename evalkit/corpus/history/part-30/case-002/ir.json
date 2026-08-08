@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Stretched Canvas on Frame 15x15cm",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԿՏԱՎՆԵՐ ՇՐՋԱՆԱԿՆԵՐՈՎ 15*15 / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "59019000000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 14.2,
+   "net_weight": 14.2,
+   "gross_weight": 15.6,
+   "unit_price": 22.2912,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Artificial leather rolls",
+   "trade_name": null,
+   "armenian_desc": "ԱՐՀԵՍՏԱԿԱՆ ԿԱՇԻ 10 ԳԼԱՆԱՓԱԹԵԹ, ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "59039099000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 393.7,
+   "net_weight": 393.7,
+   "gross_weight": 438.0,
+   "unit_price": 21.1725,
+   "package_count": 16,
+   "package_type": "BAG"
+  }
+ ]
+}

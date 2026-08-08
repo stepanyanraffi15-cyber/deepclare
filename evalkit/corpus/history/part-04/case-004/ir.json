@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Clinker bricks",
+   "trade_name": null,
+   "armenian_desc": "ԿԼԻՆԿԵՐ",
+   "hs_code": "25231000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 52812.9,
+   "net_weight": 52812.9,
+   "gross_weight": 52812.9,
+   "unit_price": 32.5348,
+   "package_count": 2113,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Kaolin Mineral Filler",
+   "trade_name": "ICEBERG",
+   "armenian_desc": "ՃԵՆԱԿԱՎ, ICEBERG, ԲՆԱԿԱՆ ՀԱՆՔԱՅԻՆ ՆՅՈՒԹ, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՈՐՊԵՍ ԼՑԱՆՅՈՒԹ ՆԵՐԿԵՐԻ և ԾԱԾԿՈՒՅԹՆԵՐԻ ԱՐՏԱԴՐՈՒԹՅՈՒՆՈՒՄ",
+   "hs_code": "25070020000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "ICEBERG",
+   "material": null,
+   "quantity": 67.2,
+   "net_weight": 67.2,
+   "gross_weight": 75.3,
+   "unit_price": 30.0312,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Quartz Sand Filler 0.1-0.3mm",
+   "trade_name": null,
+   "armenian_desc": "ԱՎԱԶ ԿՎԱՐՑԱՅԻՆ,0,1/0,3 ՄՄ, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՈՐՊԵՍ ԼՑԱՆՅՈՒԹ",
+   "hs_code": "25051000000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 1538.8,
+   "net_weight": 1538.8,
+   "gross_weight": 1568.1,
+   "unit_price": 31.4478,
+   "package_count": 62,
+   "package_type": "BAG"
+  }
+ ]
+}

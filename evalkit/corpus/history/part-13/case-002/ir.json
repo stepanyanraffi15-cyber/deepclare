@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Plastic drainage channel metal cover A15",
+   "trade_name": "ABADIS A15",
+   "armenian_desc": "ՀՈՍԱԿ, ՄԵՏԱՂԱԿԱՆ ԾԱԾԿՈՒՅԹՈՎ A15 ԴԱՍ ABADIS 200*160 ՄՄ՝ ՊԼԱՍՏՄԱՍԵ",
+   "hs_code": "39229000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "ABADIS",
+   "material": null,
+   "quantity": 247.8,
+   "net_weight": 247.8,
+   "gross_weight": 251.6,
+   "unit_price": 23.1626,
+   "package_count": 10,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Black plastic drainage channel class C",
+   "trade_name": "MEGABIZ",
+   "armenian_desc": "ՀՈՍԱԿ, ՍԵՎ C ԴԱՍ MEGABIZ 200*160 ՄՄ՝ ՊԼԱՍՏՄԱՍԵ",
+   "hs_code": "39229000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "MEGABIZ",
+   "material": null,
+   "quantity": 474.0,
+   "net_weight": 474.0,
+   "gross_weight": 479.1,
+   "unit_price": 42.7258,
+   "package_count": 18,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "goods": [
+  {
+   "brand": "A5",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "K",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A7",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A4",
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A5",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

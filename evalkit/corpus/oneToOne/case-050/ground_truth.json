@@ -1,0 +1,34 @@
+{
+ "goods": [
+  {
+   "brand": "HB",
+   "trade_name": "HB ORIGINAL",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "HB",
+   "trade_name": "HB MUNCHNER WEISSE",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "HB",
+   "trade_name": "HB ORIGINAL",
+   "material": null
+  },
+  {
+   "brand": "HB",
+   "trade_name": "HB MUNCHNER WEISSE",
+   "material": null
+  },
+  {
+   "brand": "HB",
+   "trade_name": "HB HELL",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "HB",
+   "trade_name": "HB ORIGINAL",
+   "material": null
+  }
+ ]
+}

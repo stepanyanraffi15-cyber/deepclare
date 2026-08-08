@@ -1,0 +1,60 @@
+{
+ "case_id": "case-010",
+ "seller": {
+  "name": "NOVA LTD",
+  "address": "84 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՍԵՎԱՆ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 111, Երևան",
+  "country": "AM",
+  "tax_id": "56146720"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "78 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-7901",
+ "date": "2026-06-13",
+ "goods": [
+  {
+   "source_name": "CELLULOSE ETHER",
+   "trade_name": "DERFIBER 330",
+   "armenian_desc": "ՑԵԼՅՈՒԼՈԶԱՅԻՆ ՄԱՆՐԱԹԵԼ, DERFIBER 330, ԿԻՐԱՌՎՈՒՄ Է ՇԻՆԱՐԱՐԱԿԱՆ ՉՈՐ ԽԱՌՆՈՒՐԴՆԵՐՈՒՄ ԱՄՐՈՒԹՅՈՒՆԸ, ՋՐԱՊԱՀՊԱՆՈՒԹՅՈՒՆԸԵՎ ՃԱՔԵՐԻ ԴԻՄԱԴՐՈՂԱԿԱՆՈՒԹՅՈՒՆԸ ԲԱՐՁՐԱՑՆԵԼՈՒ ՀԱՄԱՐ, 202 ՊԱՐԿ",
+   "hs_code": "39129090000",
+   "unit": "166",
+   "origin": "DE",
+   "brand": "DERFIBER",
+   "material": null,
+   "quantity": 6408.4,
+   "net_weight": 6408.4,
+   "gross_weight": 6567.0,
+   "unit_price": 2.6156,
+   "package_count": 7,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "FORMIC ACID SALTS",
+   "trade_name": null,
+   "armenian_desc": "ՄՐՋՆԱԹԹՎԻ ԱՂԵՐ, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՍԱԼԻԿԻ ՍՈՍՆՁԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՄԵՋ, 100 ՊԱՐԿ, ՆԵՐՄՈՒԾՎԵԼ Է ՈՉ ԴԵՂԱԳՈՐԾԱԿԱՆ ՆՊԱՏԱԿՈՎ",
+   "hs_code": "29151200000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 2762.5,
+   "net_weight": 2762.5,
+   "gross_weight": 2806.7,
+   "unit_price": 1.1623,
+   "package_count": 5,
+   "package_type": "BAG"
+  }
+ ]
+}

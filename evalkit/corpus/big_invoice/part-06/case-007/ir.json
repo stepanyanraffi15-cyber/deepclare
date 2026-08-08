@@ -1,0 +1,108 @@
+{
+ "case_id": "case-007",
+ "seller": {
+  "name": "LUMEN GMBH",
+  "address": "13 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՎԱՆ ՇԻՆ\" ՍՊԸ",
+  "address": "Բաղրամյան 54, Երևան",
+  "country": "AM",
+  "tax_id": "81239643"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "70 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6054",
+ "date": "2026-02-19",
+ "goods": [
+  {
+   "source_name": "soft plasticine 12g",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԾԵՓԱԿԵՐՏՈՒԹՅԱՆ ՄԱԾՈՒԿՆԵՐ` ՓԱՓՈՒԿ, 12 ԳՐ․ (ՊԼԱՍՏԻԼԻՆ) / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 8800 ՏՈՒՓ",
+   "hs_code": "34070000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 936.3,
+   "net_weight": 936.3,
+   "gross_weight": 986.1,
+   "unit_price": 1.6454,
+   "package_count": 45,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "children's watches",
+   "trade_name": null,
+   "armenian_desc": "ՁԵՌՔԻ ՄԱՆԿԱԿԱՆ ԺԱՄԱՑՈՒՅՑՆԵՐ ՝ ԷԼԵԿՏՐՈՆԱՅԻՆ ՑՈՒՑԱՆՇՈՒՄՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / ՈՉ ԹԱՆԿԱՐԺԵՔ ՄԵՏԱՂՆԵՐԻՑ",
+   "hs_code": "91021200000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 2448.0,
+   "net_weight": 49.0,
+   "gross_weight": 55.8,
+   "unit_price": 0.1287,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "marker ink",
+   "trade_name": null,
+   "armenian_desc": "ԹԱՆԱՔՆԵՐ ՄԱՐԿԵՐՆԵՐԻ ՀԱՄԱՐ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 1200 ՀԱՏ",
+   "hs_code": "32159000090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 26.8,
+   "net_weight": 26.8,
+   "gross_weight": 27.8,
+   "unit_price": 7.2005,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "acrylic paint 100ml",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԱԿՐԻԼԱՅԻՆ ՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ  100 ՄԼ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 216 ՀԱՏ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 40.3,
+   "net_weight": 40.3,
+   "gross_weight": 47.8,
+   "unit_price": 2.6408,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "acrylic paint 100ml",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԱԿՐԻԼԱՅԻՆ ՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ  100 ՄԼ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 936 ՀԱՏ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 127.1,
+   "net_weight": 127.1,
+   "gross_weight": 142.6,
+   "unit_price": 2.1182,
+   "package_count": 15,
+   "package_type": "BAG"
+  }
+ ]
+}

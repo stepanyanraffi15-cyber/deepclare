@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Wooden geometric shape educational toy",
+   "trade_name": null,
+   "armenian_desc": "ՓԱՅՏՅԱ ԶԱՐԳԱՑՆՈՂ ԽԱՂ ` ԵՐԿՐԱՉԱՓԱԿԱՆ ՊԱՏԿԵՐՆԵՐԻ ՏԵՍՔՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /- ԻՆՎՈՅՍԻ ՏՈՂ՝ 184,185",
+   "hs_code": "95030061000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 119.6,
+   "net_weight": 119.6,
+   "gross_weight": 129.6,
+   "unit_price": 12.0478,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Virtual Reality Headset System",
+   "trade_name": "SONY PS5 VR2",
+   "armenian_desc": "ՎԻՐՏՈՒԱԼ ԻՐԱԿԱՆՈՒԹՅԱՆ ԱԿՆՈՑԻ ՀՎՔ SONY PS5 VR2",
+   "hs_code": "95045000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SONY",
+   "material": null,
+   "quantity": 12.6,
+   "net_weight": 12.6,
+   "gross_weight": 28.8,
+   "unit_price": 33.8866,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Gaming Racing Wheel and Pedals",
+   "trade_name": "SONY PS5 THRUSTMASTER/T248RS",
+   "armenian_desc": "ԷԼԵԿՏՐՈՆԱՅԻՆ ԽԱՂԻ ՀԱՄԱՐ ԿԱՌԱՎԱՐՄԱՆ ՎԱՀԱՆԱԿԻ ՀՎՔ SONY PS5 DRIVING FORCE (THRUSTMASTER/T248RS)(PS5)",
+   "hs_code": "95045000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SONY",
+   "material": null,
+   "quantity": 21.7,
+   "net_weight": 21.7,
+   "gross_weight": 31.0,
+   "unit_price": 13.0272,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

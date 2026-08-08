@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "DERFOAM",
+   "trade_name": "DERFOAM LDR",
+   "material": null
+  },
+  {
+   "brand": "DERFIBER",
+   "trade_name": "DERFIBER 330",
+   "material": null
+  },
+  {
+   "brand": "DERKIM",
+   "trade_name": "DERKIM GPR 12",
+   "material": null
+  }
+ ]
+}

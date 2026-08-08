@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "DEFOAMER ADDITIVE BASED ON MINERAL OIL",
+   "trade_name": "DERFOAM LDR",
+   "armenian_desc": "ՀԱՆՔԱՅԻՆ ՅՈՒՂԻ ՀԻՄՔՈՎ ՀԱԿԱՓՓՐԱՑՆՈՂ ՀԱՎԵԼՈՒՄ, DERFOAM LDR, ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐՈՒՄ, ՇԻՆԱՐԱՐԱԿԱՆ ԱՅԼ ԽԱՌՆՈՒՐԴՆԵՐՈՒՄ ՓՓՈՒՐԻ ԱՌԱՋԱՑՈՒՄԸ ԿԱՆԽԵԼՈՒ ՀԱՄԱՐ, 2 ՏԱՐԱ",
+   "hs_code": "34029010080",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "DERFOAM",
+   "material": null,
+   "quantity": 381.2,
+   "net_weight": 381.2,
+   "gross_weight": 428.8,
+   "unit_price": 2.9984,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BIOCIDE PRESERVATIVE",
+   "trade_name": "ACTICIDE LA 1209",
+   "armenian_desc": "ԲԻՈՑԻԴԱՅԻՆ ՊԱՀՊԱՆԻՉ ՆՅՈՒԹ, ACTICIDE LA 1209, ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐԻ, ՍՈՍԻՆՁՆԵՐԻ, ԱՅԼ ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ԲԱԿՏԵՐԻԱՆԵՐԻ ԵՎ ՍՆԿԵՐԻ ԱՃԸ ԿԱՆԽԵԼՈՒ ՀԱՄԱՐ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ԱՆԱՍՆԱԲՈՒԺԱԿԱՆ ԴԵՂԱՄԻՋՈՑ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՊԵՍՏԻՑԻԴ ԵՎ ԱԳՐՈՔԻՄԻԿԱՏ",
+   "hs_code": "38089480000",
+   "unit": "166",
+   "origin": "GB",
+   "brand": "ACTICIDE",
+   "material": null,
+   "quantity": 126.6,
+   "net_weight": 126.6,
+   "gross_weight": 139.3,
+   "unit_price": 7.431,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

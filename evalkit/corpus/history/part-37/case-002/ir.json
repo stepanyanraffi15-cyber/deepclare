@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Decorative artificial plastic plants",
+   "trade_name": null,
+   "armenian_desc": "ԴԵԿՈՐԱՏԻՎ ԱՐՀԵՍՏԱԿԱՆ ԲՈՒՅՍԵՐ ՊԼԱՍՏՄԱՍԱՅԻՑ",
+   "hs_code": "67021000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 460.6,
+   "net_weight": 460.6,
+   "gross_weight": 511.8,
+   "unit_price": 13.4741,
+   "package_count": 19,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Artificial flowering cherry tree",
+   "trade_name": null,
+   "armenian_desc": "ԱՐՀԵՍՏԱԿԱՆ ԲԱԼԵՆՈՒ ԾԱՂԿԱԾ ԾԱՌ, 257081028, 300 ՍՄ",
+   "hs_code": "67021000000",
+   "unit": "166",
+   "origin": "NL",
+   "brand": null,
+   "material": null,
+   "quantity": 58.2,
+   "net_weight": 58.2,
+   "gross_weight": 60.7,
+   "unit_price": 13.056,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

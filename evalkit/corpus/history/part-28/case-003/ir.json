@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "ATLAS LTD",
+  "address": "102 Harbor Rd, Port City",
+  "country": "KR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 95, Երևան",
+  "country": "AM",
+  "tax_id": "91258987"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "86 Logistic Ave, Port City",
+  "country": "KR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "KR",
+ "invoice_no": "INV-2026-1701",
+ "date": "2026-02-06",
+ "goods": [
+  {
+   "source_name": "Office glue stick",
+   "trade_name": "DOLPHIN",
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՉՈՐ ՍՈՍԻՆՁ 1ԿԳ-ԻՑ ՊԱԿԱՍ ՓԱԹԵԹԱՎՈՐՄԱՄԲ (8ԳՐ)/ / '' DOLPHIN \"",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "KR",
+   "brand": "DOLPHIN",
+   "material": null,
+   "quantity": 228.2,
+   "net_weight": 228.2,
+   "gross_weight": 238.5,
+   "unit_price": 33.06,
+   "package_count": 9,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Office emulsion glue",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ԷՄՈՒԼՍԻՈՆ ՍՈՍԻՆՁ 1ԿԳ-ԻՑ ՊԱԿԱՍ ՓԱԹԵԹԱՎՈՐՄԱՄԲ (40ԳՐ)/ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 93.0,
+   "net_weight": 93.0,
+   "gross_weight": 100.5,
+   "unit_price": 13.475,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Silicone glue sticks",
+   "trade_name": null,
+   "armenian_desc": "ՉՈՐ ՍՈՍԻՆՁ ՝ ՍԻԼԻԿՈՆԵ ՁՈՂԵՐԻ ՏԵՍԱԿԱՆԻ /1 ԿԳ-ԻՑ ՈՉ ԱՎԵԼԻ ԶՏԱՔԱՇՈՎ/ /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 515.0,
+   "net_weight": 515.0,
+   "gross_weight": 529.4,
+   "unit_price": 31.025,
+   "package_count": 20,
+   "package_type": "BAG"
+  }
+ ]
+}

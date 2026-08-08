@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Silver metal elegant bathroom floor drain",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 10*10 ՍՄ՝ ԱՐԾԱԹԱԳՈՒՅՆ, ՄԵՏԱՂԱԿԱՆ, ԷԼԵԳԱՆՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 31.2,
+   "net_weight": 31.2,
+   "gross_weight": 32.5,
+   "unit_price": 27.86,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Stainless steel beer kegs",
+   "trade_name": "GEORGIAN",
+   "armenian_desc": "ԳԱՐԵՋՐԻ ԲԱԶՄԱԿԻ ՕԳՏԱԳՈՐԾՄԱՆ ՄԵՏԱՂՅԱ ՏԱՐԱՆԵՐ / ԿՈՐՈԶԻԱԿԱՅՈՒՆ ՊՈՂՊԱՏԻՑ / ` '' GEORGIAN BEER COMPANY '' ՄԱԿՆՇՄԱՄԲ 30 ԼԻՏՐ ՏԱՐՈՂՈՒԹՅԱՄԲ / ՊԱՏԻ ՀԱՍՏՈՒԹՅՈՒՆԸ 0.5 ՄՄ-ԻՑ ԱՎԵԼԻ",
+   "hs_code": "73102990000",
+   "unit": "166",
+   "origin": "GE",
+   "brand": "GEORGIAN",
+   "material": null,
+   "quantity": 1737.9,
+   "net_weight": 1737.9,
+   "gross_weight": 1737.9,
+   "unit_price": 9.6986,
+   "package_count": 69,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Galvanized self-tapping screw",
+   "trade_name": null,
+   "armenian_desc": "ԻՆՔՆԱՀԱՏԻՉ ՊՏՈՒՏԱԿ Սև ՄԵՏԱՂԻՑ` ՑԻՆԿԱՊԱՏ ԳԼԽԻԿԸ ԽԱՉԱՁև ՓՈՐԱԿՈՎ, ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "73181499000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 4072.6,
+   "net_weight": 4072.6,
+   "gross_weight": 4252.2,
+   "unit_price": 8.8665,
+   "package_count": 162,
+   "package_type": "BAG"
+  }
+ ]
+}

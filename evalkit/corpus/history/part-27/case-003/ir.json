@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Wooden puzzle educational game",
+   "trade_name": null,
+   "armenian_desc": "ՓԱՅՏՅԱ ԶԱՐԳԱՑՆՈՂ ԽԱՂ ` ՓԱԶԼ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "95030061000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 56.9,
+   "net_weight": 56.9,
+   "gross_weight": 59.3,
+   "unit_price": 30.99,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "10-inch electronic writing tablet",
+   "trade_name": null,
+   "armenian_desc": "ԷԼԵԿՏՐՈՆԱՅԻՆ ԳՐԱՏԱԽՏԱԿ ՆԱԽԱՏԵՍՎԱԾ ԷԿՐԱՆԻՆ ԳՐԻՉՈՎ ՆՇՈՒՄՆԵՐ ԿԱՏԱՐԵԼՈՒ ԵՎ ՆԿԱՐԵԼՈՒ ՀԱՄԱՐ` 10-ՐԴ ՉԱՓԻ /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "95030095000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 92.5,
+   "net_weight": 92.5,
+   "gross_weight": 110.2,
+   "unit_price": 24.8088,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Video Game Console",
+   "trade_name": "SONY PS5 1TB",
+   "armenian_desc": "ՏԵՍԱԽԱՂԵՐ՝ ՀԵՌՈՒՍՏԱԸՆԴՈՒՆԻՉԻ ՕԳՏԱԳՈՐԾՄԱՄԲ SONY PS5 SLIM (1TB) (EU)",
+   "hs_code": "95045000010",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SONY",
+   "material": null,
+   "quantity": 427.5,
+   "net_weight": 427.5,
+   "gross_weight": 641.2,
+   "unit_price": 10.5415,
+   "package_count": 17,
+   "package_type": "BAG"
+  }
+ ]
+}

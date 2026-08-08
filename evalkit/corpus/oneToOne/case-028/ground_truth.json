@@ -1,0 +1,604 @@
+{
+ "goods": [
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON PC2 DE-NOX TP12",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON PH 2 DE-NOX",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON FORMALDEHYDE BP04",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON FORMALDEHYDE BP06",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON V8 4MG-UK-UBE6289A 4MG-UK-UBE2069A 4MG-UK-UBE2073A",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON VACUUM V10 ABSOLUTE 8CW-UK-UJA0057A 8CW-UK-UJA0844A",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON V12 ABSOLUTE SV 46 T8T-UK-UAT2260A",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON G1 5MK-UK-TKA4197A 5MK-UK-TKA4100A 5MK-UK-TKA0676A 5MK-UK-TKJ0721A",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON GEN 5 DETECT ABSOLUTE Z5T-EU-UFB1240A",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON SV50 7MZ-KR-UGA1633A",
+   "material": null
+  },
+  {
+   "brand": "DYSON",
+   "trade_name": "DYSON HS07 AIR STRAIGHTENER",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX ENCORE",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/On-The-Go",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/120",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/310)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/520)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/710)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/720)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SPEAKER (PARTYBOX/ULTIMATE)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SAUNBAR/500",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SAUNBAR/800",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SAUNBAR/1000",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL SAUNBAR/1300",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL BOOMBOX 4",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL XTREME 4",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL CLIP 5",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL PULSE 5",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL GO 4",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (JR 320 BT)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (TUNE 520 BT)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (LIVE 670 NC)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (TUNE 720 BT)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (TUNE 770 NC)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (LIVE 770 NC)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (WAVE 200 TWS)",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL EARPHONES (ENDURANCE PEAK",
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL (Portable Digital/Wireless/Mic",
+   "material": null
+  },
+  {
+   "brand": "HARMAN",
+   "trade_name": "HARMAN KARDON SOUND STICK",
+   "material": null
+  },
+  {
+   "brand": "HARMAN",
+   "trade_name": "HARMAN KARDON AURA STUDIP",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SPEAKER (ACTON III)",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SPEAKER (STANMORE III)",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SPEAKER (EMBERTON III)",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SPEAKER (WOBURN III)",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SPEAKER (MIDDLETON II)",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SPEAKER (TUFTON)",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL HESTON 120",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL HESTON 60",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL SUB",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL MAJOR IV",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL MAJOR V",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL MINOR IV",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 CHARGING DOCK MULTI FUNCION",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DISC",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DRIVING FORCE SHIFTER (LOGITECH",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DUALSENSE",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DUALSENSE EDGE",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 PORTAL",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 PORTAL",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 PULSE (EXPLORE)",
+   "material": null
+  },
+  {
+   "brand": "Sony",
+   "trade_name": "Sony PS5 HEADSET PULSE (3D WIRELESS/ARMY",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DRIVING FORCE (LOGITECH G29)",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DRIVING FORCE (THRUSTMASTER/T248RS)(PS5)",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DRIVING FORCE (THRUSTMASTER/T300RS)(PS5)",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DRIVING FORCE (THRUSTMASTER/T98 FERRARI",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 DRIVING FORCE (TRUEFORCE RASING/LOGITECH",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 PRO (2TB)",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 SLIM (1TB) (EU)",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 SLIM DIGITAL (1TB)",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 SLIM DIGITAL (1TB) 825",
+   "material": null
+  },
+  {
+   "brand": "SONY",
+   "trade_name": "SONY PS5 VR2",
+   "material": null
+  },
+  {
+   "brand": "STARLINK",
+   "trade_name": "STARLINK V5 MINI",
+   "material": null
+  },
+  {
+   "brand": "STARLINK",
+   "trade_name": "STARLINK STANDART V4",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI NEO 2 FLY MORE COMBO",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI NEO FLY MORE COMBO",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI AIR 3S COMBO",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI AVATA 2 FLY COMBO THREE",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI MINI 4 PRO",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI MINI 4 PRO FLY MORE",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI MINI 5 PRO COMBO",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI MINI 5 PRO FLY MORE",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI MATRICE 4 E",
+   "material": null
+  },
+  {
+   "brand": "DJI",
+   "trade_name": "DJI MATRICE 4 T",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV UE50U8000F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV UE55U8000F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV UE65DU7100",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV UE85DU7100",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV QE55Q7F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV QE65Q7F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV QE75Q8F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV QE85Q8F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV QE75QN80F",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": "SAMSUNG TV QE85QN70F",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL LED TV UHD 4K GOOGLE",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL LED TV UHD 4K GOOGLE",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL LED TV UHD 4K GOOGLE",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED HD GOOGLE TV32S5K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED HD GOOGLE TV43S5K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED HD GOOGLE TV50S5K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED 4K UHD GOOGLE TV",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED MINI LED 144HZ 4K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED MINI LED 144HZ 4K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED MINI LED 144HZ 4K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED MINI LED 144HZ 4K",
+   "material": null
+  },
+  {
+   "brand": "TCL",
+   "trade_name": "TCL QLED MINI LED 144HZ 4K",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 43UA75009lA",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 50UA75009LA",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 55UA75009LA",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 65UA75009LA",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 65NANO80A6B",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 65NANO81A6A",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV LED65B5RLA",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV 75UT81009LB",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV OLED 55C56LA",
+   "material": null
+  },
+  {
+   "brand": "LG",
+   "trade_name": "LG TV OlED65C56lA",
+   "material": null
+  }
+ ]
+}

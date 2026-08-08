@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Rear fog light assembly",
+   "trade_name": "BYD SA3HK-4116300",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ ԱՄ-Ի ՀԱՄԱՐ ՆԱԽԱՏԵՍՎԱԾ ՀԵՏԵՎԻ ՀԱԿԱՄԱՌԱԽՈՒՂԱՅԻՆ ԼՈՒՍԱՐՁԱԿՆԵՐ , SA3HK-4116300",
+   "hs_code": "85122000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.2,
+   "unit_price": 10.8591,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Rear fog lights",
+   "trade_name": "BYD SA3HK-4116300",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՀԵՏԵՎԻ ՀԱԿԱՄԱՌԱԽՈՒՂԱՅԻՆ ԼՈՒՍԱՐՁԱԿՆԵՐ , SA3HK-4116300",
+   "hs_code": "85122000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.3,
+   "unit_price": 12.1948,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Qin Plus rear tail lights",
+   "trade_name": "BYD HA2HE-4133010 HA2HE-4133020",
+   "armenian_desc": "2023-2024 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> QIN PLUS ՄԱՐԴԱՏԱՐ ԱՄ-Ի ՀԵՏԵՎԻ ԼՈՒՍԱՐՁԱԿ, ՁԱԽ ԿՈՂՄԻ HA2HE-4133010, ԱՋ ԿՈՂՄԻ HA2HE-4133020",
+   "hs_code": "85122000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 62.4,
+   "net_weight": 62.4,
+   "gross_weight": 76.3,
+   "unit_price": 25.3894,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Rear bumper electrical wiring harness",
+   "trade_name": "BYD SA3EG-4013100A",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ ԱՄ-Ի ՀԵՏԵՎԻ ԹԱՓԱՐԳԵԼԻ ԷԼԵԿՏՐԱԿԱՆ ՀԱՂՈՐԴԱԼԱՐԵՐ , SA3EG-4013100A, ՉԻ ՊԱՐՈՒՆԱԿՈՒՄ ԹԱՆԿԱՐԺԵՔ ՄԵՏԱՂՆԵՐ",
+   "hs_code": "85443000070",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.1,
+   "net_weight": 1.1,
+   "gross_weight": 1.4,
+   "unit_price": 1.7871,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "10 kVA diesel generator",
+   "trade_name": null,
+   "armenian_desc": "ԴԻԶԵԼԱՅԻՆ ԳԵՆԵՐԱՏՈՐ 10 ԿՎԱ ՀԶՈՐՈՒԹՅԱՄԲ",
+   "hs_code": "85021180000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 370.1,
+   "net_weight": 370.1,
+   "gross_weight": 396.9,
+   "unit_price": 11.8372,
+   "package_count": 15,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Electrical connector",
+   "trade_name": "FINDER",
+   "armenian_desc": "1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ /093.20/ FINDER",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "FINDER",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.1,
+   "unit_price": 30.2404,
+   "package_count": 6,
+   "package_type": "BAG"
+  }
+ ]
+}

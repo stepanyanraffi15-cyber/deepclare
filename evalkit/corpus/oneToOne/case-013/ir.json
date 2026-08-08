@@ -1,0 +1,92 @@
+{
+ "case_id": "case-013",
+ "seller": {
+  "name": "ZENITH INDUSTRIES",
+  "address": "34 Harbor Rd, Port City",
+  "country": "AM",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՍԵՎԱՆ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Բաղրամյան 4, Երևան",
+  "country": "AM",
+  "tax_id": "37880866"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "17 Logistic Ave, Port City",
+  "country": "AM",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "AM",
+ "invoice_no": "INV-2026-1236",
+ "date": "2026-05-27",
+ "goods": [
+  {
+   "source_name": "Phthalocyanine blue pigment",
+   "trade_name": "DEC. LINEA ECO RU - 9021",
+   "armenian_desc": "ԳՈՒՆԱՆՅՈՒԹ (ՊԻԳՄԵՆՏ) ԿԱՊՈՒՅՏ ՖԹԱԼՈ ԵՐԱՆԳՈՎ, DEC. LINEA ECO RU - 9021 ՄՈԴԵԼԻ",
+   "hs_code": "32071000000",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "LINEA",
+   "material": null,
+   "quantity": 2.1,
+   "net_weight": 2.1,
+   "gross_weight": 2.1,
+   "unit_price": 7.2307,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "L10 Prime Master primer",
+   "trade_name": "L10 PRIME MASTER LT. 5 50",
+   "armenian_desc": "Նախահիմք - L10 PRIME MASTER\r\nLT. 5, 50 ԼԻՏՐ",
+   "hs_code": "32091000090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "PRIME",
+   "material": null,
+   "quantity": 67.4,
+   "net_weight": 67.4,
+   "gross_weight": 83.0,
+   "unit_price": 0.8439,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "G07 Primegrout G.25 grout",
+   "trade_name": "G07 PRIMEGROUT G.25 2KG 30",
+   "armenian_desc": "ԿԱՐԱՆՅՈՒԹ - G07 PRIMEGROUT\r\nG.25 2KG, 30 ՀԱՏ",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "PRIMEGROUT",
+   "material": null,
+   "quantity": 60.4,
+   "net_weight": 60.4,
+   "gross_weight": 67.4,
+   "unit_price": 1.1495,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "G07 Primegrout G.30 grout",
+   "trade_name": "G07 PRIMEGROUT G.30 2KG 30",
+   "armenian_desc": "ԿԱՐԱՆՅՈՒԹ - G07 PRIMEGROUT\r\nG.30 2KG, 30 ՀԱՏ",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "PRIMEGROUT",
+   "material": null,
+   "quantity": 59.9,
+   "net_weight": 59.9,
+   "gross_weight": 66.9,
+   "unit_price": 1.1495,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

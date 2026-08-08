@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Electric Shaver",
+   "trade_name": "XIAOMI S200",
+   "armenian_desc": "ԷԼ․ ՍԱՓՐԻՉՆԵՐ՝ XIAOMI S200 /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742",
+   "hs_code": "85101000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "XIAOMI",
+   "material": null,
+   "quantity": 1.9,
+   "net_weight": 1.9,
+   "gross_weight": 3.2,
+   "unit_price": 33.0669,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "4K Dash Camera Set",
+   "trade_name": "SET 70MAI A810S-2 D2830B03YHL5AC9854ZYLQ",
+   "armenian_desc": "ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ 70MAI 4k A810s-2 set (NEW) SERIAL NO. D2830B03YHL5AC9854ZYLQ",
+   "hs_code": "85258999000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SET",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.4,
+   "unit_price": 8.009,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Mijia 2 Fabric Shaver",
+   "trade_name": "MIJIA",
+   "armenian_desc": "ՀԱԳՈՒՍՏԻ ՔՈՐՔԵՐԸ /ԹԵԼԵՐԸ/ ՄԱՔՐՈՂ ԷԼ. ՍԱՐՔ MIJIA 2",
+   "hs_code": "85098000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "MIJIA",
+   "material": null,
+   "quantity": 5.2,
+   "net_weight": 5.2,
+   "gross_weight": 8.0,
+   "unit_price": 17.0981,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

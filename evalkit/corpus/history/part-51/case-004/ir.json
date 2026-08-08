@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Cement remover cleaning agent",
+   "trade_name": "LT",
+   "armenian_desc": "ՑԵՄԵՆՏԻ ՀԵՌԱՑՆՈՂ ՄԻՋՈՑ (LT 1), 2 ԼԻՏՐ, ՆԱԽԱՏԵՍՎԱԾ ՉԷ ՍՆՆԴԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՕԳՏԱԳՈՐԾՄԱՆ ՄԵՋ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՆԱԽԱՏԵՍՎԱԾ ՉԷ ԹՈՒՆԱՔԻՄԻԿԱՏՆԵՐԻ ԵՎ ՊԱՐԱՐՏԱՆՅՈՒԹԵՐԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՀԱՄԱՐ",
+   "hs_code": "28111980000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "LT",
+   "material": null,
+   "quantity": 1.7,
+   "net_weight": 1.7,
+   "gross_weight": 1.9,
+   "unit_price": 29.1756,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Nano mineral filler",
+   "trade_name": "ADACAL N2-C",
+   "armenian_desc": "ՆԱՆՈ ՀԱՆՔԱՅԻՆ ԼՑՈՆԻՉ, ADACAL N2-C ՄՈԴԵԼԻ",
+   "hs_code": "28365000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ADACAL",
+   "material": null,
+   "quantity": 1208.7,
+   "net_weight": 1208.7,
+   "gross_weight": 1510.9,
+   "unit_price": 33.3775,
+   "package_count": 49,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Floor surface cleaning agent",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՔՐՈՂ ՄԻՋՈՑ ԱՆՎՏԱՆԳ ՀԱՏԱԿ (LT1) , 2 ԼԻՏՐ, ՆԱԽԱՏԵՍՎԱԾ ՉԷ ՍՆՆԴԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՕԳՏԱԳՈՐԾՄԱՆ ՄԵՋ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՆԱԽԱՏԵՍՎԱԾ ՉԷ ԹՈՒՆԱՔԻՄԻԿԱՏՆԵՐԻ ԵՎ ՊԱՐԱՐՏԱՆՅՈՒԹԵՐԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՀԱՄԱՐ",
+   "hs_code": "28111980000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 2.1,
+   "net_weight": 2.1,
+   "gross_weight": 2.3,
+   "unit_price": 10.8531,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

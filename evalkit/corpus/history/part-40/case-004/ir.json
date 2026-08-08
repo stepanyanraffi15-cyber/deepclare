@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Hair shampoo",
+   "trade_name": "ELIDOR",
+   "armenian_desc": "ՇԱՄՊՈՒՆՆԵՐ՝ ԱՊՐԱՆՔԱՆԻՇԸ ELIDOR 400ՄԼ",
+   "hs_code": "33051000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ELIDOR",
+   "material": null,
+   "quantity": 642.6,
+   "net_weight": 642.6,
+   "gross_weight": 655.9,
+   "unit_price": 31.9981,
+   "package_count": 26,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Air freshener spray",
+   "trade_name": "EST",
+   "armenian_desc": "ՕԴԸ ԹԱՐՄԱՑՆՈՂ ԲՈՒՐԱՎԵՏԻՉՆԵՐ 500 ՄԼ / EST",
+   "hs_code": "33074900000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "EST",
+   "material": null,
+   "quantity": 7.7,
+   "net_weight": 7.7,
+   "gross_weight": 8.0,
+   "unit_price": 38.8952,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Hair shampoo",
+   "trade_name": "ELSEVE",
+   "armenian_desc": "ՇԱՄՊՈՒՆՆԵՐ՝ ԱՊՐԱՆՔԱՆԻՇԸ ELSEVE 400ՄԼ",
+   "hs_code": "33051000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ELSEVE",
+   "material": null,
+   "quantity": 258.8,
+   "net_weight": 258.8,
+   "gross_weight": 289.9,
+   "unit_price": 29.4216,
+   "package_count": 11,
+   "package_type": "BAG"
+  }
+ ]
+}

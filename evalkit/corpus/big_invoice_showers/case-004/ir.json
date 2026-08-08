@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Linear Shower Drain - Grating (Stripe) Matte 120cm",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 120 ՍՄ՝  ԱՆՓԱՅԼ, ՄԵՏԱՂԱԿԱՆ, ՇԵՐՏԱՎՈՐ, 10 ՀԱՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 16.3,
+   "net_weight": 16.3,
+   "gross_weight": 16.6,
+   "unit_price": 14.2134,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Pointed Shower Drain - Grating (Elegance) Matte 12*12 cm",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 12*12 ՍՄ՝  ԱՆՓԱՅԼ, ՄԵՏԱՂԱԿԱՆ, ԷԼԵԳԱՆՏ, 24 ՀԱՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 12.0,
+   "net_weight": 12.0,
+   "gross_weight": 12.9,
+   "unit_price": 13.6688,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Linear Shower Drain - Grating (tile) Grey 30cm",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 30 ՍՄ՝  ՄՈԽՐԱԳՈՒՅՆ, ՄԵՏԱՂԱԿԱՆ, ՍԱԼԻԿԱՊԱՏ, 36 ՀԱՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 26.1,
+   "net_weight": 26.1,
+   "gross_weight": 27.6,
+   "unit_price": 13.5108,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "goods": [
+  {
+   "brand": "GT300",
+   "trade_name": "GT300 5",
+   "material": null
+  },
+  {
+   "brand": "C/GT300",
+   "trade_name": "C/GT300",
+   "material": null
+  },
+  {
+   "brand": "GT190",
+   "trade_name": "GT190",
+   "material": null
+  },
+  {
+   "brand": "C/GT200N",
+   "trade_name": "C/GT200N",
+   "material": null
+  },
+  {
+   "brand": "GT190",
+   "trade_name": "GT190",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  }
+ ]
+}

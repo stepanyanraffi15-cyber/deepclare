@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Knitted ironing board cover",
+   "trade_name": null,
+   "armenian_desc": "ՏՐԻԿՈՏԱԺԵ ԿՏՈՐ ՇՈՐԵՐ ԱՐԴՈՒԿԵԼՈՒ ՀԱՄԱՐ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "63079098000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 77.9,
+   "net_weight": 77.9,
+   "gross_weight": 77.9,
+   "unit_price": 35.7625,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Viscose cleaning cloths",
+   "trade_name": "ACCORD",
+   "armenian_desc": "ՄԱՔՐՈՂ ԼԱԹԵՐ 3 ՀԱՏԱՆՈՑ՝ ՎԻՍԿՈԶԱՅԻՆ, ԱՊՐԱՆՔԱՆԻՇԸ ACCORD",
+   "hs_code": "63071090000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ACCORD",
+   "material": null,
+   "quantity": 268.2,
+   "net_weight": 268.2,
+   "gross_weight": 295.0,
+   "unit_price": 35.2705,
+   "package_count": 11,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Microfiber dusting cloth",
+   "trade_name": null,
+   "armenian_desc": "ՄԻԿՐՈՖԻԲՐԱՅԻՑ ԼԱԹԵՐ ՓՈՇԻՆ ՀԵՌԱՑՆԵԼՈՒ ՀԱՄԱՐ՝ 40*40ՍՄ / / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆ",
+   "hs_code": "63071030000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 42.1,
+   "net_weight": 42.1,
+   "gross_weight": 42.8,
+   "unit_price": 39.4279,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

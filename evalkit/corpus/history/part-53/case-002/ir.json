@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Port City",
+  "country": "CZ",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Port City",
+  "country": "CZ",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CZ",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Beer in metal kegs",
+   "trade_name": "PILSNER",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ /PILSNER URQUELL / 30Լ․ ՄԵՏԱՂՅԱ ՏԱԿԱՌՈՎ",
+   "hs_code": "22030010000",
+   "unit": "112",
+   "origin": "CZ",
+   "brand": "PILSNER",
+   "material": null,
+   "quantity": 5718.0,
+   "net_weight": 5718.0,
+   "gross_weight": 5718.0,
+   "unit_price": 2.0614,
+   "package_count": 229,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Beer in metal cans",
+   "trade_name": "STARNBERGER",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" STARNBERGER HELLES \" ՄԵՏԱՂՅԱ ՏԱՐԱՅՈՎ / X 0.45 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ",
+   "hs_code": "22030009000",
+   "unit": "112",
+   "origin": "GE",
+   "brand": "STARNBERGER",
+   "material": null,
+   "quantity": 7318.7,
+   "net_weight": 7318.7,
+   "gross_weight": 7488.3,
+   "unit_price": 33.369,
+   "package_count": 293,
+   "package_type": "BAG"
+  }
+ ]
+}

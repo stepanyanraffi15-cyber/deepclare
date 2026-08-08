@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Frameless glass 15x21",
+   "trade_name": null,
+   "armenian_desc": "ԱՊԱԿԻ ԱՌԱՆՑ ՇՐՋԱՆԱԿԻ 15*21 /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "70060090000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 18.7,
+   "net_weight": 18.7,
+   "gross_weight": 20.0,
+   "unit_price": 37.2703,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Sealion 06 right side mirror",
+   "trade_name": "BYD UGE-8202109C",
+   "armenian_desc": "BYD SEALION 06, Ա/Մ-Ի ՀԵՏԻՆ ՏԵՍԱՆԵԼԻՈՒԹՅԱՆ ԱՋ ՀԱՅԵԼԻ, UGE-8202109C",
+   "hs_code": "70091000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 2.1,
+   "net_weight": 2.1,
+   "gross_weight": 3.1,
+   "unit_price": 23.5537,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Vitreous china bathroom sink",
+   "trade_name": null,
+   "armenian_desc": "ԼՎԱՑԱՐԱՆ ԱՊԱԿԵԿԵՐԱՄԻԿԱՅԻՑ ԼՈԳԱՐԱՆԻ ՀԱՄԱՐ",
+   "hs_code": "70131000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 27.8,
+   "net_weight": 27.8,
+   "gross_weight": 30.9,
+   "unit_price": 34.5482,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

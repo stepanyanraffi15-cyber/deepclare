@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Electronic office calculators",
+   "trade_name": "FLAMINGO",
+   "armenian_desc": "ԷԼԵԿՏՐՈՆԱՅԻՆ ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՀԱՇՎԻՉՆԵՐ FLAMINGO \" CD 2737\"",
+   "hs_code": "84701000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "FLAMINGO",
+   "material": null,
+   "quantity": 18.2,
+   "net_weight": 18.2,
+   "gross_weight": 19.2,
+   "unit_price": 24.7452,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Manifold pump connection kit",
+   "trade_name": null,
+   "armenian_desc": "ԲԱԺԱՆԱՐԱՐԻ ԵՎ ՋՐԻ ՊՈՄՊԻ ՄԻԱՑՄԱՆ ԿՈՄՊԼԵԿՏ ԹԵՐՄՈԳԼԽԻԿՈՎ՝ ՆԵՐՔԵՎԻ ՄԻԱՑՈՒՄ /ԱՌԱՆՑ ՋՐԻ ՊՈՄՊԻ/ /E008-3 ՄՈԴԵԼԻ/, ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "84818081990",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 224.3,
+   "net_weight": 224.3,
+   "gross_weight": 234.4,
+   "unit_price": 15.0034,
+   "package_count": 9,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Sandblasting Machine Trigger",
+   "trade_name": "MRO MRO.100 P.84",
+   "armenian_desc": "ԱՎԱԶԻ ՀՈՍՔԱԳԾԻ ԱՂԱՑԻ ՁԳԱՆ, MRO.100 P.84",
+   "hs_code": "84749090000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "MRO",
+   "material": null,
+   "quantity": 8.3,
+   "net_weight": 8.3,
+   "gross_weight": 9.5,
+   "unit_price": 1.364,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "acrylic paint 100ml",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԱԿՐԻԼԱՅԻՆ ՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ  100 ՄԼ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 936 ՀԱՏ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 111.5,
+   "net_weight": 111.5,
+   "gross_weight": 125.1,
+   "unit_price": 2.1738,
+   "package_count": 13,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "AMD rubber",
+   "trade_name": null,
+   "armenian_desc": "ԴՐԱՄԻ ՌԵՏԻՆԵ ՕՂԱԿՆԵՐ  / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / 300 ՏՈՒՓ",
+   "hs_code": "40169997080",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 379.8,
+   "net_weight": 379.8,
+   "gross_weight": 382.3,
+   "unit_price": 2.4698,
+   "package_count": 13,
+   "package_type": "BAG"
+  }
+ ]
+}

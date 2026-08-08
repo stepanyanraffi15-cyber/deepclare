@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Plastic butter dishes",
+   "trade_name": null,
+   "armenian_desc": "ԽՈՀԱՆՈՑԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԿԱՐԱԳԱՄԱՆՆԵՐ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39241000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 17.1,
+   "net_weight": 17.1,
+   "gross_weight": 21.4,
+   "unit_price": 20.808,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic laundry basket",
+   "trade_name": "BAMBOO",
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԶԱՄԲՅՈՒՂՆԵՐ ԼՎԱՑՔԻ ՇՈՐԵՐԻ ՀԱՄԱՐ / / BAMBOO",
+   "hs_code": "39231000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "BAMBOO",
+   "material": null,
+   "quantity": 167.6,
+   "net_weight": 167.6,
+   "gross_weight": 167.6,
+   "unit_price": 25.7587,
+   "package_count": 7,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Household plastic waste bin",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԱՂԲԱՄԱՆՆԵՐ N3 / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39249000090",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 117.2,
+   "net_weight": 117.2,
+   "gross_weight": 132.6,
+   "unit_price": 4.4712,
+   "package_count": 5,
+   "package_type": "BAG"
+  }
+ ]
+}

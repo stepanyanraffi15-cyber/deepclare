@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Cooling radiator frame",
+   "trade_name": "BYD SA3H-5301290B",
+   "armenian_desc": "BYD SONG PLUS Ա/Մ-Ի ՀՈՎԱՑՄԱՆ ՌԱԴԻԱՏՈՐԻ ՇՐՋԱՆԱԿ, SA3H-5301290B",
+   "hs_code": "87089199090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 11.5,
+   "net_weight": 11.5,
+   "gross_weight": 13.4,
+   "unit_price": 31.7882,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Steering system outer tie rod 16mm right",
+   "trade_name": "BYD HAD-3401120AR",
+   "armenian_desc": "\"BYD\" SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՂԵԿԱՅԻՆ ՀԱՄԱԿԱՐԳԻ ՄԱՍ` ԱՐՏԱՔԻՆ ԾԱՅՐԱՊԱՆԱԿ 16ՄՄ/ԱՋ ԿՈՂՄԻ/, HAD-3401120AR",
+   "hs_code": "87089499090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 13.8,
+   "net_weight": 13.8,
+   "gross_weight": 16.1,
+   "unit_price": 2.6636,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Bumper and headlight mounting bracket",
+   "trade_name": "BYD HA5H-4121155 HA5H-4121156",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS Ա/Մ-Ի ԱՌՋԵՎԻ ԹԱՓԱՐԳԵԼԻ և ԼՈՒՍԱՐՁԱԿԻ ԱՄՐԱՑՄԱՆ ԴԵՏԱԼ՝ ՀԵՏԵՎԻ ՁԱԽ ԿՈՂՄԻ , HA5H-4121155, ԱՋ ԿՈՂՄԻ , HA5H-4121156",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 41.6605,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

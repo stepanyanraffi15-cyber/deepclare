@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "ABB",
+   "trade_name": "MS116-1.6-2.5 ABB",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 4 MM- 100",
+   "material": null
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-2560 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  }
+ ]
+}

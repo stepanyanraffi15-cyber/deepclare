@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Ballpoint pen with keychain",
+   "trade_name": null,
+   "armenian_desc": "ԳՆԴԻԿԱՎՈՐ ԳՐԻՉՆԵՐ /ԲԱՆԱԼԻԻ ՇՂԹԱՅՈՎ/ - ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "96081010000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 23.2,
+   "net_weight": 23.2,
+   "gross_weight": 31.4,
+   "unit_price": 9.3932,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Household toilet cleaning brush",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ԽՈԶԱՆԱԿՆԵՐ ՍԱՆՀԱՆԳՈԻՅՑԻ ՀԱՄԱՐ ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "96039091000",
+   "unit": "796",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 4.8,
+   "net_weight": 4.8,
+   "gross_weight": 5.0,
+   "unit_price": 13.6172,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Black office permanent markers",
+   "trade_name": "HAUZER",
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՄԱՐԿԵՐՆԵՐ ՍԵՎ՝ ՍԴ Հ 6133 /HAUZER",
+   "hs_code": "96082000000",
+   "unit": "796",
+   "origin": "IN",
+   "brand": "HAUZER",
+   "material": null,
+   "quantity": 9.3,
+   "net_weight": 9.3,
+   "gross_weight": 10.2,
+   "unit_price": 5.106,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

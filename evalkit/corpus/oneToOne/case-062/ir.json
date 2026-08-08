@@ -1,0 +1,108 @@
+{
+ "case_id": "case-062",
+ "seller": {
+  "name": "QUANTA INDUSTRIES",
+  "address": "32 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Աբովյան 100, Երևան",
+  "country": "AM",
+  "tax_id": "70643924"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "76 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-3626",
+ "date": "2026-12-07",
+ "goods": [
+  {
+   "source_name": "Gravity seed cleaning and sorting machine",
+   "trade_name": "XFZ-50S",
+   "armenian_desc": "ՍԵՐՄԵՐԻ ՄԱՔՐՄԱՆ ԵՎ ՏԵՍԱԿԱՎՈՐՄԱՆ ՄԵՔԵՆԱ ԳՐԱՎԻՏԱՑԻՈՆ ՍԵՂԱՆՈՎ, ՄՈԴԵԼԸ ՝ 5XFZ-50S, ՄԵՔԵՆԱՅԻ ՉԱՓՍԵՐԸ ՝ 1500*2000 ՄՄ, ՍԵՂԱՆԻ ՉԱՓՍԵՐԸ ՝ 2250*2000 ՄՄ, 380 V, 50 HZ",
+   "hs_code": "84371000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "XFZ-50S",
+   "material": null,
+   "quantity": 1.1,
+   "net_weight": 6215.0,
+   "gross_weight": 6325.0,
+   "unit_price": 11484.092,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Seed transport elevator",
+   "trade_name": "TM30",
+   "armenian_desc": "ԷԼԵՎԱՏՈՐ TM30 ՆԱԽԱՏԵՍՎԱԾ Է ՍԵՐՄԵՐԻ ՏԵՂԱՓՈԽՄԱՆ ՀԱՄԱՐ",
+   "hs_code": "84283200000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "TM30",
+   "material": null,
+   "quantity": 1.1,
+   "net_weight": 495.0,
+   "gross_weight": 513.7,
+   "unit_price": 1288.602,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Replacement seed cleaner screens 1500x1000mm",
+   "trade_name": null,
+   "armenian_desc": "ՍԵՐՄԱՄԱՔՐՄԱՆ ՄԵՔԵՆԱՅԻ ՊԱՀԵՍՏԱՅԻՆ ՄԱՂԵՐ 1500*1000 ՄՄ, ԱՆՑՔԵՐԻ ՁԵՎԸ ԿԼՈՐ ՝ 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, ԷԼԻՊՍԱՁԵՎ 2.2*20 ՄՄ, 2.5*20 ՄՄ, 3.0*25 ՄՄ, 6.0*25 ՄՄ, 20 ՀԱՏ",
+   "hs_code": "84379000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 139.0,
+   "net_weight": 139.0,
+   "gross_weight": 142.0,
+   "unit_price": 3.2686,
+   "package_count": 20,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Replacement seed cleaner screens with frames",
+   "trade_name": null,
+   "armenian_desc": "ՍԵՐՄԱՄԱՔՐՄԱՆ ՄԵՔԵՆԱՅԻ ՊԱՀԵՍՏԱՅԻՆ ՄԱՂԵՐ ՇՐՋԱՆԱԿՈՎ, ԱՆՑՔԵՐԻ ՁԵՎԸ ԿԼՈՐ ՝ 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, ԷԼԻՊՍԱՁԵՎ 2.2*20 ՄՄ, 2.5*20 ՄՄ, 3.0*25 ՄՄ, 6.0*25 ՄՄ, 42 ՀԱՏ",
+   "hs_code": "84379000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 346.6,
+   "net_weight": 346.6,
+   "gross_weight": 353.4,
+   "unit_price": 11.1877,
+   "package_count": 41,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Replacement seed cleaner screens 300x350mm",
+   "trade_name": null,
+   "armenian_desc": "ՍԵՐՄԱՄԱՔՐՄԱՆ ՄԵՔԵՆԱՅԻ ՊԱՀԵՍՏԱՅԻՆ ՄԱՂԵՐ 300*350 ՄՄ, ԱՆՑՔԵՐԻ ՁԵՎԸ ԿԼՈՐ ՝ 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, ԷԼԻՊՍԱՁԵՎ 2.2*20 ՄՄ, 2.5*20 ՄՄ, 3.0*25 ՄՄ, 6.0*25 ՄՄ, 14 ՀԱՏ",
+   "hs_code": "84379000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 5.6,
+   "net_weight": 5.6,
+   "gross_weight": 5.6,
+   "unit_price": 17.0846,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

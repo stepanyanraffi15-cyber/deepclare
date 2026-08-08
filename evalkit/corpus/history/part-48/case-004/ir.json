@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Rear bumper lower mounting bracket",
+   "trade_name": "BYD UGE-2804430",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 Ա/Մ-Ի ՀԵՏԵՎԻ ԹԱՓԱՐԳԵԼԻ ՄԱՍ՝ ԱՄՐԱՑՄԱՆ ԴԵՏԱԼՀԵՏԵՎԻ, ԱՋ ԿՈՂՄԻ ՍՏՈՐԻՆ , UGE-2804430",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.5,
+   "unit_price": 10.3631,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Front right passenger door",
+   "trade_name": "BYD URE-6201019/70",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԴՈՒՌ, ԱՌՋԵՎԻ ԱՋ ԿՈՂՄԻ , URE-6201019/70",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 18.1,
+   "net_weight": 18.1,
+   "gross_weight": 28.5,
+   "unit_price": 41.7238,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Rear bumper air guide duct",
+   "trade_name": "BYD HAD-2804700",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS Ա/Մ-Ի ՀԵՏԵՎԻ ԹԱՓԱՐԳԵԼԻ ՄԱՍ՝ ՕԴՈՒՂՂՈՐԴԻՉ , HAD-2804700",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.4,
+   "unit_price": 19.1084,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

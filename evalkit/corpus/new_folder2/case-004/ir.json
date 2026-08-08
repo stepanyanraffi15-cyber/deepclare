@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Manchester",
+  "country": "GB",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Manchester",
+  "country": "GB",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "GB",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "BIOCIDE PRESERVATIVE",
+   "trade_name": "ACTICIDE LA 1209",
+   "armenian_desc": "ԲԻՈՑԻԴԱՅԻՆ ՊԱՀՊԱՆԻՉ ՆՅՈՒԹ, ACTICIDE LA 1209, ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐԻ, ՍՈՍԻՆՁՆԵՐԻ, ԱՅԼ ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ԲԱԿՏԵՐԻԱՆԵՐԻ ԵՎ ՍՆԿԵՐԻ ԱՃԸ ԿԱՆԽԵԼՈՒ ՀԱՄԱՐ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ԱՆԱՍՆԱԲՈՒԺԱԿԱՆ ԴԵՂԱՄԻՋՈՑ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՊԵՍՏԻՑԻԴ ԵՎ ԱԳՐՈՔԻՄԻԿԱՏ",
+   "hs_code": "38089480000",
+   "unit": "166",
+   "origin": "GB",
+   "brand": "ACTICIDE",
+   "material": null,
+   "quantity": 74.7,
+   "net_weight": 74.7,
+   "gross_weight": 82.2,
+   "unit_price": 6.748,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "MELAMINE RESIN",
+   "trade_name": "DERKIM GPR 12",
+   "armenian_desc": "ՄԵԼԱՄԻՆԱՅԻՆ ԽԵԺԵՐ, DERKIM GPR 12, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՍԱԼԻԿԻ ՍՈՍՆՁԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՄԵՋ, 4 ՊԱՐԿ",
+   "hs_code": "39092000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "DERKIM",
+   "material": null,
+   "quantity": 134.3,
+   "net_weight": 134.3,
+   "gross_weight": 141.0,
+   "unit_price": 4.3255,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "CELLULOSE ETHER",
+   "trade_name": "MEILOSE GMC 3110",
+   "armenian_desc": "ՑԵԼՅՈՒԼՈԶԱՅԻՆ ԵԹԵՐ, MEILOSE GMC 3110, ՓՈՇԵՆՄԱՆ ՏԵՍՔՈՎ, ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ՀԱՄԱՐ, 8 ՊԱՐԿ",
+   "hs_code": "39123985000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "MEILOSE",
+   "material": null,
+   "quantity": 195.4,
+   "net_weight": 195.4,
+   "gross_weight": 205.2,
+   "unit_price": 3.9228,
+   "package_count": 8,
+   "package_type": "BAG"
+  }
+ ]
+}

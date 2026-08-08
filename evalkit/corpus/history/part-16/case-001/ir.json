@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Rear light plastic cover",
+   "trade_name": "BYD UGE-2804830 UGE-2804840",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԼՈՒՍԱՐՁԱԿԻ ՊԼԱՍՏՄԱՍՍԵ ԿԱՓԱՐԻՉ, ՀԵՏևԻ ՁԱԽ ԿՈՂՄԻ UGE-2804830, ԱՋ ԿՈՂՄԻ UGE-2804840",
+   "hs_code": "39269097098",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 2.0,
+   "unit_price": 21.3486,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Sealion 06 rear left light cover",
+   "trade_name": "BYD UGE-2804830",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՀԵՏևԻ ՁԱԽ ԼՈՒՍԱՐՁԱԿԻ ՊԼԱՍՏՄԱՍՍԵ ԿԱՓԱՐԻՉ , UGE-2804830",
+   "hs_code": "39269097098",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 36.2219,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic toothbrush case",
+   "trade_name": null,
+   "armenian_desc": "ՊԼԱՍՏՄԱՍԵ ՏՈՒՓ ԱՏԱՄԻ ԽՈԶԱՆԱԿԻ ՀԱՄԱՐ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39231000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 13.8,
+   "net_weight": 13.8,
+   "gross_weight": 20.9,
+   "unit_price": 17.3988,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "goods": [
+  {
+   "brand": "LED",
+   "trade_name": "LED",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SCHNEIDER",
+   "trade_name": "A9F74210 SCHNEIDER",
+   "material": null
+  },
+  {
+   "brand": "ETHERNET",
+   "trade_name": "ETHERNET",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR VE OPK",
+   "material": null
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-4040 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "CK-4001",
+   "trade_name": "CK-4001 0 50-1 50 4",
+   "material": null
+  },
+  {
+   "brand": "DC-DC",
+   "trade_name": "DC-DC SSR20-524B ELCO/-",
+   "material": null
+  },
+  {
+   "brand": "LT-025008",
+   "trade_name": "LT-025008 8MM 2 50 4",
+   "material": null
+  }
+ ]
+}

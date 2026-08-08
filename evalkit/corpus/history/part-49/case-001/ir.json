@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Steering system mechanism for BYD",
+   "trade_name": "BYD TA70-3401010JA",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՂԵԿԱՅԻՆ ՀԱՄԱԿԱՐԳԻ ՄԵԽԱՆԻԶՄ , TA70-3401010JA",
+   "hs_code": "87089499090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 12.9,
+   "net_weight": 12.9,
+   "gross_weight": 13.3,
+   "unit_price": 12.8571,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Sealion 06 front camera plastic part",
+   "trade_name": "BYD UGE-5302200",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԱՌՋԵՎԻ ԽՑԻԿԻ ՊԼ․ ՄԱՍ , UGE-5302200",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 3.8,
+   "net_weight": 3.8,
+   "gross_weight": 4.6,
+   "unit_price": 15.1755,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Tai 3 door decorative trim set",
+   "trade_name": "BYD SA3HK-5402840 UREC-5402830",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԴՌԱՆ ՍՏՈՐԻՆ ԴԵԿՈՐԱՏԻՎ ԴԵՏԱԼ,ԱՌՋԵՎԻ ԱՋ ԿՈՂՄԻ SA3HK-5402840, ՁԱԽ ԿՈՂՄԻ UREC-5402830",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 9.7,
+   "net_weight": 9.7,
+   "gross_weight": 16.2,
+   "unit_price": 39.4265,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

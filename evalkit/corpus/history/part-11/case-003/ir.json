@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Milk powder under 1.5% fat",
+   "trade_name": null,
+   "armenian_desc": "ԿԱԹԻ ՓՈՇԻ ՄԻՆՉԵՎ 1,5% ՅՈՒՂԱՅՆՈՒԹՅԱՄԲ",
+   "hs_code": "04021019000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 53136.0,
+   "net_weight": 53136.0,
+   "gross_weight": 54530.8,
+   "unit_price": 10.8258,
+   "package_count": 2126,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Frozen pasteurized cream 50% fat",
+   "trade_name": "NOVBAR",
+   "armenian_desc": "ՊԱՍՏԵՐԻԶԱՑՎԱԾ, ՋԵՐՄԱՅԻՆ ՄՇԱԿՈՒՄ ԱՆՑԱԾ ՍԵՐՈՒՑՔ 50% ՅՈՒՂԱՅՆՈՒԹՅԱՄԲ, ԱՌԱՆՑ ՇԱՔԱՐԻ, ՍԱՌԵՑՎԱԾ, 12,5 ԿԳԱՆՈՑ ԴՈՒՅԼԵՐՈՎ, ՄԱԿՆԱՆՇՈՒՄԸ ՝ NOVBAR",
+   "hs_code": "04015099000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "NOVBAR",
+   "material": null,
+   "quantity": 28000.1,
+   "net_weight": 28000.1,
+   "gross_weight": 29166.8,
+   "unit_price": 22.9314,
+   "package_count": 1120,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Milk powder 1.5% fat",
+   "trade_name": "NOVBAR",
+   "armenian_desc": "ԿԱԹԻ ՓՈՇԻ ՄԻՆՉԵՎ 1,5% ՅՈՒՂԱՅՆՈՒԹՅԱՄԲ, 25 ԿԳ-ԱՆՈՑ ՊԱՐԿԵՐՈՎ, ՄԱԿՆՇՈՒՄԸ ՝ NOVBAR",
+   "hs_code": "04021019000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "NOVBAR",
+   "material": null,
+   "quantity": 30394.0,
+   "net_weight": 30394.0,
+   "gross_weight": 30637.2,
+   "unit_price": 19.5585,
+   "package_count": 1216,
+   "package_type": "BAG"
+  }
+ ]
+}

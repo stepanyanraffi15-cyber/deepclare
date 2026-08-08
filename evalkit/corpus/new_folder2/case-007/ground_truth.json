@@ -1,0 +1,29 @@
+{
+ "goods": [
+  {
+   "brand": "DERFIBER",
+   "trade_name": "DERFIBER 330",
+   "material": null
+  },
+  {
+   "brand": "DERKIM",
+   "trade_name": "DERKIM GPR 12",
+   "material": null
+  },
+  {
+   "brand": "ACTICIDE",
+   "trade_name": "ACTICIDE LA 1209",
+   "material": null
+  },
+  {
+   "brand": "MEILOSE",
+   "trade_name": "MEILOSE GMC 3112D",
+   "material": null
+  },
+  {
+   "brand": "MEILOSE",
+   "trade_name": "MEILOSE GMC 3110",
+   "material": null
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Black plastic drainage end cap",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ, ՍԵՎ, ԾԱՅՐԱՅԻՆ ԿԱՓԱՐԻՉ 130*60 ՄՄ՝ ՊԼԱՍՏՄԱՍԵ",
+   "hs_code": "39229000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 4.4,
+   "net_weight": 4.4,
+   "gross_weight": 8.8,
+   "unit_price": 36.2273,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Heavy duty plastic clothes hangers",
+   "trade_name": null,
+   "armenian_desc": "ԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԿԱԽԻՉՆԵՐ ՀԱԳՈՒՍՏԻ ՀԱՄԱՐ 44ՍՄ ՀԱՍՏ /3 ՀԱՏԱՆՈՑ/ ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39249000090",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 26.8,
+   "net_weight": 26.8,
+   "gross_weight": 30.8,
+   "unit_price": 26.1642,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic storage box set",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՏՈՒՓԵՐ /6 ԿՏՈՐՈՎ/ ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39231000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 133.7,
+   "net_weight": 133.7,
+   "gross_weight": 137.7,
+   "unit_price": 1.4844,
+   "package_count": 6,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Rear right door decorative sill",
+   "trade_name": "BYD SA3HK-5402860",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԴՌԱՆ ՍՏՈՐԻՆ ԴԵԿՈՐԱՏԻՎ ՇԵՄ, ՀԵՏԵՎԻ ԱՋ ԿՈՂՄԻ , SA3HK-5402860",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.2,
+   "unit_price": 23.6867,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Front half-shaft for BYD Song Plus",
+   "trade_name": "BYD SA3EK-2203020 SA3EGU-2203010",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԿԻՍԱՍՌՆՈՒ ՄԱՍ ԱՌՋԵՎԻ, ԱՋ ԿՈՂՄԻ SA3EK-2203020, ՁԱԽ ԿՈՂՄԻ SA3EGU-2203010",
+   "hs_code": "87085099090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 46.1,
+   "net_weight": 46.1,
+   "gross_weight": 56.8,
+   "unit_price": 9.6786,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Rear wheel arch decorative trim set",
+   "trade_name": "BYD URE-5302430 URE-5302440",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԱՆՎԱԿԱՄԱՐԻ ԴԵԿՈՐԱՏԻՎ , ՀԵՏԵՎԻ ՁԱԽ URE-5302430, ԱՋ ԿՈՂՄԻ URE-5302440",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 10.0,
+   "net_weight": 10.0,
+   "gross_weight": 10.0,
+   "unit_price": 9.3981,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "goods": [
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS",
+   "material": null
+  },
+  {
+   "brand": "PERWOLL",
+   "trade_name": "PERWOLL 2.97",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS EXTRA 1440",
+   "material": null
+  },
+  {
+   "brand": "ACCORD",
+   "trade_name": "ACCORD 6000",
+   "material": null
+  },
+  {
+   "brand": "ARIEL",
+   "trade_name": "ARIEL",
+   "material": null
+  },
+  {
+   "brand": "PERSIL",
+   "trade_name": "PERSIL",
+   "material": null
+  },
+  {
+   "brand": "FAIRY",
+   "trade_name": "FAIRY PLATINUM",
+   "material": null
+  },
+  {
+   "brand": "ARIEL",
+   "trade_name": "ARIEL 1",
+   "material": null
+  }
+ ]
+}

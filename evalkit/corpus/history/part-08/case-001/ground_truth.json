@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "HARMAN",
+   "trade_name": "HARMAN",
+   "material": null
+  },
+  {
+   "brand": "MARSHAL",
+   "trade_name": "MARSHAL",
+   "material": null
+  },
+  {
+   "brand": "SAMSUNG",
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

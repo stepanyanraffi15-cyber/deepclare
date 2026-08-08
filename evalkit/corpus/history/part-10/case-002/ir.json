@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Rear right bumper reflector",
+   "trade_name": "BYD SA3HK-4135200",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՀԵՏԵՎԻ ԼՈՒՍԱՅԻՆ ԱՆԴՐԱԴԱՐՁԻՉՆԵՐ, ԱՋ ԿՈՂՄԻ SA3HK-4135200",
+   "hs_code": "85122000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 4.6,
+   "net_weight": 4.6,
+   "gross_weight": 5.4,
+   "unit_price": 13.2867,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "License plate light",
+   "trade_name": "BYD SA3F-4108100A-D1",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՀԱՄԱՐ ՀԱՄԱՐԱՆԻՇԻ ԼՈՒՅՍ , SA3F-4108100A-D1",
+   "hs_code": "85122000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.5,
+   "unit_price": 37.5578,
+   "package_count": 5,
+   "package_type": "BAG"
+  }
+ ]
+}

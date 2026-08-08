@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "Antifoam Additive for Dry Mortar",
+   "trade_name": "ANTIFOAM",
+   "armenian_desc": "ՊԱՏՐԱՍՏԻ ՀԱՎԵԼԱՆՅՈՒԹ՝ ՓՐՓՐԱՄԱՐԻՉ ՉՈՐ ՇԱՂԱԽՆԵՐԻ ՀԱՄԱՐ /ANTIFOAM PS 5/, 25 ԿԳ-ՈՑ ՊԱՐԿԵՐՈՎ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՍՆՆԴԱՅԻՆ ՀԱՎԵԼՈՒՄ",
+   "hs_code": "38244000000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "ANTIFOAM",
+   "material": null,
+   "quantity": 116.9,
+   "net_weight": 116.9,
+   "gross_weight": 123.9,
+   "unit_price": 3.5235,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Correction fluid with brush",
+   "trade_name": "DOLPHIN",
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՋՆՋԻՉՆԵՐ (ՇՏՐԻԽ) ՎՐՁԻՆՈՎ ԴՑ 400 '' DOLPHIN \"",
+   "hs_code": "38249996080",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "DOLPHIN",
+   "material": null,
+   "quantity": 67.8,
+   "net_weight": 67.8,
+   "gross_weight": 72.9,
+   "unit_price": 20.2842,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

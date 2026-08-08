@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "A5 Notebook",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՌՈՒՄՆԵՐԻ ԵՎ ՀՈՒՇԱԳՐՈՒԹՅՈՒՆՆԵՐԻ ՆՈԹԱՏԵՏՐ A5 / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 864 ՀԱՏ",
+   "hs_code": "48201030000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A5",
+   "material": null,
+   "quantity": 67.5,
+   "net_weight": 67.5,
+   "gross_weight": 71.7,
+   "unit_price": 3.4788,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "paper for notes 3*3 colors 500 pcs.",
+   "trade_name": null,
+   "armenian_desc": "ԹՂԹԵՐ ՆՇՈՒՄՆԵՐԻ, ԳՐԱՌՈՒՄՆԵՐԻ ՀԱՄԱՐ ԻՆՔՆԱԿՊՉՈՒՆ ԵԶՐԱՇԵՐՏՈՎ, ԳՈՒՆԱՎՈՐ, 500 ՀԱՏԱՆՈՑ, 3*3 /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ/ 240 ՀԱՏ",
+   "hs_code": "48209000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 66.3,
+   "net_weight": 66.3,
+   "gross_weight": 66.8,
+   "unit_price": 2.3207,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "evalkit"
+version = "0.1.0"
+description = "Numeric quality metrics for customs-declaration (ESADout_CU) output vs. ground truth"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []  # core is stdlib-only, on purpose — it copies into any repo unchanged
+
+[project.optional-dependencies]
+# Semantic tier: plug in a multilingual embedder behind evalkit.semantic.Embedder.
+semantic = ["sentence-transformers>=2.2"]
+# synth generator (dev tool): Pillow for scan-degraded PDFs, openpyxl for Excel invoices.
+synth = ["pillow>=10", "openpyxl>=3.1"]
+dev = ["ruff>=0.5"]
+
+[project.scripts]
+evalkit = "evalkit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["evalkit"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

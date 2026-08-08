@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Milk powder under 1.5% fat",
+   "trade_name": null,
+   "armenian_desc": "ԿԱԹԻ ՓՈՇԻ ՄԻՆՉԵՎ 1,5% ՅՈՒՂԱՅՆՈՒԹՅԱՄԲ",
+   "hs_code": "04021019000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 34272.0,
+   "net_weight": 34272.0,
+   "gross_weight": 35171.6,
+   "unit_price": 10.7001,
+   "package_count": 1371,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Frozen pasteurized cream 50% fat",
+   "trade_name": "NOVBAR",
+   "armenian_desc": "ՊԱՍՏԵՐԻԶԱՑՎԱԾ, ՋԵՐՄԱՅԻՆ ՄՇԱԿՈՒՄ ԱՆՑԱԾ ՍԵՐՈՒՑՔ 50% ՅՈՒՂԱՅՆՈՒԹՅԱՄԲ, ԱՌԱՆՑ ՇԱՔԱՐԻ, ՍԱՌԵՑՎԱԾ, 12,5 ԿԳԱՆՈՑ ԴՈՒՅԼԵՐՈՎ, ՄԱԿՆԱՆՇՈՒՄԸ ՝ NOVBAR",
+   "hs_code": "04015099000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "NOVBAR",
+   "material": null,
+   "quantity": 18854.6,
+   "net_weight": 18854.6,
+   "gross_weight": 19640.2,
+   "unit_price": 25.5351,
+   "package_count": 755,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Milk powder 1.5% fat",
+   "trade_name": "NOVBAR",
+   "armenian_desc": "ԿԱԹԻ ՓՈՇԻ ՄԻՆՉԵՎ 1,5% ՅՈՒՂԱՅՆՈՒԹՅԱՄԲ, 25 ԿԳ-ԱՆՈՑ ՊԱՐԿԵՐՈՎ, ՄԱԿՆՇՈՒՄԸ ՝ NOVBAR",
+   "hs_code": "04021019000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "NOVBAR",
+   "material": null,
+   "quantity": 23546.2,
+   "net_weight": 23546.2,
+   "gross_weight": 23734.6,
+   "unit_price": 17.94,
+   "package_count": 942,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Plastic household waste bin",
+   "trade_name": "FANTASY",
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԱՂԲԱՄԱՆՆԵՐ 5Լ․ FANTASY",
+   "hs_code": "39249000090",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "FANTASY",
+   "material": null,
+   "quantity": 22.6,
+   "net_weight": 22.6,
+   "gross_weight": 23.6,
+   "unit_price": 27.3135,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic baby bathtub with drain",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ՊԼԱՍՏՄԱՍԵ ԼՈԳՆՈՑՆԵՐ ՋՐԱՀԵՌԱՑՄԱՆ ՀԱՄԱԿԱՐԳՈՎ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39221000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 334.2,
+   "net_weight": 334.2,
+   "gross_weight": 339.3,
+   "unit_price": 26.9062,
+   "package_count": 13,
+   "package_type": "BAG"
+  }
+ ]
+}

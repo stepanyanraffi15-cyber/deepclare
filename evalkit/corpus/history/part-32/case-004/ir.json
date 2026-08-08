@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Pencil sharpener with container",
+   "trade_name": null,
+   "armenian_desc": "ՍՐԻՉՆԵՐ ՄԱՏԻՏՆԵՐԻ ՀԱՄԱՐ` ՏԱՐԱՅՈՎ / / '' ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ \"",
+   "hs_code": "82141000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 34.1,
+   "net_weight": 34.1,
+   "gross_weight": 42.1,
+   "unit_price": 16.6423,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Office staplers",
+   "trade_name": "DOLPHIN",
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ԿԱՐԻՉՆԵՐ ԴՍ12 '' DOLPHIN \"",
+   "hs_code": "82055980990",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "DOLPHIN",
+   "material": null,
+   "quantity": 23.5,
+   "net_weight": 23.5,
+   "gross_weight": 25.3,
+   "unit_price": 38.9511,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Pencil sharpeners",
+   "trade_name": "DOLPHIN X08-1 X06-13",
+   "armenian_desc": "ՍՐԻՉՆԵՐ ՄԱՏԻՏՆԵՐԻ ՀԱՄԱՐ` X08-1 , X06-13 , '' DOLPHIN \"",
+   "hs_code": "82141000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "DOLPHIN",
+   "material": null,
+   "quantity": 33.4,
+   "net_weight": 33.4,
+   "gross_weight": 35.5,
+   "unit_price": 3.6616,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

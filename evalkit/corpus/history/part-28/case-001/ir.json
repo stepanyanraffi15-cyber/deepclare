@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Office Glue Stick",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՉՈՐ ՍՈՍԻՆՁ ` 1ԿԳ-ԻՑ ՊԱԿԱՍ ՓԱԹԵԹԱՎՈՐՄԱՄԲ, 9 ԳՐԱՄ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 98.1,
+   "net_weight": 98.1,
+   "gross_weight": 115.7,
+   "unit_price": 10.0899,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Office Liquid Glue",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՀԵՂՈՒԿ ՍՈՍԻՆՁ ` 1ԿԳ-ԻՑ ՊԱԿԱՍ ՓԱԹԵԹԱՎՈՐՄԱՄԲ, 50ՄԼ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 33.1,
+   "net_weight": 33.1,
+   "gross_weight": 34.2,
+   "unit_price": 12.3397,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Silicone glue sticks",
+   "trade_name": null,
+   "armenian_desc": "ՉՈՐ ՍՈՍԻՆՁ ՝ ՍԻԼԻԿՈՆԵ ՁՈՂԵՐԻ ՏԵՍԱԿԱՆԻ /1 ԿԳ-ԻՑ ՈՉ ԱՎԵԼԻ ԶՏԱՔԱՇՈՎ/ /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 576.8,
+   "net_weight": 576.8,
+   "gross_weight": 593.0,
+   "unit_price": 32.4133,
+   "package_count": 22,
+   "package_type": "BAG"
+  }
+ ]
+}

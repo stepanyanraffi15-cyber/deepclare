@@ -1,0 +1,64 @@
+{
+ "goods": [
+  {
+   "brand": "MKR",
+   "trade_name": "MKR VE OPK 2",
+   "material": null
+  },
+  {
+   "brand": "ELCO/--",
+   "trade_name": "ELCO/--",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "MS116-1-1.6 ABB",
+   "material": null
+  },
+  {
+   "brand": "LED",
+   "trade_name": "LED",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "ABB AF12-30-10 12A 5.5kW 230V",
+   "material": null
+  },
+  {
+   "brand": "LT-007508",
+   "trade_name": "LT-007508 8MM 0 75 4",
+   "material": null
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-4040 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 6 MM-100",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 4 MM- 100",
+   "material": null
+  },
+  {
+   "brand": "AUTONICS",
+   "trade_name": "E50S8-5000-3-T-1 AUTONICS",
+   "material": null
+  },
+  {
+   "brand": "ETHERNET",
+   "trade_name": "ETHERNET",
+   "material": null
+  },
+  {
+   "brand": "FINDER",
+   "trade_name": "FINDER -",
+   "material": null
+  }
+ ]
+}

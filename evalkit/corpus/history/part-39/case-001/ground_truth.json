@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "GIALLO",
+   "trade_name": "GIALLO",
+   "material": null
+  },
+  {
+   "brand": "NERO",
+   "trade_name": "NERO",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

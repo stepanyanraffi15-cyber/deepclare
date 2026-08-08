@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Port City",
+  "country": "SG",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Port City",
+  "country": "SG",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "SG",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Raw Robusta coffee beans Grade 1",
+   "trade_name": "ROBUSTA S18",
+   "armenian_desc": "ROBUSTA ՏԵՍԱԿԻ ՍՈՒՐՃԻ ՉԲՈՎԱԾ ՀԱՏԻԿՆԵՐ, GRADE 1 ՈՐԱԿԻ, S18 ՉԱՓՍԻ",
+   "hs_code": "09011100020",
+   "unit": "166",
+   "origin": "SG",
+   "brand": "ROBUSTA",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.5,
+   "unit_price": 5.5658,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Raw Arabica coffee beans Grade 1",
+   "trade_name": "ARABICA S16 S18",
+   "armenian_desc": "ARABICA ՏԵՍԱԿԻ ՍՈՒՐՃԻ ՉԲՈՎԱԾ ՀԱՏԻԿՆԵՐ, GRADE 1 ՈՐԱԿԻ, S16 ՉԱՓՍԻ` 0.5 ԿԳ, S18 ՉԱՓՍԻ` 0.5 ԿԳ",
+   "hs_code": "09011100010",
+   "unit": "166",
+   "origin": "SG",
+   "brand": "ARABICA",
+   "material": null,
+   "quantity": 1.3,
+   "net_weight": 1.3,
+   "gross_weight": 1.3,
+   "unit_price": 8.0294,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

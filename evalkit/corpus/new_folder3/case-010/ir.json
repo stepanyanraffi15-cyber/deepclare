@@ -1,0 +1,60 @@
+{
+ "case_id": "case-010",
+ "seller": {
+  "name": "NOVA LTD",
+  "address": "84 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՍԵՎԱՆ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 111, Երևան",
+  "country": "AM",
+  "tax_id": "56146720"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "78 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-7901",
+ "date": "2026-06-13",
+ "goods": [
+  {
+   "source_name": "PAPIA",
+   "trade_name": "PAPIA",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ ՝ PAPIA,  32*3` 16992 ՀԱՏ /177 ՏՈՒՓ/",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PAPIA",
+   "material": "ԹՈՒՂԹ",
+   "quantity": 1909.2,
+   "net_weight": 1909.2,
+   "gross_weight": 1942.7,
+   "unit_price": 1.8441,
+   "package_count": 225,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "ACCORD 6000",
+   "trade_name": "ACCORD 6000",
+   "armenian_desc": "ՄԱՔՐՈՂ ԼԱԹԵՐ 3 ՀԱՏԱՆՈՑ՝ ՎԻՍԿՈԶԱՅԻՆ,  ԱՊՐԱՆՔԱՆԻՇԸ ACCORD, 6000 ՀԱՏ",
+   "hs_code": "63071090000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ACCORD",
+   "material": null,
+   "quantity": 221.0,
+   "net_weight": 221.0,
+   "gross_weight": 243.1,
+   "unit_price": 1.4175,
+   "package_count": 56,
+   "package_type": "BAG"
+  }
+ ]
+}

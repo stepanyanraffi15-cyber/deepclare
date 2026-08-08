@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Single-stage dry rotor centrifugal pump",
+   "trade_name": null,
+   "armenian_desc": "ՄԻԱՍՏԻՃԱՆ ԿԵՆՏՐՈՆԱԽՈՒՅՍ ՊՈՄՊ՝ ՉՈՐ ՌՈՏՈՐՈՎ, ՄՈԴԵԼ՝ IPL50/120-1.5/2",
+   "hs_code": "84137059000",
+   "unit": "796",
+   "origin": "DE",
+   "brand": null,
+   "material": null,
+   "quantity": 99.7,
+   "net_weight": 99.7,
+   "gross_weight": 120.7,
+   "unit_price": 15.6385,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "A4 size paper laminating machine",
+   "trade_name": "FLM",
+   "armenian_desc": "Ա4 ՁԵՎԱՉԱՓԻ ԹՂԹԻ ԼԱՄԻՆԱՑԻՈՆ ՍԱՐՔ FLM BX 2503 /FLAMINGO",
+   "hs_code": "84729099000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "FLM",
+   "material": null,
+   "quantity": 29.4,
+   "net_weight": 29.4,
+   "gross_weight": 30.7,
+   "unit_price": 40.7456,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

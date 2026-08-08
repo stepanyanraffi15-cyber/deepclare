@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Children's watercolor coloring album",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԱԼԲՈՄ ՆԵՐԿԻՐ ԻՆՔԴ / ՋՐԱՆԵՐԿՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "49030000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 93.8,
+   "net_weight": 93.8,
+   "gross_weight": 98.7,
+   "unit_price": 9.0514,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Children's sand art coloring album",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԱԼԲՈՄ ՆԵՐԿԻՐ ԻՆՔԴ A5/ ԱՎԱԶՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "49030000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 133.7,
+   "net_weight": 133.7,
+   "gross_weight": 144.8,
+   "unit_price": 13.4694,
+   "package_count": 6,
+   "package_type": "BAG"
+  }
+ ]
+}

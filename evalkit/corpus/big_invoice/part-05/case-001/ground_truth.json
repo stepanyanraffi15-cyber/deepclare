@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A1",
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

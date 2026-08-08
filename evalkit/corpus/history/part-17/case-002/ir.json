@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Plastic pastry storage container",
+   "trade_name": "NO",
+   "armenian_desc": "ԽՈՀԱՆՈՑԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՏԱՐԱՆԵՐ ԽՄՈՐԵՂԵՆԻ ՀԱՄԱՐ NO 4` 42.5*27, 5*11.5 ՍՄ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39241000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "NO",
+   "material": null,
+   "quantity": 26.2,
+   "net_weight": 26.2,
+   "gross_weight": 26.2,
+   "unit_price": 26.8544,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic desk pen holders with red base",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԳՐՉԱՄԱՆՆԵՐ/ԿԱՐՄԻՐ ՀԻՄՔՈՎ/ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "39261000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 91.8,
+   "net_weight": 91.8,
+   "gross_weight": 106.0,
+   "unit_price": 37.5034,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

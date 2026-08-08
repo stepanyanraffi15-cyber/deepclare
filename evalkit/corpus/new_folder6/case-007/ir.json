@@ -1,0 +1,108 @@
+{
+ "case_id": "case-007",
+ "seller": {
+  "name": "NOVA MATERIALS",
+  "address": "12 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Կոմիտաս 70, Երևան",
+  "country": "AM",
+  "tax_id": "47539499"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "74 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-3961",
+ "date": "2026-05-18",
+ "goods": [
+  {
+   "source_name": "PS1-5-0-65 ABB",
+   "trade_name": "PS1-5-0-65 ABB",
+   "armenian_desc": "ՄԻԱՑԻՉ ԱՎՏՈՄԱՏ ԱՆՋԱՏԻՉՆԵՐԻ ՀԱՄԱՐ PS1-5-0-65 /ABB/  10 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ABB",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.1,
+   "unit_price": 105.9548,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "LT-060012 12MM 6 00 4",
+   "trade_name": "LT-060012 12MM 6 00 4",
+   "armenian_desc": "ՄԵԿՈՒՍԱՑՎԱԾ ՊՂՆՁԵ ՄԱԼՈՒԽԻ ԾԱՅՐԱԿԱԼՆԵՐ, LT-060012 12MM 6,00 4 ՏՈՒՓ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "LT-060012",
+   "material": null,
+   "quantity": 2.1,
+   "net_weight": 2.1,
+   "gross_weight": 2.3,
+   "unit_price": 36.8923,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BER16-4 ABB",
+   "trade_name": "BER16-4 ABB",
+   "armenian_desc": "ՌԵՎԵՐՍԻՎ ԿՈՆՏԱԿՏՈՐՆԵՐԻ ՄԻԱՑՄԱՆ ԿՈՄՊԼԵԿՏ BER16-4 /ABB/ 20 ՀԱՏ",
+   "hs_code": "85389099080",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ABB",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.1,
+   "unit_price": 284.5938,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "FINDER--",
+   "trade_name": "FINDER--",
+   "armenian_desc": "1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ /093.20/  FINDER-- 20 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "FINDER--",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.1,
+   "unit_price": 412.3174,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "MKR 4 MM- 100",
+   "trade_name": "MKR 4 MM- 100",
+   "armenian_desc": "1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1022 MKR 4 MM- 100 ՀԱՏ, 1025 MKR 4 MM-100 ՀԱՏ, 1024 MKR 4 MM-100 ՀԱՏ, 1026 MKR 4 MM- 100 ՀԱՏ, 1027 MKR 4 MM-100 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "MKR",
+   "material": null,
+   "quantity": 6.4,
+   "net_weight": 6.4,
+   "gross_weight": 7.1,
+   "unit_price": 49.8421,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

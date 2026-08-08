@@ -1,0 +1,108 @@
+{
+ "case_id": "case-007",
+ "seller": {
+  "name": "LUMEN GMBH",
+  "address": "13 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՎԱՆ ՇԻՆ\" ՍՊԸ",
+  "address": "Բաղրամյան 54, Երևան",
+  "country": "AM",
+  "tax_id": "81239643"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "70 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-6054",
+ "date": "2026-02-19",
+ "goods": [
+  {
+   "source_name": "CELLULOSE ETHER",
+   "trade_name": "DERFIBER 330",
+   "armenian_desc": "ՑԵԼՅՈՒԼՈԶԱՅԻՆ ՄԱՆՐԱԹԵԼ, DERFIBER 330, ԿԻՐԱՌՎՈՒՄ Է ՇԻՆԱՐԱՐԱԿԱՆ ՉՈՐ ԽԱՌՆՈՒՐԴՆԵՐՈՒՄ ԱՄՐՈՒԹՅՈՒՆԸ, ՋՐԱՊԱՀՊԱՆՈՒԹՅՈՒՆԸԵՎ ՃԱՔԵՐԻ ԴԻՄԱԴՐՈՂԱԿԱՆՈՒԹՅՈՒՆԸ ԲԱՐՁՐԱՑՆԵԼՈՒ ՀԱՄԱՐ, 202 ՊԱՐԿ",
+   "hs_code": "39129090000",
+   "unit": "166",
+   "origin": "DE",
+   "brand": "DERFIBER",
+   "material": null,
+   "quantity": 5595.4,
+   "net_weight": 5595.4,
+   "gross_weight": 5733.9,
+   "unit_price": 2.6616,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "MELAMINE RESIN",
+   "trade_name": "DERKIM GPR 12",
+   "armenian_desc": "ՄԵԼԱՄԻՆԱՅԻՆ ԽԵԺԵՐ, DERKIM GPR 12, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՍԱԼԻԿԻ ՍՈՍՆՁԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՄԵՋ, 4 ՊԱՐԿ",
+   "hs_code": "39092000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "DERKIM",
+   "material": null,
+   "quantity": 85.0,
+   "net_weight": 85.0,
+   "gross_weight": 89.2,
+   "unit_price": 3.6944,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BIOCIDE PRESERVATIVE",
+   "trade_name": "ACTICIDE LA 1209",
+   "armenian_desc": "ԲԻՈՑԻԴԱՅԻՆ ՊԱՀՊԱՆԻՉ ՆՅՈՒԹ, ACTICIDE LA 1209, ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐԻ, ՍՈՍԻՆՁՆԵՐԻ, ԱՅԼ ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ԲԱԿՏԵՐԻԱՆԵՐԻ ԵՎ ՍՆԿԵՐԻ ԱՃԸ ԿԱՆԽԵԼՈՒ ՀԱՄԱՐ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ԱՆԱՍՆԱԲՈՒԺԱԿԱՆ ԴԵՂԱՄԻՋՈՑ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՊԵՍՏԻՑԻԴ ԵՎ ԱԳՐՈՔԻՄԻԿԱՏ",
+   "hs_code": "38089480000",
+   "unit": "166",
+   "origin": "GB",
+   "brand": "ACTICIDE",
+   "material": null,
+   "quantity": 99.3,
+   "net_weight": 99.3,
+   "gross_weight": 109.2,
+   "unit_price": 6.509,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "CELLULOSE ETHER",
+   "trade_name": "MEILOSE GMC 3112D",
+   "armenian_desc": "ՑԵԼՅՈՒԼՈԶԱՅԻՆ ԵԹԵՐ, MEILOSE GMC 3112D, ՓՈՇԵՆՄԱՆ ՏԵՍՔՈՎ, ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ՀԱՄԱՐ, 120 ՊԱՐԿ",
+   "hs_code": "39123985000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "MEILOSE",
+   "material": null,
+   "quantity": 3825.0,
+   "net_weight": 3825.0,
+   "gross_weight": 3952.5,
+   "unit_price": 3.8406,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "CELLULOSE ETHER",
+   "trade_name": "MEILOSE GMC 3110",
+   "armenian_desc": "ՑԵԼՅՈՒԼՈԶԱՅԻՆ ԵԹԵՐ, MEILOSE GMC 3110, ՓՈՇԵՆՄԱՆ ՏԵՍՔՈՎ, ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ՀԱՄԱՐ, 8 ՊԱՐԿ",
+   "hs_code": "39123985000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "MEILOSE",
+   "material": null,
+   "quantity": 217.2,
+   "net_weight": 217.2,
+   "gross_weight": 228.1,
+   "unit_price": 3.8346,
+   "package_count": 9,
+   "package_type": "BAG"
+  }
+ ]
+}

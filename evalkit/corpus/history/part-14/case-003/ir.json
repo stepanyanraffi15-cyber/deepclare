@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Square plastic storage boxes",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՏՈՒՓԵՐ /ՔԱՌԱԿՈՒՍԻ/ ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39231000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 913.9,
+   "net_weight": 913.9,
+   "gross_weight": 956.4,
+   "unit_price": 30.9383,
+   "package_count": 37,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic waste bin with pedal",
+   "trade_name": "NO",
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԱՂԲԱՄԱՆՆԵՐ ՝ ՍԵՂՄԱԿՈՎ` NO 2, /11.5Լ/ ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39249000090",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "NO",
+   "material": null,
+   "quantity": 30.5,
+   "net_weight": 30.5,
+   "gross_weight": 38.4,
+   "unit_price": 7.6204,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Household plastic storage container",
+   "trade_name": "ELIT",
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՏՈՒՓԵՐ 600ՄԼ / / ELIT",
+   "hs_code": "39231000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ELIT",
+   "material": null,
+   "quantity": 6.1,
+   "net_weight": 6.1,
+   "gross_weight": 6.1,
+   "unit_price": 22.4271,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

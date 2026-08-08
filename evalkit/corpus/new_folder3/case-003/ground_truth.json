@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "PERSIL",
+   "trade_name": "PERSIL",
+   "material": null
+  },
+  {
+   "brand": "SELPAK",
+   "trade_name": "SELPAK",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "ARIEL",
+   "trade_name": "ARIEL 1",
+   "material": null
+  }
+ ]
+}

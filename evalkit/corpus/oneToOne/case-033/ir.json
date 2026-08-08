@@ -1,0 +1,92 @@
+{
+ "case_id": "case-033",
+ "seller": {
+  "name": "QUANTA EXPORT",
+  "address": "176 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Աբովյան 39, Երևան",
+  "country": "AM",
+  "tax_id": "66395912"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "40 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-9490",
+ "date": "2026-08-02",
+ "goods": [
+  {
+   "source_name": "Liquid laundry fabric softener",
+   "trade_name": "YUMOS EXTRA 1440",
+   "armenian_desc": "ԼՎԱՑՔԻ ՀԵՂՈՒԿ ՓԱՓԿԵՑՈՒՑԻՉ /ԿՈՆԴԻՑԻՈՆԵՐ/ ՝ ԱՊՐԱՆՔԱՆԻՇԸ YUMOS EXTRA, 1440 ՄԼ*9 -1026 ՀԱՏ ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "YUMOS",
+   "material": null,
+   "quantity": 1668.0,
+   "net_weight": 1668.0,
+   "gross_weight": 1723.8,
+   "unit_price": 1.3549,
+   "package_count": 116,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Liquid laundry detergent gel",
+   "trade_name": "PERSIL",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ԳԵԼ՝ ԱՊՐԱՆՔԱՆԻՇԸ PERSIL 3900ՄԼ*4-384 ՀԱՏ  ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PERSIL",
+   "material": null,
+   "quantity": 1836.9,
+   "net_weight": 1836.9,
+   "gross_weight": 1884.9,
+   "unit_price": 0.9916,
+   "package_count": 103,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Three-ply toilet paper",
+   "trade_name": "PAPIA",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ ՝ PAPIA,  32*3` 23040 ՀԱՏ /240 ՏՈՒՓ/",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PAPIA",
+   "material": "ԹՈՒՂԹ",
+   "quantity": 2224.8,
+   "net_weight": 2224.8,
+   "gross_weight": 2276.3,
+   "unit_price": 1.5816,
+   "package_count": 248,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Liquid laundry detergent",
+   "trade_name": "PERWOLL 2.97",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ՄԻՋՈՑ՝ ԱՊՐԱՆՔԱՆԻՇԸ PERWOLL, 2.97 Լ*6-4950 ՀԱՏ  ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PERWOLL",
+   "material": null,
+   "quantity": 16067.7,
+   "net_weight": 16067.7,
+   "gross_weight": 16336.0,
+   "unit_price": 0.8613,
+   "package_count": 893,
+   "package_type": "BAG"
+  }
+ ]
+}

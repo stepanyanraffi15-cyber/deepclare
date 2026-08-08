@@ -1,0 +1,76 @@
+{
+ "case_id": "case-008",
+ "seller": {
+  "name": "CASPIAN LTD",
+  "address": "100 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 12, Երևան",
+  "country": "AM",
+  "tax_id": "34970864"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "30 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-5370",
+ "date": "2026-01-23",
+ "goods": [
+  {
+   "source_name": "felt-tip pen 24g",
+   "trade_name": null,
+   "armenian_desc": "ՖԼՈՄԱՍՏԵՐՆԵՐԻ ՀԱՎԱՔԱԾՈՒ 24 ԳՈՒՅՆ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "96082000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 5463.9,
+   "net_weight": 31.9,
+   "gross_weight": 44.3,
+   "unit_price": 0.0198,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "felt-tip pen 10g",
+   "trade_name": null,
+   "armenian_desc": "ՖԼՈՄԱՍՏԵՐՆԵՐԻ ՀԱՎԱՔԱԾՈՒ 10 ԳՈՒՅՆ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "96082000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 1337.3,
+   "net_weight": 80.2,
+   "gross_weight": 90.8,
+   "unit_price": 0.2372,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "felt-tip pen 48g",
+   "trade_name": null,
+   "armenian_desc": "ՖԼՈՄԱՍՏԵՐՆԵՐԻ ՀԱՎԱՔԱԾՈՒ 48 ԳՈՒՅՆ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "96082000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 50.1,
+   "net_weight": 30.5,
+   "gross_weight": 34.6,
+   "unit_price": 1.3013,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

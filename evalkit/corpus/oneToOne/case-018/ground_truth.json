@@ -1,0 +1,49 @@
+{
+ "goods": [
+  {
+   "brand": "WHITE",
+   "trade_name": "P18 WHITE ELITE MASTER FACADE LT.15",
+   "material": null
+  },
+  {
+   "brand": "NEUTRAL",
+   "trade_name": "P80 NEUTRAL DECOSTAR INTERIOR LT. 15",
+   "material": null
+  },
+  {
+   "brand": "NEUTRAL",
+   "trade_name": "P81 NEUTRAL DECOSTAR FACADE LT. 5",
+   "material": null
+  },
+  {
+   "brand": "NEUTRAL",
+   "trade_name": "P81 NEUTRAL DECOSTAR FACADE LT. 9",
+   "material": null
+  },
+  {
+   "brand": "PRIME",
+   "trade_name": "L10 PRIME MASTER LT. 9 117",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.00 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.20 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.25 2KG 15",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.30 2KG 20",
+   "material": null
+  }
+ ]
+}

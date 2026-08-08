@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Water based siloxane facade paint",
+   "trade_name": null,
+   "armenian_desc": "ՋՐԱՅԻՆ ՀԻՄՔՈՎ, ՍԻԼՈՔՍԱՆԱՅԻՆ, ՖԱՍԱԴԱՅԻՆ ՆԵՐԿ, ԿՈԴԸ՝ ARPLGS001",
+   "hs_code": "32091000090",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 1.8,
+   "net_weight": 1.8,
+   "gross_weight": 2.1,
+   "unit_price": 15.6421,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Polymer based adhesive sealant",
+   "trade_name": "LR LR-26-204",
+   "armenian_desc": "ՊՈԼԻՄԵՐԻ ՀԻՄՔՈՎ ՀԵՐՄԵՏԻԿ/ՍՈՍԻՆՁ, LR-26-204",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "BE",
+   "brand": "LR",
+   "material": null,
+   "quantity": 1.9,
+   "net_weight": 1.9,
+   "gross_weight": 1.9,
+   "unit_price": 20.8459,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Liquid surface protective coating Top 2K Satin",
+   "trade_name": "TOP",
+   "armenian_desc": "ՄԱԿԵՐԵՍԻ ՊԱՇՏՊԱՆԻՉ ՆԵՐՔԻՆ ՇԵՐՏ, ՀԵՂՈՒԿ ՎԻՃԱԿՈՒՄ, TOP 2K SATIN FINISH ՄՈԴԵԼԻ, 2.25 ԿԳԱՆՈՑ ՏԱՐԱՅՈՎ",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "SI",
+   "brand": "TOP",
+   "material": null,
+   "quantity": 20.5,
+   "net_weight": 20.5,
+   "gross_weight": 21.4,
+   "unit_price": 9.8895,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "PERSIL",
+   "trade_name": "PERSIL",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ԳԵԼ՝ ԱՊՐԱՆՔԱՆԻՇԸ PERSIL 3900ՄԼ*4-1280 ՀԱՏ  ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PERSIL",
+   "material": null,
+   "quantity": 3630.1,
+   "net_weight": 3630.1,
+   "gross_weight": 3791.2,
+   "unit_price": 1.1518,
+   "package_count": 227,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "SELPAK",
+   "trade_name": "SELPAK",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ՝ SELPAK,  32*3` 14112 ՀԱՏ /147 ՏՈՒՓ/",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "SELPAK",
+   "material": "ԹՈՒՂԹ",
+   "quantity": 1198.3,
+   "net_weight": 1198.3,
+   "gross_weight": 1277.1,
+   "unit_price": 1.7622,
+   "package_count": 141,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "ARIEL 1",
+   "trade_name": "ARIEL 1",
+   "armenian_desc": "ԼՎԱՑՔԻ ՓՈՇԻ` ԱՊՐԱՆՔԱՆԻՇԸ ARIEL, 1,5ԿԳ ՓԱԹԵԹԱԹԱՎՈՐՄԱՄԲ- 980 ՀԱՏ, ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ARIEL",
+   "material": null,
+   "quantity": 1672.9,
+   "net_weight": 1672.9,
+   "gross_weight": 1682.3,
+   "unit_price": 0.975,
+   "package_count": 112,
+   "package_type": "BAG"
+  }
+ ]
+}

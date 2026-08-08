@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "Three-ply toilet paper",
+   "trade_name": "PAPIA",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ ՝ PAPIA, 32*3",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PAPIA",
+   "material": null,
+   "quantity": 1935.9,
+   "net_weight": 1935.9,
+   "gross_weight": 1994.4,
+   "unit_price": 4.4141,
+   "package_count": 78,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plain paper gift bags",
+   "trade_name": null,
+   "armenian_desc": "ԹՂԹԵ ՏՈՊՐԱԿՆԵՐ ՆՎԵՐՆԵՐԻ ՀԱՄԱՐ /ԱՆԳՈՒՅՆ, ՀԻՄՔԻ ԼԱՅՆՈՒԹՅՈՒՆԸ ՄԻՆՉԵՎ 40 ՍՄ/ 31*42*11.5 ՉԱՓԻ /ԻՆՎՈՅՍ ՏՈՂ 33",
+   "hs_code": "48194000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 96.4,
+   "net_weight": 96.4,
+   "gross_weight": 102.2,
+   "unit_price": 9.8129,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

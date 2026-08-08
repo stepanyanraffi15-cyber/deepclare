@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "A3",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

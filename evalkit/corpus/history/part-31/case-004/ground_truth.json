@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "ORGAL",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "SILK",
+   "trade_name": "SILK",
+   "material": null
+  },
+  {
+   "brand": "MULTIQUARTZ",
+   "trade_name": "MULTIQUARTZ",
+   "material": null
+  }
+ ]
+}

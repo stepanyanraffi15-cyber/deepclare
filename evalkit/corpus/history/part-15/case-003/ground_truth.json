@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "BYD",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO",
+   "material": null
+  }
+ ]
+}

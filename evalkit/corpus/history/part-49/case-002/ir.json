@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Front wheel arch decorative trim",
+   "trade_name": "BYD URE-5302430",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԱՆՎԱԿԱՄԱՐԻ ԴԵԿՈՐԱՏԻՎ ԴԵՏԱԼ, ԱՌՋԵՎԻ ԱՋ ԿՈՂՄԻ , URE-5302430",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.4,
+   "net_weight": 1.4,
+   "gross_weight": 1.4,
+   "unit_price": 20.7452,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Rear door lower decorative trim",
+   "trade_name": "BYD SA3HK-5402850",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԴՌԱՆ ՍՏՈՐԻՆ ԴԵԿՈՐԱՏԻՎ ԴԵՏԱԼ, ՀԵՏԵՎԻ ՁԱԽ ԿՈՂՄԻ , SA3HK-5402850",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.9,
+   "net_weight": 1.9,
+   "gross_weight": 1.9,
+   "unit_price": 9.063,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

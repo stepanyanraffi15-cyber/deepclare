@@ -1,0 +1,76 @@
+{
+ "case_id": "case-008",
+ "seller": {
+  "name": "CASPIAN LTD",
+  "address": "100 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 12, Երևան",
+  "country": "AM",
+  "tax_id": "34970864"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "30 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-5370",
+ "date": "2026-01-23",
+ "goods": [
+  {
+   "source_name": "A3 photo frame",
+   "trade_name": null,
+   "armenian_desc": "ԼՈՒՍԱՆԿԱՐԻ ԴԵԿՈՐԱՏԻՎ ՊՈԼ. ՇՐՋԱՆԱԿՆԵՐ A3 - 480 ՀԱՏ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "39264000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A3",
+   "material": null,
+   "quantity": 331.0,
+   "net_weight": 331.0,
+   "gross_weight": 346.3,
+   "unit_price": 1.3064,
+   "package_count": 22,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "book cover with self-adhesive edge",
+   "trade_name": null,
+   "armenian_desc": "ԳՐՔԻ ՊՈԼԻՄԵՐԱՅԻՆ ԻՆՔՆԱԿՊՉՈՒՆ ԿԱԶՄԵՐ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / 54600 ՀԱՏ",
+   "hs_code": "39199000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 392.3,
+   "net_weight": 392.3,
+   "gross_weight": 409.8,
+   "unit_price": 3.5832,
+   "package_count": 32,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "polymer laptop cover 35*21",
+   "trade_name": null,
+   "armenian_desc": "ՏԵՏՐԻ ՊՈԼ. ԿԱԶՄԵՐ 35*21 / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / 24000 ՀԱՏ",
+   "hs_code": "39261000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 209.4,
+   "net_weight": 209.4,
+   "gross_weight": 216.2,
+   "unit_price": 1.7416,
+   "package_count": 17,
+   "package_type": "BAG"
+  }
+ ]
+}

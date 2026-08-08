@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Kinetic sand with molds",
+   "trade_name": null,
+   "armenian_desc": "ԿԻՆԵՏԻԿ ԱՎԱԶ ՝ ԵՐԵԽԱՆԵՐԻ ԽԱՂԱԼՈՒ ՀԱՄԱՐ 500 ԳՐԱՄ / ԿԱՂԱՊԱՐՆԵՐՈՎ",
+   "hs_code": "95030070000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 102.7,
+   "net_weight": 102.7,
+   "gross_weight": 108.4,
+   "unit_price": 17.8322,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Wooden domino educational game",
+   "trade_name": null,
+   "armenian_desc": "ՓԱՅՏՅԱ ԶԱՐԳԱՑՆՈՂ ԽԱՂ ` ԴՈՄԻՆՈ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "95030061000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 34.6,
+   "net_weight": 34.6,
+   "gross_weight": 36.3,
+   "unit_price": 25.9297,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Wireless Gaming Controller",
+   "trade_name": "SONY PS5",
+   "armenian_desc": "ԽԱՂԱՅԻՆ ՀԱՄԱԿԱՐԳՉԻ ՀԱՄԱՐ ԿԱՌԱՎԱՐՄԱՆ ՎԱՀԱՆԱԿ SONY PS5 DUALSENSE",
+   "hs_code": "95045000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SONY",
+   "material": null,
+   "quantity": 51.8,
+   "net_weight": 51.8,
+   "gross_weight": 101.8,
+   "unit_price": 10.74,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

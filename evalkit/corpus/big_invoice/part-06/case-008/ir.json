@@ -1,0 +1,76 @@
+{
+ "case_id": "case-008",
+ "seller": {
+  "name": "CASPIAN LTD",
+  "address": "100 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 12, Երևան",
+  "country": "AM",
+  "tax_id": "34970864"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "30 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-5370",
+ "date": "2026-01-23",
+ "goods": [
+  {
+   "source_name": "acrylic paint 100ml",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԱԿՐԻԼԱՅԻՆ ՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ  100 ՄԼ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 216 ՀԱՏ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 33.3,
+   "net_weight": 33.3,
+   "gross_weight": 39.5,
+   "unit_price": 2.8329,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "soft plasticine 12g",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԾԵՓԱԿԵՐՏՈՒԹՅԱՆ ՄԱԾՈՒԿՆԵՐ` ՓԱՓՈՒԿ, 12 ԳՐ․ (ՊԼԱՍՏԻԼԻՆ) / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 8800 ՏՈՒՓ",
+   "hs_code": "34070000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 672.7,
+   "net_weight": 672.7,
+   "gross_weight": 708.5,
+   "unit_price": 1.6125,
+   "package_count": 32,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "gouache 500ml",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԳՈՒԱՇՆԵՐԻ ՀԱՎԱՔԱԾՈՒ 500 ՄԼ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 24 ՀԱՏ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 12.6,
+   "net_weight": 12.6,
+   "gross_weight": 13.6,
+   "unit_price": 1.4947,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

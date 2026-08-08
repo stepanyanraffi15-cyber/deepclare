@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Wireless Computer Mouse",
+   "trade_name": "XIAOMI 2-BLACK",
+   "armenian_desc": "ՀԱՄԱԿԱՐԳՉԱՅԻՆ ԱՆԼԱՐ ՄԿՆԻԿ XIAOMI WIRELESS MOUSE LITE 2-BLACK, (ՀՀ ԱԱԾ ԹՈՒՅԼՏՎՈՒԹՅՈՒՆ ԱՆՀՐԱԺԵՇՏ ՉԷ ՀԱՄԱՁԱՅՆ ՀՀ ԱԱԾ ԿՈՂՄԻՑ ՀՐԱՊԱՐԱԿՎԱԾ ՑԱՆԿԻ 116-ՐԴ ՏՈՂԻ)",
+   "hs_code": "84716070000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "XIAOMI",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 2.5,
+   "unit_price": 9.0387,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Engine timing chain guide",
+   "trade_name": "BYD 371QA-1021030",
+   "armenian_desc": "2007-2012 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> F3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԲԵՆԶԻՆԱՅԻՆ ՇԱՐԺԻՉԻ ՊԱՀԵՍՏԱՄԱՍ՝ ՇՂԹԱՅԻ ՈՒՂՂՈՐԴԻՉ , 371QA-1021030",
+   "hs_code": "84099100080",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 23.835,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Qin Plus transmission oil filter",
+   "trade_name": "BYD T65-1711100",
+   "armenian_desc": "BYD QIN PLUS ՄԱՐԴԱՏԱՐ Ա/ՄԵՔ-Ի ԱՎՏՈՄԱՏ ՓՈԽԱՆՑՄԱՆ ՏՈՒՓԻ ՅՈՒՂԻ ՖԻԼՏՐ /ԱՐՏԻԿՈՒԼ T65-1711100",
+   "hs_code": "84212900090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.9,
+   "net_weight": 1.9,
+   "gross_weight": 1.9,
+   "unit_price": 15.5966,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

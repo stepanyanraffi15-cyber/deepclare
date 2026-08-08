@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "NOVA GMBH",
+  "address": "111 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ԿԱՊԻՏԱԼ\" ՍՊԸ",
+  "address": "Կոմիտաս 76, Երևան",
+  "country": "AM",
+  "tax_id": "67379267"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "41 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1416",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Kengo KK105 calculator",
+   "trade_name": null,
+   "armenian_desc": "ԷԼԵԿՏՐՈՆԱՅԻՆ  ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՀԱՇՎԻՉՆԵՐ  \"KENKO\" KK105",
+   "hs_code": "84701000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "KENKO\"",
+   "material": null,
+   "quantity": 462.4,
+   "net_weight": 35.1,
+   "gross_weight": 38.6,
+   "unit_price": 0.6229,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Kengo 105p calculator",
+   "trade_name": null,
+   "armenian_desc": "ԷԼԵԿՏՐՈՆԱՅԻՆ  ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՀԱՇՎԻՉՆԵՐ  \"KENKO\" 105B",
+   "hs_code": "84701000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "KENKO\"",
+   "material": null,
+   "quantity": 628.2,
+   "net_weight": 46.1,
+   "gross_weight": 49.6,
+   "unit_price": 0.5095,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "kinetic sand 25 kg",
+   "trade_name": null,
+   "armenian_desc": "ԿԻՆԵՏԻԿ ԱՎԱԶ  ԵՐԵԽԱՆԵՐԻ ԽԱՂԱԼՈՒ ՀԱՄԱՐ 25 ԿԳ․ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "95030070000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 12.4,
+   "net_weight": 310.0,
+   "gross_weight": 313.7,
+   "unit_price": 9.6843,
+   "package_count": 13,
+   "package_type": "BAG"
+  }
+ ]
+}

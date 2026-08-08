@@ -1,0 +1,76 @@
+{
+ "case_id": "case-008",
+ "seller": {
+  "name": "CASPIAN LTD",
+  "address": "100 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 12, Երևան",
+  "country": "AM",
+  "tax_id": "34970864"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "30 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-5370",
+ "date": "2026-01-23",
+ "goods": [
+  {
+   "source_name": "FINDER -",
+   "trade_name": "FINDER -",
+   "armenian_desc": "ՌԵԼԵՅԻ ՄՈԴՈՒԼ  /39.11.0.024.0060 / FINDER - 50 ՀԱՏ",
+   "hs_code": "85364190000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "FINDER",
+   "material": null,
+   "quantity": 1.3,
+   "net_weight": 1.3,
+   "gross_weight": 1.5,
+   "unit_price": 474.24,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "MKR 2 5 MM- 100",
+   "trade_name": "MKR 2 5 MM- 100",
+   "armenian_desc": "1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1014 MKR 2,5 MM- 100 ՀԱՏ, 1016 MKR 2,5 MM-100 ՀԱՏ, 1017 MKR 2,5 MM-100 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "MKR",
+   "material": null,
+   "quantity": 1.6,
+   "net_weight": 1.6,
+   "gross_weight": 1.8,
+   "unit_price": 74.6308,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "MKR 2 5 MM 1000",
+   "trade_name": "MKR 2 5 MM 1000",
+   "armenian_desc": "1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1012 MKR 2,5 MM\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1012 MKR 2,5 MM\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1012 MKR 2,5 MM- 100 ՀԱՏ, 1015 MKR 2,5 MM-100 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "MKR",
+   "material": null,
+   "quantity": 1.2,
+   "net_weight": 1.2,
+   "gross_weight": 1.3,
+   "unit_price": 71.5,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

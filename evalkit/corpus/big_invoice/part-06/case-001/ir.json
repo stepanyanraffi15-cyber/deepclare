@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "NOVA GMBH",
+  "address": "111 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ԿԱՊԻՏԱԼ\" ՍՊԸ",
+  "address": "Կոմիտաս 76, Երևան",
+  "country": "AM",
+  "tax_id": "67379267"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "41 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1416",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "lantern",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԳՐՊԱՆԻ ԼԱՊՏԵՐ ԿԱԽԻՉՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "85131000000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 13872.0,
+   "net_weight": 181.8,
+   "gross_weight": 198.8,
+   "unit_price": 0.1611,
+   "package_count": 12,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "The silicone gun is small",
+   "trade_name": null,
+   "armenian_desc": "ԷԼ.ԱՏՐՃԱՆԱԿՆԵՐ ՍԻԼԻԿՈՆԵ ՍՈՍՆՁԻ ՀԱՄԱՐ` ՓՈՔՐ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "85151900000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 502.6,
+   "net_weight": 55.8,
+   "gross_weight": 64.4,
+   "unit_price": 0.4895,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "plasticine 12g",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԾԵՓԱԿԵՐՏՈՒԹՅԱՆ ՄԱԾՈՒԿՆԵՐ 12 ԳՐ․ (ՊԼԱՍՏԻԼԻՆ) / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 1080 ՏՈՒՓ",
+   "hs_code": "34070000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 368.1,
+   "net_weight": 368.1,
+   "gross_weight": 387.1,
+   "unit_price": 1.2123,
+   "package_count": 19,
+   "package_type": "BAG"
+  }
+ ]
+}

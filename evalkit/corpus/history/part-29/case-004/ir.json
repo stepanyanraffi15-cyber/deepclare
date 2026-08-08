@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Student drawing compass",
+   "trade_name": null,
+   "armenian_desc": "ԱՇԱԿԵՐՏԱԿԱՆ ԿԱՐԿԻՆՆԵՐ /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "90172010000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 10.8,
+   "net_weight": 10.8,
+   "gross_weight": 12.8,
+   "unit_price": 14.0098,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Crankshaft position sensor for passenger car",
+   "trade_name": "BYD 476Q-4D-3813800",
+   "armenian_desc": "\"BYD\" F3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԾՆԿԱՁԵՎ ԼԻՍԵՌԻ ԴԻՐՔԻ ՏՎԻՉ, 476Q-4D-3813800 /DELPHI",
+   "hs_code": "90328900000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 25.4366,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Four-sided film applicator",
+   "trade_name": "BEVS 30/60/90/120 1803/80/1",
+   "armenian_desc": "ՉՈՐՍ ԿՈՂՄԱՆԻ ԱՊԼԻԿԱՏՈՐ, ԱՇԽԱՏԱՆՔԱՅԻՆ ԼԱՅՆՈՒԹՅՈՒՆԸ 80ՄՄ, ԲԱՑՎԱԾՔԸ 30/60/90/120 ՄՄ, ՄՈԴԵԼԸ ՝ BEVS 1803/80/1",
+   "hs_code": "90318098000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "BEVS",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.4,
+   "unit_price": 6.8836,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

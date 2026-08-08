@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "LR",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "TOP",
+   "trade_name": "TOP",
+   "material": null
+  }
+ ]
+}

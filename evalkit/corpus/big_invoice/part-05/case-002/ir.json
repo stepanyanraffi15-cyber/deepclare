@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "pen box",
+   "trade_name": null,
+   "armenian_desc": "ԳՐՉԱՏՈՒՓԵՐ՝ ՊԼԱՍՏՄԱՍՍԱՅԻ ԹԵՐԹԵՐԻՑ ԴԻՄԱՅԻՆ ՄԱԿԵՐԵՎՈՒՅԹՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "42029219000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 274.5,
+   "net_weight": 50.6,
+   "gross_weight": 60.3,
+   "unit_price": 1.4898,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "A4 paper clipping made of wood",
+   "trade_name": null,
+   "armenian_desc": "ՓԱՅՏՅԱ A4 ՖՈՐՄԱՏԻ ԹՂԹԻ ՏԱԿԴԻՐՆԵՐ  ԻՐԵՆՑ ԱՄՐԱԿՆԵՐՈՎ   / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 250 ՀԱՏ",
+   "hs_code": "44219990000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A4",
+   "material": "ՓԱՅՏ",
+   "quantity": 63.3,
+   "net_weight": 63.3,
+   "gross_weight": 65.2,
+   "unit_price": 1.1424,
+   "package_count": 7,
+   "package_type": "BAG"
+  }
+ ]
+}

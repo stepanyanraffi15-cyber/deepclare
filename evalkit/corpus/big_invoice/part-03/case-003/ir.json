@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "A3 photo frame",
+   "trade_name": null,
+   "armenian_desc": "ԼՈՒՍԱՆԿԱՐԻ ԴԵԿՈՐԱՏԻՎ ՊՈԼ. ՇՐՋԱՆԱԿՆԵՐ A3 - 480 ՀԱՏ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ /",
+   "hs_code": "39264000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A3",
+   "material": null,
+   "quantity": 222.6,
+   "net_weight": 222.6,
+   "gross_weight": 232.9,
+   "unit_price": 1.4334,
+   "package_count": 15,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "a folder with a place for files",
+   "trade_name": null,
+   "armenian_desc": "ՊԼ․ ԹՂԹԱՊԱՆԱԿՆԵՐ A4 ՍԵՂՄԱԿՈՎ  / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 1200 ՀԱՏ",
+   "hs_code": "39261000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A4",
+   "material": null,
+   "quantity": 68.6,
+   "net_weight": 68.6,
+   "gross_weight": 75.9,
+   "unit_price": 2.8779,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "a folder with a place for files",
+   "trade_name": null,
+   "armenian_desc": "ՊԼ․ ԹՂԹԱՊԱՆԱԿՆԵՐ A4 ՍԵՂՄԱԿՈՎ  / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 3744 ՀԱՏ",
+   "hs_code": "39261000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A4",
+   "material": null,
+   "quantity": 155.1,
+   "net_weight": 155.1,
+   "gross_weight": 171.3,
+   "unit_price": 3.0124,
+   "package_count": 8,
+   "package_type": "BAG"
+  }
+ ]
+}

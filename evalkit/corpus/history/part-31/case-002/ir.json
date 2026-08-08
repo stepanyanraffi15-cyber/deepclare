@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Port City",
+  "country": "EU",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Port City",
+  "country": "EU",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "EU",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "Silk Base Argento water-based acrylic paint",
+   "trade_name": "SILK",
+   "armenian_desc": "ԱԿՐԻԼԱՅԻՆ ՆԵՐԿ ՋՐԱՅԻՆ ՀԻՄՔՈՎ, SILK BASE ARGENTO ՄՈԴԵԼԻ, 1 ԼԻՏՐ",
+   "hs_code": "32091000090",
+   "unit": "166",
+   "origin": "EU",
+   "brand": "SILK",
+   "material": null,
+   "quantity": 7.7,
+   "net_weight": 7.7,
+   "gross_weight": 8.3,
+   "unit_price": 5.9822,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Acrylic paint set",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԱԿՐԻԼԱՅԻՆ ՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ 12 ԳՈՒՅՆ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 61.3,
+   "net_weight": 61.3,
+   "gross_weight": 73.3,
+   "unit_price": 36.2142,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

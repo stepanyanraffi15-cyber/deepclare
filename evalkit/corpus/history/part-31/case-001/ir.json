@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Rotterdam",
+  "country": "NL",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Rotterdam",
+  "country": "NL",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "NL",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Silicone sealant sample",
+   "trade_name": null,
+   "armenian_desc": "ՍԻԼԻԿՈՆԱՅԻՆ ՀԵՐՄԵՏԻԿ, ՆՄՈՒՇՆԵՐ",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "NL",
+   "brand": null,
+   "material": null,
+   "quantity": 4.7,
+   "net_weight": 4.7,
+   "gross_weight": 4.7,
+   "unit_price": 36.5448,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Vixalit 500 Bianco water-based acrylic paint",
+   "trade_name": "VIXALIT",
+   "armenian_desc": "ԱԿՐԻԼԱՅԻՆ ՆԵՐԿ ՋՐԱՅԻՆ ՀԻՄՔՈՎ, VIXALIT 500 BIANCO ՄՈԴԵԼԻ, 5 ԼԻՏՐ",
+   "hs_code": "32091000090",
+   "unit": "166",
+   "origin": "EU",
+   "brand": "VIXALIT",
+   "material": null,
+   "quantity": 11.8,
+   "net_weight": 11.8,
+   "gross_weight": 12.3,
+   "unit_price": 36.1614,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Oil paint set in tubes",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ՅՈՒՂԱՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ` 12 ԳՈՒՅՆ, ՍՐՎԱԿՆԵՐՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 56.1,
+   "net_weight": 56.1,
+   "gross_weight": 65.0,
+   "unit_price": 38.2087,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

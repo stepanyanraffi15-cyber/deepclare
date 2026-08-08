@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Grey END CAP 130*60",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿԻ ՄՈԽՐԱԳՈՒՅՆ ԾԱՅՐԱՅԻՆ ԿԱՓԱՐԻՉ 130*60 ՄՄ՝ ՊԼԱՍՏՄԱՍԵ, 600 ՀԱՏ",
+   "hs_code": "39229000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 9.4,
+   "net_weight": 9.4,
+   "gross_weight": 28.2,
+   "unit_price": 42.68,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Linear Shower Drain - Grating (Zebrano) Black 90cm",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 90 ՍՄ՝  ՍԵՎ, ՄԵՏԱՂԱԿԱՆ, ԶԵԲՐԱՁԵՎ, 10 ՀԱՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 15.1,
+   "net_weight": 15.1,
+   "gross_weight": 15.4,
+   "unit_price": 14.2281,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Linear Shower Drain - Grating (Elegance) Black 90cm",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 90 ՍՄ՝  ՍԵՎ, ՄԵՏԱՂԱԿԱՆ, ԷԼԵԳԱՆՏ,  8 ՀԱՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 14.7,
+   "net_weight": 14.7,
+   "gross_weight": 15.0,
+   "unit_price": 13.9031,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

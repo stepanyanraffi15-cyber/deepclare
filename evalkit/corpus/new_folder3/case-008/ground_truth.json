@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "PERSIL",
+   "trade_name": "PERSIL",
+   "material": null
+  },
+  {
+   "brand": "ACCORD",
+   "trade_name": "ACCORD 6000",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS",
+   "material": null
+  }
+ ]
+}

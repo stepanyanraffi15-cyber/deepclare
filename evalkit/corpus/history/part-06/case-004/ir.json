@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Automotive fuse kit",
+   "trade_name": null,
+   "armenian_desc": "ՄԵՔԵՆԱՅԻ ԱՊԱՀՈՎԻՉՆԵՐԻ ՀԱՎԱՔԱԾՈՒ",
+   "hs_code": "85361050000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 4.3,
+   "net_weight": 4.3,
+   "gross_weight": 5.0,
+   "unit_price": 27.5159,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Robot vacuum cleaner",
+   "trade_name": "XIAOMI S40 67955/B2AE7F5Y703037 67955/B2AE7F5Y702506 67955/B2AE7F5Y702883 67955/B2AE7F5Y702933 67955/B2AE7F5Y702867 67955/B2AE7F5Y702947 67955/B2AE7F5Y702881 67955/B2AE7F5Y702995 67955/B2AE7F5Y702991 67955/B2SR7F5Y702952",
+   "armenian_desc": "ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ XIAOMI S40 PRO /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 67955/B2AE7F5Y703037 67955/B2AE7F5Y702506 67955/B2AE7F5Y702883 67955/B2AE7F5Y702933 67955/B2AE7F5Y702867 67955/B2AE7F5Y702947 67955/B2AE7F5Y702881 67955/B2AE7F5Y702995 67955/B2AE7F5Y702991 67955/B2SR7F5Y702952",
+   "hs_code": "85081100000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "XIAOMI",
+   "material": null,
+   "quantity": 36.1,
+   "net_weight": 36.1,
+   "gross_weight": 54.2,
+   "unit_price": 42.5399,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Car video recorder",
+   "trade_name": "ANTBEST",
+   "armenian_desc": "ԱՎՏՈՄԵՔԵՆԱՅԻ ՎԻԴԻՈՌԵԳԻՍՏՐԱՏՈՐ ANTBEST",
+   "hs_code": "85219000090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "ANTBEST",
+   "material": null,
+   "quantity": 122.1,
+   "net_weight": 122.1,
+   "gross_weight": 129.3,
+   "unit_price": 33.8376,
+   "package_count": 5,
+   "package_type": "BAG"
+  }
+ ]
+}

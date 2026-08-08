@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "FLAMINGO",
+   "trade_name": "FLAMINGO",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "MRO",
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

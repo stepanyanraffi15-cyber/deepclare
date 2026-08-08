@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "MKR 2 5 MM 1000",
+   "trade_name": "MKR 2 5 MM 1000",
+   "armenian_desc": "1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1012 MKR 2,5 MM\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1012 MKR 2,5 MM\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n1000 Վ ԻՑ ՈՉ ԱՎԵԼ ԼԱՐՄԱՆ ՀԱՄԱՐ ՄԻԱԿՑԻՉՆԵՐ ԵՎ ԿՈՆՏԱԿՏԱՅԻՆ ՏԱՐՐԵՐ ԼԱՐԵՐԻ ԵՎ ՄԱԼՈՒԽՆԵՐԻ ՀԱՄԱՐ 1012 MKR 2,5 MM- 100 ՀԱՏ, 1015 MKR 2,5 MM-100 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "MKR",
+   "material": null,
+   "quantity": 1.6,
+   "net_weight": 1.6,
+   "gross_weight": 1.7,
+   "unit_price": 76.0571,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "MS116-1-1.6 ABB",
+   "trade_name": "MS116-1-1.6 ABB",
+   "armenian_desc": "ԱՎՏՈՄԱՏ ԱՆՋԱՏԻՉՆԵՐ՝ MS116-1-1.6 /ABB/  20 ՀԱՏ",
+   "hs_code": "85362010070",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ABB",
+   "material": null,
+   "quantity": 5.8,
+   "net_weight": 5.8,
+   "gross_weight": 6.2,
+   "unit_price": 160.48,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

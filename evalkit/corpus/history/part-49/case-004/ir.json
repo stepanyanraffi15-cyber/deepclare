@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Front bumper air intake plastic trim",
+   "trade_name": "BYD SA3HKU-2803113",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԱՌՋԵՎԻ ԹԱՓԱՐԳԵԼԻ ՊԼԱՍՏԻԿԵ ԴԵՏԱԼ՝ ՕԴԱՏԱՐ ԱՆՑՔ, ՁԱԽ ԿՈՂՄԻ , SA3HKU-2803113",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.1,
+   "net_weight": 1.1,
+   "gross_weight": 1.1,
+   "unit_price": 34.6017,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Front bumper upper trim",
+   "trade_name": "BYD SHHA-2803117",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ ԱՄ-Ի ԱՌՋԵՎԻ ԹԱՓԱՐԳԵԼԻ ՎԵՐԻՆ ՄԱՍ , SHHA-2803117",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 2.7,
+   "net_weight": 2.7,
+   "gross_weight": 4.1,
+   "unit_price": 1.7329,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Front right lower suspension control arm",
+   "trade_name": "BYD TA72-2904020AA",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԿԱԽՈՑԻ ՄԱՍ՝ ԱՌՋԵՎԻ ԿԱԽՈՑԻ ՆԵՐՔԵՎԻ ԼԾԱԿ, ԱՋ ԿՈՂՄԻ , TA72-2904020AA",
+   "hs_code": "87088099090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 3.3,
+   "net_weight": 3.3,
+   "gross_weight": 3.6,
+   "unit_price": 29.5596,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

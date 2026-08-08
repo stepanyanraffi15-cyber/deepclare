@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "PILSNER",
+   "trade_name": "PILSNER",
+   "material": null
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER",
+   "material": null
+  },
+  {
+   "brand": "HB",
+   "trade_name": "HB",
+   "material": null
+  }
+ ]
+}

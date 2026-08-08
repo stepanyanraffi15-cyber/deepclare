@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Oval plastic food storage container",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՕՎԱԼԱՁԵՎ ՏԱՐԱՆՆԵՐ ՍՆՆԴԱՄԹԵՐՔԻ ՀԱՄԱՐ` 15Լ․ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39241000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 102.8,
+   "net_weight": 102.8,
+   "gross_weight": 107.6,
+   "unit_price": 13.6149,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Tai 3 plastic side mirror cover",
+   "trade_name": "BYD URE-8202219",
+   "armenian_desc": "BYD TAI 3 Ա/Մ-Ի ԿՈՂԱՅԻՆ ՀԱՅԵԼՈՒ ՊԼ. ՊԱՏՅԱՆ, URE-8202219",
+   "hs_code": "39269097098",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 2.7,
+   "net_weight": 2.7,
+   "gross_weight": 2.7,
+   "unit_price": 21.4756,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic kitchen measuring cup",
+   "trade_name": "NO",
+   "armenian_desc": "ԽՈՀԱՆՈՑԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՉԱՓԻՉ ԲԱԺԱԿՆԵՐ NO 1՝ 0.5Լ․, / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39241000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "NO",
+   "material": null,
+   "quantity": 10.7,
+   "net_weight": 10.7,
+   "gross_weight": 10.7,
+   "unit_price": 39.0769,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Black metal bathroom floor drain zebra-pattern",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 30 ՍՄ՝ ՍԵՎ, ՄԵՏԱՂԱԿԱՆ, ԶԵԲՐԱՁԵՎ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 24.0,
+   "net_weight": 24.0,
+   "gross_weight": 25.1,
+   "unit_price": 4.1884,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Gray metal bathroom floor drain zebra-pattern",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 30 ՍՄ՝ ՄՈԽՐԱԳՈՒՅՆ, ՄԵՏԱՂԱԿԱՆ, ԶԵԲՐԱՁԵՎ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 31.9,
+   "net_weight": 31.9,
+   "gross_weight": 33.4,
+   "unit_price": 2.0454,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

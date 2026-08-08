@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "Small artificial rattan LED chandelier",
+   "trade_name": null,
+   "armenian_desc": "ՋԱՀ ԱՌԱՍՏԱՂԻ ՎՐԱ ԱՄՐԱՑՎՈՂ, ԱՅԼ ՆՅՈՒԹԵՐԻՑ՝ ՓՈՔՐ ԱՐՀԵՍՏԱԿԱՆ ՌԱՏԱՆԻ ԹԵՐԹԵՐԻՑ / /, ԼԵԴ ԼՈՒՅՍՈՎ ԱՇԽԱՏՈՂ, ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆ",
+   "hs_code": "94051100390",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 62.0,
+   "net_weight": 62.0,
+   "gross_weight": 66.7,
+   "unit_price": 7.1342,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Large fabric LED ceiling chandelier",
+   "trade_name": null,
+   "armenian_desc": "ՋԱՀ ԱՌԱՍՏԱՂԻ ՎՐԱ ԱՄՐԱՑՎՈՂ, ԱՅԼ ՆՅՈՒԹԵՐԻՑ՝ ՀԻՄՆԱԿՄԱԽՔԸ ՄԵՏԱՂԱԿԱՆ ՏԱՐՐԵՐՈՎ, ԼՈՒՍԱՄՓՈՓԸ՝ ԿՏՈՐ /ՄԵԾ/ / /, ԼԵԴ ԼՈՒՅՍՈՎ ԱՇԽԱՏՈՂ, ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆ",
+   "hs_code": "94051100390",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 13.5,
+   "net_weight": 13.5,
+   "gross_weight": 14.8,
+   "unit_price": 13.8485,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

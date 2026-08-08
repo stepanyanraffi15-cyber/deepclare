@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "VESTA GMBH",
+  "address": "111 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ԿԱՊԻՏԱԼ\" ՍՊԸ",
+  "address": "Կոմիտաս 76, Երևան",
+  "country": "AM",
+  "tax_id": "67379267"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "41 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1416",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "A5 Notebook",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՌՈՒՄՆԵՐԻ ԵՎ ՀՈՒՇԱԳՐՈՒԹՅՈՒՆՆԵՐԻ ՆՈԹԱՏԵՏՐ A5 / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 324 ՀԱՏ",
+   "hs_code": "48201030000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A5",
+   "material": null,
+   "quantity": 66.5,
+   "net_weight": 66.5,
+   "gross_weight": 69.4,
+   "unit_price": 1.7362,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "A5 Notebook",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՌՈՒՄՆԵՐԻ ԵՎ ՀՈՒՇԱԳՐՈՒԹՅՈՒՆՆԵՐԻ ՆՈԹԱՏԵՏՐ A5 / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 60 ՀԱՏ",
+   "hs_code": "48201030000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A5",
+   "material": null,
+   "quantity": 20.8,
+   "net_weight": 20.8,
+   "gross_weight": 21.7,
+   "unit_price": 2.549,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "A6 Notebook",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՌՈՒՄՆԵՐԻ ԵՎ ՀՈՒՇԱԳՐՈՒԹՅՈՒՆՆԵՐԻ ՆՈԹԱՏԵՏՐ A6 / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 576 ՀԱՏ",
+   "hs_code": "48201030000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "A6",
+   "material": null,
+   "quantity": 86.3,
+   "net_weight": 86.3,
+   "gross_weight": 88.7,
+   "unit_price": 2.0659,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

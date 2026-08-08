@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Aerated concrete blocks",
+   "trade_name": null,
+   "armenian_desc": "ԳԱԶԱԲԼՈԿ ԱԱՍ՝ 60*25*20 ՍՄ- 38,4 ՄԵՏՐ ԽՈՐԱՆԱՐԴ, 60*25*15 ՍՄ- 19,8 ՄԵՏՐ ԽՈՐԱՆԱՐԴ, 60*25*10 ՍՄ- 19,2 ՄԵՏՐ ԽՈՐԱՆԱՐԴ",
+   "hs_code": "68101110000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 44953.0,
+   "net_weight": 44953.0,
+   "gross_weight": 45334.2,
+   "unit_price": 12.5745,
+   "package_count": 1798,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Decorative stone sand flakes Giallo",
+   "trade_name": "GIALLO",
+   "armenian_desc": "ԱՎԱԶԻ ՀԱՏԻԿ, ՔԱՐԻ ՓԱԹԻԼ ԴԵԿՈՐԱՏԻՎ ՏԵՍՔ ՍՏԱՆԱԼՈՒ ՀԱՄԱՐ, GIALLO ՄՈԴԵԼԻ",
+   "hs_code": "68062090000",
+   "unit": "166",
+   "origin": "EU",
+   "brand": "GIALLO",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.4,
+   "unit_price": 39.8099,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

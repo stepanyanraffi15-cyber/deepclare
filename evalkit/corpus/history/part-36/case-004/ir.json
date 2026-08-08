@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Port City",
+  "country": "EU",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Port City",
+  "country": "EU",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "EU",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Naturwax Eco liquid surface protective coating",
+   "trade_name": "NATURWAX",
+   "armenian_desc": "ՄԱԿԵՐԵՍԻ ՊԱՇՏՊԱՆԻՉ ՇԵՐՏ ՀԵՂՈՒԿ ՎԻՃԱԿՈՒՄ, NATURWAX ECO ՄՈԴԵԼԻ, 1 ԼԻՏՐ",
+   "hs_code": "34049000090",
+   "unit": "166",
+   "origin": "EU",
+   "brand": "NATURWAX",
+   "material": null,
+   "quantity": 3.9,
+   "net_weight": 3.9,
+   "gross_weight": 4.7,
+   "unit_price": 29.3231,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Liquid laundry detergent",
+   "trade_name": "ARIEL",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ԳԵԼ՝ ԱՊՐԱՆՔԱՆԻՇԸ ARIEL 4000ՄԼ ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ARIEL",
+   "material": null,
+   "quantity": 2487.9,
+   "net_weight": 2487.9,
+   "gross_weight": 2600.3,
+   "unit_price": 42.1933,
+   "package_count": 100,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Dishwasher detergent tablets",
+   "trade_name": "ARIEL",
+   "armenian_desc": "ՍՊԱՍՔ ԼՎԱՆԱԼՈՒ ՄԻՋՈՑ ՀԱԲԵՐԻ ՏԵՍՔՈՎ` ԱՊՐԱՆՔԱՆԻՇԸ ARIEL , ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ARIEL",
+   "material": null,
+   "quantity": 284.4,
+   "net_weight": 284.4,
+   "gross_weight": 362.3,
+   "unit_price": 20.2584,
+   "package_count": 11,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Clinker bricks",
+   "trade_name": null,
+   "armenian_desc": "ԿԼԻՆԿԵՐ",
+   "hs_code": "25231000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": null,
+   "quantity": 67377.1,
+   "net_weight": 67377.1,
+   "gross_weight": 67377.1,
+   "unit_price": 30.8554,
+   "package_count": 2696,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Construction grade quartz sand",
+   "trade_name": null,
+   "armenian_desc": "ԿՎԱՐՑԱՅԻՆ ԱՎԱԶ ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՄԵՋ ՕԳՏԱԳՈՐԾՎՈՂ, 0.3-0.9ՄՄ - 1575ԿԳ, 1,0-1,7ՄՄ - 1575ԿԳ",
+   "hs_code": "25051000000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 3987.9,
+   "net_weight": 3987.9,
+   "gross_weight": 3987.9,
+   "unit_price": 37.449,
+   "package_count": 160,
+   "package_type": "BAG"
+  }
+ ]
+}

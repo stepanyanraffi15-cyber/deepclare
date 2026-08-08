@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Front bumper lower decorative panel",
+   "trade_name": "BYD SA3HK-2803135",
+   "armenian_desc": "BYD SONG PLUS Ա/Մ-Ի ԱՌՋԵՎԻ ԹԱՓԱՐԳԵԼԻ ՄԱՍ՝ ՍՏՈՐԻՆ ԴԵԿՈՐԱՏԻՎ ՎԱՀԱՆԱԿ, SA3HK-2803135",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 13.3,
+   "net_weight": 13.3,
+   "gross_weight": 15.2,
+   "unit_price": 4.0287,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Front bumper decorative frame",
+   "trade_name": "BYD HA2EN-2803121/71-D10",
+   "armenian_desc": "BYD QIN PLUS Ա/Մ-Ի ԱՌՋԵՎԻ ԹԱՓԱՐԳԵԼԻ ՄԱՍ՝ ՆԵՔԵՎԻ ԴԵԿՈՐԱՏԻՎ ՇՐՋԱՆԱԿ, HA2EN-2803121/71-D10",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.3,
+   "net_weight": 1.3,
+   "gross_weight": 1.3,
+   "unit_price": 11.2749,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Song Plus front left fender brackets",
+   "trade_name": "BYD SA3F-5401127Q/70 SA3F-5401117Q/70",
+   "armenian_desc": "BYD SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԹԱՓՔԻ ՄԱՍ՝ ԴԻՄԱՑԻ ՁԱԽ ԱՆՎԱԹԵՎԻ ՎԵՐԻՆ ԿԵՆՏՐՈՆԱԿԱՆ ԱՄՐԱԿ, SA3F-5401127Q/70 , ԴԻՄԱՑԻ ՁԱԽ ԱՆՎԱԹԵՎԻ ՀԵՏԵՎԻ ԿԵՆՏՐՈՆԱԿԱՆ ԱՄՐԱԿ, SA3F-5401117Q/70",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 2.4,
+   "net_weight": 2.4,
+   "gross_weight": 2.4,
+   "unit_price": 30.7319,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

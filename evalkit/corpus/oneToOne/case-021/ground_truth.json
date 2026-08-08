@@ -1,0 +1,29 @@
+{
+ "goods": [
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS EXTRA 1440",
+   "material": null
+  },
+  {
+   "brand": "PERSIL",
+   "trade_name": "PERSIL",
+   "material": null
+  },
+  {
+   "brand": "PAPIA",
+   "trade_name": "PAPIA",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "SELPAK",
+   "trade_name": "SELPAK",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "PERWOLL",
+   "trade_name": "PERWOLL 2.97",
+   "material": null
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "VESTA GMBH",
+  "address": "111 Harbor Rd, Rotterdam",
+  "country": "NL",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ԿԱՊԻՏԱԼ\" ՍՊԸ",
+  "address": "Կոմիտաս 76, Երևան",
+  "country": "AM",
+  "tax_id": "67379267"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "41 Logistic Ave, Rotterdam",
+  "country": "NL",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "NL",
+ "invoice_no": "INV-2026-1416",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Gas turbine flexible shaft coupling",
+   "trade_name": null,
+   "armenian_desc": "ԳԱԶԱՏՈՒՐԲԻՆԻ ՎԵՐԱՆՈՐՈԳՄԱՆ ՊԱՀԵՍՏԱՄԱՍ՝ ՃԿՈՒՆ ԼԻՍԵՌԱՅԻՆ ԿՑՈՐԴԻՉ 122-1544P0001",
+   "hs_code": "84119900980",
+   "unit": "796",
+   "origin": "NL",
+   "brand": null,
+   "material": null,
+   "quantity": 15.5,
+   "net_weight": 15.5,
+   "gross_weight": 15.5,
+   "unit_price": 19.6295,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Framed screens for seed cleaning machine",
+   "trade_name": null,
+   "armenian_desc": "ՍԵՐՄԱՄԱՔՐՄԱՆ ՄԵՔԵՆԱՅԻ ՊԱՀԵՍՏԱՅԻՆ ՄԱՂԵՐ ՇՐՋԱՆԱԿՈՎ, ԱՆՑՔԵՐԻ ՁԵՎԸ ԿԼՈՐ ՝ 2.0, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, ԷԼԻՊՍԱՁԵՎ 2.2*20 ՄՄ, 2.5*20 ՄՄ, 3.0*25 ՄՄ, 6.0*25 ՄՄ",
+   "hs_code": "84379000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 265.6,
+   "net_weight": 265.6,
+   "gross_weight": 270.8,
+   "unit_price": 21.7054,
+   "package_count": 11,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Gas turbine intermediate rings",
+   "trade_name": null,
+   "armenian_desc": "ԳԱԶԱՏՈՒՐԲԻՆԻ ՎԵՐԱՆՈՐՈԳՄԱՆ ՊԱՀԵՍՏԱՄԱՍ՝ ՄԻՋԱՆԿՅԱԼ ՕՂԱԿՆԵՐ 122-1553P0001",
+   "hs_code": "84119900980",
+   "unit": "796",
+   "origin": "DE",
+   "brand": null,
+   "material": null,
+   "quantity": 34.2,
+   "net_weight": 34.2,
+   "gross_weight": 46.5,
+   "unit_price": 2.6104,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

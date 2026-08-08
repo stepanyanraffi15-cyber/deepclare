@@ -1,0 +1,194 @@
+{
+ "goods": [
+  {
+   "brand": "AUTONICS",
+   "trade_name": "E50S8-5000-3-T-1 AUTONICS",
+   "material": null
+  },
+  {
+   "brand": "IS",
+   "trade_name": "IS 108MM LEUZE/-15",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "ABB AF12-30-10 12A 5.5kW 230V",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "BER16-4 ABB",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "PS1-5-0-65 ABB",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "MS116-1-1.6 ABB",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "MS116-1.6-2.5 ABB",
+   "material": null
+  },
+  {
+   "brand": "ABB",
+   "trade_name": "HKF-I-11 ABB",
+   "material": null
+  },
+  {
+   "brand": "FINDER",
+   "trade_name": "FINDER -",
+   "material": null
+  },
+  {
+   "brand": "FINDER--",
+   "trade_name": "FINDER--",
+   "material": null
+  },
+  {
+   "brand": "SCHNEIDER",
+   "trade_name": "A9F74106 SCHNEIDER -5",
+   "material": null
+  },
+  {
+   "brand": "SCHNEIDER",
+   "trade_name": "A9F74210 SCHNEIDER",
+   "material": null
+  },
+  {
+   "brand": "DC-DC",
+   "trade_name": "DC-DC SSR20-524B ELCO/-",
+   "material": null
+  },
+  {
+   "brand": "ELCO/--",
+   "trade_name": "ELCO/--",
+   "material": null
+  },
+  {
+   "brand": "EATON-",
+   "trade_name": "EATON-",
+   "material": null
+  },
+  {
+   "brand": "UP",
+   "trade_name": "UP",
+   "material": null
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KLEMSAN",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "ONKA",
+   "trade_name": "ONKA",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-2540 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-2560 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-4040 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "KLEMSAN",
+   "trade_name": "KKD-4060 KLEMSAN",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 2 5 MM 1000",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 2 5 MM- 100",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 4 MM- 100",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 6 MM-100",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR VE OPK 2",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR VE OPK",
+   "material": null
+  },
+  {
+   "brand": "ETHERNET",
+   "trade_name": "ETHERNET",
+   "material": null
+  },
+  {
+   "brand": "LED",
+   "trade_name": "LED",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "LT-007508",
+   "trade_name": "LT-007508 8MM 0 75 4",
+   "material": null
+  },
+  {
+   "brand": "LT-025008",
+   "trade_name": "LT-025008 8MM 2 50 4",
+   "material": null
+  },
+  {
+   "brand": "UY3003",
+   "trade_name": "UY3003 4",
+   "material": null
+  },
+  {
+   "brand": "LT-060012",
+   "trade_name": "LT-060012 12MM 6 00 4",
+   "material": null
+  },
+  {
+   "brand": "CK-4001",
+   "trade_name": "CK-4001 0 50-1 50 4",
+   "material": null
+  },
+  {
+   "brand": "YK401",
+   "trade_name": "YK401 0 50-1 4",
+   "material": null
+  },
+  {
+   "brand": "NC",
+   "trade_name": "NC",
+   "material": null
+  }
+ ]
+}

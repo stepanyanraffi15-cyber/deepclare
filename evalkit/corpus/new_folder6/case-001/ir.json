@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "YK401 0 50-1 4",
+   "trade_name": "YK401 0 50-1 4",
+   "armenian_desc": "ՄԵԿՈՒՍԱՑՎԱԾ ՊՂՆՁԵ ՄԱԼՈՒԽԻ ԾԱՅՐԱԿԱԼՆԵՐ, YK401 0,50-1 4 ՏՈՒՓ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "YK401",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.2,
+   "unit_price": 80.7506,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "KLEMSAN",
+   "trade_name": "KLEMSAN",
+   "armenian_desc": "ՍԵՎ ՄԵՏԱՂԻՑ ՌԵԼՍԵՐ ԱՆՋԱՏԻՉՆԵՐԸ ԱՄՐԱՑՆԵԼՈՒ ՀԱՄԱՐ /KLEMSAN/ 40 ՀԱՏ",
+   "hs_code": "73269098070",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "KLEMSAN",
+   "material": "ՄԵՏԱՂ",
+   "quantity": 11.9,
+   "net_weight": 11.9,
+   "gross_weight": 12.8,
+   "unit_price": 8.6314,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "PS1-5-0-65 ABB",
+   "trade_name": "PS1-5-0-65 ABB",
+   "armenian_desc": "ՄԻԱՑԻՉ ԱՎՏՈՄԱՏ ԱՆՋԱՏԻՉՆԵՐԻ ՀԱՄԱՐ PS1-5-0-65 /ABB/  10 ՀԱՏ",
+   "hs_code": "85369010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ABB",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.1,
+   "unit_price": 102.1151,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

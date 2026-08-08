@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Wooden counting abacus for children",
+   "trade_name": null,
+   "armenian_desc": "ՓԱՅՏՅԱ ՀԱՄՐԻՉՆԵՐ ԵՐԵԽԱՆԵՐԻ ՀԱՄԱՐ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "44219990000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 54.3,
+   "net_weight": 54.3,
+   "gross_weight": 57.7,
+   "unit_price": 17.5125,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Wooden Euro Pallets 1200x800mm",
+   "trade_name": null,
+   "armenian_desc": "ԲԱԶՄԱԿԻ ՕԳՏԱԳՈՐԾՄԱՆ ՀԱՐԹ /ԵՎՐՈ ՊԱԼԵՏՆԵՐ/՝ ՓԱՅՏԵ, ԵՎՐՈՊԱԿԱՆ ՍՏԱՆԴԱՐՏ, ԱՄԵՆԱԲԱՐՁՐ ՈՐԱԿԻ, ՉԱՓՍԸ՝ 1200*800 ՄՄ , ՆԱԽԱՏԵՍՎԱԾ ՉԷ ԿԵՆԴԱՆԱԿԱՆ ԾԱԳՄԱՆ ԱՊՐԱՆՔՆԵՐԻ ՀԱՄԱՐ",
+   "hs_code": "44152020000",
+   "unit": "166",
+   "origin": "EU",
+   "brand": null,
+   "material": null,
+   "quantity": 398.8,
+   "net_weight": 398.8,
+   "gross_weight": 398.8,
+   "unit_price": 28.1683,
+   "package_count": 16,
+   "package_type": "BAG"
+  }
+ ]
+}

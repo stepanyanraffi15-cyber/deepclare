@@ -1,0 +1,34 @@
+{
+ "goods": [
+  {
+   "brand": "REACRYL",
+   "trade_name": "REACRYL R50",
+   "material": null
+  },
+  {
+   "brand": "ADACAL",
+   "trade_name": "ADACAL N2-C",
+   "material": null
+  },
+  {
+   "brand": "REACRYL",
+   "trade_name": "REACRYL R550",
+   "material": null
+  },
+  {
+   "brand": "REACRYL",
+   "trade_name": "REACRYL T-22",
+   "material": null
+  },
+  {
+   "brand": "REACRYL",
+   "trade_name": "REACRYL T90",
+   "material": null
+  },
+  {
+   "brand": "SYNTRAN",
+   "trade_name": "SYNTRAN AC 5923",
+   "material": null
+  }
+ ]
+}

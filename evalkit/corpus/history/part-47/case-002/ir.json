@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Rear wheel arch fender liners",
+   "trade_name": "BYD SA3F-5401917/70 SA3F-5401918A/70",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԱՆՎԱԹԵՎ, ՀԵՏԵՎԻ ՁԱԽ ԿՈՂՄԻ SA3F-5401917/70, ԱՋ ԿՈՂՄԻ SA3F-5401918A/70",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 19.1,
+   "net_weight": 19.1,
+   "gross_weight": 20.2,
+   "unit_price": 35.1844,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Front wheel arch mud guards",
+   "trade_name": "BYD SA3F-3102110 SA3F-3102120",
+   "armenian_desc": "2024-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SONG PLUS Ա/Մ-Ի ԹԱՓՔԻ ՄԱՍ՝ ԱՆՎԱԹԵՎԻ ԿԵՂՏԱՊԱՇՏՊԱՆԻՉ ՏԱԿԴԻՐ, ԴԻՄԱՑԻ ՁԱԽ ԿՈՂՄԻ SA3F-3102110, ԱՋ ԿՈՂՄԻ SA3F-3102120",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 19.0,
+   "net_weight": 19.0,
+   "gross_weight": 19.0,
+   "unit_price": 41.0611,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

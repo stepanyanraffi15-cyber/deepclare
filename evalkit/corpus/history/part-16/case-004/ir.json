@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Side mirror plastic housing cover",
+   "trade_name": "BYD UGE-8202219A",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԿՈՂԱՅԻՆ ՀԱՅԵԼՈՒ ՊԼ. ՊԱՏՅԱՆ, ԱՋ ԿՈՂՄԻ , UGE-8202219A",
+   "hs_code": "39269097098",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 40.5847,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Two-tier plastic cutlery organizer",
+   "trade_name": null,
+   "armenian_desc": "ԽՈՀԱՆՈՑԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԲԱԺԱՆԱՐԱՐՆԵՐ ԴԱՆԱԿ, ՊԱՏԱՌԱՔԱՂՆԵՐԻ ՀԱՄԱՐ` ԵՐԿՀԱՐԿԱՆԻ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39241000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 46.8,
+   "net_weight": 46.8,
+   "gross_weight": 49.2,
+   "unit_price": 32.1872,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Foldable plastic baby bathtubs",
+   "trade_name": "AQUA",
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ՊԼԱՍՏՄԱՍԵ ԼՈԳՆՈՑՆԵՐ` ԾԱԼՈՎԻ, 3 ԿՏՈՐԻՑ / / AQUA NEST",
+   "hs_code": "39221000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "AQUA",
+   "material": null,
+   "quantity": 36.2,
+   "net_weight": 36.2,
+   "gross_weight": 41.4,
+   "unit_price": 33.9388,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

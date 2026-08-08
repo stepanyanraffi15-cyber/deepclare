@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Rear left car door",
+   "trade_name": "BYD HAD-6201010/70",
+   "armenian_desc": "BYD QIN PLUS Ա/Մ-Ի ՀԵՏԵՎԻ ՁԱԽ ԴՈՒՌ, HAD-6201010/70",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 52.2,
+   "net_weight": 52.2,
+   "gross_weight": 53.3,
+   "unit_price": 20.7452,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Right side half shaft axle",
+   "trade_name": "BYD IB5-2203020",
+   "armenian_desc": "\"BYD\" F 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԿԻՍԱՍՌՆԻ՝ , ԱՋ /ԱՐՏԻԿՈՒԼ IB5-2203020",
+   "hs_code": "87085099090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 103.3,
+   "net_weight": 103.3,
+   "gross_weight": 107.9,
+   "unit_price": 24.6214,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

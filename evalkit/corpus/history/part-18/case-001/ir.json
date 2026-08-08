@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "MERIDIAN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Plain paper gift bags",
+   "trade_name": null,
+   "armenian_desc": "ԹՂԹԵ ՏՈՊՐԱԿՆԵՐ ՆՎԵՐՆԵՐԻ ՀԱՄԱՐ /ԱՆԳՈՒՅՆ, ՀԻՄՔԻ ԼԱՅՆՈՒԹՅՈՒՆԸ ՄԻՆՉԵՎ 40 ՍՄ/ - 12*15*6 ՉԱՓՍ , 13*21*8 ՉԱՓՍ , 16*22*8 ՉԱՓՍ /ԻՆՎՈՅՍ ՏՈՂ 28, 29, 30",
+   "hs_code": "48194000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 96.9,
+   "net_weight": 96.9,
+   "gross_weight": 109.4,
+   "unit_price": 36.4071,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Lever arch file folders",
+   "trade_name": null,
+   "armenian_desc": "ԹՂԹԱՊԱՆԱԿՆԵՐ ՌԵԳԻՍՏՐ / / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "48203000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 632.1,
+   "net_weight": 632.1,
+   "gross_weight": 714.1,
+   "unit_price": 22.4662,
+   "package_count": 25,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Medium printed paper gift bags",
+   "trade_name": null,
+   "armenian_desc": "ԹՂԹԵ ՏՈՊՐԱԿՆԵՐ ՆՎԵՐՆԵՐԻ ՀԱՄԱՐ /ՏՊԱԳՐՎԱԾ, ՀԻՄՔԻ ԼԱՅՆՈՒԹՅՈՒՆԸ ՄԻՆՉԵՎ 40 ՍՄ/ - 22*27*11 ՉԱՓԻ , 26*33*12 ՉԱՓԻ , 31.5*25*11.5 ՉԱՓԻ",
+   "hs_code": "48194000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 107.4,
+   "net_weight": 107.4,
+   "gross_weight": 115.8,
+   "unit_price": 37.5852,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

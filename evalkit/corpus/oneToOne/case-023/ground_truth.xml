@@ -1,0 +1,3195 @@
+<?xml version="1.0" encoding="UTF-8"?><ESADout_CU:ESADout_CU xmlns:ESADout_CU="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.10.0" xmlns:catESAD_cu="urn:customs.ru:CUESADCommonAggregateTypesCust:5.10.0" xmlns:cat_ru="urn:customs.ru:CommonAggregateTypes:5.10.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DocumentModeID="1006107E" xsi:schemaLocation="urn:customs.ru:Information:CustomsDocuments:ESADout_CU:5.10.0 ESADout_CU.xsd">
+  <ESADout_CU:CustomsProcedure>IM</ESADout_CU:CustomsProcedure>
+  <ESADout_CU:CustomsModeCode>40</ESADout_CU:CustomsModeCode>
+  <ESADout_CU:ESADout_CUGoodsShipment>
+    <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+    <catESAD_cu:SpecificationNumber>1</catESAD_cu:SpecificationNumber>
+    <catESAD_cu:SpecificationListNumber>1</catESAD_cu:SpecificationListNumber>
+    <catESAD_cu:TotalGoodsNumber>85</catESAD_cu:TotalGoodsNumber>
+    <catESAD_cu:TotalPackageNumber>253</catESAD_cu:TotalPackageNumber>
+    <catESAD_cu:TotalSheetNumber>1</catESAD_cu:TotalSheetNumber>
+    <ESADout_CU:ESADout_CUConsignor>
+      <cat_ru:OrganizationName>ATLAS EXPORT</cat_ru:OrganizationName>
+      <cat_ru:Address>
+        <cat_ru:CountryCode>CN</cat_ru:CountryCode>
+        <cat_ru:CounryName>ՉԻՆԱՍՏԱՆ</cat_ru:CounryName>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUConsignor>
+    <ESADout_CU:ESADout_CUConsignee>
+      <cat_ru:OrganizationName>"ԿՈՏԱՅՔ ՇԻՆ" ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>45693522</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:CountryCode>AM</cat_ru:CountryCode>
+        <cat_ru:CounryName>ՀԱՅԱՍՏԱՆ</cat_ru:CounryName>
+        <cat_ru:StreetHouse>Տիգրան Մեծ 1, Երևան</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUConsignee>
+    <ESADout_CU:ESADout_CUFinancialAdjustingResponsiblePerson>
+      <cat_ru:OrganizationName>"ԿՈՏԱՅՔ ՇԻՆ" ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>45693522</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:CountryCode>AM</cat_ru:CountryCode>
+        <cat_ru:CounryName>ՀԱՅԱՍՏԱՆ</cat_ru:CounryName>
+        <cat_ru:StreetHouse>Տիգրան Մեծ 1, Երևան</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUFinancialAdjustingResponsiblePerson>
+    <ESADout_CU:ESADout_CUDeclarant>
+      <cat_ru:OrganizationName>"ԿՈՏԱՅՔ ՇԻՆ" ՍՊԸ</cat_ru:OrganizationName>
+      <cat_ru:RAOrganizationFeatures>
+        <cat_ru:UNN>45693522</cat_ru:UNN>
+      </cat_ru:RAOrganizationFeatures>
+      <cat_ru:Address>
+        <cat_ru:CountryCode>AM</cat_ru:CountryCode>
+        <cat_ru:CounryName>ՀԱՅԱՍՏԱՆ</cat_ru:CounryName>
+        <cat_ru:StreetHouse>Տիգրան Մեծ 1, Երևան</cat_ru:StreetHouse>
+      </cat_ru:Address>
+    </ESADout_CU:ESADout_CUDeclarant>
+    <ESADout_CU:ESADout_CUGoodsLocation>
+      <ESADout_CU:InformationTypeCode>11</ESADout_CU:InformationTypeCode>
+      <ESADout_CU:CustomsOffice>05100010</ESADout_CU:CustomsOffice>
+      <ESADout_CU:CustomsCountryCode>AM</ESADout_CU:CustomsCountryCode>
+    </ESADout_CU:ESADout_CUGoodsLocation>
+    <ESADout_CU:ESADout_CUConsigment>
+      <catESAD_cu:ContainerIndicator>false</catESAD_cu:ContainerIndicator>
+      <catESAD_cu:DestinationCountryCode>AM</catESAD_cu:DestinationCountryCode>
+      <catESAD_cu:DestinationCountryName>ՀԱՅԱՍՏԱՆ</catESAD_cu:DestinationCountryName>
+      <ESADout_CU:ESADout_CUDepartureArrivalTransport>
+        <cat_ru:TransportModeCode>31</cat_ru:TransportModeCode>
+      </ESADout_CU:ESADout_CUDepartureArrivalTransport>
+      <ESADout_CU:ESADout_CUBorderTransport>
+        <cat_ru:TransportModeCode>31</cat_ru:TransportModeCode>
+      </ESADout_CU:ESADout_CUBorderTransport>
+    </ESADout_CU:ESADout_CUConsigment>
+    <ESADout_CU:ESADout_CUMainContractTerms>
+      <catESAD_cu:ContractCurrencyCode>USD</catESAD_cu:ContractCurrencyCode>
+      <catESAD_cu:TotalInvoiceAmount>314941.07</catESAD_cu:TotalInvoiceAmount>
+      <catESAD_cu:TradeCountryCode>CN</catESAD_cu:TradeCountryCode>
+      <catESAD_cu:CUESADDeliveryTerms>
+        <cat_ru:DeliveryTermsStringCode>CPT</cat_ru:DeliveryTermsStringCode>
+      </catESAD_cu:CUESADDeliveryTerms>
+    </ESADout_CU:ESADout_CUMainContractTerms>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>1</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI H40   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 65469/ELAPUF5SV01634
+65469/ELAPUF5SS00140
+65469/ELAPUF5SV02615
+65469/ELAPUF5SV02902
+65469/ELAPUF5SV02879
+65469/ELAPUF5SV01544</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>25.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>23.7</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>4550.97</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6.5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>2</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI X20+   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO.  54405/BFACWF50550334
+54405/BFACWF5U450761
+54405/BFACWF5U451027
+54405/BFACWF5U551177
+54405/BFACWF5U554881
+54405/BFACWF5U551340
+54405/BFACWF5U551029
+54405/BFACWF5U554988
+54405/BFACWF5U551333
+54405/BFACWF5U550051</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>54</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>41</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>11639.7</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>4</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>4</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>3</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI E5   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 53060/A2AA4F4SQ00490
+53060/A2AA4F4SQ02492
+53060/A2AA4F4SQ00619
+53060/A2AA4F4SQ00561
+53060/A2AA4F4SQ02454
+53060/A2AA4F4SQ02450
+53060/A2AA4F4SQ02360
+53060/A2AA4F4SQ02064
+53060/A2AA4F4SQ02462
+53060/A2AA4F4SQ02502</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>43.9</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>23.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2226.05</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>4</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI 5   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 66660/A2AA4F5V601340
+66660/A2AA4F5V601408
+66660/A2AA4F5V700055
+66660/A2AA4F5V700065
+66660/A2AA4F5V700052
+66660/A2AA4F5V700059</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>24</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>22.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>9533.7</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>5</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI 5 PRO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 65239/A2AA4F5WQ03141
+65239/A2AA4F5W901835
+65239/A2AA4F5WQ02915
+65239/A2AA4F5WQ02931
+65239/A2AA4F5W901736
+65239/A2AA4F5W901853</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>23.5</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>21.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>11411.12</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>6</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI X 20 PRO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/  SERIAL NO. 57873/DUAA8F5WC00765
+57873/DUAA8F5WC00784
+57873/DUAA8F5WB00178
+57873/DUAA8F5WB00435
+57873/DUAA8F5WC00769
+57873/DUAA8F5WB00426</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>22.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>21.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>6301.69</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.7</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>7</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI X20 MAX   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 59071/DUAA8F5WB02597
+59071/DUAA8F5WB02577
+59071/DUAA8F5WB02563
+59071/DUAA8F5VN01810
+59071/DUAA8F5WB02579
+59071/DUAA8F5WB02225
+59071/DUAA8F5WB02574
+59071/DUAA8F5WB02641
+59071/DUAA8F5VN01758
+59071/DUAA8F5VN01838
+59071/DUAA8F5VN02589
+59071/DUAA8F5VN01831
+59071/DUAA8F5VN01972
+59071/DUAA8F5WB02604
+59071/DUAA8F5WB02584</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>88.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>51.7</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>17998.51</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>13.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>5</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>5</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>8</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI S 40  /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 66892/ELAPUF5WF00867
+66892/ELAPUF5WF00883
+66892/ELAPUF5WF00872
+66892/ELAPUF5WF00880
+66892/ELAPUF5WF00879
+66892/ELAPUF5WF00854
+66892/ELAPUF5WF00856
+66892/ELAPUF5WF00742
+66892/ELAPUF5WF00804
+66892/ELAPUF5WF00882
+66892/ELAPUF5WF00861
+66892/ELAPUF5WF00810
+66892/ELAPUF5WF00881
+66892/ELAPUF5WF00874
+66892/ELAPUF5WF00884
+66892/ELAPUF5WF00354
+66892/ELAPUF5WF00365
+66892/ELAPUF5WF00865
+66892/ELAPUF5WF00851
+66892/ELAPUF5WF00858</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>135.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>83.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>9697.79</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>20.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>11</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>11</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>9</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI X10   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 41794/BFACWF4Y750090
+41794/BFACWF4Y750038
+41794/BFACWF4Y750028</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>11</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>9.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2148.3</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>10</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI S40 PRO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 67955/B2AE7F5Y703037
+67955/B2AE7F5Y702506
+67955/B2AE7F5Y702883
+67955/B2AE7F5Y702933
+67955/B2AE7F5Y702867
+67955/B2AE7F5Y702947
+67955/B2AE7F5Y702881
+67955/B2AE7F5Y702995
+67955/B2AE7F5Y702991
+67955/B2SR7F5Y702952</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>58.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>38.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>7233.1</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9.7</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>11</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI G20 MAX   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 57805/BWAGPF5W300217
+57805/BWAGPF5W300660
+57805/BWAGPF5W300672
+57805/BWAGPF5W300710
+57805/BWAGPF5W300687
+57805/BWAGPF5W300706
+57805/BWAGPF5W300695
+57805/BWAGPF5W300688
+57805/BWAGPF5W300669
+57805/BWAGPF5W300652</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>63.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>44.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>6631.15</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>4</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>4</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>12</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՓՈՇԵԿՈՒԼ ՆԱԽԱՏԵՍՎԱԾ և ՋՐՈՎ և ՉՈՐ ՄԱՔՐՄԱՆ ՀԱՄԱՐ, ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI TRUCLEAN W30 PRO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 69578/ELAGPF5W501003
+69578/ELAGPF5W500998
+69578/ELAGPF5W501000
+69578/ELAGPF5VB00054
+69578/ELAGPF5VF00424
+69578/ELAGPF5W501002
+69578/ELAGPF5W501009
+69578/ELAGPF5W500999
+69578/ELAGPF5W501001
+69578/ELAGPF5W501007</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>67</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>53</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>7817.7</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>4</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>4</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>13</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ. ՍԿՈՒՏԵՐ XIAOMI 5 /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>54.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>44.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2386.12</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>87116090000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>14</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ. ՍԿՈՒՏԵՐ XIAOMI 5 MAX /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>56.7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>46.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>3357.77</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>87116090000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>15</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ. ՍԿՈՒՏԵՐ XIAOMI E LITE /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>27</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>26</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2032</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>87116090000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>16</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ  XIAOMI SOLAR OUTDOOR CW500 DUAL /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 59825/A3AGUF5WK00323
+59825/A3AGUF5Y700091
+59825/A3AGUF5WK00254
+59825/A3AGUF5Y700092
+59825/A3AGUF5WK00490</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2.9</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>2.6</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>874.61</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>4.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>17</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ  XIAOMI SMART C500 DUAL /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 57612/DGABR05VV00221
+57612/DGABR05VY00271
+57612/DGABR05VV00041
+57612/DGABR05VE02720
+57612/DGABR05VV00693
+57612/DGABR05VV00127</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>2.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1165.08</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>18</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ  XIAOMI SMART C701 /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 73114/DGABR05YC00991
+73114/DGABR05YC00179
+73114/DGABR05YC00192
+73114/DGABR05YC00577
+73114/DGABR05YC00191
+73114/DGABR05YC00129
+73114/DGABR05YC00516
+73114/DGABR05YD04218
+73114/DGABR05YC00196
+73114/DGABR05YC01121</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>5.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>5.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1400.56</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>19</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ  XIAOMI  C302 /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. 65465/BDAM9A5V201261
+65465/BDAM9A5V209203
+65465/BDAM9A5VV03285
+65465/BDAM9A5V205034
+65465/BDAM9A5VV01362
+65465/BDAM9A5V200434
+65465/BDAM9A5V206160
+65465/BDAM9A5V203474
+65465/BDAM9A5V205178
+65465/BDAM9A5V205065</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>9.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>9.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>817.57</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>20</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՑԱՆՑԱՅԻՆ ՍԱՐՔ ՌՈՈՒԹԵՐ XIAOMI MESH SYSTEM AX3000 NE 2 PACK  /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>6.7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>3.4</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>137.48</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85176200030</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>21</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>WI-FI ՀԵՌԱՀԱՐՈՒԹՅԱՆ ԵՐԿԱՐԱՑՆՈՂ ՍԱՐՔ  XIAOMI  WI-FI RANGE EXTNDER PRO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.3</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>370.15</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85176200090</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>22</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>WI-FI ՀԵՌԱՀԱՐՈՒԹՅԱՆ ԵՐԿԱՐԱՑՆՈՂ ՍԱՐՔ  XIAOMI  WI-FI RANGE EXTNDER N300   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>256.13</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85176200090</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>23</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԼԻԹԻՈՒՄ -ԻՈՆԱՅԻՆ ՄԱՐՏԿՈՑ  ԼԻՑՔԱՎՈՐԻՉ-ԿՈՒՏԱԿԻՉ  XIAOMI MAGNETIC POWER BANK 6000MAH   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.4</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>578.49</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85076000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>24</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԼԻԹԻՈՒՄ -ԻՈՆԱՅԻՆ ՄԱՐՏԿՈՑ  ԼԻՑՔԱՎՈՐԻՉ-ԿՈՒՏԱԿԻՉ  XIAOMI POWER BANK 20000MAH INTEGRATED CABLE-TAN   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>8.3</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>7.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1361.72</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85076000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>20.3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>25</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԼԻԹԻՈՒՄ -ԻՈՆԱՅԻՆ ՄԱՐՏԿՈՑ  ԼԻՑՔԱՎՈՐԻՉ-ԿՈՒՏԱԿԻՉ  XIAOMI SMART BAND 10 BLACK   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>7.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>6.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2381.14</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85076000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>19.3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>26</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ. ԿԵՆՑԱՂԱՅԻՆ ԱՐԴՈւԿ ԳՈԼՈՐՇԻՈՎ`  XIAOMI HANDLED STEAMER IRON   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>6.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>4.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>682.08</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85164000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>4.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>27</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ. ԿԵՆՑԱՂԱՅԻՆ ԱՐԴՈւԿ ԳՈԼՈՐՇԻՈՎ`  XIAOMI HANDHELD GARMENT STEAMER  /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>5.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>4.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>372.85</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85164000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>28</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ․ ԱՏԱՄԻ ԽՈԶԱՆԱԿ /ԻՐԻԳԱՏՈՐ/ XIAOMI WATER FLOSSER 2   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>6.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>3.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>620.81</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9.5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>29</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԳՐԻԼ ՊԱՏՐԱՍՏՈՂ ԿԵՆՑԱՂԱՅԻՆ ԷԼ․ ՍԱՐՔ/ ԱԷՐՈԳՐԻԼ/  XIAOMI 6.5Լ BLACK   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>26.7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>17.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>653.44</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85166070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>30</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԳՐԻԼ ՊԱՏՐԱՍՏՈՂ ԿԵՆՑԱՂԱՅԻՆ ԷԼ․ ՍԱՐՔ/ ԱԷՐՈԳՐԻԼ/  XIAOMI 6.5Լ WHITE   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>26.7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>17.3</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>623.36</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85166070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>31</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԳՐԻԼ ՊԱՏՐԱՍՏՈՂ ԿԵՆՑԱՂԱՅԻՆ ԷԼ․ ՍԱՐՔ/ ԱԷՐՈԳՐԻԼ/  XIAOMI SMART 12Լ   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>76.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>61</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2733.17</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85166070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>32</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԳՐԻԼ ՊԱՏՐԱՍՏՈՂ ԿԵՆՑԱՂԱՅԻՆ ԷԼ․ ՍԱՐՔ/ ԱԷՐՈԳՐԻԼ/  XIAOMI DUAL ZONE 10Լ   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>71.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>57.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2167.33</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85166070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>3</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>3</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>33</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԳՐԻԼ ՊԱՏՐԱՍՏՈՂ ԿԵՆՑԱՂԱՅԻՆ ԷԼ․ ՍԱՐՔ/ ԱԷՐՈԳՐԻԼ/  XIAOMI 6.5Լ   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>15.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>15.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>733.6</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85166070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>34</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՕԴԸ ՄԱՔՐՈՂ և ԽՈՆԱՎԵՑՆՈՂ ԷԼ ՍԱՐՔ XIAOMI MIJIA SMART 6   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>13.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>8.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2373.36</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>35</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՕԴԸ ՄԱՔՐՈՂ և ԽՈՆԱՎԵՑՆՈՂ ԷԼ ՍԱՐՔ XIAOMI  SMART ELITE   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>4.5</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>4</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2644.52</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2.7</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>36</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՕԴԸ ՄԱՔՐՈՂ և ԽՈՆԱՎԵՑՆՈՂ ԷԼ ՍԱՐՔ XIAOMI  SMART COMPACT 4   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>23.9</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>22.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2558.87</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.4</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>37</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՕԴԻ ԽՈՆԱՎՈՒԹՅՈՒՆԸ ԿԱՐԳԱՎՈՐՈՂ ՍԱՐՔ    XIAOMI  SMART DEHUMIDIFIER LITE   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>38.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>35.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1538.24</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3.2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>38</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՕԴԻ ԽՈՆԱՎՈՒԹՅՈՒՆԸ ԿԱՐԳԱՎՈՐՈՂ ՍԱՐՔ   XIAOMI  SMART DEHUMIDIFIER PRO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>81</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>78</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1510.56</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>39</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՕԴԻ ԽՈՆԱՎՈՒԹՅՈՒՆԸ ԿԱՐԳԱՎՈՐՈՂ ՍԱՐՔ   XIAOMI SMART HUMIDIFIER 2 LITE   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>16.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>14.7</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>930.83</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>40</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԱՆԼԱՐ ԱԿԱՆՋԱԿԱԼՆԵՐ XIAOMI OPENWEAR STEREO   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1891.03</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85183095000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>41</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՀԱՄԱԿԱՐԳՉԱՅԻՆ ԱՆԼԱՐ ՄԿՆԻԿ XIAOMI WIRELESS MOUSE LITE 2-BLACK, (ՀՀ ԱԱԾ ԹՈՒՅԼՏՎՈՒԹՅՈՒՆ ԱՆՀՐԱԺԵՇՏ ՉԷ ՀԱՄԱՁԱՅՆ ՀՀ ԱԱԾ ԿՈՂՄԻՑ ՀՐԱՊԱՐԱԿՎԱԾ ՑԱՆԿԻ 116-ՐԴ ՏՈՂԻ)</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>61.7</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>42</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՀԱՄԱԿԱՐԳՉԱՅԻՆ ԱՆԼԱՐ ՄԿՆԻԿ XIAOMI WIRELESS MOUSE 3 (ՀՀ ԱԱԾ ԹՈՒՅԼՏՎՈՒԹՅՈՒՆ ԱՆՀՐԱԺԵՇՏ ՉԷ ՀԱՄԱՁԱՅՆ ՀՀ ԱԱԾ ԿՈՂՄԻՑ ՀՐԱՊԱՐԱԿՎԱԾ ՑԱՆԿԻ 116-ՐԴ ՏՈՂԻ)</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>461.72</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>84716070000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>11.9</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>43</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ․ ՍԱՓՐԻՉՆԵՐ՝ XIAOMI S200 /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>3.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>407.55</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85101000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6.5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>44</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ   XIAOMI DREAME L10 S PRO  /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/ SERIAL NO. R2364K51PEU5276801
+R2364K51PEU5307501
+R2364K51PEU5302101
+R2364K51PEU5307601</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>26.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>16</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>3648</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>45</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ XIAOMI ROBOROCK Q8 MAX PRO PLUS SERIAL NO. RCCVCY51601097
+RCCVCY51600800
+RCCVCY51601277</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>20.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>12</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>3191.1</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>46</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ XIAOMI ROBOROCK Q8 MAX PRO SERIAL NO. RCCVBY51403662
+RCCVBY51404758
+RCCVBY51403669</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>20.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>12</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>2938.35</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85081100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>47</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4K A800SE SERIAL NO. 1500A32YH3CJ1565</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.4</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>317.44</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>48</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4K A800SE-1 SET SERIAL NO. 0011C01WL4CL0824</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>426.43</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>49</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4K A810S NEW SERIAL NO.  2200C10QL57H1158</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>446.77</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>50</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4k A810s-2 set (NEW) SERIAL NO.  D2830B03YHL5AC9854ZYLQ</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>606.32</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>51</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4K Omni X800 128GB Black SERIAL NO.  D2820B02YHL5AE2800HTZT</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>673.88</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>52</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI K Omni X800-2 SET 128GB Black SERIAL NO. D5800C01YHL5A90664Z2T4</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>816.07</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>53</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4K T800-2 (NEW, 256gb memory card included) SERIAL NO.  D1800B32YHL5924222ZNEO</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>769.46</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>54</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI 4k T800-41 (New, 512gb memory card included) SERIAL NO. D2410B02YHL5AL1357UYIK</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.1</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>1090.1</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>55</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI A200 -1 set type C SERIAL NO.  D4800C01YHL5931785GLNA</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.9</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.6</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>261.16</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>56</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI A410 SERIAL NO. D2210B12YHL5936459N3LK</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>225.19</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>57</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI A410-1 SET SERIAL NO.  D2830B01YHL59S2186I3DE</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>263.38</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>58</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI M500 128G SERIAL NO. D4800B01YHL51L2164QRZH</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>331.98</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>59</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI M800 128GB (NEW) SERIAL NO. D1800B31YHL5921154XFM4</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>525.53</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>60</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI M800-2 SET 128GB SERIAL NO. D5800B01YHL5AR1958CGSS</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>1.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.7</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>611.2</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>61</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ    70MAI  INTERIOR FC02 SERIAL NO. D2410B01YHL5819351OOOC</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.3</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>76.3</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>62</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԱՈՒԴԻՈ ՀԱՄԱԿԱՐԳԻ ՄԱԼՈՒԽ ՄԻԱՑՈՒՑԻՉՆԵՐՈՎ 80Վ -ԻՑ ՈՉ ԱՎԵԼԻ ԼԱՐՈՒՄՈՎ, ՈՉ ԹԱՆԿԱՐԺԵՔ ՄԵՏԱՂԻՑ ՀԱՂՈՐԴԱԼԱՐԵՐՈՎ  70MAI OBD-II HARDWIRE Kit OBD01 TYPE-C /1ՀԱՏ/, 5 ՊԱՐԿ</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>402.4</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85444290070</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ԿԳ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>166</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>5</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>5</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>63</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ, ՏԵՍԱՁԱՅՆԱԳՐՈՂ, ՀԵՏԵՎԻ, 70 MAI RC21 /ՀԱՄԱՏԵՂԵԼԻ Է A 410-Ի ՀԵՏ/ SERIAL NO. D2820B01YHL5813036JD5T</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>74.62</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>64</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ, ՏԵՍԱՁԱՅՆԱԳՐՈՂ, ՀԵՏԵՎԻ, 70 MAI RC22 /ՀԱՄԱՏԵՂԵԼԻ Է A 800SE  ՏԵՍԱԽՑԻԿԻ ՀԵՏ/ SERIAL NO.  D0302A24WLL59L0854</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>72.2</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>65</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ, ՏԵՍԱՁԱՅՆԱԳՐՈՂ, ՀԵՏԵՎԻ, 70 MAI RC24 /ՀԱՄԱՏԵՂԵԼԻ Է A 810S ՏԵՍԱԽՑԻԿԻ ՀԵՏ/ SERIAL NO. D302RC22WLL55H3536</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>113.19</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>66</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ ` ՀԵՏԵՎԻ, 70MAI S500-TYPE-C SERIAL NO.  D302RC21WLL59L2133</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>0.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>441.76</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85258999000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>67</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՀԱԳՈՒՍՏԻ ՔՈՐՔԵՐԸ /ԹԵԼԵՐԸ/ ՄԱՔՐՈՂ ԷԼ. ՍԱՐՔ MIJIA 2</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>6.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>4.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>165.32</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>68</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԼԻԹԻՈՒՄ -ԻՈՆԱՅԻՆ ՄԱՐՏԿՈՑ  ԼԻՑՔԱՎՈՐԻՉ-ԿՈՒՏԱԿԻՉ  XIAOMI 33W MAGNETIC POWER BANK 10000 ՆԵՐԿԱՌՈՒՑՎԱԾ ՄԱԼՈՒԽՈՎ   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>4.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>2.1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>561.18</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85076000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9.4</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>69</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV S MINI LED 75 ԴՅՈՒՅՄ 2025   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO. 59292/155100004977
+59292/155100004983
+59292/155100004944
+59292/155100004978
+59292/155100004985
+59292/155100004987
+59292/155100004984</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>248.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>193.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>16525.5</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>6.9</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>7</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>7</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>70</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV S MINI LED 55 ԴՅՈՒՅՄ 2025   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO.  59276/172100006887
+59276/172100006750
+59276/172100007218
+59276/172100006731
+59276/172100003709
+59276/172100005424
+59276/172100006886
+59276/172100005425
+59276/172100005232
+59276/172100004997</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>249.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>187.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>15568.8</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.4</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>11</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>11</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>71</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV A PRO 55 ԴՅՈՒՅՄ 2026   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO.  63999/106100015404
+63999/106100015405
+63999/106100015418
+63999/106100006771
+63999/106100015419
+63999/106100006948
+63999/106100006776
+63999/106100006759
+63999/106100002985
+63999/106100006952
+63999/106100003561
+63999/106100015420
+63999/106100003557
+63999/106100006960
+63999/106100006763
+63999/106100006775
+63999/106100006759
+63999-106100006939
+63999/106100008767
+63999/106100006751</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>416</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>312</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>26104</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>20.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>21</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>21</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>72</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV A PRO 43 ԴՅՈՒՅՄ 2026   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO. 63979/106100026778
+63979/106100027197
+63979/106100027265
+63979/106100026448
+63979/106100027120
+63979/106100026775
+63979/106100026772
+63979/106100026486
+63979/106100027062
+63979/106100026774</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>141.4</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>101</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>8104.24</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>10.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>11</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>11</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>73</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV  A  43 ԴՅՈՒՅՄ 2026   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO. 64100/106100003129
+64100/106100003135
+64100/106100002966
+64100/106100004269
+64100/106100003000
+64100/106100003134
+64100/106100003090
+64100/106100003013
+64100/106100003128
+64100/106100003131</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>124.8</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>91.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>6988.8</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>9.6</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>10</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>10</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>74</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV A  50 ԴՅՈՒՅՄ 2026   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO. 63913/121100022164
+63913/121100022249
+63913/121100022247
+63913/121100022246
+63913/121100022255
+63913/121100022241
+63913/121100022239
+63913/121100022250
+63913/121100022238
+63913/121100022245
+63913/121100022253
+63913/121100022251
+63913/121100022242
+63913/121100022243
+63913/121100022168</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>227.7</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>172.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>14324.4</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>13.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>14</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>14</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>75</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV A  PRO  65 ԴՅՈՒՅՄ 2026   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 / SERIAL NO. 63737/106100015501
+63737/106100014795
+63737/106100014803
+63737/106100014790
+63737/106100014789
+63737/106100014794
+63737/106100014798
+63737/106100015502
+63737/106100014785
+63737/106100014799
+63737/106100014797
+63737/106100015421
+63737/106100015509
+63737/106100015072
+63737/106100015511
+63737/106100014804
+63737/106100015514
+63737/106100015505
+63737/106100015506
+63737/106100014793
+63737/106100015060
+63737/106100015064
+63737/106100014801
+63737/106100014802
+63737/106100014791</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>643.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>495.8</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>42076</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>26.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>27</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>27</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>76</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV MAX 100 ԴՅՈՒՅՄ 2025   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742  SERIAL NO. 59581/124584251126</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>82.5</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>66</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>6712.2</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1.1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>77</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՄԱՐԹ ՀԵՌՈՒՍՏԱՑՈՒՅՑ XIAOMI TV MAX 85 ԴՅՈՒՅՄ 2025   /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742 SERIAL NO. 59581/151100003585
+59581/151100003603</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>112</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>88</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>6853</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85287220010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>78</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՄԱՆԿԱԿԱՆ ԷԼ. ԳՈՔԱՐԹ  XIAOMI NINEBOT PRO 2 /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>66</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>55</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>5122</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>87116090000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>79</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՄԱՆԿԱԿԱՆ ԷԼ. ՍԿՈՒՏԵՐ XIAOMI  NINEBOT E2 PLUS  /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>105.6</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>84</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>4769.76</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>87116090000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>4.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>5</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>5</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>80</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՄԱՆԿԱԿԱՆ ԷԼ. ՍԿՈՒՏԵՐ XIAOMI  NINEBOT E2  /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 742/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>103.2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>81.6</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>3797.76</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>87116090000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>4.8</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>5</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>5</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>81</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՍՈՒՐՃ ՊԱՐՏԱՐԱՍՏՈՂ ԷԼ․ ՍԱՐՔ ԿԱՊՍՈՒԼԱՅԻՆ  MIJIA N1</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>15</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>10.5</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>619.2</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85167100000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>3</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>82</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԲԱՑՎՈՂ ԿԱՓԱՐԻՉՈՎ ԹԵՐՄՈՍՆԵՐ 3 ՀԱՏ /MIJIA/ 480 ՄԼ, 2 ՊԱՐԿ</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>184.25</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>96170000010</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>1</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ԿԳ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>166</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>2</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>2</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>83</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ԷԼ․ ԲԱԺԱԿ՝ ՋՈՒՐ ՏԱՔԱՑՆԵԼՈՒ ՀԱՄԱՐ  /MIJIA/ 350 ՄԼ</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2.3</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.2</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>269.44</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85167970000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>2.9</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>84</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՄԱԶ ԿՏՐՈՂ ԷԼ. ՍԱՐՔ /MIJIA 2/</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>3</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>1.4</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>427.68</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85102000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.5</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+    <ESADout_CU:ESADout_CUGoods>
+      <catESAD_cu:GoodsNumeric>85</catESAD_cu:GoodsNumeric>
+      <catESAD_cu:GoodsDescription>ՀԱԳՈՒՍՏԻ ՔՈՐՔԵՐԸ /ԹԵԼԵՐԸ/ ՄԱՔՐՈՂ ԷԼ. ՍԱՐՔ MIJIA 2</catESAD_cu:GoodsDescription>
+      <catESAD_cu:GrossWeightQuantity>2</catESAD_cu:GrossWeightQuantity>
+      <catESAD_cu:NetWeightQuantity>0.9</catESAD_cu:NetWeightQuantity>
+      <catESAD_cu:InvoicedCost>171.09</catESAD_cu:InvoicedCost>
+      <catESAD_cu:GoodsTNVEDCode>85098000000</catESAD_cu:GoodsTNVEDCode>
+      <catESAD_cu:OriginCountryCode>CN</catESAD_cu:OriginCountryCode>
+      <catESAD_cu:OriginCountryName>ՉԻՆԱՍՏԱՆ</catESAD_cu:OriginCountryName>
+      <catESAD_cu:CustomsCostCorrectMethod>1</catESAD_cu:CustomsCostCorrectMethod>
+      <catESAD_cu:Preferencii>
+        <catESAD_cu:CustomsTax>OO</catESAD_cu:CustomsTax>
+        <catESAD_cu:CustomsDuty>OO</catESAD_cu:CustomsDuty>
+        <catESAD_cu:Rate>OO</catESAD_cu:Rate>
+      </catESAD_cu:Preferencii>
+      <ESADout_CU:SupplementaryGoodsQuantity>
+        <cat_ru:GoodsQuantity>5.7</cat_ru:GoodsQuantity>
+        <cat_ru:MeasureUnitQualifierName>ՀԱՏ</cat_ru:MeasureUnitQualifierName>
+        <cat_ru:MeasureUnitQualifierCode>796</cat_ru:MeasureUnitQualifierCode>
+      </ESADout_CU:SupplementaryGoodsQuantity>
+      <ESADout_CU:ESADGoodsPackaging>
+        <catESAD_cu:PakageQuantity>1</catESAD_cu:PakageQuantity>
+        <catESAD_cu:PakageTypeCode>1</catESAD_cu:PakageTypeCode>
+        <catESAD_cu:PackingInformation>
+          <catESAD_cu:PackingCode>BG</catESAD_cu:PackingCode>
+          <catESAD_cu:PakingQuantity>1</catESAD_cu:PakingQuantity>
+        </catESAD_cu:PackingInformation>
+      </ESADout_CU:ESADGoodsPackaging>
+      <ESADout_CU:ESADCustomsProcedure>
+        <catESAD_cu:MainCustomsModeCode>40</catESAD_cu:MainCustomsModeCode>
+        <catESAD_cu:PrecedingCustomsModeCode>00</catESAD_cu:PrecedingCustomsModeCode>
+        <catESAD_cu:GoodsTransferFeature>000</catESAD_cu:GoodsTransferFeature>
+      </ESADout_CU:ESADCustomsProcedure>
+    </ESADout_CU:ESADout_CUGoods>
+  </ESADout_CU:ESADout_CUGoodsShipment>
+  <ESADout_CU:FilledPerson>
+    <cat_ru:PersonSurname>Բրոքեր</cat_ru:PersonSurname>
+    <cat_ru:PersonName>Փորձնական</cat_ru:PersonName>
+  </ESADout_CU:FilledPerson>
+</ESADout_CU:ESADout_CU>

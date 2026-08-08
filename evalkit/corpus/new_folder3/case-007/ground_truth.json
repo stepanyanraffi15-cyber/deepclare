@@ -1,0 +1,29 @@
+{
+ "goods": [
+  {
+   "brand": "PAPIA",
+   "trade_name": "PAPIA",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "FAIRY",
+   "trade_name": "FAIRY PLATINUM",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS EXTRA 1440",
+   "material": null
+  },
+  {
+   "brand": "PERSIL",
+   "trade_name": "PERSIL",
+   "material": null
+  },
+  {
+   "brand": "ACCORD",
+   "trade_name": "ACCORD 6000",
+   "material": null
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "ATLAS LTD",
+  "address": "102 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 95, Երևան",
+  "country": "AM",
+  "tax_id": "91258987"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "86 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1701",
+ "date": "2026-02-06",
+ "goods": [
+  {
+   "source_name": "BYD Sealion 06 exterior front door handle",
+   "trade_name": "BYD UGEA-6105109A",
+   "armenian_desc": "BYD SEALION 06 Ա/Մ-Ի ԴԻՄԱՑԻ ԱՋ ԴՌԱՆ ԲՌՆԱԿ, ԴՐՍԻ, UGEA-6105109A",
+   "hs_code": "83023000090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.8,
+   "net_weight": 1.8,
+   "gross_weight": 3.1,
+   "unit_price": 21.0403,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Exterior rear right door handle",
+   "trade_name": "BYD URE-6205109",
+   "armenian_desc": "2023-2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> TAI 3 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ՀԵՏՎԻ ԱՋ ԴՌԱՆ ԲՌՆԱԿՆԵՐ, ԴՐՍԻ , URE-6205109",
+   "hs_code": "83023000090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.1,
+   "net_weight": 1.1,
+   "gross_weight": 1.4,
+   "unit_price": 19.4795,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Metal globe piggy bank",
+   "trade_name": null,
+   "armenian_desc": "ՄԵՏԱՂՅԱ ԽՆԱՅԱՏՈՒՓԵՐ՝ ԳԼՈԲՈՒՍ / ԵՐԵԽԱՆԵՐԻ ՀԱՄԱՐ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "83062900090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 51.8,
+   "net_weight": 51.8,
+   "gross_weight": 81.5,
+   "unit_price": 29.1502,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

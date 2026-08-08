@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Rubber floor mat with textile",
+   "trade_name": null,
+   "armenian_desc": "ՀԱՏԱԿԻ ՌԵՏԻՆԵ ԳՈՐԳԻԿՆԵՐ ԱՅԼ ՄԱՆԱԾԱԳՈՐԾԱԿԱՆ ՆՅՈՒԹԵՐԻ ՀԱՄԱԴՐՈՒԹՅԱՄԲ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "57039000000",
+   "unit": "055",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 24.5,
+   "net_weight": 24.5,
+   "gross_weight": 24.5,
+   "unit_price": 27.2409,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Rubber floor mat set",
+   "trade_name": null,
+   "armenian_desc": "ՀԱՏԱԿԻ ՌԵՏԻՆԵ ԳՈՐԳԻԿՆԵՐ ԱՅԼ ՄԱՆԱԾԱԳՈՐԾԱԿԱՆ ՆՅՈՒԹԵՐԻ ՀԱՄԱԴՐՈՒԹՅԱՄԲ /3 ՀԱՏԱՆՈՑ/ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "57039000000",
+   "unit": "055",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 109.6,
+   "net_weight": 109.6,
+   "gross_weight": 109.6,
+   "unit_price": 13.8732,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "50mm artificial grass turf",
+   "trade_name": null,
+   "armenian_desc": "ԱՐՀԵՍՏԱԿԱՆ ԽՈՏԱԾԱԾԿ 50ՄՄ ԲԱՐՁՈՒԹՅԱՄԲ, ԱՌԱՆՑ ԱՊՐԱՆՔԱՆԻՇԻ, 4 X 50Մ - 8 ԳԼԱՆԱՓԱԹԵԹ, 0.4 X 10Մ - 1 ԳԼԱՆԱՓԱԹԵԹ, 0.4 X 7.5Մ - 1 ԳԼԱՆԱՓԱԹԵԹ, 0.8 X 5Մ - 1 ԳԼԱՆԱՓԱԹԵԹ, 1.5 X 4Մ - 1 ԳԼԱՆԱՓԱԹԵԹ",
+   "hs_code": "57033100090",
+   "unit": "055",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 1742.3,
+   "net_weight": 1742.3,
+   "gross_weight": 1851.5,
+   "unit_price": 32.447,
+   "package_count": 70,
+   "package_type": "BAG"
+  }
+ ]
+}

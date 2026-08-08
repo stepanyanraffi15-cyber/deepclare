@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "OMNI",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "JBL",
+   "trade_name": "JBL",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

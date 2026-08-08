@@ -1,0 +1,108 @@
+{
+ "case_id": "case-035",
+ "seller": {
+  "name": "VERTEX EXPORT",
+  "address": "184 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՍԵՎԱՆ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 13, Երևան",
+  "country": "AM",
+  "tax_id": "11639062"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "48 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1413",
+ "date": "2026-06-22",
+ "goods": [
+  {
+   "source_name": "1mm IXPE flooring underlayment 10 density",
+   "trade_name": "IXPE",
+   "armenian_desc": "1 ՄՄ IXPE ՀԱՏԱԿԻ ԵՆԹԱՇԵՐՏ 10*ԽՏՈՒԹՅՈՒՆ*124ՄՄ, 7 ԳԼԱՆ",
+   "hs_code": "39189000000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": "IXPE",
+   "material": null,
+   "quantity": 9117.5,
+   "net_weight": 914.1,
+   "gross_weight": 919.1,
+   "unit_price": 0.328,
+   "package_count": 27,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "1mm IXPE flooring underlayment 10 density",
+   "trade_name": "IXPE",
+   "armenian_desc": "1 ՄՄ IXPE ՀԱՏԱԿԻ ԵՆԹԱՇԵՐՏ 10*ԽՏՈՒԹՅՈՒՆ*179ՄՄ, 9 ԳԼԱՆ",
+   "hs_code": "39189000000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": "IXPE",
+   "material": null,
+   "quantity": 28391.0,
+   "net_weight": 2874.3,
+   "gross_weight": 2884.8,
+   "unit_price": 0.3318,
+   "package_count": 85,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "1mm IXPE flooring underlayment 15 density",
+   "trade_name": "IXPE",
+   "armenian_desc": "1 ՄՄ IXPE ՀԱՏԱԿԻ ԵՆԹԱՇԵՐՏ 15*ԽՏՈՒԹՅՈՒՆ*179ՄՄ, 9 ԳԼԱՆ",
+   "hs_code": "39189000000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": "IXPE",
+   "material": null,
+   "quantity": 10415.2,
+   "net_weight": 698.6,
+   "gross_weight": 708.2,
+   "unit_price": 0.2513,
+   "package_count": 33,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "1mm IXPE flooring underlayment 15 density",
+   "trade_name": "IXPE",
+   "armenian_desc": "1 ՄՄ IXPE ՀԱՏԱԿԻ ԵՆԹԱՇԵՐՏ 15*ԽՏՈՒԹՅՈՒՆ*298ՄՄ, 3 ԳԼԱՆ",
+   "hs_code": "39189000000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": "IXPE",
+   "material": null,
+   "quantity": 10143.0,
+   "net_weight": 683.8,
+   "gross_weight": 688.8,
+   "unit_price": 0.246,
+   "package_count": 29,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "1mm EVA flooring underlayment",
+   "trade_name": "EVA",
+   "armenian_desc": "1 ՄՄ EVA ՀԱՏԱԿԻ ԵՆԹԱՇԵՐՏ ,179ՄՄ, 9 ԳԼԱՆ",
+   "hs_code": "39189000000",
+   "unit": "055",
+   "origin": "CN",
+   "brand": "EVA",
+   "material": null,
+   "quantity": 6321.1,
+   "net_weight": 530.8,
+   "gross_weight": 536.0,
+   "unit_price": 0.219,
+   "package_count": 19,
+   "package_type": "BAG"
+  }
+ ]
+}

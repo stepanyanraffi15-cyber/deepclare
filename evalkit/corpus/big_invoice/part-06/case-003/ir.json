@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "acrylic paint 100ml",
+   "trade_name": null,
+   "armenian_desc": "ՆԿԱՐՉԱԿԱՆ ԱԿՐԻԼԱՅԻՆ ՆԵՐԿԵՐԻ ՀԱՎԱՔԱԾՈՒ  100 ՄԼ/ ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 216 ՀԱՏ",
+   "hs_code": "32131000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 22.4,
+   "net_weight": 22.4,
+   "gross_weight": 26.5,
+   "unit_price": 3.1082,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "plasticine 12g",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԾԵՓԱԿԵՐՏՈՒԹՅԱՆ ՄԱԾՈՒԿՆԵՐ 12 ԳՐ․ (ՊԼԱՍՏԻԼԻՆ) / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 1080 ՏՈՒՓ",
+   "hs_code": "34070000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 285.9,
+   "net_weight": 285.9,
+   "gross_weight": 300.7,
+   "unit_price": 1.3099,
+   "package_count": 15,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "plasticine 10g",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԾԵՓԱԿԵՐՏՈՒԹՅԱՆ ՄԱԾՈՒԿՆԵՐ 10 ԳՐ․ (ՊԼԱՍՏԻԼԻՆ) / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / - 672 ՏՈՒՓ",
+   "hs_code": "34070000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 179.7,
+   "net_weight": 179.7,
+   "gross_weight": 186.4,
+   "unit_price": 1.2057,
+   "package_count": 8,
+   "package_type": "BAG"
+  }
+ ]
+}

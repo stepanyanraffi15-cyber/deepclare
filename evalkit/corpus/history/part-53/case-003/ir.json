@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Krombacher Pils beer in keg",
+   "trade_name": "KROMBACHER",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" KROMBACHER PILS \" / 30 ԼԻՏՐ ՏԱՐՈՂՈՒԹՅԱՄԲ / ՝ ՊԼ ՏԱԿԱՌՈՎ",
+   "hs_code": "22030010000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "KROMBACHER",
+   "material": null,
+   "quantity": 20822.7,
+   "net_weight": 20822.7,
+   "gross_weight": 22210.9,
+   "unit_price": 28.5418,
+   "package_count": 833,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Beer in metal cans",
+   "trade_name": "STARNBERGER",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" STARNBERGER HELLES \" ՄԵՏԱՂՅԱ ՏԱՐԱՅՈՎ / X 0.45 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ",
+   "hs_code": "22030009000",
+   "unit": "112",
+   "origin": "GE",
+   "brand": "STARNBERGER",
+   "material": null,
+   "quantity": 7752.3,
+   "net_weight": 7752.3,
+   "gross_weight": 7931.9,
+   "unit_price": 30.7927,
+   "package_count": 310,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Beer and lemon juice mixed drink",
+   "trade_name": "KROMBACHER",
+   "armenian_desc": "ԳԱՐԵՋՐԻ ԵՎ ԿԻՏՐՈՆԻ ՀՅՈՒԹԻ ԽԱՐՆՈՒՐԴՈՎ ՈՉ ՓՐՓՐՈՒՆ ԸՄՊԵԼԻՔ 2.5 % ԱԼԿՈՀՈԼԻ ՊԱՐՈՒՆԱԿՈՒԹՅԱՄԲ 0.5 L ՄԵՏԱՂՅԱ ՏԱՐԱՆԵՐՈՎ / KROMBACHER RADLER",
+   "hs_code": "22060059010",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "KROMBACHER",
+   "material": null,
+   "quantity": 2350.0,
+   "net_weight": 2350.0,
+   "gross_weight": 2444.9,
+   "unit_price": 8.4252,
+   "package_count": 94,
+   "package_type": "BAG"
+  }
+ ]
+}

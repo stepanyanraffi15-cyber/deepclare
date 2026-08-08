@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "ANTBEST",
+   "trade_name": "ANTBEST",
+   "material": null
+  }
+ ]
+}

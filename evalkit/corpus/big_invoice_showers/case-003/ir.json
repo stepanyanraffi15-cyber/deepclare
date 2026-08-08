@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Port City",
+  "country": "IR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Linear Shower Drain - Grating (Stripe) Black 90cm",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ ԼՈԳԱՍԵՆՅԱԿԻ ՀԱՄԱՐ 90 ՍՄ՝  ՍԵՎ, ՄԵՏԱՂԱԿԱՆ, ՇԵՐՏԱՎՈՐ, 10 ՀԱՏ",
+   "hs_code": "73249000090",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՄԵՏԱՂ",
+   "quantity": 12.6,
+   "net_weight": 12.6,
+   "gross_weight": 12.9,
+   "unit_price": 15.3161,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Grey END CAP",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿԻ ԽՑԱՆԻ ԿԱՓԱՐԻՉ, ՄՈԽՐԱԳՈՒՅՆ, ՊԼԱՍՏՄԱՍԵ, 300 ՀԱՏ",
+   "hs_code": "39229000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": null,
+   "material": "ՊԼԱՍՏ",
+   "quantity": 5.8,
+   "net_weight": 5.8,
+   "gross_weight": 11.6,
+   "unit_price": 33.5725,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "GALVANIZED class-A15 ABADIS 200*160",
+   "trade_name": null,
+   "armenian_desc": "ՀՈՍԱԿ, ԱԼԻՔԱՎՈՐ ՑԻՆԿԱՊԱՏ  A15 ԴԱՍ ABADIS  200*160 ՄՄ՝ ՊԼԱՍՏՄԱՍԵ, 30 ՀԱՏ",
+   "hs_code": "39229000000",
+   "unit": "166",
+   "origin": "IR",
+   "brand": "A15",
+   "material": "ՊԼԱՍՏ",
+   "quantity": 170.7,
+   "net_weight": 170.7,
+   "gross_weight": 172.1,
+   "unit_price": 2.3764,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

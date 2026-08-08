@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "4K Dash Camera 128GB",
+   "trade_name": "OMNI 70MAI X800 128GB D2820B02YHL5AE2800HTZT",
+   "armenian_desc": "ՏԵՍԱԽՑԻԿ ՀՍԿՈՂԱԿԱՆ ՏԵՍԱՁԱՅՆԱԳՐՈՂ 70MAI 4K Omni X800 128GB Black SERIAL NO. D2820B02YHL5AE2800HTZT",
+   "hs_code": "85258999000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "OMNI",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.4,
+   "unit_price": 14.1934,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Portable wireless speaker",
+   "trade_name": "JBL",
+   "armenian_desc": "ԲԱՐՁՐԱԽՈՍՆԵՐԻ ՀԱՎԱՔԱԾՈՒ` ՄԵԿ ԻՐԱՆՈՒՄ ՆԵՐԿԱՌՈՒՑՎԱԾ JBL GO 4",
+   "hs_code": "85182200090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "JBL",
+   "material": null,
+   "quantity": 7.6,
+   "net_weight": 7.6,
+   "gross_weight": 16.0,
+   "unit_price": 37.64,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Hisense 75 inch LED television",
+   "trade_name": "HISENSE 75Q61Q 3TE75F25130W018CG510224 3TE75F25130W018CG510226 3TE75F25130W018CG510231 3TE75F25130W018CG510228 3TE75F25130W018CG510140 3TE75F25130W018CG510225 3TE75F25130W018CG510230 3TE75F25130W018CG510227",
+   "armenian_desc": "ՀԵՌՈՒՍՏԱՑՈՒՅՑ 75\" HISENSE TV 75Q61Q (ԱՆԿՅՈՒՆԱԳԻԾԸ 191ՍՄ) /ԸՍՏ ՊԵԿ ՀՐԱՊԱՐԱԿԱԾ ՄՏԱՎՈՐ ՍԵՓԱԿԱՆՈՒԹՅԱՆ ՑԱՆԿԻ ՏՈՂ 1052/ SERIAL NO. 3TE75F25130W018CG510224 3TE75F25130W018CG510226 3TE75F25130W018CG510231 3TE75F25130W018CG510228 3TE75F25130W018CG510140 3TE75F25130W018CG510225 3TE75F25130W018CG510230 3TE75F25130W018CG510227",
+   "hs_code": "85287220010",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "HISENSE",
+   "material": null,
+   "quantity": 197.7,
+   "net_weight": 197.7,
+   "gross_weight": 304.6,
+   "unit_price": 5.0551,
+   "package_count": 7,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Children's watercolor coloring album",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԱԼԲՈՄ ՆԵՐԿԻՐ ԻՆՔԴ / ՋՐԱՆԵՐԿՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "49030000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 103.0,
+   "net_weight": 103.0,
+   "gross_weight": 108.3,
+   "unit_price": 9.6503,
+   "package_count": 4,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Children's educational coloring album",
+   "trade_name": null,
+   "armenian_desc": "ՄԱՆԿԱԿԱՆ ԱԼԲՈՄ ՆԵՐԿԻՐ ԻՆՔԴ ՏԱՌԵՐՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ / / /ԻՆՎՈՅՍ ՏՈՂ 40, 41",
+   "hs_code": "49030000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 277.1,
+   "net_weight": 277.1,
+   "gross_weight": 280.4,
+   "unit_price": 10.872,
+   "package_count": 11,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Commemorative postage stamps",
+   "trade_name": "THE 8TH",
+   "armenian_desc": "ՓՈՍՏԱՅԻՆ ՆԱՄԱԿԱՆԻՇՆԵՐ` \"THE 8TH EUROPEAN POLITICAL COMMUNITY SUMMIT IN YEREVAN\"",
+   "hs_code": "49070010900",
+   "unit": "166",
+   "origin": "BE",
+   "brand": "THE",
+   "material": null,
+   "quantity": 3.1,
+   "net_weight": 3.1,
+   "gross_weight": 3.4,
+   "unit_price": 18.5909,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

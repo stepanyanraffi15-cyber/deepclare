@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Used Iveco diesel tractor unit",
+   "trade_name": "IVECO WJMM62AU90C459603 BA3C 1A11 AS440ST/FP",
+   "armenian_desc": "ՕԳՏԱԳՈՐԾՎԱԾ ԹԱՄԲԱՅԻՆ ՔԱՐՇԱԿ՝ IVECO , ՇԱՐԺԻՉԸ ԴԻԶԵԼԱՅԻՆ, ՏԱՐԵԹԻՎԸ՝ 2021Թ․, ՆՈՒՅՆԱԿԱՆԱՑՄԱՆ ՀԱՄԱՐԸ՝ WJMM62AU90C459603, ԱՐՏԱԴՐՎԱԾ Է 12․10․2021Թ․-ԻՆ, ՏԵՍԱԿԸ՝ BA3C 1A11, ՄՈԴԵԼԸ՝ AS440ST/FP",
+   "hs_code": "87012190190",
+   "unit": "796",
+   "origin": "DE",
+   "brand": "IVECO",
+   "material": null,
+   "quantity": 8770.7,
+   "net_weight": 8770.7,
+   "gross_weight": 8770.7,
+   "unit_price": 39.1208,
+   "package_count": 351,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Qin Plus rear lower bumper bracket",
+   "trade_name": "BYD HA5H-2804330",
+   "armenian_desc": "BYD QIN PLUS Ա/Մ-Ի ԹԱՓԱՐԳԵԼԻ ՄԱՍ՝ ԱՄՐԱՑՄԱՆ ԴԵՏԱԼՀԵՏԵՎԻ ՍՏՈՐԻՆ ՁԱԽ ԿՈՂՄԻ, HA5H-2804330",
+   "hs_code": "87081090090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 29.7349,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Sealion 06 windshield washer reservoir",
+   "trade_name": "BYD UGEA-5207110B",
+   "armenian_desc": "BYD SEALION 06 Ա/Մ-Ի ԱՊԱԿԵՄԱՔՐԻՉ ՀԱՄԱԿԱՐԳԻ ՋՐԻ ՊԼ․ ԲԱՔ ԻՐ ՇԱՐԺԻՉՈՎ, UGEA-5207110B",
+   "hs_code": "87089997090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 6.9,
+   "net_weight": 6.9,
+   "gross_weight": 9.1,
+   "unit_price": 16.2174,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

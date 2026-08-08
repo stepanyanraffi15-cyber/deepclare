@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Tool trolley",
+   "trade_name": "TROLLEY",
+   "armenian_desc": "ԳՈՐԾԻՔՆԵՐԻ ՊԱՅՈՒՍԱԿ, TROLLEY PORTA PANNELLI ՄՈԴԵԼԻ",
+   "hs_code": "42022900000",
+   "unit": "796",
+   "origin": "IT",
+   "brand": "TROLLEY",
+   "material": null,
+   "quantity": 5.5,
+   "net_weight": 5.5,
+   "gross_weight": 11.0,
+   "unit_price": 4.2456,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic sheet surface bags",
+   "trade_name": null,
+   "armenian_desc": "ՊԱՅՈՒՍԱԿՆԵՐ ԴԻՄԱՅԻՆ ՄԱԿԵՐԵՎՈՒՅԹԸ ՊԼ. ԹԵՐԹԵՐԻՑ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "42022210000",
+   "unit": "796",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 166.1,
+   "net_weight": 166.1,
+   "gross_weight": 167.5,
+   "unit_price": 21.1643,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Protective Polymer Gaming Console Case",
+   "trade_name": "SONY PS5",
+   "armenian_desc": "ՊՈԼԻՄԵՐԱՅԻՆ ՊԱՏՅԱՆ SONY PS5 PORTAL -Ի ՀԱՄԱՐ",
+   "hs_code": "42029219000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SONY",
+   "material": null,
+   "quantity": 1.2,
+   "net_weight": 1.2,
+   "gross_weight": 2.4,
+   "unit_price": 15.2757,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

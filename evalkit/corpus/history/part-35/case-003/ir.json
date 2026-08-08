@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "ATLAS LTD",
+  "address": "102 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 95, Երևան",
+  "country": "AM",
+  "tax_id": "91258987"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "86 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1701",
+ "date": "2026-02-06",
+ "goods": [
+  {
+   "source_name": "Wooden A4 clipboard with clip",
+   "trade_name": null,
+   "armenian_desc": "ՓԱՅՏՅԱ A4 ՖՈՐՄԱՏԻ ԹՂԹԻ ՏԱԿԴԻՐՆԵՐ ԻՐԵՆՑ ԱՄՐԱԿՆԵՐՈՎ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "44219990000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 56.9,
+   "net_weight": 56.9,
+   "gross_weight": 59.5,
+   "unit_price": 7.5405,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Wooden Euro Pallets 1200x800mm",
+   "trade_name": null,
+   "armenian_desc": "ԲԱԶՄԱԿԻ ՕԳՏԱԳՈՐԾՄԱՆ ՀԱՐԹ /ԵՎՐՈ ՊԱԼԵՏՆԵՐ/՝ ՓԱՅՏԵ, ԵՎՐՈՊԱԿԱՆ ՍՏԱՆԴԱՐՏ, ԱՄԵՆԱԲԱՐՁՐ ՈՐԱԿԻ, ՉԱՓՍԸ՝ 1200*800 ՄՄ , ՆԱԽԱՏԵՍՎԱԾ ՉԷ ԿԵՆԴԱՆԱԿԱՆ ԾԱԳՄԱՆ ԱՊՐԱՆՔՆԵՐԻ ՀԱՄԱՐ",
+   "hs_code": "44152020000",
+   "unit": "166",
+   "origin": "EU",
+   "brand": null,
+   "material": null,
+   "quantity": 223.3,
+   "net_weight": 223.3,
+   "gross_weight": 223.3,
+   "unit_price": 28.0648,
+   "package_count": 9,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Thin wood veneer sheets",
+   "trade_name": null,
+   "armenian_desc": "ԵՐԵՍՊԱՏՄԱՆ ԹԵՐԹԵՐ 1 ՄՄ-ԻՑ ՈՉ ԱՎԵԼԻ ՀԱՍՏՈՒԹՅԱՄԲ, ՓԱՅՏԱՏԱՇԵՂ, ՍՂՈՑԱԾ, ԿՏՐԱՏՎԱԾ",
+   "hs_code": "44089085020",
+   "unit": "113",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 11.9,
+   "net_weight": 11.9,
+   "gross_weight": 13.2,
+   "unit_price": 12.4331,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

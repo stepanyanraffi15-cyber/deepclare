@@ -1,0 +1,92 @@
+{
+ "case_id": "case-065",
+ "seller": {
+  "name": "VESTA MATERIALS",
+  "address": "19 Harbor Rd, Port City",
+  "country": "AM",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 80, Երևան",
+  "country": "AM",
+  "tax_id": "43306392"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "33 Logistic Ave, Port City",
+  "country": "AM",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "AM",
+ "invoice_no": "INV-2026-2849",
+ "date": "2026-03-17",
+ "goods": [
+  {
+   "source_name": "White Elite Master Facade Paint",
+   "trade_name": "P18 WHITE ELITE MASTER FACADE LT.",
+   "armenian_desc": "ՆԵՐԿ - P18 WHITE ELITE MASTER FACADE LT. 15, 150 ԼԻՏՐ",
+   "hs_code": "32091000090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "WHITE",
+   "material": null,
+   "quantity": 251.2,
+   "net_weight": 251.2,
+   "gross_weight": 265.9,
+   "unit_price": 2.299,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Prime Master Primer",
+   "trade_name": "L10 PRIME MASTER LT. 5 -",
+   "armenian_desc": "ՆԱԽԱՀԻՄՔ - L10 PRIME MASTER LT. 5 - 100 ԼԻՏՐ",
+   "hs_code": "32091000090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "PRIME",
+   "material": null,
+   "quantity": 113.3,
+   "net_weight": 113.3,
+   "gross_weight": 129.3,
+   "unit_price": 1.1253,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Primegrout Tile Grout Assorted Colors",
+   "trade_name": "G07 PRIMEGROUT G.230 2KG` 50",
+   "armenian_desc": "ԿԱՐԱՆՅՈՒԹ - G07 PRIMEGROUT G.230 2KG` 50 ՀԱՏ, G.35 2KG` 50 ՀԱՏ, G.80 2KG` 50 ՀԱՏ",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "PRIMEGROUT",
+   "material": null,
+   "quantity": 324.4,
+   "net_weight": 324.4,
+   "gross_weight": 354.6,
+   "unit_price": 1.1873,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Bondmaster Tile Grout Assorted Colors",
+   "trade_name": "BONDMASTER G.105 BIANCO TITANIO 2KG` 10",
+   "armenian_desc": "ԿԱՐԱՆՅՈՒԹ - BONDMASTER G.105 BIANCO TITANIO 2KG` 10 ՀԱՏ, G.110 GRIGIO PERLA 2KG` 10 ՀԱՏ, G.125 GRIGIO CEMENTO 2KG` 10 ՀԱՏ, G.145 NERO NOTTE 2KG` 10 ՀԱՏ, G.420 BRUNO GRAFITE 2KG` 10 ՀԱՏ",
+   "hs_code": "32141010090",
+   "unit": "166",
+   "origin": "AM",
+   "brand": "BONDMASTER",
+   "material": null,
+   "quantity": 104.1,
+   "net_weight": 104.1,
+   "gross_weight": 118.6,
+   "unit_price": 6.1312,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

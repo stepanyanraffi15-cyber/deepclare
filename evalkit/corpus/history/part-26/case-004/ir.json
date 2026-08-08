@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "A4 photo paper 180gsm",
+   "trade_name": null,
+   "armenian_desc": "ՖՈՏՈԹՈՒՂԹ A4 180 ԳՐԱՄ / / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "37039000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 47.0,
+   "net_weight": 47.0,
+   "gross_weight": 48.6,
+   "unit_price": 32.4168,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "A5 Photo Paper 200gsm",
+   "trade_name": null,
+   "armenian_desc": "ՖՈՏՈԹՈՒՂԹ 148*210 200 ԳՐԱՄ / / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "37039000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 133.7,
+   "net_weight": 133.7,
+   "gross_weight": 141.3,
+   "unit_price": 42.7635,
+   "package_count": 5,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "A4 Self-Adhesive Photo Paper 135gsm",
+   "trade_name": null,
+   "armenian_desc": "ԻՆՔՆԱԿՊՉՈՒՆ ՖՈՏՈԹՈՒՂԹ A4 135 ԳՐԱՄ / / \" ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ \"",
+   "hs_code": "37039000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 112.6,
+   "net_weight": 112.6,
+   "gross_weight": 115.4,
+   "unit_price": 8.602,
+   "package_count": 5,
+   "package_type": "BAG"
+  }
+ ]
+}

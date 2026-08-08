@@ -1,0 +1,49 @@
+{
+ "goods": [
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.00 2KG 30",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.10 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.20 2KG 30",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.200 2KG 10",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.230 2KG 10",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.30 2KG 30",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.35 2KG 30",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.40 2KG 10",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.60 2KG 10",
+   "material": null
+  }
+ ]
+}

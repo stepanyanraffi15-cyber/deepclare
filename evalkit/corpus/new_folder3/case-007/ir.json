@@ -1,0 +1,108 @@
+{
+ "case_id": "case-007",
+ "seller": {
+  "name": "NOVA MATERIALS",
+  "address": "12 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ՏՐԵՅԴ\" ՍՊԸ",
+  "address": "Կոմիտաս 70, Երևան",
+  "country": "AM",
+  "tax_id": "47539499"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "74 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-3961",
+ "date": "2026-05-18",
+ "goods": [
+  {
+   "source_name": "PAPIA",
+   "trade_name": "PAPIA",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ ՝ PAPIA,  32*3` 16992 ՀԱՏ /177 ՏՈՒՓ/",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PAPIA",
+   "material": "ԹՈՒՂԹ",
+   "quantity": 1305.9,
+   "net_weight": 1305.9,
+   "gross_weight": 1328.8,
+   "unit_price": 1.7417,
+   "package_count": 154,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "FAIRY PLATINUM",
+   "trade_name": "FAIRY PLATINUM",
+   "armenian_desc": "ՍՊԱՍՔ ԼՎԱՆԱԼՈՒ ՄԻՋՈՑ ՀԱԲԵՐԻ ՏԵՍՔՈՎ` ԱՊՐԱՆՔԱՆԻՇԸ FAIRY PLATINUM 125*2`- 100 ՓԱԹԵԹ, ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "FAIRY",
+   "material": null,
+   "quantity": 140.8,
+   "net_weight": 140.8,
+   "gross_weight": 155.8,
+   "unit_price": 2.1558,
+   "package_count": 38,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "YUMOS EXTRA 1440",
+   "trade_name": "YUMOS EXTRA 1440",
+   "armenian_desc": "ԼՎԱՑՔԻ ՀԵՂՈՒԿ ՓԱՓԿԵՑՈՒՑԻՉ /ԿՈՆԴԻՑԻՈՆԵՐ/ ՝ ԱՊՐԱՆՔԱՆԻՇԸ YUMOS EXTRA, 1440 ՄԼ*9 -2052 ՀԱՏ ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "YUMOS",
+   "material": null,
+   "quantity": 2425.9,
+   "net_weight": 2425.9,
+   "gross_weight": 2462.6,
+   "unit_price": 1.2754,
+   "package_count": 174,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "PERSIL",
+   "trade_name": "PERSIL",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ԳԵԼ՝ ԱՊՐԱՆՔԱՆԻՇԸ PERSIL 3900ՄԼ*4-1280 ՀԱՏ  ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PERSIL",
+   "material": null,
+   "quantity": 3921.9,
+   "net_weight": 3921.9,
+   "gross_weight": 4096.0,
+   "unit_price": 1.0922,
+   "package_count": 246,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "ACCORD 6000",
+   "trade_name": "ACCORD 6000",
+   "armenian_desc": "ՄԱՔՐՈՂ ԼԱԹԵՐ 3 ՀԱՏԱՆՈՑ՝ ՎԻՍԿՈԶԱՅԻՆ,  ԱՊՐԱՆՔԱՆԻՇԸ ACCORD, 6000 ՀԱՏ",
+   "hs_code": "63071090000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "ACCORD",
+   "material": null,
+   "quantity": 267.4,
+   "net_weight": 267.4,
+   "gross_weight": 294.1,
+   "unit_price": 1.4205,
+   "package_count": 67,
+   "package_type": "BAG"
+  }
+ ]
+}

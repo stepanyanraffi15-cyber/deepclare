@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Robot Vacuum Cleaner",
+   "trade_name": "XIAOMI RCCVBY51403662 RCCVBY51404758 RCCVBY51403669",
+   "armenian_desc": "ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ XIAOMI ROBOROCK Q8 MAX PRO SERIAL NO. RCCVBY51403662 RCCVBY51404758 RCCVBY51403669",
+   "hs_code": "85081100000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "XIAOMI",
+   "material": null,
+   "quantity": 11.4,
+   "net_weight": 11.4,
+   "gross_weight": 19.4,
+   "unit_price": 7.1962,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Robot Vacuum Cleaner",
+   "trade_name": "XIAOMI RCCVCY51601097 RCCVCY51600800 RCCVCY51601277",
+   "armenian_desc": "ՌՈԲՈՏ ՓՈՇԵԿՈՒԼ ՆԵՐԿԱՌՈՒՑՎԱԾ ՇԱՐԺԻՉՈՎ XIAOMI ROBOROCK Q8 MAX PRO PLUS SERIAL NO. RCCVCY51601097 RCCVCY51600800 RCCVCY51601277",
+   "hs_code": "85081100000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "XIAOMI",
+   "material": null,
+   "quantity": 15.2,
+   "net_weight": 15.2,
+   "gross_weight": 25.8,
+   "unit_price": 20.4435,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

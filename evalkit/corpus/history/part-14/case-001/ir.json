@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Decorative plastic food storage container",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՏԱՐԱՆԵՐ ՆԱԽՇԱՎՈՐ 6Լ ՍՆՆԴԱՄԹԵՐՔԻ ՀԱՄԱՐ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39241000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 36.6,
+   "net_weight": 36.6,
+   "gross_weight": 39.2,
+   "unit_price": 16.2238,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Rectangular plastic storage boxes",
+   "trade_name": null,
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ՏՈՒՓԵՐ /ՈՒՂՂԱՆԿՅՈՒՆ/ ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "39231000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 1826.9,
+   "net_weight": 1826.9,
+   "gross_weight": 1895.8,
+   "unit_price": 20.7112,
+   "package_count": 73,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Household plastic bucket",
+   "trade_name": "CLEANMAX",
+   "armenian_desc": "ԿԵՆՑԱՂԱՅԻՆ ՊԼԱՍՏՄԱՍԵ ԴՈՒՅԼԵՐ 14Լ / / CLEANMAX",
+   "hs_code": "39249000090",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "CLEANMAX",
+   "material": null,
+   "quantity": 45.9,
+   "net_weight": 45.9,
+   "gross_weight": 52.0,
+   "unit_price": 31.7689,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Portable wireless speaker",
+   "trade_name": "MARSHAL",
+   "armenian_desc": "ԲԱՐՁՐԱԽՈՍՆԵՐԻ ՀԱՎԱՔԱԾՈՒ 1 ԻՐԱՆՈՒՄ ՆԵՐԿԱՌՈՒՑՎԱԾ MARSHAL SPEAKER (EMBERTON III)",
+   "hs_code": "85182200090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "MARSHAL",
+   "material": null,
+   "quantity": 13.9,
+   "net_weight": 13.9,
+   "gross_weight": 25.7,
+   "unit_price": 14.5985,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Portable wireless speaker",
+   "trade_name": "MARSHAL",
+   "armenian_desc": "ԲԱՐՁՐԱԽՈՍՆԵՐԻ ՀԱՎԱՔԱԾՈՒ 1 ԻՐԱՆՈՒՄ ՆԵՐԿԱՌՈՒՑՎԱԾ MARSHAL SPEAKER (STANMORE III)",
+   "hs_code": "85182200090",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "MARSHAL",
+   "material": null,
+   "quantity": 122.3,
+   "net_weight": 122.3,
+   "gross_weight": 176.9,
+   "unit_price": 1.9366,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "goods": [
+  {
+   "brand": "ARIEL",
+   "trade_name": "ARIEL",
+   "material": null
+  },
+  {
+   "brand": "ARIEL",
+   "trade_name": "ARIEL 1",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS EXTRA 1440",
+   "material": null
+  },
+  {
+   "brand": "ACCORD",
+   "trade_name": "ACCORD 6000",
+   "material": null
+  }
+ ]
+}

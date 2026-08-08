@@ -1,0 +1,76 @@
+{
+ "case_id": "case-004",
+ "seller": {
+  "name": "ATLAS EXPORT",
+  "address": "71 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 107, Երևան",
+  "country": "AM",
+  "tax_id": "43324815"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "35 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-6076",
+ "date": "2026-04-06",
+ "goods": [
+  {
+   "source_name": "Office Liquid Glue",
+   "trade_name": null,
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՀԵՂՈՒԿ ՍՈՍԻՆՁ ` 1ԿԳ-ԻՑ ՊԱԿԱՍ ՓԱԹԵԹԱՎՈՐՄԱՄԲ, 50ՄԼ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 32.3,
+   "net_weight": 32.3,
+   "gross_weight": 33.3,
+   "unit_price": 13.4566,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Epoxy metal adhesive cartridge",
+   "trade_name": "LOXEAL",
+   "armenian_desc": "ԷՊՈՔՍԻԴԱՅԻՆ ՍՈՍԻՆՁ ՄԵՏԱՂ ԿՊՑՆԵԼՈՒ ՀԱՄԱՐ, LOXEAL 3638 IN CARTUCCIA 400 ML",
+   "hs_code": "35069100000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "LOXEAL",
+   "material": null,
+   "quantity": 29.8,
+   "net_weight": 29.8,
+   "gross_weight": 35.8,
+   "unit_price": 41.4475,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Office glue stick",
+   "trade_name": "DOLPHIN",
+   "armenian_desc": "ԳՐԱՍԵՆՅԱԿԱՅԻՆ ՉՈՐ ՍՈՍԻՆՁ 1ԿԳ-ԻՑ ՊԱԿԱՍ ՓԱԹԵԹԱՎՈՐՄԱՄԲ (8ԳՐ)/ / '' DOLPHIN \"",
+   "hs_code": "35061000000",
+   "unit": "166",
+   "origin": "KR",
+   "brand": "DOLPHIN",
+   "material": null,
+   "quantity": 216.9,
+   "net_weight": 216.9,
+   "gross_weight": 226.7,
+   "unit_price": 30.2429,
+   "package_count": 8,
+   "package_type": "BAG"
+  }
+ ]
+}

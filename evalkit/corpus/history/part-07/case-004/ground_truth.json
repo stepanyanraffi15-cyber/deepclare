@@ -1,0 +1,19 @@
+{
+ "goods": [
+  {
+   "brand": "SET",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA",
+   "material": null
+  }
+ ]
+}

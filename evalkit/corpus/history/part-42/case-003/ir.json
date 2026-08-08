@@ -1,0 +1,76 @@
+{
+ "case_id": "case-003",
+ "seller": {
+  "name": "HELIOS LTD",
+  "address": "139 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՄԱՍԻՍ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Կոմիտաս 30, Երևան",
+  "country": "AM",
+  "tax_id": "60770111"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "67 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1248",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Oval synthetic pile knit rug",
+   "trade_name": null,
+   "armenian_desc": "ՏՐԻԿՈՏԱԺԵ ԳՈՐԾՎԱԾՔ ԽԱՎԱԾԱԾԿ ՍԻՆԹԵՏԻԿ ԹԵԼԵՐԻՑ՝ 50*80, ՕՎԱԼ /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "60012900000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 62.2,
+   "net_weight": 62.2,
+   "gross_weight": 62.2,
+   "unit_price": 33.6861,
+   "package_count": 3,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Synthetic pile knit rug",
+   "trade_name": null,
+   "armenian_desc": "ՏՐԻԿՈՏԱԺԵ ԳՈՐԾՎԱԾՔ ԽԱՎԱԾԱԾԿ ՍԻՆԹԵՏԻԿ ԹԵԼԵՐԻՑ՝ 40*60 /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "60012900000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 42.2,
+   "net_weight": 42.2,
+   "gross_weight": 42.2,
+   "unit_price": 37.3789,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Square synthetic pile knit rug",
+   "trade_name": null,
+   "armenian_desc": "ՏՐԻԿՈՏԱԺԵ ԳՈՐԾՎԱԾՔ ԽԱՎԱԾԱԾԿ ՍԻՆԹԵՏԻԿ ԹԵԼԵՐԻՑ՝ 50*80, ՔԱՌԱԿՈՒՍԻ /ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "60012900000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 77.4,
+   "net_weight": 77.4,
+   "gross_weight": 77.4,
+   "unit_price": 32.8884,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}

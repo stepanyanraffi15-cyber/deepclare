@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "Tool bag",
+   "trade_name": "BORSA",
+   "armenian_desc": "ԳՈՐԾԻՔՆԵՐԻ ՊԱՅՈՒՍԱԿ, BORSA CATALOGHI ՄՈԴԵԼԻ",
+   "hs_code": "42022900000",
+   "unit": "796",
+   "origin": "IT",
+   "brand": "BORSA",
+   "material": null,
+   "quantity": 1.0,
+   "net_weight": 1.0,
+   "gross_weight": 1.0,
+   "unit_price": 28.4567,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic sheet surface bags",
+   "trade_name": null,
+   "armenian_desc": "ՊԱՅՈՒՍԱԿՆԵՐ ԴԻՄԱՅԻՆ ՄԱԿԵՐԵՎՈՒՅԹԸ ՊԼ. ԹԵՐԹԵՐԻՑ / / ԱՌԱՆՑ ՄԱԿՆՇՄԱՆ",
+   "hs_code": "42022210000",
+   "unit": "796",
+   "origin": "TR",
+   "brand": null,
+   "material": null,
+   "quantity": 156.8,
+   "net_weight": 156.8,
+   "gross_weight": 158.1,
+   "unit_price": 22.935,
+   "package_count": 6,
+   "package_type": "BAG"
+  }
+ ]
+}

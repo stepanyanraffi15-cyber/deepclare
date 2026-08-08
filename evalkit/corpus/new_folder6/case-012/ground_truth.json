@@ -1,0 +1,44 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "FINDER--",
+   "trade_name": "FINDER--",
+   "material": null
+  },
+  {
+   "brand": "AUTONICS",
+   "trade_name": "E50S8-5000-3-T-1 AUTONICS",
+   "material": null
+  },
+  {
+   "brand": "UP",
+   "trade_name": "UP",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 2 5 MM- 100",
+   "material": null
+  },
+  {
+   "brand": "MKR",
+   "trade_name": "MKR 2 5 MM 1000",
+   "material": null
+  },
+  {
+   "brand": "ONKA",
+   "trade_name": "ONKA",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "UY3003",
+   "trade_name": "UY3003 4",
+   "material": null
+  }
+ ]
+}

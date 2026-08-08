@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN MATERIALS",
+  "address": "156 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱՐԱՏ ՊՐԵՍՏԻԺ\" ՍՊԸ",
+  "address": "Տիգրան Մեծ 82, Երևան",
+  "country": "AM",
+  "tax_id": "97266076"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "66 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-8288",
+ "date": "2026-06-18",
+ "goods": [
+  {
+   "source_name": "BYD Sealion 06 Suspension Stabilizer Link",
+   "trade_name": "BYD TA72-2906020A",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 ՄԱՐԴԱՏԱՐ Ա/Մ-Ի ԿԱԽՈՑԻ ՄԱՍ՝ ԿԱԽՈՑԱՅԻՆ ՀԱՄԱԿԱՐԳԻ ԿԱՅՈՒՆԱՐԱՐԻ ԿԱՆԳՆԱԿ , TA72-2906020A",
+   "hs_code": "87088055090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 22.9,
+   "net_weight": 22.9,
+   "gross_weight": 22.9,
+   "unit_price": 26.8732,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "BYD Sealion 06 Mudguard Mounting Bracket",
+   "trade_name": "BYD UGE-3102740 UGE-3102750",
+   "armenian_desc": "2025 ԹԹ․ ԼՐԱԿԱԶՄՈՒԹՅԱՆ <BYD> SEALION 06 Ա/Մ-Ի ԹԱՓՔԻ ՄԱՍ՝ ԱՆՎԱԹԵՎԻ ԿԵՂՏԱՊԱՇՏՊԱՆԻՉ ՏԱԿԴԻՐԻ ԱՄՐԱՑՄԱՆ ԴԵՏԱԼ UGE-3102740 UGE-3102750",
+   "hs_code": "87082990090",
+   "unit": "166",
+   "origin": "CN",
+   "brand": "BYD",
+   "material": null,
+   "quantity": 1.5,
+   "net_weight": 1.5,
+   "gross_weight": 1.5,
+   "unit_price": 5.6576,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

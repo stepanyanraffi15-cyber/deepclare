@@ -1,0 +1,76 @@
+{
+ "case_id": "case-001",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "179 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԿՈՏԱՅՔ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Աբովյան 116, Երևան",
+  "country": "AM",
+  "tax_id": "39719869"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "4 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-9870",
+ "date": "2026-01-01",
+ "goods": [
+  {
+   "source_name": "Paint and lacquer additive Texanol",
+   "trade_name": "TEXANOL",
+   "armenian_desc": "ՆԵՐԿԵՐԻՆ ԵՎ ԼԱՔԵՐԻՆ ԽԱՌՆԵԼՈՒ ՀԱՎԵԼԱՆՅՈՒԹ, TEXANOL, ՆԵՐՄՈՒԾՎԵԼ Է ՈՉ ԴԵՂԱԳՈՐԾԱԿԱՆ ՆՊԱՏԱԿՆԵՐՈՎ",
+   "hs_code": "29156019000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "TEXANOL",
+   "material": null,
+   "quantity": 152.7,
+   "net_weight": 152.7,
+   "gross_weight": 152.7,
+   "unit_price": 1.2057,
+   "package_count": 6,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Formic acid salts for tile adhesive",
+   "trade_name": null,
+   "armenian_desc": "ՄՐՋՆԱԹԹՎԻ ԱՂԵՐ, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՍԱԼԻԿԻ ՍՈՍՆՁԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՄԵՋ , ՆԵՐՄՈՒԾՎԵԼ Է ՈՉ ԴԵՂԱԳՈՐԾԱԿԱՆ ՆՊԱՏԱԿՈՎ",
+   "hs_code": "29151200000",
+   "unit": "166",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 2117.5,
+   "net_weight": 2117.5,
+   "gross_weight": 2151.4,
+   "unit_price": 13.9067,
+   "package_count": 85,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Dipropylene Glycol Methyl Ether",
+   "trade_name": "DOWANOL",
+   "armenian_desc": "ԴԻՊՐՈՊԻԼԵՆ ԳԼԻԿՈԼ ՄԵԹԻԼ ԷԹԵՐ, DOWANOL DPM , ՆԱԽԱՏԵՍՎԱԾ Է ՆԵՐԿԵՐԻ ԱՐՏԱԴՐՈՒԹՅԱՆ ՀԱՄԱՐ, 1 ՏԱՐԱ, ՆԵՐՄՈՒԾՎԵԼ Է ՈՉ ԴԵՂԱԳՈՐԾԱԿԱՆ ՆՊԱՏԱԿՈՎ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ԲԺՇԿԱԿԱՆ ԱՐՏԱԴՐԱՏԵՍԱԿ, ՉԻ ՊԱՐՈՒՆԱԿՈՒՄ ՀՈԳԵՄԵՏ ՆՅՈՒԹԵՐ",
+   "hs_code": "29094980090",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "DOWANOL",
+   "material": null,
+   "quantity": 201.0,
+   "net_weight": 201.0,
+   "gross_weight": 206.2,
+   "unit_price": 9.6334,
+   "package_count": 8,
+   "package_type": "BAG"
+  }
+ ]
+}

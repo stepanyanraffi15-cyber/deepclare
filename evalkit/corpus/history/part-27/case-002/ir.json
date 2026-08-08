@@ -1,0 +1,60 @@
+{
+ "case_id": "case-002",
+ "seller": {
+  "name": "LUMEN CHEM",
+  "address": "149 Harbor Rd, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԱՐԱԳԱԾ ԻՄՊՈՐՏ\" ՍՊԸ",
+  "address": "Բաղրամյան 70, Երևան",
+  "country": "AM",
+  "tax_id": "91512648"
+ },
+ "carrier": {
+  "name": "ContinentalFreight",
+  "address": "65 Logistic Ave, Shanghai",
+  "country": "CN",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "CN",
+ "invoice_no": "INV-2026-1449",
+ "date": "2026-05-02",
+ "goods": [
+  {
+   "source_name": "Video Game Console",
+   "trade_name": "SONY PS5 1TB",
+   "armenian_desc": "ՏԵՍԱԽԱՂԵՐ՝ ՀԵՌՈՒՍՏԱԸՆԴՈՒՆԻՉԻ ՕԳՏԱԳՈՐԾՄԱՄԲ SONY PS5 SLIM (1TB) (EU)",
+   "hs_code": "95045000010",
+   "unit": "796",
+   "origin": "CN",
+   "brand": "SONY",
+   "material": null,
+   "quantity": 374.1,
+   "net_weight": 374.1,
+   "gross_weight": 561.2,
+   "unit_price": 10.1737,
+   "package_count": 15,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Plastic mosaic tile toy set",
+   "trade_name": null,
+   "armenian_desc": "ԽԱՂԱԼԻՔԻ ՀԱՎԱՔԱԾՈՒ ՝ 16*16 ՊԼԱՍՏԻԿ ՔԱՐԵՐՈՎ ՄՈԶԱՅԿԱ / ԱՌԱՆՑ ԱՊՐԱՆՔԱՅԻՆ ՆՇԱՆԻ",
+   "hs_code": "95030070000",
+   "unit": "796",
+   "origin": "CN",
+   "brand": null,
+   "material": null,
+   "quantity": 68.7,
+   "net_weight": 68.7,
+   "gross_weight": 78.6,
+   "unit_price": 32.7521,
+   "package_count": 3,
+   "package_type": "BAG"
+  }
+ ]
+}
