@@ -12,7 +12,6 @@ through a run.
 from __future__ import annotations
 
 from functools import lru_cache
-from pathlib import Path
 
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -32,29 +31,7 @@ class Settings(BaseSettings):
     google_api_key: str = Field(min_length=1)
     genai_api_base: str = Field(min_length=1)
 
-    # --- embeddings: the symmetry contract ----------------------------------
-    # Dossier 11 §2: build side and query side must use the same model and the same
-    # dimensionality or the vectors do not align. These are configuration so that a run
-    # can pin what it actually used.
-    classify_embedding_model: str = Field(min_length=1)
-    classify_embedding_dim: int = Field(gt=0)
-    embedding_text_structure: str = Field(min_length=1)
-
-    # --- vector store -------------------------------------------------------
-    qdrant_path: Path
-    qdrant_collection: str = Field(min_length=1)
-
-    # --- reference data -----------------------------------------------------
-    nomenclature_artifact_path: Path
-    nomenclature_snapshot_path: Path
-    nomenclature_api_base: str = Field(min_length=1)
-    nomenclature_crawl_max_id: int = Field(gt=0)
-    nomenclature_crawl_workers: int = Field(gt=0)
-    nomenclature_crawl_timeout_seconds: float = Field(gt=0)
-    nomenclature_expected_leaf_count: int = Field(gt=0)
-    nomenclature_leaf_count_tolerance: int = Field(ge=0)
-
-    @field_validator("genai_api_base", "nomenclature_api_base")
+    @field_validator("genai_api_base")
     @classmethod
     def _strip_trailing_slash(cls, value: str) -> str:
         return value.rstrip("/")
