@@ -168,3 +168,92 @@ any copy. Two items are escalated to the user rather than decided by me:
   measuring *worse* (48% full-code) than a simpler undeployed one (67%), with two
   irreconcilable explanations for the same pair of numbers, and three different candidate
   counts shipping. This is a measurement question before it is a coding one.
+
+---
+
+## Entry 1 — Reference layer removed; step 1 cannot proceed as written
+
+### What changed, and why
+
+Direction received mid-build, and it overrides decision D-05: **no nomenclature data,
+no user data and no input XML examples live in this repository, the Qdrant ATG
+collection is the only database, and vector search is not part of this pipeline.**
+
+Removed accordingly:
+
+- the nomenclature crawler (id-enumeration acquisition against the government API);
+- the artifact build and its sanity gates;
+- the reference query surface — menus, prefix lookups, existence gate, scoped top-k;
+- the embedding adapter.
+
+Also removed: an in-progress crawl was killed and everything it had written to
+`data/reference/` deleted. `data/` now holds only `qdrant_exim/` (113 MB). The stale
+Qdrant lock file from the killed process is gone, along with build artifacts
+(`*.egg-info`, `__pycache__`).
+
+Configuration shrank to the generative provider. The CLI exposes `run`, which raises
+`NotImplementedError` naming the modules still missing — no stub returns a fake value.
+
+### What works, and how it was verified
+
+- **Typed configuration.** `load_settings()` reads `.env` once and fails at startup
+  listing every missing or invalid variable by name. Verified by loading it and by
+  running `python -m deepclare run x.pdf`, which reaches the honest
+  `NotImplementedError` rather than a fabricated result.
+- **Domain vocabulary (M1).** Provenance, three-part confidence, transform chain and
+  review items. Verified by round-tripping a traced value through a transform and by
+  confirming that a derived value without a named rule is rejected at construction.
+
+### Findings from the live probes, recorded before the layer was removed
+
+These were measured, not inferred, and they remain true whoever ends up owning the
+reference layer:
+
+1. **The paged listing endpoint really does cap.** It reports `totalRoots = 10000`
+   regardless of `type` or `isFinal` filters, against an id space extending past 21,000.
+   Dossier 11 §D1's crawl hazard is confirmed against the live API: anything built on
+   the paged listing is missing most of the tree with no error.
+2. **Per-node id enumeration works** and is the only complete route. Ids run 1 to
+   ~21,189 with 404s as ordinary gaps; ~0.12 s per request.
+3. **The supplied vector collection is English-embedded in the canonical
+   broad→specific structure.** Measured: a query phrased
+   `<chapter> — <heading> — <leaf>` scored **0.84** and returned the correct leaf, where
+   a plain English phrase for the same goods scored **0.65** and Armenian and Russian
+   queries for a known code scored 0.63 and 0.64. The symmetry contract of dossier 11
+   §2 is real and this collection sits on the English side of it.
+4. **The collection carries no text.** 14,332 points; payload is exactly
+   `{code, level, p2, p4, p6, p8}`; levels 1/2/5 with 96 chapters, 957 headings, 13,279
+   leaves. `meta.json` declares **no payload indexes**, though dossier 11 §2 specifies
+   them on `level` and the 2- and 4-digit prefixes.
+5. **957 headings, not 1,228.** Consistent with dossier 11 §D1 — roughly 271 headings
+   have no explicit 4-digit node — but it means a heading menu built by scanning the
+   collection silently loses 22% of headings, and heading mis-narrowing is named as the
+   worst failure mode in the system because it is unrecoverable.
+
+### The blocker
+
+Build step 1 is "load the nomenclature, query it, get real results". With the local
+reference layer removed and the collection carrying no text, four inputs the pipeline
+requires have no source:
+
+- the chapter menu (96 chapters with titles) the first narrowing call shortlists from;
+- the heading menu and titles the second call picks across;
+- the taxonomic path `code — chapter › heading › leaf` the final pick reads — without
+  it candidates render as bare digits and the model cannot judge that none of them is
+  the right category, which is what abstention depends on;
+- the per-code supplementary unit, tier 1 of the unit-resolution ladder. Absent, every
+  line falls silently to the kilogram default, which dossier 03 §4.1 flags as a review
+  guess on every line.
+
+Prior-filing reuse (M7) rests on the same layer. Classification (step 3) and assembly
+(step 4) both sit on top of it.
+
+This is stop condition 3 — a load-bearing gap no reasonable reading resolves. Guessing
+an interface for a reference service that may already exist elsewhere would be exactly
+the kind of invention the build rules forbid. Escalated rather than faked.
+
+### Still open from Entry 0
+
+Unchanged and unanswered: the GIR chapter legal notes, and whether the corpora of real
+accepted declarations transfer at all. The second is customer data and is explicitly a
+user decision.
