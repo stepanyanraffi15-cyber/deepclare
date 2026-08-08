@@ -29,12 +29,12 @@ check_submission(files)
 routed = route_documents(files)
 print(f"routed: invoice={routed.invoice.file_name if routed.invoice else None}")
 
-pages = rasterize_documents(routed.documents_in_order())
+pages = rasterize_documents(routed.page_bearing_documents())
 print(f"rasterized {len(pages)} page(s) (role hint: {pages[0].role_hint})")
 
 # every page reads as the invoice: one document, one role, no classifier call needed
 verdicts = [PageVerdict(page=i+1, page_type="invoice") for i in range(len(pages))]
-grouped = group_pages(pages, verdicts)
+grouped = group_pages(routed, pages, verdicts)
 doc = grouped.invoice
 print(f"grouped: invoice document with {len(doc.pages)} page(s)")
 

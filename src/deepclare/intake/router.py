@@ -28,7 +28,7 @@ from deepclare.intake.errors import (
     SubmissionProblem,
     SubmissionRejected,
 )
-from deepclare.intake.formats import FileFormat, detect_format
+from deepclare.intake.formats import FileFormat, detect_format, is_page_bearing
 from deepclare.intake.roles import role_of
 from deepclare.intake.submission import SubmittedFile
 
@@ -70,6 +70,24 @@ class RoutedSubmission(BaseModel):
         """
         note = (self.consignment_note,) if self.consignment_note else ()
         return (self.invoice, *note, *self.supporting_evidence)
+
+    def page_bearing_documents(self) -> tuple[RoutedDocument, ...]:
+        """The documents made of pages, in the same order. These get rasterized."""
+        return tuple(
+            d for d in self.documents_in_order() if is_page_bearing(d.file_format)
+        )
+
+    def page_less_documents(self) -> tuple[RoutedDocument, ...]:
+        """The documents made of no pages, in the same order.
+
+        A workbook and an XML are already structured data. They never reach the
+        rasterizer and so never reach page grouping, which is why they need naming here:
+        a document that is not in one of these two partitions is a document the run has
+        lost. Each goes to the reader for its own format.
+        """
+        return tuple(
+            d for d in self.documents_in_order() if not is_page_bearing(d.file_format)
+        )
 
 
 def route_documents(files: Sequence[SubmittedFile]) -> RoutedSubmission:

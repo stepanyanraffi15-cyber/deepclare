@@ -18,6 +18,14 @@ two values downstream, and the classifier prompt's own "follow the content over 
 instruction is overridden for `other`. That is intended. It is written as one named
 function rather than left to emerge from a chain of defaults, so that changing the policy
 means changing the policy.
+
+The same rule reaches past the pages. A workbook or an XML has no pages, so it is never
+rasterized and nothing about it can be grouped — and a document that grouping does not
+mention is a document the run has silently dropped, which is the page-loss failure again
+at the whole-document scale. So grouping takes the routed submission itself rather than a
+loose list of pages: it checks that the batch it was handed accounts for every
+page-bearing document, and it carries the page-less ones through untouched for the reader
+that handles their format. Everything that entered intake leaves it exactly once.
 """
 
 from __future__ import annotations
@@ -34,7 +42,9 @@ from deepclare.intake.errors import (
     SubmissionProblem,
     SubmissionRejected,
 )
+from deepclare.intake.formats import is_page_bearing
 from deepclare.intake.rasterizer import RenderedPage
+from deepclare.intake.router import RoutedDocument, RoutedSubmission
 
 
 class GroupedPage(BaseModel):
@@ -80,8 +90,8 @@ class LogicalDocument(BaseModel):
 
 
 class GroupedSubmission(BaseModel):
-    """What intake hands on: the invoice, the consignment note if there is one, and the
-    supporting documents left over."""
+    """What intake hands on: the invoice, the consignment note if there is one, the
+    supporting documents left over, and whatever carried no pages at all."""
 
     model_config = ConfigDict(frozen=True)
 
@@ -92,18 +102,27 @@ class GroupedSubmission(BaseModel):
     supporting_evidence: tuple[LogicalDocument, ...] = ()
     """One per source file, never pooled: two catalogues are two documents."""
 
+    page_less: tuple[RoutedDocument, ...] = ()
+    """The workbooks and XML files of the submission, in submission order, exactly as the
+    router described them. They were never rasterized and never classified, so there is
+    nothing to group and no page classification to record — they are carried whole,
+    bytes and all, for the reader that handles their format. Empty is the ordinary case.
+    """
+
 
 def group_pages(
-    pages: Sequence[RenderedPage], verdicts: Sequence[PageVerdict]
+    routed: RoutedSubmission,
+    pages: Sequence[RenderedPage],
+    verdicts: Sequence[PageVerdict],
 ) -> GroupedSubmission:
-    """Group a batch of rendered pages into logical documents.
+    """Group a submission's rendered pages into logical documents.
 
-    `pages` is the batch exactly as it was presented to the classifier; a verdict's page
-    number counts over that batch. Raises SubmissionRejected when no page reads as an
-    invoice — failing loudly beats filing a declaration with no goods on it.
+    `pages` is the batch exactly as it was presented to the classifier — every page of
+    every page-bearing document of `routed`, in `documents_in_order()` order — and a
+    verdict's page number counts over that batch. Raises SubmissionRejected when no page
+    reads as an invoice: failing loudly beats filing a declaration with no goods on it.
     """
-    if not pages:
-        raise ValueError("page grouping needs at least one rendered page")
+    _check_the_batch_covers_the_submission(routed, pages)
 
     usable = _verdicts_by_batch_position(verdicts, len(pages))
     grouped = tuple(
@@ -134,7 +153,36 @@ def group_pages(
             else None
         ),
         supporting_evidence=_evidence_documents(grouped),
+        page_less=routed.page_less_documents(),
     )
+
+
+def _check_the_batch_covers_the_submission(
+    routed: RoutedSubmission, pages: Sequence[RenderedPage]
+) -> None:
+    """Refuse a batch that does not account for exactly the page-bearing documents.
+
+    Both halves are caller mistakes rather than bad submissions, so both raise rather
+    than reject. A page-bearing document with no page in the batch would be dropped from
+    the output in silence; a page from a document the router never saw means the batch
+    and the submission describe different runs. The batch's *order* is not checked
+    because grouping cannot see it — the order that matters is the one the classifier was
+    shown, and a verdict names a position in that batch and nothing else.
+    """
+    if not is_page_bearing(routed.invoice.file_format):
+        raise ValueError(
+            f"{routed.invoice.file_name} is a {routed.invoice.file_format} invoice, "
+            "which carries no pages: it is unambiguously the invoice and is read "
+            "directly by the reader for its format, never grouped"
+        )
+
+    expected = {document.document_id for document in routed.page_bearing_documents()}
+    presented = {page.source_document_id for page in pages}
+    if presented != expected:
+        raise ValueError(
+            "the page batch does not match the routed submission: expected pages from "
+            f"{sorted(expected)}, got {sorted(presented)}"
+        )
 
 
 def assign_page_role(verdict: PageClass | None, role_hint: DocumentRole) -> DocumentRole:

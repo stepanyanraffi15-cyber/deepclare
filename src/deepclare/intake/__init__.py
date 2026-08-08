@@ -26,8 +26,17 @@ Two hard rules govern the module:
 
 The stages, in order: `check_submission` (names and declared roles only) →
 `route_documents` (three buckets, format classed from the bytes) → `rasterize_documents`
-(every page at 200 DPI, in document order) → a page-type classifier the caller injects →
-`group_pages`.
+over `page_bearing_documents()` (every page at 200 DPI, in document order) → a page-type
+classifier the caller injects → `group_pages`, which takes the routed submission back
+alongside the pages.
+
+It takes it back for a reason. A workbook and an XML have no pages, so they are never
+rasterized and never classified; handed only a page list, grouping could not mention them
+and they would vanish from a run that accepted them. So grouping checks that the batch
+accounts for every page-bearing document and passes `page_less_documents()` through
+whole. Everything that entered leaves exactly once, and a page-less invoice — which is
+read directly rather than grouped — is refused here by name rather than mistaken for a
+submission with no invoice page.
 """
 
 from deepclare.intake.classifier import PageTypeClassifier, PageVerdict
