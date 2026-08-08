@@ -1385,3 +1385,281 @@ the shipment total. Fixed in its own commit.
   fails on line 40 of 60 has spent forty description calls and forty traversals and keeps
   none of them. For a 554-line filing — which the corpus contains — that is the difference
   between an expensive retry and an unusable one.
+
+---
+
+## Entry 10 — The evaluation harness: a scorecard with the run's identity attached to it
+
+`src/deepclare/evaluation/` and `python -m deepclare.evaluation`. A corpus directory in, a
+scorecard out, with everything the number depends on printed above the number.
+
+### What it is, and what it deliberately is not
+
+**It does not score.** `evalkit/` is a finished, stdlib-only scorer with its own interface
+and it is used in full — line alignment, chrF, the attribute rubric, the hierarchical code
+comparison, the numeric tolerance. A second implementation of any of those here would be a
+second opinion about what "correct" means and the two would drift. Nothing in `evalkit/`
+was modified; it is bound onto the import path from a directory derived from the corpus
+the caller named, and it is not installed, so no build artifact lands in a directory this
+build does not own.
+
+**It does not produce declarations.** How a case becomes XML is a **parameter** — a
+callable taking the case's input paths and returning declaration XML. One producer ships:
+read a file the case already holds. Pointed at `ground_truth.xml` that is the harness's own
+self-check; pointed at `declaration.xml` it scores whatever a previous run wrote. The run
+graph plugs in as a third-party callable and the harness learns nothing about it.
+
+**It does not report a number without its identity.** Model ids per tier, every decoding
+parameter, every prompt's declared version *and* the sha256 of its bytes, the nomenclature
+vintage, the embedding model and width, retrieval depth, every classifier feature flag, the
+scorer's own thresholds, and the git build with a dirty marker. All of it prints before the
+first metric.
+
+### What it reports
+
+Per case and in aggregate: goods-line alignment precision / recall / F1; commodity-code
+agreement **at 2, 4, 6, 8 and 10 digits** rather than pass/fail, plus exact match, mean
+agreeing prefix length, and coverage; numeric exactness per field (quantity, net weight,
+gross weight, invoiced cost, package count); and description chrF, token F1, exact rate and
+the four rubric checks each over the lines where it had something to assert. `--cases N`
+scores a subset, because 71 full pipeline runs is a lot of tokens and the common use is a
+quick read.
+
+Agreement is reported by depth because *where* two codes diverge says which stage broke: a
+wrong chapter is a narrowing failure, a right chapter with a wrong heading is the failure
+the specification names as unrecoverable, and agreement to eight digits with a wrong tail is
+a different and much cheaper problem. One rate cannot tell those apart.
+
+### The two accounting decisions that keep the number honest
+
+**The roll-up is line-weighted.** Cases in this corpus run from 4 goods lines to 554, so a
+mean of per-case accuracies is a mean over cases and says almost nothing about lines. The
+case-weighted figure is printed beside it, because a metric that moves in one and not the
+other is telling you which cases changed.
+
+**Ten lines are held out and reported separately.** Two codes in the corpus — `39069090090`
+and `39100000090` — exist in neither our nomenclature nor the authority. Verified again
+here against the artifact: of the corpus's **316 distinct codes, exactly those two** fail to
+resolve to a leaf, over **10 of 2,842 goods lines**. The existence gate refuses a code that
+is not in the tree, so on those lines abstaining is the correct behaviour and the corpus
+scores it as a miss. Left in the aggregate they depress it silently. The report prints the
+attributable figure, the all-labels figure, and an account of the held-out lines: how many
+were abstained on (right) and how many were answered anyway.
+
+Coverage is printed with every code figure, and exact agreement is given twice — as
+accuracy over all matched lines, and as precision over the lines the system answered.
+Selective prediction is the frame this product operates in and an accuracy number without
+its coverage is not readable.
+
+### Verified
+
+`python -m deepclare.evaluation evalkit/corpus --from-file ground_truth.xml` — all 71
+cases, 2,842 goods lines, each ground truth scored against itself. **Every figure 100%,
+every case PASS, 154 seconds.** Anything less than perfect there is a defect in the harness,
+not a finding about the product.
+
+That test alone is worthless, because a harness that always returns 1.0 passes it. So
+`tests/test_evaluation_harness.py` — 12 tests, no network, no settings, no model —
+degrades exactly one thing about the produced declaration and asserts that exactly the
+corresponding number moves:
+
+| Degradation | What must move | Measured |
+|---|---|---|
+| Blank one line's code | coverage and accuracy fall to 13/14; **precision stays 1.00**; alignment untouched | as stated |
+| Wrong code sharing the first five digits | agreement at 2 and 4 stays 1.00, at 6 / 8 / 10 falls to 13/14 | as stated |
+| Delete one goods block | recall 13/14, **precision stays 1.00** | as stated |
+| Add 5 kg to one net weight | `net_weight` 13/14, every other field 14/14 | as stated |
+| Abstain on the five impossible labels in `case-031` | attributable bucket n=1 at 100%, all-labels bucket 1/6, held-out account 5 abstained | as stated |
+| Producer raises on one case | the case is named with its error, the other case still scores, the run reports itself **not complete** | as stated |
+
+Full suite not run — per the verification discipline, one targeted file.
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-39 | Producing a declaration is a parameter, and no pipeline producer ships here | The pipeline was being built in parallel. A harness that imports it cannot be run or verified until it exists, and cannot be pointed at anything else afterwards — including at a stored output from a previous release, which is what a regression run needs |
+| D-40 | The roll-up is line-weighted; the case-weighted figure is printed beside it | 4 to 554 lines per case. Neither figure alone is the truth and the gap between them is information |
+| D-41 | Lines whose label names a code that does not exist are held out of the headline and accounted for on their own | Abstaining there is the governing asymmetry working correctly. Scoring correct behaviour as a miss makes the number mean something other than what it says, and hiding the exclusion makes it worse |
+| D-42 | Code agreement is reported as accuracy **and** precision **and** coverage | A system allowed to decline has no meaningful accuracy without its coverage. The scorer reports one exact-match rate, which counts an abstention as a wrong answer |
+| D-43 | `--cases N` is the first N in name order — a prefix, not a sample — and the report says it is biased | Reproducible between runs and cheap to name. A random sample would need a seed pinned in the manifest to be worth as much, and would still be a subset of one family |
+| D-44 | A case whose producer raises is recorded and the run continues, but the run is never *complete* | On a corpus where each case is a full pipeline run, losing seventy results to the seventy-first is worse than reporting seventy with the seventy-first named. Recorded, listed with its error, and it blocks the completeness flag and the exit code — which is not the same as swallowed |
+| D-45 | The scorer is bound onto the import path, never installed | It carries no dependencies and is copied rather than released; installing it writes build artifacts into a directory this build does not own. The path is derived from the corpus directory the caller already gave, so no path is written into the code |
+| D-46 | Two small additive functions elsewhere: `prompting.prompt_identities` and `reference.store.artifact_vintage` | The manifest needs every prompt's version and content hash, and the prompt loader is the only thing allowed to read that directory. It needs the nomenclature vintage, and the store carries it but demands a Qdrant client to construct — and the embedded store is exclusive-locked to one process, so a report that only needs to *pin* the data must not take that lock away from a run |
+
+### Where this is weakest
+
+- **Every number in the verified report is 1.0 because the input was the truth.** The
+  harness is proven to measure correctly and has measured nothing about the product. The
+  first real number arrives when a pipeline producer is wired in, and per the classification
+  entry's warning it has to be a distribution over runs rather than a single figure.
+- **No intervals.** The specification requires a 95% interval on every proportion and a
+  denominator on every number. The denominators are all there; the intervals are not. Two
+  runs whose figures differ by two points currently cannot be told apart.
+- **No baseline, so no regression view.** There is nothing to diff against, no item-level
+  churn (`fixed` / `broken`), and no attribution verdict. The manifest is the half of §14
+  that makes those possible; the comparison itself is not built.
+- **No slices.** The specification calls an aggregate without its slices unreportable —
+  by chapter, by input channel, by script, by whether the document printed its own code. The
+  per-line detail needed to compute them is in the JSON output; nothing computes them.
+- **No cost, no latency, no abstention split.** `justified` versus `costly` abstention is
+  the metric that says whether declining is working, and it needs a judgement the corpus
+  labels cannot supply on their own.
+- **Alignment is quadratic in goods lines.** 154 seconds for the corpus, most of it in the
+  554-line case, because matching computes chrF for every produced line against every
+  labelled line. That is the scorer's, and it is why `--cases N` exists.
+- **A pre-emitted file cannot be attributed.** The manifest prints the configuration in
+  force while scoring and says, in the report, that it does not describe whatever wrote the
+  file. Closing that needs the producing run to write its own manifest beside its XML.
+
+---
+
+## Entry 10 — M17 Trace: the observation layer
+
+`src/deepclare/trace/`. Run identifiers, per-node capture, structured per-stage records,
+and the pinned versions that explain a result. It depends on the domain vocabulary, the
+model-call account the model adapter already returns, and the candidate shape the
+reference store already returns — and on no producing module, which is what the
+dependency table says. **Nothing else was touched**, and nothing was wired: the seam is
+provided, the orchestrator connects it.
+
+### Read-only, enforced structurally rather than promised
+
+The module decomposition's rule for M17 is that it must not know how to change
+behaviour. Two facts hold it, and neither is a comment asking for it:
+
+- **Every method a run calls returns `None`.** `stage()` yields nothing; `node()` yields a
+  draft with setters and no getters. There is no value a run could branch on, so no branch
+  can depend on tracing being on. A prohibition backed by omission cannot be violated.
+- **The recorder never reaches back.** It holds no port, imports no stage, calls no
+  module. What to record is the caller's decision.
+
+A mis-wired call — a node recorded outside any stage — is refused at *every* capture
+level including `off`, because a defect that appears only when tracing is turned up is a
+behaviour that varies on tracing.
+
+### The seven pinned axes, and the rule they exist for
+
+`RunManifest`: data (nomenclature vintage, index build, embedding model and width,
+canonical text-structure version, code-list versions), models (id, served version and
+decoding per stage), prompts (name, version, optional content hash), configuration (every
+threshold and flag, plus capture volume), code, environment, evaluation. `compare_manifests`
+applies the attribution rule: one axis apart is attributable, two or more is a **compound
+change** and no single cause may be claimed. The run identifier is deliberately *not* an
+axis, or two runs of the same build could never compare as identical.
+
+`RunTrace.pin_drift()` is the check the manifest alone cannot give: the manifest is a
+claim and the calls are the evidence. A model that answered for a stage the manifest pins
+differently, or a prompt version that was rendered and is not pinned, is named.
+
+An axis nothing in this build publishes carries `UNPINNED` and appears in
+`manifest.unpinned()`. Two runs agreeing on an axis neither of them pinned have
+established nothing, and the printed report says so.
+
+### Capture volume is four levels, and redaction is not one of them
+
+`off` → `records` (what happened: node, decision, outcome, model call, tokens, timing,
+candidates with scores — **no document content**) → `states` (entry and exit state) →
+`payloads` (full prompt and full response). A truncation cap that can be set to `None`,
+and a sampling rate that is deterministic in the run id and sequence number so a second
+reading of a trace agrees with the first. Sampling drops *content*, never the node record:
+one durable record per node traversal is the specification's ask, and a sampled-away
+record is a hole in the run's account of itself.
+
+Redaction has no off switch at any level. It is driven by the domain's own field names —
+`name`, `address`, `tax_code`, `surname`, `phone`, `email`, `iban` — and by the identity
+strings `identities_in()` harvests out of a record the run produced, which is what makes a
+*rendered prompt* safe, since a prompt is one long string with no field names left in it.
+A pattern backstop catches emails, IBANs and international phone numbers no field named.
+It deliberately does **not** scrub long digit runs: a commodity code is eleven digits, and
+a trace that masks commodity codes cannot explain a classification.
+
+### Retention: no function that could violate the invariant
+
+There is no `delete`, no `prune`, no `expire`, no window that anything enforces.
+`RetentionPolicy` is a declaration that gets recorded and printed. `ArtifactStore` refuses
+to overwrite a retained artifact, because writing over one is a deletion under another
+name. The JSONL sink opens `"a"` and only ever `"a"` — the measured precedent deleted its
+trace file at the start of every run.
+
+### Verified
+
+`tests/check_trace_report.py` builds a two-line run through the recorder exactly as an
+orchestrator would — a printed-code fast path that dead-ends and has its prefix cleared by
+the reset node, a material-split abstention, two degradations, nine model calls — and
+prints it. Actual output, abridged:
+
+```
+  UNPINNED (7) — a comparison establishes nothing about these:
+    - code.build_identifier
+    - prompts[pick_code].content_hash                      … and five more
+  capture payloads, cut at 240 chars, sampling 1.00, redaction always on
+  retention indefinite, declared by check_trace_report.py; deletion is by explicit
+  human action only — no code path here removes an artifact or a trace
+
+    #9    C4 retrieve              line 1    abstained     0.0 ms
+           decision   : the 6-digit scope 853690 retrieved nothing at any widening rung
+           abstention : no_candidates
+    #10   C7 reset                 line 1    completed     0.0 ms
+           superseded : printed_prefix held '853690' — dead end; cleared so the entry
+                        branch cannot retake the fast path
+    #13   C4 retrieve              line 1    completed     0.0 ms  attempt 2
+           retrieval  : 4 candidate(s), scope p4 in (8536, 8535)
+                      *   1. 8536901000  0.8412
+                          2. 8536909000  0.7788
+    #17   C5 pick code             line 2    abstained     0.0 ms
+           abstention : none_chosen
+
+  identity strings this run handled : 6
+  identity strings still in the trace: 0  ()
+  and in the trace file on disk     : 0
+
+  model swap only        : single-axis change: models
+  model swap + new tree  : COMPOUND CHANGE across data, models — no single cause may be claimed
+  same build twice       : manifests are identical on all seven axes
+```
+
+`tests/test_trace_observation.py` — 35 deterministic tests, no network: the return-`None`
+contract, a failing node recorded with the exception still propagating, both abstention
+kinds staying distinct, the superseded slot surviving the loop guard, each capture level's
+exact contents, truncation and its disabling, sampling determinism, the redaction proof
+(the fixture is asserted to leak *before* it is masked, so the check has teeth), the
+manifest's unpinned list, all three attribution verdicts, pin drift, the append-only sink
+across two runs, and the artifact store's refusal to overwrite.
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-31 | Four capture levels rather than the specification's two (`records` / debug) | It names node records and payload capture as separate concerns but gives one dial. Entry and exit state is document content and belongs between them, so a run can account for every node without storing an invoice |
+| D-32 | Sampling governs states and payloads, never the node record | §16.3's sampling sentence sits under *input and output capture*; §16.2 asks for one durable record per traversal. Sampling away a record would make the two contradict |
+| D-33 | The redactor is *given* the identity strings, harvested from the records by field name | A pattern scrubber alone cannot find a company name, and a field mask alone cannot help a rendered prompt. The domain model already says which fields are identity, so the field semantics are the mask |
+| D-34 | A bare `name` is always masked, including country and customs-office names | Over-masking costs nothing recoverable here: in this domain every non-identity name travels beside its code, and codes are never masked. Under-masking is the consequential error |
+| D-35 | Long digit runs are not scrubbed | An eleven-digit commodity code would be masked and the trace would stop explaining the thing it exists to explain. Tax codes are removed by value, from the field that declared itself one |
+| D-36 | The run identifier and start time are excluded from the axis fingerprints | They differ by construction, so including them makes every comparison a compound change |
+| D-37 | `UNPINNED` is a declared sentinel, listed by `unpinned()`, never a fabricated version | An invented version string makes two different runs look identical, which is worse than a run that admits what it could not pin |
+| D-38 | A sink write failure raises rather than being swallowed | It does mean an infrastructure failure can surface with tracing on that would not with it off. The values a run produces are unaffected either way, and a trace that silently did not record is the failure §16.2 exists to prevent |
+| D-39 | The recorder's node context manager measures wall clock itself | The alternative is every caller timing its own node, which is the shape that produces a pipeline with no latency numbers — and §15.2 records that no latency measurement of any kind survives in the evidence base |
+
+### Where this is weakest
+
+- **A name learned late is not masked retroactively.** `learn_identities` extends the
+  redactor; nothing rewrites a record already written. Anything captured before the invoice
+  has been read is masked by field name and by pattern only. There is a test asserting
+  exactly this, so the limit is stated rather than discovered.
+- **Prompt content hashes are unpinned.** `PromptPin.content_hash` is optional and every
+  prompt is currently listed as unpinned, because nothing outside the prompt loader reads
+  the prompt directory. `deepclare.prompting.prompt_identities`, added concurrently by the
+  evaluation work, is the natural source; wiring it is the composition root's job.
+- **`canonical_text_structure_version` has no publisher.** Nothing in the reference
+  artifact carries one — Entry 3 already raised that the artifact needs a version identity
+  a consumer can check, not just a build timestamp. Until it does, this axis is whatever
+  the composition root types, which is exactly the drift the pin is meant to prevent.
+- **Two `RunManifest` types now exist.** `deepclare.trace.manifest.RunManifest` (seven
+  axes, per run, with the attribution rule) and `deepclare.evaluation.manifest.RunManifest`
+  (built concurrently, filled from settings and artifacts for a scoring run). They overlap
+  substantially and were written in parallel against the same specification section.
+  Reconciling them is an architectural decision and has not been taken.
+- **Nothing computes a metric.** Golden sets, metric definitions, the judge harness and
+  the published report are not in this package and have no stub here that looks as though
+  they are. This is the layer they would be computed from.
