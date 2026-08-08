@@ -1105,19 +1105,28 @@ real embeddings. Actual output:
 |---|---|---|---|---|
 | `PORTLAND CEMENT CEM I 42.5 N` | `2523290000` | 0.6836 | yes | C1 · C2 · C4 · C5 |
 | `TERMINAL BLOCK 4 MM`, invoice prints `8536.90.10.00.00` | `8536901000` | 0.9525 | no | **C0** · C4 · C5 |
-| `INDUCTIVE PROXIMITY SENSOR M18` | abstained | 0.0 | yes | C1 · C2 · C4 · C5 |
+| `INDUCTIVE PROXIMITY SENSOR M18` | abstained twice, picked `8536500600` once | 0.0 / 0.6986 | yes | C1 · C2 · C4 · C5 |
 | `CLOTHES HANGERS, 42 CM` | abstained, material split | 0.0 | yes | C1 · C2 · C4 · C5 |
 | `PE BAG 50X80`, catalogue prints `3923210000` | `3923210000` | 0.7 | yes | **L4**, no model call |
 
-The two abstentions are the interesting ones and both are actionable rather than blank:
+The abstentions are the interesting rows and both are actionable rather than blank:
 
-- the sensor — *"the subheadings below this level are differentiated by operating voltage
-  … the voltage is not specified"*, resolved by *"state the operating voltage of the
-  sensor"*. This is the row the specification records as unsolvable from the input
-  available, and the system says so instead of guessing;
-- the hangers — *"If they are made of wood, the correct code is 4421100000. If they are
-  made of plastic, they would be classified under 3924900009."* Both branches named with
-  their codes, which is what turns an abstention into a question an operator can answer.
+- the hangers, on every run — *"If they are made of wood, the correct code is 4421100000.
+  If they are made of plastic, they would be classified under 3924900009."* Both branches
+  named with their codes, which is what turns an abstention into a question an operator
+  can answer, plus *"state the material of the clothes hangers"* in its own field;
+- the sensor, on two runs of three — *"the subheadings below this level are differentiated
+  by operating voltage … the voltage is not specified"*, resolved by *"state the operating
+  voltage of the sensor"*. This is the row the specification records as unsolvable from
+  the input available.
+
+**On the third run the sensor did not abstain**, and that run is worth more than the two
+that did. It picked `8536500600` and justified it with *"electronic switches consisting of
+a transistor and a logic chip, which is the typical construction of a modern inductive
+sensor"* — a construction detail no document states, reasoned from what such a product
+usually contains. That is the confident-wrong-code shape exactly. The composite confidence
+came out at **0.6986**, four thousandths under the gate, so the line was flagged. The gate
+caught it; nothing else would have.
 
 The fast path fired on the printed code, skipped both narrowing calls, and retrieved four
 candidates from the 6-digit subtree — one model call for the whole line.
@@ -1177,3 +1186,9 @@ that a second dead end terminates. Full suite: 372 passed.
   composite and on this evidence it is carrying no information at all. That is a
   calibration problem in the prompt, and it is the first thing to look at if the gate ever
   fires in the wrong direction.
+- **The same input does not give the same answer twice.** Every decoding parameter is
+  pinned — temperature 0, top-p 1, top-k 1, a fixed seed — and the sensor line still
+  abstained on two runs and picked on a third. Reasoning models are not reproducible from
+  decoding settings alone. Two consequences: no single run of the check script is
+  evidence, and any evaluation of this stage has to report a distribution rather than a
+  number.
