@@ -47,6 +47,13 @@ class Settings(BaseSettings):
     # --- prompts ------------------------------------------------------------
     prompts_dir: Path
 
+    # --- embeddings: the symmetry contract ----------------------------------
+    # The build side and the query side must use the same model and the same width or
+    # the vectors do not align. Configuration rather than constants, so a run can pin
+    # what it actually used and a mismatch is loud.
+    classify_embedding_model: str = Field(min_length=1)
+    classify_embedding_dim: int = Field(gt=0)
+
     # --- reference data -----------------------------------------------------
     # The vector collection and the tree that gives its codes meaning. Both are large
     # derived objects no checkout reproduces, so their absence must be a startup
