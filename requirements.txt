@@ -11,6 +11,11 @@ qdrant-client==1.16.1
 pypdfium2==5.12.1
 pillow==12.3.0
 
+# Workbook reading. openpyxl's read-only mode is a forward-only XML stream, which is what
+# the spreadsheet path needs: a workbook's declared used range is routinely stale and a
+# loader that trusts it pays for every phantom cell the range names.
+openpyxl==3.1.5
+
 # Tests. Needed only to run `tests/`; nothing under `src/` imports it. It is pinned here
 # because this is the one pinned dependency list, but pyproject feeds this whole file to
 # the package's runtime dependencies, so it installs in production too. Splitting a

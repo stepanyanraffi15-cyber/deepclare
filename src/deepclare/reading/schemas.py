@@ -143,6 +143,129 @@ class ClassifyPageType(BaseModel):
     verdicts: list[ClassifiedPage]
 
 
+# --- the spreadsheet path -------------------------------------------------------------
+# A workbook is read from an exact, deterministic rendering of its own cells, so the two
+# things the vision shapes carry have no referent here. There is no page: a workbook is
+# not paginated and a sheet is not a page. And legibility is not in question: the text is
+# the cell, character for character. What is genuinely uncertain on this channel is which
+# cell holds which field, and that is what `confidence` grades — the same question the
+# vision path asks, resting on the one risk this input actually has.
+
+
+class WorkbookText(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    text: str
+    confidence: ExtractionConfidence
+
+
+class WorkbookNumber(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    number: Number
+    confidence: ExtractionConfidence
+
+
+class WorkbookParty(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    name: str | None = None
+    address: str | None = None
+    tax_code: str | None = None
+    confidence: ExtractionConfidence
+
+
+# The goods lines this call returns are a first guess. They are kept only when the
+# structural path — locate the table, label its columns, read the typed cells by index —
+# produced nothing, because a model asked to transcribe every numeric value of a table
+# reliably drops one of two adjacent similar fields whatever the prompt says.
+class WorkbookGoodsLine(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    description: str
+    printed_line_number: int | None = None
+    quantity: Number | None = None
+    unit: str | None = None
+    gross_weight: Number | None = None
+    net_weight: Number | None = None
+    weight_unit: str | None = None
+    unit_price: Number | None = None
+    total_price: Number | None = None
+    package_count: Number | None = None
+    package_type: str | None = None
+    origin_country: str | None = None
+    trade_name: str | None = None
+    units_per_package: Number | None = None
+    package_weight_kg: Number | None = None
+    dimensions: str | None = None
+    printed_customs_code: str | None = None
+    confidence: ExtractionConfidence
+
+
+class WorkbookServiceCharge(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    description: str
+    amount: Number | None = None
+    confidence: ExtractionConfidence
+
+
+class ReadWorkbookInvoice(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    invoice_number: WorkbookText | None = None
+    invoice_date: WorkbookText | None = None
+    currency: WorkbookText | None = None
+    incoterms_code: WorkbookText | None = None
+    incoterms_place: WorkbookText | None = None
+    origin_country: WorkbookText | None = None
+    seller: WorkbookParty | None = None
+    buyer: WorkbookParty | None = None
+    total_amount: WorkbookNumber | None = None
+    service_charges: list[WorkbookServiceCharge] = []
+    goods_lines: list[WorkbookGoodsLine] = []
+
+
+# The label vocabulary, and the only place it is written down. The values are the goods
+# line's own field names so that a label cannot drift from the field it binds to: there is
+# no translation table between what the model says and what the typed reader writes.
+ColumnLabel = Literal[
+    "printed_line_number",
+    "description",
+    "quantity",
+    "unit",
+    "gross_weight",
+    "net_weight",
+    "weight_unit",
+    "unit_price",
+    "total_price",
+    "package_count",
+    "package_type",
+    "origin_country",
+    "trade_name",
+    "units_per_package",
+    "package_weight_kg",
+    "dimensions",
+    "printed_customs_code",
+    "ignore",
+]
+
+
+class LabelledColumn(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    column: int = Field(ge=0)
+    label: ColumnLabel
+
+
+# One label per column and never a value. This is the whole point of the node: the answer
+# space is bounded by the table's own width, so nothing here can lose a figure.
+class LabelColumns(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    columns: list[LabelledColumn]
+
+
 class ReadConsignmentNote(BaseModel):
     model_config = ConfigDict(frozen=True)
 

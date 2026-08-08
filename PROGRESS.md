@@ -1514,7 +1514,7 @@ Full suite not run — per the verification discipline, one targeted file.
 
 ---
 
-## Entry 10 — M17 Trace: the observation layer
+## Entry 11 — M17 Trace: the observation layer
 
 `src/deepclare/trace/`. Run identifiers, per-node capture, structured per-stage records,
 and the pinned versions that explain a result. It depends on the domain vocabulary, the
@@ -1663,3 +1663,222 @@ across two runs, and the artifact store's refusal to overwrite.
 - **Nothing computes a metric.** Golden sets, metric definitions, the judge harness and
   the published report are not in this package and have no stub here that looks as though
   they are. This is the layer they would be computed from.
+
+---
+
+## Entry 12 — The spreadsheet reading path (A7–A11): the only route carrying Armenian goods text
+
+`src/deepclare/reading/workbook.py`, `table.py`, `columns.py`, `spreadsheet.py`, plus
+`prompts/read_workbook_invoice.md` and `prompts/label_columns.md`. A workbook invoice now
+reads end to end; before this the entry point raised `NotImplementedError` naming itself.
+
+This channel matters more than its size. It is the **only** input route that carries
+Armenian-language goods text, and it had no recorded extraction evidence at all.
+
+### The shape, and why it is three nodes and not one
+
+```
+A7  buffer the workbook     one forward-only streaming pass; the only read there will be
+A8  whole-text read         header fields, always, whatever A9–A11 do
+A9  locate the goods table  structural, language-blind, no model
+A10 label the columns       one label per column, never a value
+A11 read the typed cells    deterministic, by column index
+```
+
+**A10 is the whole design.** Asking one model to transcribe every numeric value across a
+goods table reliably drops one of two adjacent similar fields — gross weight beside net
+weight — regardless of prompt wording, because the source column order does not match the
+schema's field order. The fix is structural: the model emits one label per column out of a
+closed set of eighteen, and code reads the cells by index. The answer space is bounded by
+the table's own width, so a figure cannot be lost by a binding that never touches it.
+
+**A9 reads no word of any language.** Its primary signal is a run of ≥2 consecutive
+buffered rows whose first cell counts 1, 2, 3… — the invoice's own numbering. A preamble
+is skipped because no preamble row begins the count, and a totals row is excluded because
+it does not continue it. Both fall out of the shape rather than being special-cased. The
+fallback is the highest-scoring header-like row (cells that are strings of stripped length
+in `(0, 40)`, ≥3 needed to score at all), earliest row winning a tie.
+
+### Verified against the real models, once
+
+`tests/make_synthetic_workbook.py` generates a fictitious workbook carrying every hazard
+the path exists for: a seven-row preamble, the table starting at row 9, **Armenian column
+headers**, gross weight beside net weight in that order, a `Կոդ` column of seller article
+numbers next to a real `ԱՏԳ ԱԱ ԿՈԴ` column, a quantity cell holding the words `շուրջ 500`,
+a row with no description, a freight row inside the table, a totals row below it, a second
+sheet with no table, and a declared used range inflated by hand to `A1:BZ50000`.
+`tests/check_workbook_reading.py` runs it. Actual output:
+
+```
+=== A9 / A10 PER SHEET ===
+Invoice               : located by numbered_run, 6 data row(s), 11 columns, 4 goods line(s)
+  no description      : (13,)
+  service rows        : (15,)
+    column  0 -> printed_line_number      column  6 -> gross_weight
+    column  1 -> description              column  7 -> net_weight
+    column  3 -> printed_customs_code     column  8 -> unit_price
+    column  4 -> quantity                 column  9 -> total_price
+    column  5 -> unit                     column 10 -> origin_country
+  not bound           : [2]
+Notes                 : no goods table; contributes nothing
+
+=== A8 HEADER ===
+invoice_number        : MPS-2026-0417        incoterms_code : FCA
+invoice_date          : 2026-03-12           incoterms_place: Mersin
+currency              : EUR                  total_amount   : None
+seller                : MERSIN PLASTIK SANAYI A.S.
+buyer                 : ԱՐԱՐԱՏ ՓԱԹԵԹԱՎՈՐՈՒՄ ՍՊԸ
+service charges       : [('ՓՈԽԱԴՐՄԱՆ ԾԱԽՍ / FREIGHT MERSIN-YEREVAN', 620.0)]
+
+=== GOODS LINES (typed_cells) ===
+  line 1: ՊՈԼԻԷԹԻԼԵՆԱՅԻՆ ՊԱՐԿ 50X80 ՍՄ
+      printed_line_number 1   quantity 12000   unit հատ
+      gross_weight 318.5      net_weight 300   unit_price 0.042
+      total_price 504         origin_country TR
+      printed_customs_code 3923210000
+  line 2: ՊՈԼԻՊՐՈՊԻԼԵՆԱՅԻՆ ՊԱՐԿ 55X95 ՍՄ
+      printed_line_number 2   unit հատ
+      gross_weight 92.4       net_weight 88    unit_price 0.115
+      total_price 57.5        origin_country TR
+      printed_customs_code 3923290000
+  line 3: ՍՏՐԵՉ ԹԱՂԱՆԹ 500ՄՄ X 300Մ
+      printed_line_number 3   quantity 240     unit ռուլոն
+      gross_weight 1104       net_weight 1056  unit_price 8.75
+      total_price 2100        origin_country TR
+      printed_customs_code 3919109000
+  line 4: ԿՈՆՏԵՅՆԵՐԱՅԻՆ ՆԵՐԴԻՐ 20 ՖՈՒՏ
+      printed_line_number 5   quantity 60      unit հատ
+      gross_weight 471        net_weight 450   unit_price 14.2
+      total_price 852         origin_country TR
+      printed_customs_code 3923900000
+
+=== WHAT COULD NOT BE READ ===
+  sheet 'Invoice' column 4 bound to quantity: 1 cell(s) at row(s) 11 — e.g. 'շուրջ 500'
+
+=== CALLS ===
+read_workbook_invoice : gemini-3.5-flash-lite v1, 2784 in / 1575 out
+label_columns         : gemini-3.5-flash-lite v1, 1505 in / 156 out
+```
+
+Five things in that output are the ones worth checking:
+
+1. **The two weights stayed apart, and in the right order.** Gross at column 6, net at
+   column 7, both filed. This is the reproduced bug and it did not fire.
+2. **`Կոդ` was not read as a customs code.** Column 2 holds `ART-5080`-style article
+   numbers and is the only column the labeller left unbound, while column 3's `ԱՏԳ ԱԱ ԿՈԴ`
+   became `printed_customs_code`. The confusion pair in the prompt is doing work.
+3. **The whole table is Armenian and the locator never read a word of it.**
+4. **`total_amount` came back null**, which is right: the only printed total includes the
+   freight row, and the prompt says return null rather than reconcile.
+5. **`line 4` carries `printed_line_number 5`** — the invoice's own numbering with the
+   description-less row 4 skipped, while `line_id` stays positional. Two different
+   identities, both correct.
+
+25 deterministic tests, none touching the network (`tests/test_spreadsheet_reading.py`):
+the buffer's blank-row and trailing-blank rules, interior-blank alignment, the empty
+workbook, the text rendering, the numeric parser, both location methods, the totals-row
+exclusion, the labeller payload's three-row cap and `(blank)` convention, duplicate labels,
+out-of-range columns, a failed labelling call, the typed read, the skipped row, the
+unreadable cell, the freight row, and provenance.
+
+### The silent-failure path, made loud
+
+07 §1.2 records a cell that will not parse as a number becoming an empty field with **no
+error, no warning and no log** — so a text column bound to a numeric field loses every
+value it holds, invisibly. Three things changed:
+
+- **It is refused rather than guessed.** `parse_number` handles `1 250,50`, `1.234,56`,
+  `1,234.56` and `2 500,75`, and **refuses `1,234`** — 1234 in one convention and 1.234 in
+  another, with nothing in the cell to decide. A refusal is visible; a coin-flip is a wrong
+  weight on a legal document.
+- **It is reported per column, not per cell**, because per column is the shape of the
+  failure. `UnreadNumbers` carries the sheet, the 0-based column, the field it was bound
+  to, every 1-based row, and up to three distinct example texts.
+- **It is logged at warning**, with the same content.
+
+The same treatment covers the rest of what this path decides quietly: duplicate labels
+(lowest column index wins), out-of-range columns, unlabelled columns, rows skipped for want
+of a description, and the sheets that had no table at all. All of it is on the returned
+`WorkbookReading`, typed.
+
+### A defect the live run found, and the fix
+
+The first live run filed the freight row **twice** — once as a goods line and once as a
+service charge. A structural pass cannot tell them apart: a freight row inside the goods
+table is numbered, priced and shaped like a goods row. The vision path has no such problem
+because the model judges each row.
+
+The fix is D-44 below: a data row whose description matches, verbatim, a service charge the
+whole-text read returned is left out of the goods and listed in `SheetOutcome.service_rows`.
+The match is whitespace-collapsed and case-folded and nothing else, so a row A8 paraphrased
+rather than copied stays as goods — the direction that loses no goods.
+
+### What A7's streaming actually buys, measured here
+
+The specification's figure is 25+ s materializing against 0.08 s streaming. That is not
+what this library does, and the honest numbers are different in an instructive way. On a
+230-row invoice with the declared range inflated to `A1:XFD1048576`:
+
+| | cells visited | time |
+|---|---|---|
+| streaming, declared range trusted | **3,833,856** | 0.18 s |
+| materializing (`read_only=False`) | 1,872 | 0.01 s |
+| A7 — streaming **and dimensions discarded** | **1,848** | 0.01 s |
+
+So in openpyxl it is not `read_only` that saves the phantom cells — it is
+`reset_dimensions()`, called before a single row is read. Trusting the declared range costs
+**2,075× the cells**, and every one of them would become a buffered object that A9, A10 and
+A11 then walk. On a second workbook where whole-column formatting had written 600 real but
+empty cells per row, the file itself is 328 KB and every reader pays to parse it; A7 still
+trims the buffer to the 1,848 cells that hold anything.
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-40 | The label vocabulary **is** the goods line's own field names, so there is no translation table | 06 §3.4 requires the vocabulary be a single source of truth shared with the reader that consumes it. Identity is the strongest form of that: a label cannot drift from the field it binds to when they are the same string |
+| D-41 | The workbook answer shapes carry **no page and no confidence-of-legibility**; `confidence` grades *identification* | A workbook is not paginated and a sheet is not a page, so a page number would be a value asked for and invented. And the text is the cell, character for character — legibility is not in question. What is uncertain is which cell holds which field, which is the same question the vision path's confidence answers, resting on the one risk this input actually has |
+| D-42 | Values read by A11 carry extraction confidence **1.0** | Extraction confidence asks whether the value was read correctly off the source. Here the value *is* the cell, copied by index. The separate risk — a wrongly bound column — belongs to A10 and is reported by this module's notes rather than smuggled into a number that means something else. See the weakness below |
+| D-43 | The structural path falls back to A8's guess whenever it yields **no** lines, not only when the labelling call fails | 02 §7.1 names the call failure. The same reasoning holds for a sheet whose mapping has no description column and for a workbook where nothing located: the alternative is a `ReadingError` on an invoice A8 has already read. `goods_source` says which happened |
+| D-44 | A row the whole-text read named verbatim as a service charge is excluded from the typed goods | Found by running it. Without this the freight row is filed as goods *and* as the charge meant to explain the gap between the invoice's total and the declared goods value, so the reconciliation the charge exists for cannot close. A8's service rows are kept on the record whatever happens to its goods, so this is the one judgement the typed path defers to |
+| D-45 | A date cell renders ISO 8601 | A spreadsheet stores a date as a serial number plus a display format; there is no printed form to preserve, so "verbatim" has no referent. Reconstructing Excel's display from its format code is a subsystem. The convention is stated in the prompt rather than left to be inferred |
+| D-46 | A blank cell renders `(blank)` in the labeller's **sample rows** as well as its header | 06 §3.4 records two conventions in one payload as a defect — a blank header rendered `(blank)`, a blank sample cell rendered as nothing. One convention, stated once, and it matches 06 §2.4's rule that absence is written out rather than omitted |
+| D-47 | An ambiguous written number is refused, not resolved | `1,234` is 1234 or 1.234 depending on locale. Guessing produces a silently wrong weight; refusing produces a visible note. The governing asymmetry decides it |
+| D-48 | `read_workbook_invoice` returns `WorkbookReading`, which *contains* the same `InvoiceReading` the vision path returns | Downstream should not branch on how the invoice arrived, so the invoice shape is identical. Everything only this route can say sits beside it rather than being flattened into a record the vision path would then carry empty |
+| D-49 | A labelling failure abandons the structural path for the **whole workbook**, not for the one sheet | A run whose lines came half from typed cells and half from a whole-text guess is two readings of one invoice joined by position, and nothing downstream could tell which line came from which |
+
+### Where this is weakest
+
+- **`read_workbook_invoice` changed signature and the run's call site has not caught up.**
+  It now takes `(document, model, prompts_dir)` and returns `WorkbookReading`;
+  `run/stages.py:133` still calls it with one argument and assigns the result straight to
+  `invoice_reading`. The path makes two model calls and cannot be dependency-free, so the
+  old signature was never reachable. The break is a `TypeError` naming both missing
+  arguments, at that line. `run/` belongs to another agent and was not touched.
+- **Extraction confidence 1.0 on every typed cell is the confident-wrong-value shape.**
+  The transcription really is exact, but the review surface ranks weakest-confidence first,
+  so a mis-bound column sorts to the *bottom* of what a human checks. The mis-binding
+  signal exists — it is in `unread_numbers`, `duplicates` and `unlabelled_columns` — but
+  nothing joins it back to the values it taints. Whoever turns these notes into review
+  items should.
+- **A workbook value cannot say which cell it came from.** `DocumentRegion` counts pages,
+  a workbook has none, so provenance carries `region=None`. Sheet and row survive only for
+  the cells that could *not* be read. Two optional fields on `DocumentRegion` would fix it
+  and that is domain surgery for another module's benefit, so it was not taken.
+- **The fallback locator has no totals-row rule.** The numbered run excludes a totals row
+  structurally; the header-score fallback takes everything below the header, so a totals
+  row carrying a description is filed as a goods line. The specification prescribes nothing
+  here and inventing a "looks like a total" test is exactly the language-dependence A9 was
+  built to avoid.
+- **Two columns labelled the same field lose the second, silently to the model.** The rule
+  is the specification's and the loss is recorded, but the case that produced it in the live
+  run would be a *mis*-labelling, not a duplicate, and nothing here can tell the operator
+  which of the two columns was actually right.
+- **One workbook, one run, one model.** The multilingual accuracy of the labeller is
+  recorded in the specification as unverifiable except by live-model verification. This is
+  one such verification, on one synthetic Armenian invoice. It is evidence that the path
+  works; it is not a measurement of how often it does.
+- **`tests/test_prompting.py::test_every_shipped_prompt_file_loads` still fails**, on
+  `pick_code_shared_path.md` — a prompt added concurrently by other work whose placeholder
+  entry is missing from that test's table. The two prompts added here are entered and
+  render.

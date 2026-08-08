@@ -107,7 +107,7 @@ def invoice_from_answer(
         for position, charge in enumerate(answer.service_charges, start=1)
     )
 
-    invoice = _build(
+    invoice = build_record(
         InvoiceRecord,
         source_document_id=context.first_source_document_id,
         pages=tuple(page.classification for page in document.pages),
@@ -130,7 +130,7 @@ def consignment_note_from_answer(
 ) -> ConsignmentNoteReading:
     """Build the consignment-note record from what the model returned."""
     context = _ReadContext(document=document, call=call)
-    note = _build(
+    note = build_record(
         ConsignmentNote,
         source_document_id=context.first_source_document_id,
         pages=tuple(page.classification for page in document.pages),
@@ -251,7 +251,7 @@ def _goods_line(
     def number(value: Decimal | None) -> Traced[Decimal] | None:
         return _traced_decimal(value, provenance, confidence)
 
-    return _build(
+    return build_record(
         InvoiceGoodsLine,
         # The join key is positional and assigned here, not asked of the model: the
         # caller knows it, and a field the caller knows is one more thing to mislabel.
@@ -361,7 +361,7 @@ def _confidence(extraction: float) -> Confidence:
     return Confidence(extraction=extraction)
 
 
-def _build[T: BaseModel](record: type[T], **fields: object) -> T:
+def build_record[T: BaseModel](record: type[T], **fields: object) -> T:
     """Construct a domain record, or fail as a reading failure.
 
     The domain's own rules — a line needs a description, an invoice needs a line — are

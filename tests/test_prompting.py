@@ -238,7 +238,22 @@ def test_every_shipped_prompt_file_loads() -> None:
             "read_invoice": {"page_count": "2"},
             "read_consignment_note": {"page_count": "1"},
             "classify_page_type": {"page_count": "2", "page_manifest": "[]"},
+            "read_workbook_invoice": {
+                "sheet_count": "1",
+                "workbook_text": "=== Sheet: Invoice ===\nNo\tDescription\n1\tPE BAG",
+            },
+            "label_columns": {
+                "sheet_name": "Invoice",
+                "column_count": "2",
+                "header_row": "No\tDescription",
+                "sample_rows": "1\tPE BAG",
+            },
             "adapter_check_text": {"word": "bonjour"},
+            "critique_lines": {"draft_lines": "line 1\n  invoice name : PE BAG"},
+            "conform_lines": {
+                "draft_lines": "line 1\n  invoice name : PE BAG",
+                "findings": "line 1 · description — reads unlike line 2.",
+            },
             "adapter_check_vision": {"width": "64", "height": "32"},
             "write_description": {
                 "goods_name": "GYPS",
