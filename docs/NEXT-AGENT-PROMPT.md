@@ -5,7 +5,7 @@ Copy everything below the line into a fresh agent session.
 ---
 
 You are continuing the DeepClare build. Work in `/Users/raffi/workspace/deepclare` on
-branch `initial-build`. Read `CLAUDE.md` first — its hard constraints are not style
+branch `main`. Read `CLAUDE.md` first — its hard constraints are not style
 preferences, and breaking one is a defect.
 
 ## Read before writing anything
