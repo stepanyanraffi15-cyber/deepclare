@@ -940,3 +940,45 @@ acceptance oracle.
   contract-terms blocks still lean on assumed child names.** A real filing will read its
   goods, parties, transport and consignment; those three may come back partly unread, and
   they will say so rather than fail quietly.
+
+---
+
+## Entry 5 — The XML is structurally plausible but not confirmed filable
+
+The filing adapter is built, in both directions, with the conformance checker the
+specification asks for. It enforces what the specification states, and it is honest
+about what the specification does not state.
+
+**Verified by grepping the dossier**, not taken on trust from the agent that wrote it:
+
+| Element | Times the specification names it |
+|---|---|
+| `GoodsTNVEDCode`, `CounryName`, `PakageQuantity`, `SupplementaryGoodsQuantity`, `ESADout_CUConsignor` | 2–5 each |
+| `ESADout_CUGoods`, `ESADout_CUConsignee`, `ESADout_CUDeclarant`, `ESADout_CUGoodsLocation`, `ESADout_CUFillingPerson`, `ESADout_CUMainContractTerms`, `ESADout_CUBorderTransport`, `CustomsZone`, `InformationTypeCode`, `PersonSurname`, `TransportMeansNationalityCode`, and 7 more | **0** |
+
+The specification is generous with **leaf** element names and the goods-item child order,
+and silent on most **container** names and on the child sequence of nearly every
+container. 18 element names and 14 sequences are therefore inferred.
+
+This matters more than it sounds. Every complex type is a sequence, and wrong child order
+is rejected as "wrong format" naming no field — so an inferred sequence is not a cosmetic
+risk, it is a whole-file rejection with no diagnostic. The conformance checker reports
+these as `element-name-evidence: unconfirmed` and names each one with its path, so the
+gap is visible rather than silent, but visible is not solved.
+
+**What would settle it**, in order of value:
+
+1. **The six customs XSD files.** The dossier's own migration verdict is "MIGRATE
+   PHYSICALLY. All six schema files and the accompanying provenance note." They are
+   schemas, not code, so the clean-room rule does not exclude them. They are the wrong
+   version — vendored 5.0.7 against a filed 5.10.0 — and must never be used as an
+   acceptance oracle, but they would settle container names and child sequences, which is
+   exactly the gap here.
+2. **One real accepted filing.** A single accepted declaration would confirm every name
+   and every sequence at once. The dossier is explicit that whether the corpora transfer
+   at all is a user decision, not an inference, because they carry genuine importer
+   identities — so this is not mine to take.
+
+Until one of those arrives, treat the emitted XML as structurally coherent and
+**unconfirmed against the portal**. Everything else in the pipeline is unaffected: the
+values are correct, only their expression is uncertain.
