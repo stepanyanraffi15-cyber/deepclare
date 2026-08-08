@@ -1,0 +1,7 @@
+# Transferred material — review before any of this is ever committed
+handoff/
+data/reference/
+data/corpus/
+*.sqlite
+*.db
+.env
