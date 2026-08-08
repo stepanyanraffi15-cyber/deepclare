@@ -48,10 +48,15 @@ def main(argv: list[str] | None = None) -> int:
         scorer = bind_scorer(root)
         cases = discover_cases(Path(args.corpus))
         selection = select(cases, args.cases)
+        drafting = args.from_file is None
         manifest = build_manifest(
             settings=settings,
-            production=Production.PRE_EMITTED,
-            producer=f"read from {args.from_file!r} in each case directory",
+            production=Production.PIPELINE if drafting else Production.PRE_EMITTED,
+            producer=(
+                "drafted by the pipeline"
+                if drafting
+                else f"read from {args.from_file!r} in each case directory"
+            ),
             corpus_dir=Path(args.corpus),
             scorer_dir=root,
             features=ClassificationFeatures(),
@@ -62,12 +67,22 @@ def main(argv: list[str] | None = None) -> int:
         print(exc, file=sys.stderr)
         return 2
 
-    report = score_corpus(
-        selection=selection,
-        produce=emitted_file(args.from_file),
-        scorer=scorer,
-        manifest=manifest,
-    )
+    if drafting:
+        # The ports hold a process-exclusive vector store, so they are opened once for
+        # the whole corpus rather than per case.
+        from deepclare.evaluation.pipeline_producer import drafting_producer
+
+        with drafting_producer(settings) as produce:
+            report = score_corpus(
+                selection=selection, produce=produce, scorer=scorer, manifest=manifest
+            )
+    else:
+        report = score_corpus(
+            selection=selection,
+            produce=emitted_file(args.from_file),
+            scorer=scorer,
+            manifest=manifest,
+        )
 
     if args.json:
         text = json.dumps(report.model_dump(mode="json"), ensure_ascii=False, indent=2)
@@ -91,10 +106,11 @@ def _parse(argv: list[str] | None) -> argparse.Namespace:
     parser.add_argument("corpus", help="corpus directory; cases are found recursively")
     parser.add_argument(
         "--from-file",
-        default="declaration.xml",
+        default=None,
         help=(
-            "score this XML file from each case directory instead of running the "
-            "pipeline. Use ground_truth.xml for the harness's own self-check."
+            "score this XML file from each case directory instead of drafting with the "
+            "pipeline. Use ground_truth.xml for the harness's own self-check, which "
+            "must come out perfect. Omit it to draft each case for real."
         ),
     )
     parser.add_argument(

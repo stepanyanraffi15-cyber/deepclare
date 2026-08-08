@@ -1,12 +1,17 @@
-"""Environment-specific configuration, read once at startup into a typed object.
+"""Configuration, read once at startup into a typed object.
 
-Nothing else in the codebase reads the environment. Per dossier 10 §4 invariant 2, no
-module reads ambient process configuration: behaviour switches reach a run as explicit
-input. This module exists to load the environment exactly once, at the edge, so that
-everything below it receives values rather than fetching them.
+Nothing else in the codebase reads the environment. No module reads ambient process
+configuration: behaviour switches reach a run as explicit input, so a run is reproducible
+from its recorded input alone. This module exists to read the environment exactly once,
+at the edge, so everything below receives values rather than fetching them.
 
-A missing or malformed required variable fails here, naming itself, rather than halfway
-through a run.
+**Only a secret is genuinely required.** Everything else has a default that is right for
+this repository, because a value the project itself decides — where its own prompts live,
+how many workers a crawl uses — is not environment-specific and should not have to be
+restated in every deployment. Each default sits here, in one typed place, and every one
+can still be overridden by an environment variable when a deployment genuinely differs.
+
+A missing or malformed value fails here, naming itself, rather than halfway through a run.
 """
 
 from __future__ import annotations
@@ -17,9 +22,11 @@ from pathlib import Path
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+
 
 class Settings(BaseSettings):
-    """Typed view of the environment. Construct via `load_settings()`."""
+    """Typed view of the configuration. Construct via `load_settings()`."""
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -28,53 +35,50 @@ class Settings(BaseSettings):
         frozen=True,
     )
 
-    # --- model provider -----------------------------------------------------
+    # --- the only thing that must be supplied -------------------------------
     google_api_key: str = Field(min_length=1)
-    genai_api_base: str = Field(min_length=1)
+    """The provider credential. There is no sensible default for a secret."""
 
-    # One model id per tier. A stage names a tier and never a model id, so swapping a
-    # model is a configuration change and the trace can pin what actually answered.
-    genai_model_cheap: str = Field(min_length=1)
-    genai_model_standard: str = Field(min_length=1)
-    genai_model_strong: str = Field(min_length=1)
+    # --- provider ------------------------------------------------------------
+    genai_api_base: str = "https://generativelanguage.googleapis.com/v1beta"
 
-    # A hard ceiling on generated tokens. It must clear the largest expected answer plus
-    # whatever the model spends on reasoning, which is billed and counted separately:
-    # exhausting it truncates the answer mid-JSON and the call fails.
-    genai_max_output_tokens: int = Field(gt=0)
-    genai_timeout_seconds: float = Field(gt=0)
+    # One model per tier. A stage names a **tier**, never a model id, so changing a model
+    # is a configuration change and the trace still records what actually answered.
+    genai_model_cheap: str = "gemini-3.5-flash-lite"
+    """Page classification, spreadsheet header reading, column labelling."""
+    genai_model_standard: str = "gemini-3.6-flash"
+    """Vision document reading, evidence, descriptions, chapter and heading narrowing."""
+    genai_model_strong: str = "gemini-2.5-pro"
+    """The final code pick and its verification — the expert judgement of the product."""
 
-    # --- prompts ------------------------------------------------------------
-    prompts_dir: Path
+    genai_max_output_tokens: int = Field(default=32768, gt=0)
+    """A ceiling that must clear the largest expected answer *plus* the reasoning the
+    model spends getting there, which is counted separately: exhausting it truncates the
+    answer mid-JSON and the call fails."""
 
-    # --- curated lookup tables ----------------------------------------------
-    # Units, countries, packing codes and the Armenian nouns that count packages. Small,
-    # hand-curated and tracked in git, unlike the reference-data layer below — but still
-    # a path, and a path is environment-specific.
-    reference_tables_dir: Path
+    genai_timeout_seconds: float = Field(default=180.0, gt=0)
 
-    # --- embeddings: the symmetry contract ----------------------------------
-    # The build side and the query side must use the same model and the same width or
-    # the vectors do not align. Configuration rather than constants, so a run can pin
-    # what it actually used and a mismatch is loud.
-    classify_embedding_model: str = Field(min_length=1)
-    classify_embedding_dim: int = Field(gt=0)
+    # --- embeddings: locked, not chosen --------------------------------------
+    # The vector collection was built with this pairing. A different model or width does
+    # not align with those vectors — retrieval would return confident nonsense rather
+    # than failing — so overriding either means rebuilding the collection.
+    classify_embedding_model: str = "models/gemini-embedding-001"
+    classify_embedding_dim: int = Field(default=768, gt=0)
 
-    # --- reference data -----------------------------------------------------
-    # The vector collection and the tree that gives its codes meaning. Both are large
-    # derived objects no checkout reproduces, so their absence must be a startup
-    # failure rather than a runtime where every classification quietly returns nothing.
-    qdrant_path: Path
-    qdrant_collection: str = Field(min_length=1)
-    reference_dir: Path
-    reference_snapshot_dir: Path
+    # --- where things live ---------------------------------------------------
+    prompts_dir: Path = REPOSITORY_ROOT / "prompts"
+    reference_tables_dir: Path = REPOSITORY_ROOT / "reference_data"
+    reference_dir: Path = REPOSITORY_ROOT / "data" / "reference" / "nomenclature_exim"
+    reference_snapshot_dir: Path = REPOSITORY_ROOT / "data" / "reference" / "snapshots"
+    qdrant_path: Path = REPOSITORY_ROOT / "data" / "qdrant_exim"
+    qdrant_collection: str = "atg_aa_codes"
 
-    # The authority the tree is acquired from. Enumerated by node id: the paged listing
-    # endpoint silently caps at 10,000 rows against an id space past 21,000, so anything
-    # built on it is missing most of the tree with no error anywhere.
-    nomenclature_api_base: str = Field(min_length=1)
-    nomenclature_max_node_id: int = Field(gt=0)
-    nomenclature_crawl_workers: int = Field(gt=0)
+    # --- acquiring the nomenclature ------------------------------------------
+    # Enumerated by node id. The paged listing endpoint reports 10,000 rows against an id
+    # space past 21,000, so anything built on it silently misses most of the tree.
+    nomenclature_api_base: str = "https://exim.src.am/api/govtech"
+    nomenclature_max_node_id: int = Field(default=21400, gt=0)
+    nomenclature_crawl_workers: int = Field(default=14, gt=0)
 
     @field_validator("genai_api_base", "nomenclature_api_base")
     @classmethod
@@ -91,31 +95,32 @@ class Settings(BaseSettings):
 
 
 class ConfigurationError(RuntimeError):
-    """Raised at startup when the environment cannot produce valid settings."""
+    """Raised at startup when the configuration cannot be made valid."""
 
 
 @lru_cache(maxsize=1)
 def load_settings() -> Settings:
-    """Read and validate the environment once.
+    """Read and validate the configuration once.
 
-    Raises ConfigurationError naming every variable that is missing or invalid.
+    Raises ConfigurationError naming every value that is missing or invalid.
     """
     try:
         return Settings()  # type: ignore[call-arg]
-    except Exception as exc:  # pydantic ValidationError, or a bad .env
+    except Exception as exc:  # pydantic ValidationError, or an unreadable .env
         raise ConfigurationError(_explain(exc)) from exc
 
 
 def _explain(exc: Exception) -> str:
-    """Turn a validation failure into a message that names the variables at fault."""
+    """Turn a validation failure into a message naming the variables at fault."""
     errors = getattr(exc, "errors", None)
     if not callable(errors):
         return f"Configuration could not be loaded: {exc}"
 
-    lines = ["Configuration is incomplete or invalid. Fix these in .env:"]
+    lines = ["Configuration is invalid. Fix these in .env:"]
     for error in errors():
         variable = ".".join(str(part) for part in error["loc"]).upper()
         lines.append(f"  {variable}: {error['msg']}")
     lines.append("")
+    lines.append("Only GOOGLE_API_KEY has to be set; everything else has a default.")
     lines.append("Start from the shipped template:  cp .env.example .env")
     return "\n".join(lines)
