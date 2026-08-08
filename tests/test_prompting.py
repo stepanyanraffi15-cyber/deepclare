@@ -221,5 +221,15 @@ def test_every_shipped_prompt_file_loads() -> None:
             "classify_page_type": {"page_count": "2", "page_manifest": "[]"},
             "adapter_check_text": {"word": "bonjour"},
             "adapter_check_vision": {"width": "64", "height": "32"},
+            "write_description": {
+                "goods_name": "GYPS",
+                "source_language": "english_latin",
+                "unit_of_measure": "KG",
+                "unit_price": "0.08",
+                "trade_name": "unknown",
+                "material": "unknown",
+                "known_facts": "(none)",
+                "sibling_lines": "(none)",
+            },
         }[name]
         assert render_prompt(prompts_dir, name, placeholders).name == name

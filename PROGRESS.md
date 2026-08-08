@@ -715,3 +715,109 @@ means the report is not in invoice order. That is what "most consequential first
 for, and a client rendering flags beside lines is unaffected, but an operator checking
 line by line against a paper invoice may want the other order. It is one sort key, in one
 place, if that turns out to be wrong.
+
+---
+
+## Entry 6 — M8 Description Composition: the Armenian text, written before any code exists
+
+`src/deepclare/description/` and `prompts/write_description.md`. Two nodes: the
+deterministic per-line context builder (A15) and the description writer (A17).
+
+### What it produces, and what it is structurally unable to see
+
+Per goods line: the Armenian description that is filed, a short Armenian generic-noun
+search term, the product kind (piece / weight / length / area / volume), and a grounding
+self-report.
+
+The module does not know the commodity code. It runs *before* code assignment and its
+output is an input to it, so a dependency on a code inverts the graph. That is enforced
+by omission rather than by instruction: `LineContext` — the one object that reaches the
+model — has no field for a code, and none for the quantity, the package counts or the
+printed dimensions either. A prohibition backed by omission cannot be violated, and every
+figure in the filed text is arithmetic computed elsewhere and appended downstream, so a
+figure the model wrote would be a duplicate or a contradiction.
+
+### Verified against the real model
+
+`tests/check_description_end_to_end.py`, three goods lines the specification records from
+the measured corpus, each in a small invoice of plausible neighbours so the sibling
+summary is built rather than typed in. Actual output:
+
+| Invoice name | Filed Armenian | Search term | Kind |
+|---|---|---|---|
+| `RAY TAŞIYICI` (Turkish) | ՌԵԼՍԻ ԲՌՆԻՉ, ՆԱԽԱՏԵՍՎԱԾ Է ԷԼԵԿՏՐԱԿԱՆ ՄՈՆՏԱԺՄԱՆ ՀԱՄԱՐ | ՌԵԼՍԻ ԲՌՆԻՉ | piece |
+| `FOR FASTENING RAIL SWITCHES FROM BLACK METAL` | ԱՄՐԱՑՄԱՆ ԴԵՏԱԼՆԵՐ ՍԵՎ ՄԵՏԱՂԻՑ, ՆԱԽԱՏԵՍՎԱԾ Է ՌԵԼՍԱՅԻՆ ՓՈԽԱԴՐԻՉՆԵՐԻ ՀԱՄԱՐ | ԱՄՐԱՑՄԱՆ ԴԵՏԱԼՆԵՐ | piece |
+| `CALCIUM FORMATE` | ԿԱԼՑԻՈՒՄԻ ՖՈՐՄԻԱՏ, ՕԳՏԱԳՈՐԾՎՈՒՄ Է ՈՐՊԵՍ ԿԱՐԾՐԱՑՄԱՆ ԱՐԱԳԱՑՈՒՑԻՉ ՉՈՐ ՇԻՆԱՐԱՐԱԿԱՆ ԽԱՌՆՈՒՐԴՆԵՐԻ ՀԱՄԱՐ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ԹԱՓՈՆ | ԿԱԼՑԻՈՒՄԻ ՖՈՐՄԻԱՏ | weight |
+
+The Turkish line is the recorded trap and it did not fire: `RAY TAŞIYICI` came back as a
+rail *holder for electrical installation* — DIN-rail carrier — not as railway equipment.
+The steel line states the material first, which is what makes it general steel articles
+rather than railway infrastructure. Neither line invented a manufacturer, a standard or a
+figure.
+
+**One prompt change was measured, not guessed.** On the first run the steel line's search
+term came back as ԵՐԿԱԹՈՒՂԱՅԻՆ ԱՄՐԱԿՆԵՐ ("railway fasteners") — the description had read
+the material correctly and the search term had over-read the word "rail", which would
+have sent retrieval into the railway chapter. One sentence was added to the search-term
+contract (name what the goods *are*, never what they are fitted to) and the same line now
+returns ԱՄՐԱՑՄԱՆ ԴԵՏԱԼՆԵՐ.
+
+34 deterministic tests, none touching the network: script detection, sibling selection and
+truncation, evidence binding, the withheld fields, prompt rendering through a stubbed
+transport, and every refusal below. Full suite: 196 passed.
+
+### Three refusals a prompt cannot enforce
+
+Each raises `DescriptionError`; there is no retry, no repair and no fallback to a generic
+Armenian noun (03 §3.1 records that fallback in the predecessor — filing a stand-in as
+though it were a description is the failure this product exists to avoid).
+
+1. **The text is Armenian**, checked with the same script rule the language tag uses.
+2. **Every figure in the text is on a document.** Digit runs in the written text that
+   appear nowhere in the input are refused. The specification's own evaluation sets
+   *fabricated-specifics rate = 0* and calls a fabricated specific a false statement to
+   the authority rather than a quality defect. The check is decimal-separator-blind, so
+   `42,5` against a printed `42.5` is the same figure. It also catches the price being
+   copied into the text, because the price is not among the sources a figure may come
+   from.
+3. **Neither string is blank.**
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-11 | The sibling summary is the *nearest* lines by printed position, not the first N | An invoice groups a product family together, so the rows beside a terse SKU line are the ones that say what it is. The spec fixes 10 lines at 60 characters and does not say which 10 |
+| D-12 | Sibling context is always built and always sent to the writer | 06 §4.1 lists it in this call's input framing; its shipped default was off with aggregate gains within noise at n=62, but the case-level fixes on terse wholesale invoices are recorded as real and the summary costs no model call. It is one argument if that turns out wrong |
+| D-13 | Derivation confidence on the generated values is the completeness self-report, mapped high/medium/low → 0.9/0.6/0.3 | A generated value must state how far to trust it or the review surface has nothing to rank it by. These three numbers stand for three declared bands; nothing in this system has calibrated them and they are not probabilities |
+| D-14 | The completeness self-report is not itself a traced value | It is a statement *about* the values rather than a value, and it is never filed |
+| D-15 | No review item is emitted here | M8's stated ignorance list does not exclude the review vocabulary, but nothing in the spec asks this module to raise one either; a `low` line is visible to whatever consumes it. Revisit when assembly decides what a thin description costs |
+| D-16 | The search term's word count is not enforced in code | A five-word term is still usable for retrieval; refusing a whole line's description over it would trade a real value for a style rule |
+
+### Two things in the specification that had to be resolved rather than followed
+
+- **Recorded defect 8 is real and is not reproduced.** The predecessor's prompt sets a
+  target of "ONE clause (~80 characters)" and then shows worked examples several times
+  that length. Rather than pick a side, the rewritten prompt states the shape (one clause,
+  or a few short comma-linked clauses) and gives no character count at all, so nothing in
+  it can contradict its own examples.
+- **The supplementary-quantity field is gone.** 06 §4.1 has the writer computing a total
+  from invoice quantity × per-unit measure. This module never computes a quantity: that
+  is arithmetic, it belongs to assembly, and the inputs it would need are the very ones
+  withheld here. The exemplar set also gained the area and volume cases the specification
+  records as a gap, so all five product kinds now have one.
+
+### Where this is weakest
+
+- **Nothing verifies the Armenian is good Armenian.** The guard checks the script, not the
+  grammar or the terminology, and the exemplars in the prompt are the style anchor for
+  every line the system writes. A native review of those six exemplars is the highest-value
+  check available and has not happened.
+- **Mark fidelity is unenforced at run time.** The evaluation spec gates it at ≥0.99 — every
+  Latin brand and model token in the source appearing character-exact in the output. The
+  prompt requires it; nothing checks it. It is a containment check away, and the reason it
+  is not here is that a legitimately generic line has no mark to carry and the rule needs
+  the evaluation harness to state which lines it applies to.
+- **The fabricated-figure guard has a known blind spot in the safe direction.** It asks
+  whether the digits appear anywhere in the input, so a figure that happens to be a
+  substring of a model number passes. It is built to catch inventions, not to audit
+  arithmetic.
