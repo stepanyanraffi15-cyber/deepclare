@@ -409,3 +409,31 @@ Remaining observations are properties of the source, not defects: one entry (hea
 contain repeated leaf names, which is the "other" phenomenon inherent to HS; and the
 leaf count of 13,279 sits 10 below the published active total, while sampling shows full
 coverage.
+
+### Correction: "sound" is not "the right version"
+
+I reported the supplied artifact as "correct and OK". That overstated what the audit
+established, and the distinction matters:
+
+- **What the audit did establish** — internal integrity, vector-to-code alignment,
+  fidelity to the authority on sample, and completeness. Those results stand.
+- **What it could not establish** — whether this is the *intended* build. Nothing inside
+  the artifact identifies itself as current or superseded: there is a build timestamp
+  and **no version marker of any kind**.
+
+The process failure was earlier than the wording. The user said the local database was
+deprecated; the replacement they sent proved byte-identical to it. That contradiction
+was in hand and should have blocked immediately, rather than being noted in passing
+while the audit proceeded to bless the data.
+
+**Staleness, now measured rather than assumed.** 2,500 authority ids sampled (11.7% of
+the id space) yielded 1,681 classifiable codes, of which **0 are missing** from the
+artifact. Extrapolated drift against the live tree is approximately zero codes. So the
+artifact is *not* stale relative to the authority, and whatever makes it deprecated is
+not detectable from outside it.
+
+**Requirement this creates.** Every reference artifact must carry a version identity that
+a consumer can check — not just a build timestamp, but an identifier a run can pin and
+report, so that "is this the right build" is answerable by the machine rather than by
+asking a human. The specification already requires runs to pin the nomenclature vintage
+for exactly this reason; this incident shows a timestamp alone does not satisfy it.
