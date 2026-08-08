@@ -17,6 +17,7 @@ environment of its own.
 
 from __future__ import annotations
 
+import hashlib
 import re
 from collections.abc import Mapping
 from functools import lru_cache
@@ -66,6 +67,47 @@ def render_prompt(
     _check_values(prompt_file, values)
     text = _PLACEHOLDER.sub(lambda match: values[match.group(1)], prompt_file.body)
     return Prompt(name=prompt_file.name, version=prompt_file.version, text=text)
+
+
+class PromptIdentity(BaseModel):
+    """What a prompt file is, for a run that must say which text it used.
+
+    The declared version and the content hash are both here because they answer
+    different questions. The version is what a produced value records as its
+    provenance; the hash is what catches a prompt edited without its version being
+    raised, which is how two runs come to report the same version and behave
+    differently.
+    """
+
+    model_config = ConfigDict(frozen=True)
+
+    name: str
+    version: str
+    content_sha256: str
+
+
+def prompt_identities(prompts_dir: Path) -> tuple[PromptIdentity, ...]:
+    """Every prompt in the directory, in name order, with its version and content hash.
+
+    A file whose stem is not a prompt name — the directory's README, for one — is not a
+    prompt and is passed over. Anything that *is* named like a prompt and does not parse
+    raises, because a run cannot honestly pin a directory it could not read.
+    """
+    directory = Path(prompts_dir)
+    identities = []
+    for path in sorted(directory.glob("*.md")):
+        if not _PROMPT_NAME.fullmatch(path.stem):
+            continue
+        prompt_file = _load_prompt_file(directory, path.stem)
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        identities.append(
+            PromptIdentity(
+                name=prompt_file.name,
+                version=prompt_file.version,
+                content_sha256=digest,
+            )
+        )
+    return tuple(identities)
 
 
 class _PromptFile(BaseModel):

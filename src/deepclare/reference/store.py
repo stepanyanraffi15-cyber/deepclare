@@ -285,6 +285,23 @@ class NomenclatureStore:
         )
 
 
+def artifact_vintage(directory: Path) -> str:
+    """Which edition of the tree sits in `directory`, without opening the vectors.
+
+    The store carries the same value on every answer it gives, but the vector collection
+    is exclusive-locked to one process, and a report that only needs to *pin* the data
+    should not have to take that lock away from a run.
+    """
+    meta_path = Path(directory) / "meta.json"
+    if not meta_path.exists():
+        raise ArtifactUnavailableError(
+            f"{meta_path} does not exist, so this artifact cannot say which edition it "
+            "is. A measurement taken against unidentifiable data is not attributable."
+        )
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    return str(meta.get("built_at", "unknown"))
+
+
 def _prefix_field(prefixes: list[str]) -> str:
     """Pick the payload field matching the prefix width, so the scope is applied in the
     store rather than by scanning results."""

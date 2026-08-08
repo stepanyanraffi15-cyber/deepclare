@@ -1455,7 +1455,7 @@ its coverage is not readable.
 
 `python -m deepclare.evaluation evalkit/corpus --from-file ground_truth.xml` — all 71
 cases, 2,842 goods lines, each ground truth scored against itself. **Every figure 100%,
-every case PASS, 154 seconds.** Anything less than perfect there is a defect in the harness,
+every case PASS, 153 seconds.** Anything less than perfect there is a defect in the harness,
 not a finding about the product.
 
 That test alone is worthless, because a harness that always returns 1.0 passes it. So
@@ -1505,9 +1505,9 @@ Full suite not run — per the verification discipline, one targeted file.
 - **No cost, no latency, no abstention split.** `justified` versus `costly` abstention is
   the metric that says whether declining is working, and it needs a judgement the corpus
   labels cannot supply on their own.
-- **Alignment is quadratic in goods lines.** 154 seconds for the corpus, most of it in the
-  554-line case, because matching computes chrF for every produced line against every
-  labelled line. That is the scorer's, and it is why `--cases N` exists.
+- **Alignment is quadratic in goods lines.** 153 seconds for the corpus, of which **94
+  seconds is the single 554-line case**, because matching computes chrF for every produced
+  line against every labelled line. That is the scorer's, and it is why `--cases N` exists.
 - **A pre-emitted file cannot be attributed.** The manifest prints the configuration in
   force while scoring and says, in the report, that it does not describe whatever wrote the
   file. Closing that needs the producing run to write its own manifest beside its XML.
