@@ -182,8 +182,13 @@ class Traced(BaseModel, Generic[T]):
         """Return a new traced value, recording the step that changed it.
 
         The chain is append-only: a filed value can always be walked back to the ink.
+
+        Rebuilt through `type(self)` rather than `Traced[T]`, because `T` is unbound
+        here: `Traced[T]` yields the unparametrised model, which validates the new value
+        as anything at all. A transform that changed a string into a number would then
+        be recorded as though nothing were wrong.
         """
-        return Traced[T](
+        return type(self)(
             value=new_value,
             provenance=self.provenance.model_copy(
                 update={"transforms": self.provenance.transforms + (transform,)}

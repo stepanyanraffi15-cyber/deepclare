@@ -1,4 +1,5 @@
-# Transferred material pending review (the handoff dossier)
+# Transferred material pending review (the handoff dossier). Unanchored on purpose: it
+# is what excludes docs/handoff/, the specification, from version control.
 handoff/
 
 # Reference data and corpora: large, untracked by design.
@@ -14,7 +15,16 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local tooling state. Ignored here rather than only in a machine-local exclude file, so
+# a second clone does not start tracking them.
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
 
 # Build artifacts
 *.sqlite
 *.db
+build/
+dist/

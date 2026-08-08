@@ -12,6 +12,7 @@ through a run.
 from __future__ import annotations
 
 from functools import lru_cache
+from pathlib import Path
 
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -31,10 +32,33 @@ class Settings(BaseSettings):
     google_api_key: str = Field(min_length=1)
     genai_api_base: str = Field(min_length=1)
 
+    # One model id per tier. A stage names a tier and never a model id, so swapping a
+    # model is a configuration change and the trace can pin what actually answered.
+    genai_model_cheap: str = Field(min_length=1)
+    genai_model_standard: str = Field(min_length=1)
+    genai_model_strong: str = Field(min_length=1)
+
+    # A hard ceiling on generated tokens. It must clear the largest expected answer plus
+    # whatever the model spends on reasoning, which is billed and counted separately:
+    # exhausting it truncates the answer mid-JSON and the call fails.
+    genai_max_output_tokens: int = Field(gt=0)
+    genai_timeout_seconds: float = Field(gt=0)
+
+    # --- prompts ------------------------------------------------------------
+    prompts_dir: Path
+
     @field_validator("genai_api_base")
     @classmethod
     def _strip_trailing_slash(cls, value: str) -> str:
         return value.rstrip("/")
+
+    @field_validator("prompts_dir")
+    @classmethod
+    def _must_be_an_existing_directory(cls, value: Path) -> Path:
+        resolved = value.expanduser().resolve()
+        if not resolved.is_dir():
+            raise ValueError(f"no such directory: {resolved}")
+        return resolved
 
 
 class ConfigurationError(RuntimeError):

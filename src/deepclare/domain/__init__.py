@@ -7,6 +7,17 @@ particular the element names, ordering or formatting of the filed document. The 
 hierarchy is domain truth; the filed document's shape belongs to the filing adapter.
 """
 
+from deepclare.domain.documents import (
+    ConsignmentNote,
+    DocumentRole,
+    InvoiceGoodsLine,
+    InvoiceRecord,
+    LineEnrichment,
+    PageClass,
+    PageClassification,
+    Party,
+    SourceLanguage,
+)
 from deepclare.domain.provenance import (
     Confidence,
     DocumentRegion,
@@ -19,10 +30,19 @@ from deepclare.domain.review import ReviewItem, ReviewKind
 
 __all__ = [
     "Confidence",
+    "ConsignmentNote",
     "DocumentRegion",
+    "DocumentRole",
+    "InvoiceGoodsLine",
+    "InvoiceRecord",
+    "LineEnrichment",
+    "PageClass",
+    "PageClassification",
+    "Party",
     "Provenance",
     "ReviewItem",
     "ReviewKind",
+    "SourceLanguage",
     "Traced",
     "Transform",
     "ValueOrigin",

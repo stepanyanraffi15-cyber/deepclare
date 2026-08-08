@@ -29,9 +29,10 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "run":
         raise NotImplementedError(
-            "The run pipeline is not built yet. Missing, in build order: intake and "
-            "page grouping (M5), vision document reading (M6), classification (M9), "
-            "declaration assembly (M11), and the filing format adapter (M12)."
+            "The run pipeline is not built yet. Missing, in build order: the page-type "
+            "classifier intake injects, the spreadsheet reading path (M6 reads pages, "
+            "not workbooks), classification (M9), declaration assembly (M11), and the "
+            "filing format adapter (M12)."
         )
 
     return 1
