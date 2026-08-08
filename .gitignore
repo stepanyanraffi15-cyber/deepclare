@@ -1,7 +1,20 @@
-# Transferred material — review before any of this is ever committed
+# Transferred material pending review (the handoff dossier)
 handoff/
-data/reference/
-data/corpus/
+
+# Reference data and corpora: large, untracked by design.
+# See dossier file 11 §0.2 — a clone never contains the reference-data layer.
+data/
+
+# Secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Build artifacts
 *.sqlite
 *.db
-.env
