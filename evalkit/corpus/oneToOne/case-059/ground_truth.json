@@ -1,0 +1,34 @@
+{
+ "goods": [
+  {
+   "brand": "WHITE",
+   "trade_name": "P18 WHITE ELITE MASTER FACADE LT.",
+   "material": null
+  },
+  {
+   "brand": "WHITE",
+   "trade_name": "P81 WHITE DECOSTAR FACADE LT. 5",
+   "material": null
+  },
+  {
+   "brand": "WHITE",
+   "trade_name": "P81 WHITE FACADE LT. 15 -",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.40 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.60 2KG 50",
+   "material": null
+  },
+  {
+   "brand": "RUSTCONVERTER",
+   "trade_name": "C15 RUSTCONVERTER 450 ML. 5",
+   "material": null
+  }
+ ]
+}

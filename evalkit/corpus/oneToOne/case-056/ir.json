@@ -1,0 +1,108 @@
+{
+ "case_id": "case-056",
+ "seller": {
+  "name": "QUANTA GROUP",
+  "address": "147 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՎԱՆ ՇԻՆ\" ՍՊԸ",
+  "address": "Աբովյան 119, Երևան",
+  "country": "AM",
+  "tax_id": "83321155"
+ },
+ "carrier": {
+  "name": "PanTrans",
+  "address": "72 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-3241",
+ "date": "2026-07-22",
+ "goods": [
+  {
+   "source_name": "Original beer in metal kegs",
+   "trade_name": "HB ORIGINAL",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB ORIGINAL \" ՄԵՏԱՂԱԿԱՆ ՏԱԿԱՌՈՎ /  180 ՀԱՏ \r\n X 30 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030010000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": "ՄԵՏԱՂ",
+   "quantity": 5902.2,
+   "net_weight": 5902.2,
+   "gross_weight": 5902.2,
+   "unit_price": 1.509,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Munchner Weisse beer in metal kegs",
+   "trade_name": "HB MUNCHNER WEISSE",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB MUNCHNER WEISSE  \" ՄԵՏԱՂԱԿԱՆ ՏԱԿԱՌՈՎ / 70 ՀԱՏ \r\n X 30 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030010000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": "ՄԵՏԱՂ",
+   "quantity": 2089.5,
+   "net_weight": 2089.5,
+   "gross_weight": 2089.5,
+   "unit_price": 1.503,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Original beer in glass bottles",
+   "trade_name": "HB ORIGINAL",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB ORIGINAL \" ԱՊԱԿՅԱ ՇՇԵՐՈՎ / 5400 ՀԱՏ  X 0.5 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030001000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": null,
+   "quantity": 2845.8,
+   "net_weight": 4411.0,
+   "gross_weight": 4553.3,
+   "unit_price": 1.6155,
+   "package_count": 285,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Munchner Weisse beer in glass bottles",
+   "trade_name": "HB MUNCHNER WEISSE",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB MUNCHNER WEISSE \" ԱՊԱԿՅԱ ՇՇԵՐՈՎ / 2700 ՀԱՏ  X 0.5 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030001000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": null,
+   "quantity": 1328.4,
+   "net_weight": 2056.6,
+   "gross_weight": 2125.4,
+   "unit_price": 1.4984,
+   "package_count": 133,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Original beer in glass bottles",
+   "trade_name": "HB ORIGINAL",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB ORIGINAL \" ԱՊԱԿՅԱ ՇՇԵՐՈՎ / 2400 ՀԱՏ  X 0.33 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030001000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": null,
+   "quantity": 772.2,
+   "net_weight": 1218.8,
+   "gross_weight": 1267.5,
+   "unit_price": 1.7871,
+   "package_count": 98,
+   "package_type": "BAG"
+  }
+ ]
+}

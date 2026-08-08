@@ -1,0 +1,2774 @@
+{
+ "goods": [
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SSONG",
+   "trade_name": "BYD> SSONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD>",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN L EV",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "TAI",
+   "trade_name": "BYD> TAI 3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "SEALION",
+   "trade_name": "BYD> SEALION 06",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "PLUS",
+   "trade_name": "BYD>SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "PLUS",
+   "trade_name": "BYD>SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "ATTO",
+   "trade_name": "BYD> ATTO 3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS NEW",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "SONG",
+   "trade_name": "BYD> SONG PLUS",
+   "material": null
+  },
+  {
+   "brand": "BYD>",
+   "trade_name": "BYD> F3",
+   "material": null
+  },
+  {
+   "brand": "QIN",
+   "trade_name": "BYD> QIN PLUS",
+   "material": null
+  }
+ ]
+}

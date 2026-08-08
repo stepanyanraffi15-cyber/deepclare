@@ -1,0 +1,64 @@
+{
+ "goods": [
+  {
+   "brand": "DIN",
+   "trade_name": "DIN No 4 BEVS",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 2201",
+   "material": null
+  },
+  {
+   "brand": "BS3900",
+   "trade_name": "BS3900 DIN55669",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 2811",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 2811/P/020",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 2811/P/030",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 2806",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 1503",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 1707",
+   "material": null
+  },
+  {
+   "brand": "BEVS",
+   "trade_name": "BEVS 2816",
+   "material": null
+  }
+ ]
+}

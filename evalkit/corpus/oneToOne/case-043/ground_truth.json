@@ -1,0 +1,69 @@
+{
+ "goods": [
+  {
+   "brand": "BINGO",
+   "trade_name": "BINGO 36",
+   "material": null
+  },
+  {
+   "brand": "DOMESTOS",
+   "trade_name": "DOMESTOS 1500",
+   "material": null
+  },
+  {
+   "brand": "FAIRY",
+   "trade_name": "FAIRY",
+   "material": null
+  },
+  {
+   "brand": "FAIRY",
+   "trade_name": "FAIRY 540",
+   "material": null
+  },
+  {
+   "brand": "PAPIA",
+   "trade_name": "PAPIA",
+   "material": null
+  },
+  {
+   "brand": "PAPIA",
+   "trade_name": "PAPIA",
+   "material": null
+  },
+  {
+   "brand": "PAPIA",
+   "trade_name": "PAPIA",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "PERWOLL",
+   "trade_name": "PERWOLL BLACK NEW 2.97",
+   "material": null
+  },
+  {
+   "brand": "PERWOLL",
+   "trade_name": "PERWOLL COLOR NEW 3.96",
+   "material": null
+  },
+  {
+   "brand": "SELPAK",
+   "trade_name": "SELPAK",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS EXTRA 1440",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS BLACK CARE",
+   "material": null
+  },
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS BLUE",
+   "material": null
+  }
+ ]
+}

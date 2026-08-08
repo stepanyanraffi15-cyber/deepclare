@@ -1,0 +1,44 @@
+{
+ "goods": [
+  {
+   "brand": "P0001`",
+   "trade_name": "P0001` 1",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "P0001`",
+   "trade_name": "P0001` 1",
+   "material": null
+  },
+  {
+   "brand": "P0001",
+   "trade_name": "P0001",
+   "material": null
+  },
+  {
+   "brand": "P0001",
+   "trade_name": "P0001",
+   "material": null
+  },
+  {
+   "brand": "P0001",
+   "trade_name": "P0001",
+   "material": null
+  },
+  {
+   "brand": "P0001",
+   "trade_name": "P0001",
+   "material": null
+  },
+  {
+   "brand": "P0001",
+   "trade_name": "P0001",
+   "material": null
+  },
+  {
+   "brand": "P0001",
+   "trade_name": "P0001",
+   "material": null
+  }
+ ]
+}

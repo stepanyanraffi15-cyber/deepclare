@@ -1,0 +1,734 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 - 1440",
+   "material": null
+  },
+  {
+   "brand": "A3",
+   "trade_name": "A3 - 480",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԱՊԱԿԻ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 180",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 200",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 230",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 260",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 135",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4 115",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": "A5",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4",
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": "A5`",
+   "trade_name": "A5`",
+   "material": null
+  },
+  {
+   "brand": "K",
+   "trade_name": "K",
+   "material": null
+  },
+  {
+   "brand": "K",
+   "trade_name": "K",
+   "material": null
+  },
+  {
+   "brand": "K",
+   "trade_name": "K",
+   "material": null
+  },
+  {
+   "brand": "K",
+   "trade_name": "K",
+   "material": null
+  },
+  {
+   "brand": "A7",
+   "trade_name": "A7",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": "A5",
+   "material": null
+  },
+  {
+   "brand": "A6",
+   "trade_name": "A6",
+   "material": null
+  },
+  {
+   "brand": "A7",
+   "trade_name": "A7",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A6",
+   "trade_name": "A6",
+   "material": null
+  },
+  {
+   "brand": "A6",
+   "trade_name": "A6",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "A5",
+   "trade_name": "A5",
+   "material": null
+  },
+  {
+   "brand": "A4",
+   "trade_name": "A4",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԹՈՒՂԹ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

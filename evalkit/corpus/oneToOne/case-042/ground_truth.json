@@ -1,0 +1,69 @@
+{
+ "goods": [
+  {
+   "brand": "MRO.100",
+   "trade_name": "MRO.100 P.84 12",
+   "material": null
+  },
+  {
+   "brand": "MRO100",
+   "trade_name": "MRO100 P.97 6",
+   "material": null
+  },
+  {
+   "brand": "MRO100",
+   "trade_name": "MRO100 P87B 1",
+   "material": null
+  },
+  {
+   "brand": "MRO100",
+   "trade_name": "MRO100 P87A 1",
+   "material": null
+  },
+  {
+   "brand": "MRO100",
+   "trade_name": "MRO100 POS.89 6",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "MRO.100",
+   "trade_name": "MRO.100 P.86A 6",
+   "material": null
+  },
+  {
+   "brand": "MRO100",
+   "trade_name": "MRO100 POS.91 6",
+   "material": null
+  },
+  {
+   "brand": "MRO100",
+   "trade_name": "MRO100 POS.94 6",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "x2000",
+   "trade_name": "x2000 LM=0 514x0 514 F=0 28",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "ML",
+   "trade_name": "ML LOXEAL PM400DMR 1",
+   "material": null
+  },
+  {
+   "brand": "LOXEAL",
+   "trade_name": "LOXEAL 3638 IN CARTUCCIA 400 ML",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "LOXEAL",
+   "trade_name": "LOXEAL MFQ10-T24",
+   "material": "ՊԼԱՍՏ"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "KW",
+   "trade_name": "KW",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  }
+ ]
+}

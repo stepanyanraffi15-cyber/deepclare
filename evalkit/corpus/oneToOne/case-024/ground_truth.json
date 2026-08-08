@@ -1,0 +1,54 @@
+{
+ "goods": [
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 32A4Q",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 43A62QS",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 50A62QS",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 55Q6Q",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE 58A62QS",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 65Q6Q",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 75Q61Q",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 85A65KS",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 98Q6Q",
+   "material": null
+  },
+  {
+   "brand": "HISENSE",
+   "trade_name": "HISENSE TV 100Q7Q",
+   "material": null
+  }
+ ]
+}

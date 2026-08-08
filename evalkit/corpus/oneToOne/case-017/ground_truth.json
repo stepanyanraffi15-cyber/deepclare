@@ -1,0 +1,209 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՓԱՅՏ"
+  },
+  {
+   "brand": "BIANKO",
+   "trade_name": "BIANKO 310 BI",
+   "material": null
+  },
+  {
+   "brand": "LRA",
+   "trade_name": "LRA",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊՈՂՊԱՏ"
+  },
+  {
+   "brand": "MISURA",
+   "trade_name": "MISURA 140",
+   "material": null
+  },
+  {
+   "brand": "BORSA",
+   "trade_name": "BORSA CATALOGHI",
+   "material": null
+  },
+  {
+   "brand": "TROLLEY",
+   "trade_name": "TROLLEY PORTA PANNELLI",
+   "material": null
+  },
+  {
+   "brand": "LITHOS",
+   "trade_name": "LITHOS BIANCO",
+   "material": null
+  },
+  {
+   "brand": "LITHOS",
+   "trade_name": "LITHOS BASE NEUTRA",
+   "material": null
+  },
+  {
+   "brand": "GHIBLI",
+   "trade_name": "GHIBLI BIANCO",
+   "material": null
+  },
+  {
+   "brand": "GHIBLI",
+   "trade_name": "GHIBLI BIANCO",
+   "material": null
+  },
+  {
+   "brand": "GHIBLI",
+   "trade_name": "GHIBLI NEUTRO",
+   "material": null
+  },
+  {
+   "brand": "VIXALIT",
+   "trade_name": "VIXALIT 500 BIANCO",
+   "material": null
+  },
+  {
+   "brand": "MARMORIN",
+   "trade_name": "MARMORIN EXTRA BIANCO",
+   "material": null
+  },
+  {
+   "brand": "MARMORIN",
+   "trade_name": "MARMORIN EXTRA NEUTRO",
+   "material": null
+  },
+  {
+   "brand": "MULTIQUARTZ",
+   "trade_name": "MULTIQUARTZ BIANCO",
+   "material": null
+  },
+  {
+   "brand": "RUSTEN",
+   "trade_name": "RUSTEN FINISH NOVA GRIGIO",
+   "material": null
+  },
+  {
+   "brand": "VIERO",
+   "trade_name": "VIERO VEL BASE NEUTRA",
+   "material": null
+  },
+  {
+   "brand": "MARMORIN",
+   "trade_name": "MARMORIN HYDRO BIANCO",
+   "material": null
+  },
+  {
+   "brand": "MARMORIN",
+   "trade_name": "MARMORIN HYDRO BIANCO",
+   "material": null
+  },
+  {
+   "brand": "SILK",
+   "trade_name": "SILK BASE ARGENTO",
+   "material": null
+  },
+  {
+   "brand": "SILK",
+   "trade_name": "SILK BASE BIANCA",
+   "material": null
+  },
+  {
+   "brand": "SILK",
+   "trade_name": "SILK BASE ROSSA",
+   "material": null
+  },
+  {
+   "brand": "NATURWAX",
+   "trade_name": "NATURWAX ECO",
+   "material": null
+  },
+  {
+   "brand": "VXF",
+   "trade_name": "VXF BIANCO",
+   "material": null
+  },
+  {
+   "brand": "VXF",
+   "trade_name": "VXF BIANCO",
+   "material": null
+  },
+  {
+   "brand": "TRAVERTINE",
+   "trade_name": "TRAVERTINE BIANCO",
+   "material": null
+  },
+  {
+   "brand": "TRAVERTINE",
+   "trade_name": "TRAVERTINE BIANCO",
+   "material": null
+  },
+  {
+   "brand": "VIEROPLAST",
+   "trade_name": "VIEROPLAST BASE CHIARA",
+   "material": null
+  },
+  {
+   "brand": "VIEROPLAST",
+   "trade_name": "VIEROPLAST BASE MEDIO-SCURA",
+   "material": null
+  },
+  {
+   "brand": "LEUCITE",
+   "trade_name": "LEUCITE",
+   "material": null
+  },
+  {
+   "brand": "ONICE",
+   "trade_name": "ONICE",
+   "material": null
+  },
+  {
+   "brand": "NERO",
+   "trade_name": "NERO",
+   "material": null
+  },
+  {
+   "brand": "GIALLO",
+   "trade_name": "GIALLO",
+   "material": null
+  },
+  {
+   "brand": "MARMORIN",
+   "trade_name": "MARMORIN SATIN BIANCO",
+   "material": null
+  },
+  {
+   "brand": "BASE",
+   "trade_name": "BASE",
+   "material": null
+  },
+  {
+   "brand": "BARRIER",
+   "trade_name": "BARRIER",
+   "material": null
+  },
+  {
+   "brand": "WHITE",
+   "trade_name": "WHITE BASE",
+   "material": null
+  },
+  {
+   "brand": "TOP",
+   "trade_name": "TOP 2K SATIN FINISH",
+   "material": null
+  },
+  {
+   "brand": "FINITURA",
+   "trade_name": "L 105 FINITURA PROTETTIVA 5",
+   "material": null
+  },
+  {
+   "brand": "WHITE",
+   "trade_name": "WHITE BASE",
+   "material": null
+  }
+ ]
+}

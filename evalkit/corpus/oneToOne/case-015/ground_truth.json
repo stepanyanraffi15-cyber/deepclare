@@ -1,0 +1,114 @@
+{
+ "goods": [
+  {
+   "brand": "PEX",
+   "trade_name": "PEX A",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "EVON",
+   "trade_name": "EVON PEX B",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "PEX",
+   "trade_name": "PEX AL PEX",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "RS25/6-130",
+   "trade_name": "RS25/6-130",
+   "material": null
+  },
+  {
+   "brand": "RS25/6-180",
+   "trade_name": "RS25/6-180",
+   "material": null
+  },
+  {
+   "brand": "RS25/7-180",
+   "trade_name": "RS25/7-180",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "L20*1/2M",
+   "trade_name": "L20*1/2M",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "F004-14",
+   "trade_name": "F004-14",
+   "material": null
+  },
+  {
+   "brand": "C-55",
+   "trade_name": "C-55",
+   "material": null
+  },
+  {
+   "brand": "C-55",
+   "trade_name": "C-55",
+   "material": null
+  },
+  {
+   "brand": "E008-3",
+   "trade_name": "E008-3",
+   "material": null
+  }
+ ]
+}

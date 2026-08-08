@@ -1,0 +1,92 @@
+{
+ "case_id": "case-041",
+ "seller": {
+  "name": "ZENITH CHEM",
+  "address": "200 Harbor Rd, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՎԱՆ ԿԱՊԻՏԱԼ\" ՍՊԸ",
+  "address": "Կոմիտաս 20, Երևան",
+  "country": "AM",
+  "tax_id": "12560738"
+ },
+ "carrier": {
+  "name": "SilkRoad Logistics",
+  "address": "22 Logistic Ave, Milano",
+  "country": "IT",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "IT",
+ "invoice_no": "INV-2026-5219",
+ "date": "2026-11-23",
+ "goods": [
+  {
+   "source_name": "B1 700 construction waterproofing material",
+   "trade_name": "B1 700",
+   "armenian_desc": "ՋՐԱՄԵԿՈՒՍԻՉ ՆՅՈՒԹ՝ B1 700, ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՄԵՋ ՕԳՏԱԳՈՐԾՎՈՂ, 1 ԼԻՏՐ,  ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՍՆՆԴԱՅԻՆ ՀԱՎԵԼՈՒՄ",
+   "hs_code": "38249970000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": "B1",
+   "material": null,
+   "quantity": 1.6,
+   "net_weight": 1.6,
+   "gross_weight": 1.9,
+   "unit_price": 3.0031,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Waterproofing material for marble and granite",
+   "trade_name": null,
+   "armenian_desc": "ՋՐԱՄԵԿՈՒՍԻՉ ՆՅՈՒԹ՝ ՄԱՐՄԱՐԸ ԵՎ ԳՐԱՆԻՏԸ ՊԱՇՏՊԱՆԵԼՈՒ ՀԱՄԱՐ , ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՄԵՋ ՕԳՏԱԳՈՐԾՎՈՂ, 1 ԼԻՏՐ,  ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՍՆՆԴԱՅԻՆ ՀԱՎԵԼՈՒՄ",
+   "hs_code": "38249970000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 1.6,
+   "net_weight": 1.6,
+   "gross_weight": 1.9,
+   "unit_price": 3.0618,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Natural finish construction waterproofing material",
+   "trade_name": null,
+   "armenian_desc": "ՋՐԱՄԵԿՈՒՍԻՉ ՆՅՈՒԹ՝ ԲՆԱԿԱՆ ՏԵՍՔԸ ՊԱՀՊԱՆԵԼՈՒ ՀԱՄԱՐ, ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՄԵՋ ՕԳՏԱԳՈՐԾՎՈՂ, 1 ԼԻՏՐ,  ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՍՆՆԴԱՅԻՆ ՀԱՎԵԼՈՒՄ",
+   "hs_code": "38249970000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 1.6,
+   "net_weight": 1.6,
+   "gross_weight": 1.9,
+   "unit_price": 3.1646,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Matte finish color enhancing waterproofing material",
+   "trade_name": null,
+   "armenian_desc": "ՋՐԱՄԵԿՈՒՍԻՉ ՆՅՈՒԹ, ԳՈՒՅՆԻ ՈՒԺԵՂԱՑՈՒՑԻՉ՝ ՄԱՏ ԾԱԾԿՈՒՅԹՈՎ, ՇԻՆԱՐԱՐՈՒԹՅԱՆ ՄԵՋ ՕԳՏԱԳՈՐԾՎՈՂ, 1 ԼԻՏՐ,  ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՎՏԱՆԳԱՎՈՐ ԹԱՓՈՆ, ՉԻ ՀԱՆԴԻՍԱՆՈՒՄ ՍՆՆԴԱՅԻՆ ՀԱՎԵԼՈՒՄ",
+   "hs_code": "38249970000",
+   "unit": "166",
+   "origin": "IT",
+   "brand": null,
+   "material": null,
+   "quantity": 1.8,
+   "net_weight": 1.8,
+   "gross_weight": 2.1,
+   "unit_price": 2.7753,
+   "package_count": 2,
+   "package_type": "BAG"
+  }
+ ]
+}

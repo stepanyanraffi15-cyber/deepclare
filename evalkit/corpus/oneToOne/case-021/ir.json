@@ -1,0 +1,108 @@
+{
+ "case_id": "case-021",
+ "seller": {
+  "name": "NOVA CHEM",
+  "address": "95 Harbor Rd, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ՇԻՐԱԿ ՇԻՆ\" ՍՊԸ",
+  "address": "Կոմիտաս 118, Երևան",
+  "country": "AM",
+  "tax_id": "28932308"
+ },
+ "carrier": {
+  "name": "EuroCargo",
+  "address": "89 Logistic Ave, Istanbul",
+  "country": "TR",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "TR",
+ "invoice_no": "INV-2026-1693",
+ "date": "2026-07-24",
+ "goods": [
+  {
+   "source_name": "Liquid laundry fabric softener",
+   "trade_name": "YUMOS EXTRA 1440",
+   "armenian_desc": "ԼՎԱՑՔԻ ՀԵՂՈՒԿ ՓԱՓԿԵՑՈՒՑԻՉ /ԿՈՆԴԻՑԻՈՆԵՐ/ ՝ ԱՊՐԱՆՔԱՆԻՇԸ YUMOS EXTRA, 1440 ՄԼ*9 -2052 ՀԱՏ ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "YUMOS",
+   "material": null,
+   "quantity": 3064.0,
+   "net_weight": 3064.0,
+   "gross_weight": 3129.3,
+   "unit_price": 1.3655,
+   "package_count": 213,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Liquid laundry detergent gel",
+   "trade_name": "PERSIL",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ԳԵԼ՝ ԱՊՐԱՆՔԱՆԻՇԸ PERSIL 3900ՄԼ*4-1280 ՀԱՏ  ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PERSIL",
+   "material": null,
+   "quantity": 5718.3,
+   "net_weight": 5718.3,
+   "gross_weight": 5800.5,
+   "unit_price": 1.021,
+   "package_count": 329,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Three-ply toilet paper",
+   "trade_name": "PAPIA",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ ՝ PAPIA,  32*3` 19392 ՀԱՏ /202 ՏՈՒՓ/",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PAPIA",
+   "material": "ԹՈՒՂԹ",
+   "quantity": 1714.4,
+   "net_weight": 1714.4,
+   "gross_weight": 1756.8,
+   "unit_price": 1.5663,
+   "package_count": 191,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Three-ply toilet paper",
+   "trade_name": "SELPAK",
+   "armenian_desc": "ԶՈՒԳԱՐԱՆԻ ԹՈՒՂԹ ԵՌԱՇԵՐՏ, ԱՊՐԱՆՔԱՆԻՇԸ՝ SELPAK,  32*3` 9600 ՀԱՏ /100 ՏՈՒՓ/",
+   "hs_code": "48181010000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "SELPAK",
+   "material": "ԹՈՒՂԹ",
+   "quantity": 955.8,
+   "net_weight": 955.8,
+   "gross_weight": 987.7,
+   "unit_price": 1.6906,
+   "package_count": 107,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Liquid laundry detergent",
+   "trade_name": "PERWOLL 2.97",
+   "armenian_desc": "ՀԵՂՈՒԿ ԼՎԱՑՔԻ ՄԻՋՈՑ՝ ԱՊՐԱՆՔԱՆԻՇԸ PERWOLL, 2.97 Լ*6-3042 ՀԱՏ  ՄԱՆՐԱԾԱԽ ՎԱՃԱՌՔԻ ՀԱՄԱՐ",
+   "hs_code": "34025000000",
+   "unit": "166",
+   "origin": "TR",
+   "brand": "PERWOLL",
+   "material": null,
+   "quantity": 9135.1,
+   "net_weight": 9135.1,
+   "gross_weight": 9372.8,
+   "unit_price": 0.8658,
+   "package_count": 508,
+   "package_type": "BAG"
+  }
+ ]
+}

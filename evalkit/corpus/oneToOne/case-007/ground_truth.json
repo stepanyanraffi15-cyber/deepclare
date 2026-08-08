@@ -1,0 +1,59 @@
+{
+ "goods": [
+  {
+   "brand": "PRIME",
+   "trade_name": "L10 PRIME MASTER LT. 5 50",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.00 2KG 30",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.10 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.130 2KG 43",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.220 2KG 50",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.35 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.40 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.470 2KG 30",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.60 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.500 2KG 20",
+   "material": null
+  },
+  {
+   "brand": "PRIMEGROUT",
+   "trade_name": "G07 PRIMEGROUT G.80 2KG 30",
+   "material": null
+  }
+ ]
+}

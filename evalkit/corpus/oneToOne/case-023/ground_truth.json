@@ -1,0 +1,429 @@
+{
+ "goods": [
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI H40",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI X20+",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI E5",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI 5 PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI X 20 PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI X20 MAX",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI S",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI X10",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI S40 PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI G20 MAX",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TRUCLEAN W30 PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI 5",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI 5 MAX",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI E LITE",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SOLAR OUTDOOR CW500 DUAL",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART C500 DUAL",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART C701",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI C302",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI MESH SYSTEM AX3000 NE 2",
+   "material": null
+  },
+  {
+   "brand": "WI-FI",
+   "trade_name": "WI-FI",
+   "material": null
+  },
+  {
+   "brand": "WI-FI",
+   "trade_name": "WI-FI",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI MAGNETIC POWER BANK 6000MAH",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI POWER BANK 20000MAH INTEGRATED CABLE-TAN",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART BAND 10 BLACK",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI HANDLED STEAMER IRON",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI HANDHELD GARMENT STEAMER",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI WATER FLOSSER",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI DUAL ZONE",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI MIJIA SMART 6",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART ELITE",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART COMPACT 4",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART DEHUMIDIFIER LITE",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART DEHUMIDIFIER PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI SMART HUMIDIFIER 2 LITE",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI OPENWEAR STEREO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI WIRELESS MOUSE LITE 2-BLACK",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI WIRELESS MOUSE 3",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI S200",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI DREAME L10 S PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI ROBOROCK Q8 MAX PRO PLUS",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI ROBOROCK Q8 MAX PRO SERIAL",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4K A800SE SERIAL NO. 1500A32YH3CJ1565",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4K A800SE-1 SET SERIAL NO.",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4K A810S NEW SERIAL NO.",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4k A810s-2 set (NEW) SERIAL",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4K Omni X800 128GB Black",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI K Omni X800-2 SET 128GB",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4K T800-2 (NEW 256gb memory",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI 4k T800-41 (New 512gb memory",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI A200 -1 set type C",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI A410 SERIAL NO. D2210B12YHL5936459N3LK",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI A410-1 SET SERIAL NO. D2830B01YHL59S2186I3DE",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI M500 128G SERIAL NO. D4800B01YHL51L2164QRZH",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI M800 128GB (NEW) SERIAL NO.",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI M800-2 SET 128GB SERIAL NO.",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI INTERIOR FC02 SERIAL NO. D2410B01YHL5819351OOOC",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI OBD-II HARDWIRE Kit OBD01 TYPE-C",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI RC21",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI RC22",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI RC24",
+   "material": null
+  },
+  {
+   "brand": "MAI",
+   "trade_name": "MAI S500-TYPE-C SERIAL NO. D302RC21WLL59L2133",
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA 2",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI 33W MAGNETIC POWER BANK 10000",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV S MINI LED 75",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV S MINI LED 55",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV A PRO 55",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV A PRO 43",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV A 43",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV A 50",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV A PRO",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV MAX 100",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI TV MAX 85",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI NINEBOT PRO 2",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI NINEBOT E2 PLUS",
+   "material": null
+  },
+  {
+   "brand": "XIAOMI",
+   "trade_name": "XIAOMI NINEBOT E2",
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA N1",
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA",
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA",
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA",
+   "material": null
+  },
+  {
+   "brand": "MIJIA",
+   "trade_name": "MIJIA 2",
+   "material": null
+  }
+ ]
+}

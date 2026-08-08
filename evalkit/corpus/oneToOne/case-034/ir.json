@@ -1,0 +1,108 @@
+{
+ "case_id": "case-034",
+ "seller": {
+  "name": "ATLAS INDUSTRIES",
+  "address": "25 Harbor Rd, Port City",
+  "country": "SE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԳԱՐՆԻ ԳՐՈՒՊ\" ՍՊԸ",
+  "address": "Կոմիտաս 97, Երևան",
+  "country": "AM",
+  "tax_id": "88101539"
+ },
+ "carrier": {
+  "name": "PanTrans",
+  "address": "12 Logistic Ave, Port City",
+  "country": "SE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "SE",
+ "invoice_no": "INV-2026-2003",
+ "date": "2026-06-09",
+ "goods": [
+  {
+   "source_name": "Powerlifting bench press bench",
+   "trade_name": "ELEIKO",
+   "armenian_desc": "ՓԱՈՒԵՐԼԻՖՏԻՆԳԻ ԾԱՆՐԱՁՈՂԻ ՊԱՌԿԱԾ ՀՐՈՒՄԻ ՆՍՏԱՐԱՆ 1 ՀԱՏ /ELEIKO/",
+   "hs_code": "95069190000",
+   "unit": "166",
+   "origin": "SE",
+   "brand": "ELEIKO",
+   "material": null,
+   "quantity": 184.1,
+   "net_weight": 184.1,
+   "gross_weight": 198.2,
+   "unit_price": 6.8549,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Powerlifting fractional weight plates",
+   "trade_name": "ELEIKO",
+   "armenian_desc": "ՓԱՈՒԵՐԼԻՖՏԻՆԳԻ ԾԱՆՐԱՁՈՂԻ ՍԿԱՎԱՌԱԿՆԵՐ՝ 0.5ԿԳ-2 ՀԱՏ, 1ԿԳ-2 ՀԱՏ, 1.5ԿԳ-2 ՀԱՏ, 2ԿԳ-2 ՀԱՏ, 2.5ԿԳ-2 ՀԱՏ, 5ԿԳ-2 ՀԱՏ /ELEIKO/",
+   "hs_code": "95069190000",
+   "unit": "166",
+   "origin": "TW",
+   "brand": "ELEIKO",
+   "material": null,
+   "quantity": 26.7,
+   "net_weight": 26.7,
+   "gross_weight": 26.7,
+   "unit_price": 8.3849,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Powerlifting competition weight plates",
+   "trade_name": "ELEIKO",
+   "armenian_desc": "ՓԱՈՒԵՐԼԻՖՏԻՆԳԻ  ԾԱՆՐԱՁՈՂԻ ՍԿԱՎԱՌԱԿՆԵՐ՝ 10ԿԳ-2 ՀԱՏ, 15ԿԳ-2 ՀԱՏ, 20ԿԳ-2 ՀԱՏ, 25ԿԳ-6 ՀԱՏ,  /ELEIKO/",
+   "hs_code": "95069190000",
+   "unit": "166",
+   "origin": "SE",
+   "brand": "ELEIKO",
+   "material": null,
+   "quantity": 258.2,
+   "net_weight": 258.2,
+   "gross_weight": 274.3,
+   "unit_price": 6.8486,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Powerlifting barbell",
+   "trade_name": "ELEIKO",
+   "armenian_desc": "ՓԱՈՒԵՐԼԻՖՏԻՆԳԻ ԾԱՆՐԱՁՈՂԻ ՁՈՂ 1 ՀԱՏ /ELEIKO/",
+   "hs_code": "95069190000",
+   "unit": "166",
+   "origin": "SE",
+   "brand": "ELEIKO",
+   "material": null,
+   "quantity": 21.8,
+   "net_weight": 21.8,
+   "gross_weight": 21.8,
+   "unit_price": 12.0647,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "Powerlifting barbell collars",
+   "trade_name": "ELEIKO",
+   "armenian_desc": "ՓԱՈՒԵՐԼԻՖՏԻՆԳԻ ԾԱՆՐԱՁՈՂԻ ՍԵՂՄԱԿՆԵՐ (ՖԻՔՍԱՏՈՐ) 1 ԶՈՒՅԳ /ELEIKO/",
+   "hs_code": "95069190000",
+   "unit": "166",
+   "origin": "SE",
+   "brand": "ELEIKO",
+   "material": null,
+   "quantity": 4.8,
+   "net_weight": 4.8,
+   "gross_weight": 4.8,
+   "unit_price": 24.0057,
+   "package_count": 1,
+   "package_type": "BAG"
+  }
+ ]
+}

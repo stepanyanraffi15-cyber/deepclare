@@ -1,0 +1,59 @@
+{
+ "goods": [
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER PILS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "L",
+   "trade_name": "L",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER PILS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER PILS",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER WEIZEN",
+   "material": null
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER WEIZEN",
+   "material": null
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER",
+   "material": null
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER",
+   "material": null
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER",
+   "material": null
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "KROMBACHER",
+   "trade_name": "KROMBACHER",
+   "material": "ԲԱՄԲԱԿ"
+  }
+ ]
+}

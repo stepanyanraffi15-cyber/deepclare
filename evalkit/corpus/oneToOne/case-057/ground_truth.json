@@ -1,0 +1,494 @@
+{
+ "goods": [
+  {
+   "brand": "NO",
+   "trade_name": "NO 6 500",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 8 250",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ԲԱՄԲԱԿ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 3 100",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 5 200",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 6 200",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 7 210",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 8 192",
+   "material": "ՄԵՏԱՂ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 12 100",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 14 100",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 16 80",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "NO",
+   "trade_name": "NO 3 216",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "DECO",
+   "trade_name": "DECO TREND",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "TREND",
+   "trade_name": "TREND",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LUMIRA",
+   "trade_name": "LUMIRA",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LUMIRA",
+   "trade_name": "LUMIRA",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "AQUA",
+   "trade_name": "AQUA NEST",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "AQUA",
+   "trade_name": "AQUA TERMO",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "AQUA",
+   "trade_name": "AQUA NEST",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "H)",
+   "trade_name": "H) 36",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "LOCK&KEEP",
+   "trade_name": "LOCK&KEEP",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "FANTASY",
+   "trade_name": "FANTASY",
+   "material": "ՊԼԱՍՏ"
+  },
+  {
+   "brand": "FANTASY",
+   "trade_name": "FANTASY",
+   "material": "ՊԼԱՍՏ"
+  }
+ ]
+}

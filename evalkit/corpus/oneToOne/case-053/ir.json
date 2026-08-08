@@ -1,0 +1,92 @@
+{
+ "case_id": "case-053",
+ "seller": {
+  "name": "TITAN CHEM",
+  "address": "44 Harbor Rd, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "buyer": {
+  "name": "\"ԼՈՌԻ ԿԱՊԻՏԱԼ\" ՍՊԸ",
+  "address": "Աբովյան 22, Երևան",
+  "country": "AM",
+  "tax_id": "26373676"
+ },
+ "carrier": {
+  "name": "TransLine",
+  "address": "47 Logistic Ave, Hamburg",
+  "country": "DE",
+  "tax_id": null
+ },
+ "currency": "USD",
+ "incoterms": "CPT",
+ "dispatch_country": "DE",
+ "invoice_no": "INV-2026-4753",
+ "date": "2026-08-07",
+ "goods": [
+  {
+   "source_name": "HB Original Beer in Metal Kegs",
+   "trade_name": "HB ORIGINAL",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB ORIGINAL \" ՄԵՏԱՂԱԿԱՆ ՏԱԿԱՌՈՎ /  276 ՀԱՏ \r\n X 30 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030010000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": "ՄԵՏԱՂ",
+   "quantity": 8470.4,
+   "net_weight": 8470.4,
+   "gross_weight": 8470.4,
+   "unit_price": 1.5585,
+   "package_count": 2,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "HB Munchner Weisse Beer in Metal Kegs",
+   "trade_name": "HB MUNCHNER WEISSE",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB MUNCHNER WEISSE  \" ՄԵՏԱՂԱԿԱՆ ՏԱԿԱՌՈՎ / 54 ՀԱՏ \r\n X 30 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030010000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": "ՄԵՏԱՂ",
+   "quantity": 1605.4,
+   "net_weight": 1605.4,
+   "gross_weight": 1605.4,
+   "unit_price": 1.5315,
+   "package_count": 1,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "HB Original Beer in Glass Bottles",
+   "trade_name": "HB ORIGINAL",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB ORIGINAL \" ԱՊԱԿՅԱ ՇՇԵՐՈՎ / 7200 ՀԱՏ  X 0.5 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030001000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": null,
+   "quantity": 3913.2,
+   "net_weight": 6065.5,
+   "gross_weight": 6478.5,
+   "unit_price": 1.5431,
+   "package_count": 9,
+   "package_type": "BAG"
+  },
+  {
+   "source_name": "HB Original Beer in Glass Bottles",
+   "trade_name": "HB ORIGINAL",
+   "armenian_desc": "ԳԱՐԵՋՈՒՐ \" HB ORIGINAL \" ԱՊԱԿՅԱ ՇՇԵՐՈՎ / 3888 ՀԱՏ  X 0.33 Լ ՏԱՐՈՂՈՒԹՅԱՄԲ /",
+   "hs_code": "22030001000",
+   "unit": "112",
+   "origin": "DE",
+   "brand": "HB",
+   "material": null,
+   "quantity": 1343.3,
+   "net_weight": 2120.1,
+   "gross_weight": 2267.7,
+   "unit_price": 1.9104,
+   "package_count": 4,
+   "package_type": "BAG"
+  }
+ ]
+}

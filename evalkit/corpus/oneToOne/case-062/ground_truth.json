@@ -1,0 +1,29 @@
+{
+ "goods": [
+  {
+   "brand": "XFZ-50S",
+   "trade_name": "XFZ-50S",
+   "material": null
+  },
+  {
+   "brand": "TM30",
+   "trade_name": "TM30",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "goods": [
+  {
+   "brand": "YUMOS",
+   "trade_name": "YUMOS EXTRA 1440",
+   "material": null
+  },
+  {
+   "brand": "PERWOLL",
+   "trade_name": "PERWOLL 2.97",
+   "material": null
+  },
+  {
+   "brand": "PERSIL",
+   "trade_name": "PERSIL",
+   "material": null
+  },
+  {
+   "brand": "BINGO",
+   "trade_name": "BINGO 301",
+   "material": null
+  },
+  {
+   "brand": "ARIEL",
+   "trade_name": "ARIEL 1",
+   "material": null
+  },
+  {
+   "brand": "FAIRY-",
+   "trade_name": "FAIRY- 408",
+   "material": null
+  },
+  {
+   "brand": "ARIEL-",
+   "trade_name": "ARIEL- 576",
+   "material": null
+  },
+  {
+   "brand": "FAIRY",
+   "trade_name": "FAIRY 108",
+   "material": null
+  },
+  {
+   "brand": "GIZMO",
+   "trade_name": "GIZMO 225",
+   "material": null
+  },
+  {
+   "brand": "PAPIA",
+   "trade_name": "PAPIA",
+   "material": "ԹՈՒՂԹ"
+  }
+ ]
+}

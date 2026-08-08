@@ -1,0 +1,84 @@
+{
+ "goods": [
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "DOWANOL",
+   "trade_name": "DOWANOL DPM",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "BYK",
+   "trade_name": "BYK 349",
+   "material": null
+  },
+  {
+   "brand": "STABIL",
+   "trade_name": "STABIL 100",
+   "material": null
+  },
+  {
+   "brand": "WEKCELO",
+   "trade_name": "WEKCELO ME 400",
+   "material": null
+  },
+  {
+   "brand": "ACEMATT",
+   "trade_name": "ACEMATT OK-500",
+   "material": null
+  },
+  {
+   "brand": "LOGIC",
+   "trade_name": "LOGIC 40",
+   "material": null
+  },
+  {
+   "brand": "ICEBERG",
+   "trade_name": "ICEBERG",
+   "material": null
+  },
+  {
+   "brand": "ORATAN",
+   "trade_name": "ORATAN 165",
+   "material": null
+  },
+  {
+   "brand": "ACRYSOL",
+   "trade_name": "ACRYSOL TT 615 1",
+   "material": null
+  },
+  {
+   "brand": "OSAKRYL",
+   "trade_name": "OSAKRYL S20",
+   "material": null
+  },
+  {
+   "brand": "GFC",
+   "trade_name": "GFC 5100 1",
+   "material": null
+  },
+  {
+   "brand": null,
+   "trade_name": null,
+   "material": null
+  },
+  {
+   "brand": "BIOPOL",
+   "trade_name": "BIOPOL IB 61",
+   "material": null
+  }
+ ]
+}
