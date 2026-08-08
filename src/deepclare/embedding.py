@@ -1,4 +1,4 @@
-"""The embedding provider adapter — query side.
+"""The embedding provider adapter, for both sides of the index.
 
 Infrastructure, not domain logic: it turns text into a vector and knows nothing about
 commodity codes or declarations. Injected into whatever needs it rather than constructed
@@ -16,15 +16,21 @@ pin what it used, and so a mismatch is a construction-time error rather than a s
 collapse in accuracy.
 
 The indexed text is an English, broad-to-specific, em-dash-separated noun phrase:
-`<chapter> — <heading> — <leaf>`. A query must be phrased the same way. Measured against
-this collection: a query in that form scores 0.84 against the correct leaf where a plain
-English phrase for the same goods scores 0.65. Change one side and the other must change
-with it.
+`<chapter> — <heading> — <leaf>`, and a query must be phrased the same way. Measured
+against this collection: a query in that form scores 0.84 against the correct leaf where
+a plain English phrase for the same goods scores 0.65.
+
+The two sides differ in one respect only, and deliberately. A **query** never retries: a
+run-time failure must surface rather than quietly cost seconds and then answer. An
+**index build** does retry, because it is a batch job that must not half-finish — a
+transient failure partway through would leave a collection whose points no longer line up
+with their codes, and nothing downstream could tell.
 """
 
 from __future__ import annotations
 
 import logging
+import time
 
 import httpx
 
@@ -33,8 +39,12 @@ from deepclare.config import Settings
 logger = logging.getLogger(__name__)
 
 QUERY_TASK = "RETRIEVAL_QUERY"
+DOCUMENT_TASK = "RETRIEVAL_DOCUMENT"
 """This provider family places query-side and document-side embeddings in deliberately
-different regions, so the side must be declared."""
+different regions of the space, so the side has to be declared."""
+
+INDEX_BUILD_ATTEMPTS = 4
+INDEX_BUILD_BACKOFF_SECONDS = 2.0
 
 
 class EmbeddingError(RuntimeError):
@@ -42,7 +52,7 @@ class EmbeddingError(RuntimeError):
 
 
 class GeminiEmbedder:
-    """Query embeddings from the configured provider, at the configured width."""
+    """Embeddings from the configured provider, at the configured width."""
 
     def __init__(
         self, settings: Settings, http_client: httpx.Client | None = None
@@ -63,16 +73,41 @@ class GeminiEmbedder:
         return self._dimensions
 
     def embed_query(self, text: str) -> list[float]:
+        """Embed one search query. One attempt — a failure belongs to the caller."""
+        return self._embed(text, task=QUERY_TASK)
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        """Embed a batch for indexing. Order in is order out, with retries."""
+        return [self._embed_with_retries(text) for text in texts]
+
+    # --- internals ---------------------------------------------------------
+
+    def _embed_with_retries(self, text: str) -> list[float]:
+        delay = INDEX_BUILD_BACKOFF_SECONDS
+        for attempt in range(INDEX_BUILD_ATTEMPTS):
+            try:
+                return self._embed(text, task=DOCUMENT_TASK)
+            except EmbeddingError:
+                if attempt == INDEX_BUILD_ATTEMPTS - 1:
+                    raise
+                logger.warning("embedding attempt %d failed, retrying", attempt + 1)
+                time.sleep(delay)
+                delay *= 2
+        raise EmbeddingError("unreachable")
+
+    def _embed(self, text: str, *, task: str) -> list[float]:
         if not text.strip():
             raise EmbeddingError("refusing to embed empty text")
 
-        path = self._model if self._model.startswith("models/") else f"models/{self._model}"
+        model_path = (
+            self._model if self._model.startswith("models/") else f"models/{self._model}"
+        )
         try:
             response = self._http.post(
-                f"{self._api_base}/{path}:embedContent",
+                f"{self._api_base}/{model_path}:embedContent",
                 json={
                     "content": {"parts": [{"text": text}]},
-                    "taskType": QUERY_TASK,
+                    "taskType": task,
                     "outputDimensionality": self._dimensions,
                 },
                 headers={
@@ -88,7 +123,7 @@ class GeminiEmbedder:
         if len(values) != self._dimensions:
             raise EmbeddingError(
                 f"provider returned {len(values)} dimensions, expected "
-                f"{self._dimensions}; this query would not align with the index"
+                f"{self._dimensions}; this would not align with the index"
             )
         return values
 

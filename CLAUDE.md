@@ -48,6 +48,22 @@ data sources, model assignments, anything touching the XML contract, or resolvin
 the specification's `[UNKNOWN]` markers: update the published architecture artifact and
 ask, then build.
 
+## Verification discipline
+
+**Do not run the full test suite.** It is large, it is not yet fully trusted, and running
+it at every step burns budget that is better spent building. Verify your own change with
+**one or two targeted examples** — the specific test file you touched, or a short script
+exercising the thing you just wrote — and move on. A full run happens once, at the end,
+deliberately.
+
+The same applies to live provider calls. Prove a model-calling path works **once**, with
+one representative input, and say so. Re-running it to feel confident costs real money and
+tells you nothing new.
+
+Automated checks never call a provider. Where a model is involved, intercept at the HTTP
+layer and assert on the request that *would* have been sent. Scripts that genuinely call
+the API are named `check_*.py` so pytest never collects them.
+
 ## Layering
 
 Module boundaries come from specification file 10, whose "must not know about"
