@@ -1,0 +1,30 @@
+{
+  "source": "Dossier 11 §D7 and §D10.8 — the country table and its printed-alias layer.",
+  "note": "The portal's own 251-row classifier did not transfer. Every Armenian name below is instead attested in the 71 accepted-shape declarations under evalkit/corpus, where it appears paired with its ISO-2 code. Nothing here is a translation written by hand.",
+  "null_name_note": "A code with \"name_hy\": null is known for routing — border-office lookup, dispatch detection — and has no attested Armenian name. The code+name pair is then never written at all, which is dossier 03 §4.5's all-or-nothing rule doing its job: the portal keys these fields on the code and renders the name from it, so a name written without its code is dropped on import with no message.",
+  "alias_note": "Aliases are printed forms as they appear on invoices and consignment notes, stored uppercase, matched on word boundaries, minimum three characters, longest match wins. ISO alpha-3 codes are deliberately absent: they are three-letter words that collide with ordinary text, and a wrong country code is legally consequential. A field whose whole content is an ISO-2 code resolves by exact match instead.",
+  "countries": [
+    {"code": "AE", "name_hy": "ԱՐԱԲԱԿԱՆ ՄԻԱՑՅԱԼ ԷՄԻՐՈՒԹՅՈՒՆՆԵՐ", "aliases": ["UNITED ARAB EMIRATES", "UAE", "DUBAI", "ОБЪЕДИНЕННЫЕ АРАБСКИЕ ЭМИРАТЫ"]},
+    {"code": "AM", "name_hy": "ՀԱՅԱՍՏԱՆ", "aliases": ["ARMENIA", "REPUBLIC OF ARMENIA", "ՀԱՅԱՍՏԱՆ", "АРМЕНИЯ"]},
+    {"code": "CH", "name_hy": "ՇՎԵՅՑԱՐԻԱ", "aliases": ["SWITZERLAND", "SUISSE", "SCHWEIZ", "ՇՎԵՅՑԱՐԻԱ", "ШВЕЙЦАРИЯ"]},
+    {"code": "CN", "name_hy": "ՉԻՆԱՍՏԱՆ", "aliases": ["CHINA", "P.R. CHINA", "PR CHINA", "PEOPLES REPUBLIC OF CHINA", "PEOPLE'S REPUBLIC OF CHINA", "ՉԻՆԱՍՏԱՆ", "КИТАЙ"]},
+    {"code": "CZ", "name_hy": "ՉԵԽԻԱ", "aliases": ["CZECH REPUBLIC", "CZECHIA", "ՉԵԽԻԱ", "ЧЕХИЯ"]},
+    {"code": "DE", "name_hy": "ԳԵՐՄԱՆԻԱ", "aliases": ["GERMANY", "DEUTSCHLAND", "ԳԵՐՄԱՆԻԱ", "ГЕРМАНИЯ"]},
+    {"code": "ES", "name_hy": "ԻՍՊԱՆԻԱ", "aliases": ["SPAIN", "ESPANA", "ESPAÑA", "ԻՍՊԱՆԻԱ", "ИСПАНИЯ"]},
+    {"code": "EU", "name_hy": "ԵՎՐՈՊԱԿԱՆ ՄԻՈՒԹՅՈՒՆ", "aliases": ["EUROPEAN UNION", "ԵՎՐՈՊԱԿԱՆ ՄԻՈՒԹՅՈՒՆ"]},
+    {"code": "GB", "name_hy": "ՄԵԾ ԲՐԻՏԱՆԻԱ", "aliases": ["UNITED KINGDOM", "GREAT BRITAIN", "ENGLAND", "ՄԵԾ ԲՐԻՏԱՆԻԱ", "ВЕЛИКОБРИТАНИЯ"]},
+    {"code": "GE", "name_hy": null, "aliases": ["GEORGIA", "SAKARTVELO", "ГРУЗИЯ"]},
+    {"code": "HK", "name_hy": null, "aliases": ["HONG KONG", "HONGKONG", "ГОНКОНГ"]},
+    {"code": "IN", "name_hy": "ՀՆԴԿԱՍՏԱՆ", "aliases": ["INDIA", "ՀՆԴԿԱՍՏԱՆ", "ИНДИЯ"]},
+    {"code": "IR", "name_hy": "ԻՐԱՆ", "aliases": ["IRAN", "ISLAMIC REPUBLIC OF IRAN", "ԻՐԱՆ", "ИРАН"]},
+    {"code": "IT", "name_hy": "ԻՏԱԼԻԱ", "aliases": ["ITALY", "ITALIA", "ԻՏԱԼԻԱ", "ИТАЛИЯ"]},
+    {"code": "KR", "name_hy": "ԿՈՐԵԱՅԻ ՀԱՆՐԱՊԵՏՈՒԹՅՈՒՆ", "aliases": ["SOUTH KOREA", "REPUBLIC OF KOREA", "KOREA", "ԿՈՐԵԱՅԻ ՀԱՆՐԱՊԵՏՈՒԹՅՈՒՆ", "ЮЖНАЯ КОРЕЯ"]},
+    {"code": "MY", "name_hy": "ՄԱԼԱՅԶԻԱ", "aliases": ["MALAYSIA", "ՄԱԼԱՅԶԻԱ", "МАЛАЙЗИЯ"]},
+    {"code": "NL", "name_hy": "ՆԻԴԵՌԼԱՆԴՆԵՐ", "aliases": ["NETHERLANDS", "HOLLAND", "ՆԻԴԵՌԼԱՆԴՆԵՐ", "НИДЕРЛАНДЫ"]},
+    {"code": "SE", "name_hy": "ՇՎԵԴԻԱ", "aliases": ["SWEDEN", "SVERIGE", "ՇՎԵԴԻԱ", "ШВЕЦИЯ"]},
+    {"code": "SI", "name_hy": "ՍԼՈՎԵՆԻԱ", "aliases": ["SLOVENIA", "SLOVENIJA", "ՍԼՈՎԵՆԻԱ", "СЛОВЕНИЯ"]},
+    {"code": "TH", "name_hy": "ԹԱՅԼԱՆԴ", "aliases": ["THAILAND", "ԹԱՅԼԱՆԴ", "ТАИЛАНД"]},
+    {"code": "TR", "name_hy": "ԹՈՒՐՔԻԱ", "aliases": ["TURKEY", "TURKIYE", "TÜRKIYE", "ԹՈՒՐՔԻԱ", "ТУРЦИЯ"]},
+    {"code": "TW", "name_hy": "ԹԱՅՎԱՆ (ՉԻՆԱՍՏԱՆ)", "aliases": ["TAIWAN", "ԹԱՅՎԱՆ", "ԹԱՅՎԱՆ (ՉԻՆԱՍՏԱՆ)", "ТАЙВАНЬ"]}
+  ]
+}

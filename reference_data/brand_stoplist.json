@@ -1,0 +1,6 @@
+{
+  "source": "Dossier 11 §D10.7 — non-brand Latin token stoplist, 32 tokens.",
+  "note": "Latin tokens that must never be read as a brand on otherwise-Armenian goods text. Filed descriptions carry them routinely on genuinely unbranded goods. Calibrated to 0 false positives on 320 corpus lines; the one prior false positive was EX, which is an article-number prefix.",
+  "use": "Brand detection, which decides whether a printed trade name is missing from the filed description and must be flagged for inclusion. A brand is never auto-inserted into the text — dossier 05 §5.4.",
+  "tokens": ["LED", "PVC", "USB", "PCS", "SET", "MM", "CM", "SM", "ML", "LT", "KG", "GR", "GSM", "NO", "AD", "UV", "AA", "AAA", "INOX", "DIN", "EN", "ISO", "GOST", "ART", "TYPE", "EX", "XL", "XXL", "XS", "MIX", "NEW", "MODEL"]
+}

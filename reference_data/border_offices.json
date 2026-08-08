@@ -1,0 +1,8 @@
+{
+  "source": "Dossier 11 §D10.4 — dispatch country to border customs office, 2 rows.",
+  "note": "The physical land crossing the goods entered by, keyed on the country they were dispatched from. Best-effort seeding, not a register: only two routes are mapped, and a route that is not here omits the whole block. A wrong customs office is a real-world error, so the operator confirms it on the portal rather than being handed a guess.",
+  "by_dispatch_country": {
+    "IR": {"office_code": "05100041", "office_name": "ԱԳԱՐԱԿ"},
+    "GE": {"office_code": "05100022", "office_name": "ԲԱՎՐԱ"}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Dossier 05 §6.8 — sizes and dimensions, description side.",
+  "note": "Filed descriptions write dimension separators as '*' and size units in Armenian. A unit token converts ONLY when it is anchored to a preceding digit, so apparel size L, a thread designation M8 and letters inside model codes never convert. The numbers themselves stay verbatim.",
+  "separators": ["X", "Х", "×", "х"],
+  "separator_replacement": "*",
+  "by_token": {
+    "MM": "ՄՄ",
+    "CM": "ՍՄ",
+    "SM": "ՍՄ",
+    "ML": "ՄԼ",
+    "KG": "ԿԳ",
+    "GR": "ԳՐ",
+    "G": "Գ",
+    "L": "Լ",
+    "LT": "Լ",
+    "M": "Մ",
+    "M2": "Մ2",
+    "M3": "Մ3"
+  }
+}

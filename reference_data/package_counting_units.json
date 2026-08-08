@@ -1,0 +1,5 @@
+{
+  "source": "Dossier 11 §D10.6 — package-counting unit words.",
+  "note": "Invoice quantity-unit strings that count packages rather than items. A quantity in one of these is a package count, and multiplying it by a printed per-package factor is the arithmetic real declarants perform. The effective vocabulary is this set UNION every alias packing_codes.json resolves — bags, drums and pallets count packages too — and the loader takes that union.",
+  "words": ["BOX", "BOXES", "CTN", "CTNS", "CARTON", "CARTONS", "CASE", "CASES", "KUTU"]
+}

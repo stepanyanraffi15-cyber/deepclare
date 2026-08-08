@@ -1,0 +1,5 @@
+{
+  "source": "Dossier 03 §5.6 — the container indicator is true iff the consignment note's goods text names a container.",
+  "note": "The dossier names the rule and not the vocabulary, so this list is curated. Matched uppercased with word boundaries, like every other alias table here. No consignment note at all files false and raises a review item, because a missing note is not evidence of no container.",
+  "keywords": ["CONTAINER", "CONTAINERS", "CONTAINERIZED", "КОНТЕЙНЕР", "КОНТЕЙНЕРЫ", "ԿՈՆՏԵՅՆԵՐ", "FCL", "LCL", "20FT", "40FT", "40HC", "20DV", "40DV"]
+}

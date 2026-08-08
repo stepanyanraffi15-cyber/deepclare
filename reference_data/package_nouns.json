@@ -1,0 +1,19 @@
+{
+  "source": "Dossier 11 §D10.9 — packing code to Armenian package noun, 8 rows and 2 defaults.",
+  "note": "Used by the box 31 quantity segment. Keyed on the same codes as packing_codes.json. Filed descriptions use packaging nouns as counting units, so the noun is part of the arithmetic's wording and not decoration.",
+  "by_code": {
+    "JB": "ՄԵԾԱՊԱՐԿ",
+    "BG": "ՊԱՐԿ",
+    "CT": "ՏՈՒՓ",
+    "BX": "ՏՈՒՓ",
+    "PX": "ՊԱԼԵՏ",
+    "DR": "ՏԱԿԱՌ",
+    "RL": "ՓԱԹԵԹ",
+    "PK": "ՏԵՂ"
+  },
+  "default_in_pack_math": "ՏՈՒՓ",
+  "default_for_package_segment": "ՏԵՂ",
+  "piece_noun": "ՀԱՏ",
+  "per_package_noun": "ՀԱՏԱՆՈՑ",
+  "nouns_note": "The pack-math form filed by real declarants is 'N <package noun> M ՀԱՏԱՆՈՑ-T ՀԱՏ' — N packages of M each, T pieces in total."
+}

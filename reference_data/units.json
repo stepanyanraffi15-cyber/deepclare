@@ -1,0 +1,28 @@
+{
+  "source": "Dossier 11 §D10.1 — unit alias table, 13 rows.",
+  "note": "Maps free-text invoice unit strings AND the nomenclature's own per-code supplementary-unit abbreviations onto OKEI codes. Three vocabularies are in play — Latin invoice text, Cyrillic nomenclature abbreviations, Armenian unit words — which is why matching is script-insensitive and uppercased. A bare OKEI code resolves to itself. A composite string ('ШТ, М') resolves by its leading token.",
+  "emittable_set": "These thirteen are the whole of what this product can file in box 41. Dossier 11 §D6 records the portal's own classifier as 32 units and requires everything emitted to be a subset of it; that table did not transfer, and this one is the subset the predecessor filed.",
+  "count_units": ["796", "715", "798"],
+  "count_units_note": "Units that count discrete things. Everything else is a magnitude, and a magnitude may never be filed under a count label. Each counts in ITS own unit: 100 pairs is not 100 pieces, so a piece total is never derived for a line counted in one of the others.",
+  "pieces": "796",
+  "mass_units_in_kilograms": {"166": "1", "168": "1000", "163": "0.001"},
+  "mass_units_note": "How many kilograms one of each mass unit is. A weight printed in tonnes and filed under the kilogram element is the recorded 1000x error of dossier 05 §6.1.",
+  "kilogram": "166",
+  "deliberately_unresolved": ["КГ N", "КГ K2O", "КГ P2O5", "КГ U", "Г Д/И", "КИ", "КГ 90% С/В"],
+  "deliberately_unresolved_note": "Content-based units — kilograms of nitrogen, of potassium oxide, of phosphorus pentoxide, of uranium, grams of fissile isotopes, curies, kilograms of 90% dry substance. They cannot be computed from commercial documents, so they resolve to nothing and the ladder falls through to a lower tier. An unknown unit maps to nothing rather than to a wrong one.",
+  "units": [
+    {"okei": "166", "name_hy": "ԿԳ", "aliases": ["166", "KG", "KGS", "KGM", "KILOGRAM", "KILOGRAMS", "ԿԳ", "КГ"]},
+    {"okei": "796", "name_hy": "ՀԱՏ", "aliases": ["796", "PCS", "PC", "PCE", "UNIT", "UNITS", "U", "ШТ", "ШТ.", "ШТ, М", "ՀԱՏ"]},
+    {"okei": "112", "name_hy": "Լ", "aliases": ["112", "L", "LTR", "LITER", "LITERS", "LITRE", "Լ", "Л"]},
+    {"okei": "168", "name_hy": "Տ", "aliases": ["168", "T", "TON", "TONS", "TONNE", "TONNES", "TONE", "MT", "Տ", "Т"]},
+    {"okei": "006", "name_hy": "Մ", "aliases": ["006", "M", "MTR", "METER", "METERS", "METRE", "М", "Մ"]},
+    {"okei": "055", "name_hy": "Մ2", "aliases": ["055", "M2", "SQM", "М2", "М²", "Մ2", "Մ²"]},
+    {"okei": "113", "name_hy": "Մ3", "aliases": ["113", "M3", "CBM", "М3", "М³", "Մ3", "Մ³"]},
+    {"okei": "715", "name_hy": "ԶՈՒՅԳ", "aliases": ["715", "PAIR", "PAIRS", "PR", "ПАР", "ПАРА", "ԶՈՒՅԳ"]},
+    {"okei": "163", "name_hy": "Գ", "aliases": ["163", "G", "GR", "GRAM", "GRAMS", "Г", "Գ"]},
+    {"okei": "798", "name_hy": "1000 ՀԱՏ", "aliases": ["798", "1000 ШТ", "1000 PCS", "1000 ՀԱՏ"]},
+    {"okei": "162", "name_hy": "ԿԱՐԱՏ", "aliases": ["162", "CARAT", "CAR", "КАР", "ԿԱՐԱՏ"]},
+    {"okei": "831", "name_hy": "Լ 100% ՍՊԻՐՏ", "aliases": ["831", "Л 100% СПИРТА", "L 100% ALCOHOL"]},
+    {"okei": "130", "name_hy": "1000 Լ", "aliases": ["130", "1000 Л", "1000 L"]}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source": "Dossier 11 §D10.2 — product-kind to OKEI, 5 rows.",
+  "note": "Tier 3 of the unit ladder: what to file when neither the commodity code nor the invoice names a unit. The kind is the description stage's read of what the goods physically are, which is not what the invoice's unit column says — discrete goods are routinely invoiced by the kilogram.",
+  "by_kind": {
+    "piece": "796",
+    "weight": "166",
+    "length": "006",
+    "area": "055",
+    "volume": "112"
+  }
+}

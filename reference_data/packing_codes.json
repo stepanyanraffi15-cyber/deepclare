@@ -1,0 +1,15 @@
+{
+  "source": "Dossier 11 §D10.3 — packing free text to UN/ECE Recommendation 21 code, 8 rows.",
+  "note": "Matched first-hit in the order written. The order is part of the data: the big-bag row must stay above the bag row, or 'BIG BAGS' matches as bags.",
+  "asymmetry": "365 codes can be filed (dossier 11 §D8); 8 can be inferred from text. A code outside this table is not a miss in the table, it is a packing kind no wording resolves.",
+  "entries": [
+    {"code": "JB", "aliases": ["BIGBAGS", "BIG BAGS", "BIG BAG", "BIGBAG", "JUMBO BAG", "JUMBOBAG", "FIBC"]},
+    {"code": "BG", "aliases": ["BAGS", "BAG", "SACKS", "SACK"]},
+    {"code": "CT", "aliases": ["CARTONS", "CARTON", "CTNS", "CTN"]},
+    {"code": "BX", "aliases": ["BOXES", "BOX", "BOXS"]},
+    {"code": "PX", "aliases": ["PALLETS", "PALLET", "PLT"]},
+    {"code": "DR", "aliases": ["DRUMS", "DRUM"]},
+    {"code": "RL", "aliases": ["ROLLS", "ROLL"]},
+    {"code": "PK", "aliases": ["PACKAGES", "PACKAGE", "PACKS", "PACK", "PKG", "PKGS"]}
+  ]
+}
