@@ -1192,3 +1192,196 @@ that a second dead end terminates. Full suite: 372 passed.
   decoding settings alone. Two consequences: no single run of the check script is
   evidence, and any evaluation of this stage has to report a distribution rather than a
   number.
+
+---
+
+## Entry 9 — M14 Run Orchestration and the CLI: the pipeline runs end to end
+
+Everything else existed as a module. This is the entry where it becomes a product: one
+command, two documents in, a declaration and a review report out.
+
+### What was built
+
+`src/deepclare/run/`, seven modules, and the shape is the argument:
+
+| Module | What it is |
+|---|---|
+| `state` | `RunInput`, `RunOptions`, `RunState` — the slots of dossier 02 §5.1 as one frozen typed object |
+| `ports` | Every capability as a protocol, injected. Six of them; four optional, and `None` is a declared branch |
+| `conditions` | Dossier 02 §6.1 as code: one named predicate per branch, with the specification's own wording beside it |
+| `stages` | The nodes, each a function of the state before it |
+| `pipeline` | The chain, and `describe_chain()`, which prints the whole topology without running it |
+| `reporting` | The assembled declaration presented to M13 as values keyed by domain concept |
+| `summary` | A24 — the run's account of itself |
+| `wiring` | The composition root. Not part of the chain |
+
+The outer chain is sequential code, which is what dossier 02 §12 recommends and for the
+reason it gives: the only genuine graph in this system — conditional entry, a bounded
+loop, a structural guard — is the per-line Code Assignment traversal, and that is already
+declared as a graph inside `deepclare.classification`. The outer chain has no cycle, no
+fan-out and no join. What a framework would have given it is exactly what was kept anyway:
+every node named, every conditional edge declared, and the topology printable.
+
+```
+python -m deepclare run --show-chain
+  1. intake  [A1+A2]
+  2. rasterize  [A3]                runs only when: the invoice's format carries pages
+  3. classify pages  [A4]           runs only when: a page-type classifier port was injected
+  4. group pages  [A5]
+  5. read documents  [A6]           branches on: at least one page grouped as a consignment note
+  6. goods gate  [A12]
+  7. enrich evidence  [A14]         branches on: an evidence enricher is configured
+  8. build line contexts  [A15]
+  9. write descriptions  [A17]
+ 10. classify lines  [A18]
+ 11. completeness guard  [A19]
+ 12. assemble lines  [A20]
+ 13. reconcile lines  [A21+A22]     branches on: a cross-line reconciler port was injected
+ 14. assemble declaration  [A23]
+ 15. write filing  [A23]
+ 16. build review report  [A24]
+```
+
+A13 (prior-filing matcher) and A16 (foreign-text reuse probe) are absent, and there is no
+port for either. Customer-history reuse was removed from this product; a node that is not
+there cannot be switched on by configuration.
+
+The CLI now has three commands. `run` writes `declaration.xml` and `review.txt` to `--out`
+and prints the summary; `build-index` embeds every filable code into the vector
+collection; `build-reference` is unchanged. The stale `NotImplementedError` claiming
+classification and filing were missing is gone.
+
+### Verified end to end, once, against the real models
+
+`tests/make_synthetic_invoice.py` now writes both a fictitious invoice and its matching
+CMR. One billed run of the real CLI over both:
+
+```
+$ python -m deepclare run /tmp/invoice_synthetic.pdf \
+      --consignment-note /tmp/cmr_synthetic.pdf --out out
+
+running intake (A1+A2) · rasterize (A3) · classify pages (A4) · group pages (A5)
+running read documents (A6) · goods gate (A12) · enrich evidence (A14)
+running build line contexts (A15) · write descriptions (A17) · classify lines (A18)
+running completeness guard (A19) · assemble lines (A20) · reconcile lines (A21+A22)
+running assemble declaration (A23) · write filing (A23) · build review report (A24)
+
+goods lines          3
+codes assigned       3
+codes abstained      0
+conforms / filable   True / True
+
+review items         32
+  placeholder    0
+  omitted        19
+  needs_review   3
+  guess          10
+
+codes flagged for confirmation   lines 3
+
+what the run did
+  enrich evidence: skipped — no supporting document was grouped
+  cross-line consistency: nothing_to_do — the critic found no inconsistency between the
+  lines, so no rewrite was requested.
+```
+
+Sixteen model calls: one page classification, two vision reads, three descriptions, three
+retrievals and three code picks, one consistency critique. The four-line invoice carries a
+freight row; three goods lines came back, which is the row correctly excluded.
+
+The filed document:
+
+```xml
+<catESAD_cu:TotalGoodsNumber>3</catESAD_cu:TotalGoodsNumber>
+<catESAD_cu:TotalPackageNumber>114</catESAD_cu:TotalPackageNumber>
+...
+<catESAD_cu:GoodsNumeric>1</catESAD_cu:GoodsNumeric>
+<catESAD_cu:GoodsDescription>ՊԼԱՍՏՄԱՍՍԱՅԵ ՏՈՒՓ, ՆԱԽԱՏԵՍՎԱԾ Է ՊԱՀՊԱՆՄԱՆ ՀԱՄԱՐ, ԿԱՊՈՒՅՏ,
+  40*60ՍՄ</catESAD_cu:GoodsDescription>
+<catESAD_cu:GoodsTNVEDCode>39231000000</catESAD_cu:GoodsTNVEDCode>
+...
+<catESAD_cu:GoodsTNVEDCode>39233010900</catESAD_cu:GoodsTNVEDCode>
+<catESAD_cu:GoodsTNVEDCode>63053390000</catESAD_cu:GoodsTNVEDCode>
+```
+
+The third line is the run's best moment and is worth reading. The invoice prints
+`3923210000` — a plastics code — against "PP woven sack 50 kg". The classifier declined
+the printed code and filed 6305.33 instead, with the reason:
+
+> *"articles made of woven plastic strips are classified as textile articles in Section
+> XI, not as plastic articles in Chapter 39. Heading 6305 covers sacks for packing goods.
+> Subheading 6305.33 specifically covers those made from polypropylene strips."*
+
+Composite confidence 0.67, under the 0.7 gate, so the line is flagged for confirmation.
+That is the product's whole thesis in one line: a defensible legal argument against the
+document's own code, filed, and handed to a human to confirm rather than asserted.
+
+Two other findings worth naming, both of which the run surfaced rather than hid:
+
+* **line 1, net above gross.** The invoice prints 624 kg net; the consignment note's
+  1890 kg distributed by quantity share gives 135.81 kg gross. Both were filed as printed
+  and the impossibility raised as a `needs review` naming both figures.
+* **`NORWAY` resolves to nothing.** The curated country table holds 22 countries — the
+  corpus's own set — and Norway is not among them, so box 34 and box 16 were omitted with
+  an item saying so. Filing a name without its code is the contract's quietest failure, so
+  omitting the pair is correct; the table is simply narrower than the world.
+
+Offline, `tests/test_run_pipeline.py` runs the whole chain with fake ports satisfying the
+same protocols the real adapters do — which is only possible because nothing in the chain
+reaches for a provider. 13 tests: the chain end to end, both skip branches, a
+reconciliation change reaching the filed XML through the value's transform chain, a failed
+critique leaving a filable declaration, and four shapes of broken per-line contract.
+
+### One real defect found by running it
+
+`assembly._total_packages` summed `item.package_quantity`, a field `GoodsItem` does not
+have. It had never fired: no test had run assembly over a full set of lines and reached
+the shipment total. Fixed in its own commit.
+
+### Decisions taken where the specification was silent, or where the code disagreed with it
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-31 | Cross-line consistency reconciles the **naming** text, before assembly appends the deterministic size and quantity segments | M10 is specified to receive the fully assembled filed string, with the segments named so a guardrail can check they came back verbatim. In this build the segments are composed inside `assembly.assemble_line` and do not exist yet at that point. Feeding the reconciler the assembled string would mean assembling twice and then re-appending the segments to text that already contains them. Reconciling the naming text instead achieves the guardrail's purpose structurally: a segment never shown to the model cannot be dropped by it — the same omission-over-prohibition argument the rest of the system runs on |
+| D-32 | A consistency change is applied as a **`Transform` on the existing value's chain**, never as a new value | M10 hands back a `Transform` per change precisely so the caller can append it. It also settles a question with no honest answer: a re-coded line would otherwise need a fresh provenance and a fresh derivation confidence, and this pass makes no measurement to put in one. The value keeps the account its producer attached and gains one more link, and the line is flagged |
+| D-33 | The description half of the completeness guard runs at `write_descriptions`, not at A19 | `build_classification_lines` already refuses a line with no description, so a guard placed after classification could never fire on that collection — unreachable code dressed as a contract. Checked where the batch is produced, it names the stage that broke the promise. A19 keeps the classifications, which is its subject in §5.1 |
+| D-34 | No page classifier configured is a **skip**, not a separate direct-read path | §6.1 has A2 → A6 bypass segmentation entirely when no classifier is configured. But with no verdicts the grouper's own rule — no verdict leaves a page on its file's role — produces exactly that direct read. One code path, one over-inclusion policy, and no configuration that can route around it |
+| D-35 | Supporting documents accepted and not read raise a shipment-level review item | The evidence enricher (A14) has no implementation in this build. §6.1 says the stage is skipped; it does not say the operator is told. Dossier 02 §1 says every uncertainty becomes a review item, and "your catalogue was not consulted and the codes were drafted without it" is exactly one |
+| D-36 | The workbook invoice is a **separate port**, not a method on the document reader | Its input is a routed file rather than a page group, and its reader needs a model and a prompt directory the chain must not know about. Binding those is what a composition root is for. A run whose invoice is a workbook and which was handed no workbook reader stops naming what is missing |
+| D-37 | `reference_tables_dir` is a settings field, not a constant | The curated tables are read from a directory and a path is environment-specific. Build rule 5 admits no exception for a path that happens to be tracked in git |
+| D-38 | The run's output is the `RunState` itself, not a narrower result object | Every slot on it was written by a named stage and the summary reads them. A second, smaller result type would either duplicate those fields or hide the ones a caller turns out to need |
+
+### Where this is weakest
+
+- **The review report double-reports about a dozen concepts.** Assembly says "no country
+  could be read from the seller's address" and the filing adapter says "so the consignor
+  address was left out entirely"; both are keyed to `consignor country` and both appear.
+  19 omitted items cover roughly ten distinct facts. They are genuinely different
+  statements — the cause and its consequence — and M13 is specified never to drop an item,
+  so nothing here deduplicates them. But a first-time reader counts twenty problems where
+  there are ten, and the right fix is probably for the two modules to agree which of them
+  reports an omission rather than for the surface to guess.
+- **Concept vocabularies have drifted between modules.** Assembly raises
+  `line goods description`; consistency raises `goods description`. `total packages`
+  against `shipment package total`. The report joins an item to its value on the concept
+  name, so a mismatch silently costs the join and the operator reads the finding and the
+  value in two places. `reporting.py` picks the assembly spelling wherever the two
+  disagree, which papers over it rather than fixing it. A single shared concept vocabulary
+  is the actual fix and is a change across four modules.
+- **The declarant profile is not reachable from the CLI.** Every run therefore omits the
+  goods location, the filler and the importer fallback, and raises five review items about
+  it. That is correct behaviour and it is also five items of noise on every single run.
+  There is no `--profile` flag because nothing has decided what the profile file looks
+  like.
+- **The workbook path's own diagnostics are dropped.** M6's spreadsheet reader reports
+  which numeric columns would not parse and whether column labelling failed; the port
+  returns only the record and logs the rest. Those belong in the review report and are not
+  there.
+- **Nothing measures whether a run is *good*.** One synthetic shipment proves the chain
+  connects. It is not evidence about accuracy, and the classification entry's warning
+  applies here with more force: the same input does not give the same answer twice, so a
+  single run of the CLI is a demonstration and never a measurement.
+- **The chain has no resume and no checkpoint.** Dossier 02 §9 describes both. A run that
+  fails on line 40 of 60 has spent forty description calls and forty traversals and keeps
+  none of them. For a 554-line filing — which the corpus contains — that is the difference
+  between an expensive retry and an unusable one.
