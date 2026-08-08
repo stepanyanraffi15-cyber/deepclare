@@ -314,3 +314,66 @@ Ordinary work inside an agreed boundary needs no gate.
 Where chapter titles, heading titles, the taxonomic path and the per-code supplementary
 unit come from at run time. Proposal in the artifact: read from the authority's public
 API on demand, cache in memory, write nothing to disk. Not started.
+
+---
+
+## Entry 3 — The nomenclature metadata artifact arrived; the pending decision is answered
+
+Supplied: `nomenclature_exim` (metadata) and `qdrant_exim` (vectors).
+
+**The vectors are unchanged.** The supplied collection is byte-identical to the one
+already here (md5 `b118567f…` both). Only the metadata half is new — which is exactly
+the half that was missing.
+
+### It resolves the blocker
+
+| Needed | Present |
+|---|---|
+| Chapter menu | 96 chapters, named in en/hy/ru |
+| Heading menu + titles | 1,228 titles, **0 blank**, covering every heading any leaf sits under (271 of them derived, per the never-blank rule) |
+| Taxonomic path for candidates | Leaf names in all three languages |
+| Per-code supplementary unit | 5,290 entries; 5,223 leaves resolve cleanly to OKEI through the alias table |
+
+Coverage measured: `name_en` 14,331/14,332, `name_hy` and `name_ru` 14,332/14,332.
+
+**The silent-drop trap cannot fire.** Codes in the vectors but not the metadata: **0**.
+Codes in the metadata but not the vectors: **0**. The failure the spec warns about — a
+top-k quietly returning fewer than k because a code is missing from the metadata — has
+no way to happen against this pair. Verified by scrolling all 14,332 points and
+differencing both directions.
+
+Verified end to end: the same query used to return six bare code numbers now renders as
+`code — chapter › heading › leaf` in English and Armenian, with the top hit at 0.844
+being the correct leaf.
+
+Installed at `data/reference/nomenclature_exim/` (gitignored, like the collection).
+
+### Two gaps, both confirmed rather than suspected
+
+1. **The GIR chapter legal notes are empty.** `notes.json` is literally `{}` — 0 of the
+   94 chapters. This settles dossier open question B5 *in the negative*: the classifier
+   has never had legal context, on any run, silently and with no error. Demonstrated —
+   the chapter 39 note renders as `(none)`. Notes are prompt-side only, so merging them
+   requires no re-embedding. Highest-value addition available.
+
+2. **There is no 6-digit subheading layer, and 29.5% of leaves are named "other".**
+   Measured: 0 six-digit entries, and 3,917 of 13,279 leaves named exactly `other` /
+   `այլ`. Demonstrated — four of six candidates for one goods line render as an
+   identical `… › other`, which no model can discriminate between. The 6-digit layer is
+   where the legal splits live (`392330` carboys and bottles, `392329` sacks and bags,
+   `392390` genuinely other). Derivable offline from public tariff payloads, no
+   credential.
+
+### Smaller findings
+
+- **Four unit strings have no OKEI mapping**: `100 шт`, `1000 м3`, `1000 кВт ч`,
+  `шт (колод)` — 5 leaves. `1000 кВт ч` is OKEI 246, which the dossier names. Without a
+  mapping these fall silently to the kilogram default.
+- **Vintage 2026-06-15**, about two months old. Leaf count 13,279 against the published
+  active total of 13,289 — 10 short, within tolerance.
+- **Heading titles are in good shape**: none blank, median length 102 characters.
+  Exactly **one** Armenian title sits in the English set (heading 9005), matching the
+  dossier's claim precisely.
+- 957 of the 1,228 headings are embedded as vectors, but the heading *menu* is built
+  from `headings.json` and is complete. Retrieval runs at leaf level, so this costs
+  nothing.
