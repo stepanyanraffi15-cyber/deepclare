@@ -982,3 +982,75 @@ gap is visible rather than silent, but visible is not solved.
 Until one of those arrives, treat the emitted XML as structurally coherent and
 **unconfirmed against the portal**. Everything else in the pipeline is unaffected: the
 values are correct, only their expression is uncertain.
+
+---
+
+## Entry 6 — The evaluation corpus arrives, and settles three things at once
+
+`evalkit/` brought 71 synthetic cases, each with input documents and a `ground_truth.xml`
+— a portal-shaped declaration. Fully synthetic: fictional companies and tax IDs, so no
+customer-data question attaches to it.
+
+### 1. It settles the XML contract, which the specification could not
+
+Reading all 71 yields **68 element names, each under exactly one of three namespace
+prefixes, and a canonical child order for all 21 containers**, frozen as a generated
+module (`filing/observed.py`) rather than hand-typed.
+
+The inference it replaces was wrong in ways that would have made every emitted file
+unimportable:
+
+| Inferred | Attested |
+|---|---|
+| *(absent)* | `ESADout_CUGoodsShipment` — the container wrapping the entire shipment |
+| `ESADout_CUFinancialResponsiblePerson` | `ESADout_CUFinancialAdjustingResponsiblePerson` |
+| `ESADout_CUFillingPerson` | `FilledPerson`, at root level, children `PersonSurname` + `PersonName` |
+| `CustomsOfficeCode` | `CustomsOffice` |
+| `CustomsZone`, `TransportMeans`, `Contact`, `Phone`, `E_mail`, `BorderCustomsOffice`, `DeliveryPlace`, `DispatchCountry*` and 8 more | appear in **zero** filings |
+
+### 2. The commodity codes verify
+
+2,842 codes across the corpus, **all in the 11-digit filed form**. 99.65% resolve against
+our nomenclature. The national 11th digit is `0` on 97.7% and `8` on 2.3% — the
+specification says "~98% zero", so that corroborates independently.
+
+The 10 that fail are `39069090090` and `39100000090`, which exist neither in our tree nor
+at the authority; the corpus is synthetic, so they are generator artifacts. The existence
+gate rejects them correctly. **Consequence for scoring: abstaining on those two is right
+and the ground truth will penalise it.**
+
+### 3. Retrieval depth was capping accuracy, and now it is measured
+
+Recall@k on 60 corpus lines, scoped to the correct heading, asking only whether the
+expected code is retrieved at all:
+
+| k | 5 | 10 | 15 | 20 | 30 | 50 | 100 |
+|---|---|---|---|---|---|---|---|
+| recall | 58.3% | **68.3%** | 76.7% | 80.0% | **86.7%** | 96.7% | 100% |
+
+**At k=10 — the value the traversal shipped with — a third of correct codes are never
+shown to the model.** Ranks beyond ten run 11, 12, 14, 15, 17, 20, 22, 23, 27, 28, 31 …
+76. That is the same shape the specification describes for its recorded 48% → 67% jump,
+reproduced here independently, which resolves its open question about whether that gain
+came from retrieving more or from restructuring the traversal: **retrieving more is
+sufficient to explain it.**
+
+Raised to 30. Fifty buys another ten points of ceiling and is the next thing to measure
+once end-to-end scoring runs.
+
+### A caveat on the ground truth itself
+
+On the one line examined closely, the classifier picked `8539213009` (halogen lamps with
+tungsten filament, for motor vehicles) where the ground truth says `8539229000` (other
+incandescent lamps, not exceeding 200 W). The pick looks *more* defensible than the
+label. The corpus is synthetic, so its codes are the generator's choices, not a broker's.
+**Scoring against it measures agreement with the generator, not customs correctness** —
+worth stating before any accuracy number from it is quoted.
+
+### An architectural constraint discovered by hitting it
+
+**Embedded Qdrant is exclusive-locked to a single process.** A second process opening the
+same directory fails outright. The specification assumes concurrent runs bounded at four,
+sharing a resident index; with the embedded store that bound is one. Either the runs
+serialise on the store, or it moves behind a server. Recorded rather than worked around —
+the test here used a filesystem snapshot, which is not a production answer.
