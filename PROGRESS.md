@@ -821,3 +821,122 @@ though it were a description is the failure this product exists to avoid).
   whether the digits appear anywhere in the input, so a figure that happens to be a
   substring of a model number passes. It is built to catch inventions, not to audit
   arithmetic.
+
+---
+
+## Entry 7 — M12 Filing Format Adapter: the declaration XML, both directions
+
+### What was built
+
+`src/deepclare/filing/` — the only module that knows the filed format, in the write and
+the read direction, plus `src/deepclare/domain/declaration.py`, the serialization-free
+declaration object that assembly will produce and the adapter consumes.
+
+| File | Owns |
+|---|---|
+| `filing/contract.py` | Every element name, sequence, constant and leaf facet, with each name's evidence |
+| `filing/values.py` | Number, date, boolean, padded-code and truncation rules — refuses rather than coerces |
+| `filing/document.py` | The element tree and the exact serializer |
+| `filing/writer.py` | Declaration → document + review items + conformance |
+| `filing/conformance.py` | Eighteen rules, each returning its own outcome |
+| `filing/reader.py` | Filed declaration → domain records, with an account of everything unread |
+
+Verified by `tests/check_declaration_emission.py` (no network, no dataset, no model): a
+two-line declaration — one complete, one where classification abstained — emitted,
+printed, judged rule by rule, read back, and re-emitted **byte-identically**. 94 tests
+added; the suite passes.
+
+Checked by eye against 03 §5 and §6, on the printed document:
+
+- Goods-block order matches §5.5 exactly: `GoodsNumeric` → `GoodsDescription` →
+  `GrossWeightQuantity` → `NetWeightQuantity` → `InvoicedCost` → `GoodsTNVEDCode` →
+  origin code+name → `CustomsCostCorrectMethod` → `Preferencii` →
+  `SupplementaryGoodsQuantity` → `ESADGoodsPackaging` → `ESADCustomsProcedure`, with the
+  additional-sign slot skipped.
+- `PakageQuantity` before `PakageTypeCode`. Misspellings reproduced: `CounryName`,
+  `ESADout_CUConsigment`, `Pakage*`/`Paking*`, `E_mail`.
+- Constants: `DocumentModeID="1006107E"`, `IM`, `40`, `1`/`1`/`1`, `40`/`00`/`000`,
+  `AM`/ՀԱՅԱՍՏԱՆ, and `OO` ×3 asserted by code point (79, 79) rather than by eye.
+- Prolog `<?xml version="1.0" encoding="UTF-8"?>` with the root on the same line;
+  two-space indent; one element per line; zero self-closing tags; zero empty elements;
+  the only `-` is the consignor name when it is missing. Deepest element sits at level 5.
+- Numbers: `1250.50` → `1250.5`, `1200` → `1200`, `3400.00` → `3400`. Padded codes
+  `796`, `166`, `000`, `00`, `05100010` intact.
+
+### The gap that dominates this module, and what was done about it
+
+**03 §5 names every leaf the emitter writes. It names only some of the containers.** The
+goods-item wrapper, the three importer party blocks, the goods-location block and its
+children, the two transport blocks, the contract-terms block and the filler block and its
+children appear nowhere in the dossier. The 5.10.0 schema was never obtained and the
+corpus of accepted filings is customer data that did not transfer. Seventeen element
+names and the per-element namespace assignment therefore have no source.
+
+Guessing them silently would be inventing the contract. Refusing to emit them would make
+the module useless. So they are named plausibly, listed in
+`contract.UNCONFIRMED_ELEMENT_NAMES`, and the conformance check reports
+`element-name-evidence` and `namespace-assignment` as **unconfirmed** — which makes
+`ConformanceResult.filable` `False` on every document the module can currently write.
+`conforms` (nothing decidable is violated) and `filable` (nothing unverified remains) are
+separate properties for exactly this reason. **Today, nothing this module writes should be
+filed.**
+
+One real accepted filing closes it. That is why the reader identifies containers by *what
+they contain* rather than by what they are called — a block with a `GoodsNumeric` in it is
+a goods item whatever it is named — and why `ParsedFiling.census` returns every element
+name and count in the file. Point the reader at one accepted filing and the census prints
+the seventeen real names.
+
+### Decisions taken where the specification was silent
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-11 | The internal declaration object lives in `domain/`, not in assembly | M12 consumes it and must not depend on M11. 03 §1's hierarchy is domain truth and M1 is where serialization-free concepts live |
+| D-12 | Contract constants are the adapter's, not the domain's | `IM`, `40`, `1006107E`, `OO`, `00`, `000`, `AM`/ՀԱՅԱՍՏԱՆ carry no domain choice. A field for them would invite a caller to vary something that cannot vary |
+| D-13 | The root sequence is read off 03 §5's own section order (5.1 header → consignor → importer trio → goods location → goods items → consignment → filler) | It is the only ordering evidence in the dossier. Reported as `child-order-evidence` unconfirmed, alongside thirteen other sequences taken from table order |
+| D-14 | `PackingInformation` nests inside `ESADGoodsPackaging` | §5.5's table order puts it there, and it makes the deepest element sit at exactly the five levels §6 states — root › goods › packaging › packing information › packing code |
+| D-15 | The whole document is written in one default namespace | Filed files carry three prefixes and nothing records which elements use which. A guessed three-way split is more invention, not less; one namespace is one thing to fix and is reported as unconfirmed |
+| D-16 | **M12 enforces the box-41 rule; M11 applies it.** A line arriving without a supplementary quantity is written without one, fails `goods-quantity-present`, and raises a `needs_review` item | §4.2's fallback is graded by the *resolved unit*, which is assembly's vocabulary. The adapter manufacturing a figure it cannot grade is exactly the placeholder data the build rules forbid |
+| D-17 | Line breaks in text become `&#13;`/`&#10;` character references | §6 requires one element per line and §5.5 records carriage-return references in filed text. Escaping both keeps the two rules compatible and is lossless |
+| D-18 | The truncated street address is right-stripped after the cut | A truncation landing on a space would otherwise leave trailing whitespace inside a length-critical leaf |
+| D-19 | Four domain fields the dossier calls "never missing" are optional in the type — container indicator, customs-value method, packaging classifier, packaging block | Assembly always populates them. Making them required would force the *reader* to invent one when a filed document lacks it, which is worse than carrying the absence |
+
+### Conformance, and the blind spots it was built not to inherit
+
+Eighteen rules, each with its own status, its count of what it examined, and findings
+carrying **path and value** rather than element name and violation kind. 08 §L1-K names
+five measured weaknesses of the predecessor's check and all five are requirements here:
+empty and whitespace-only elements are checked rather than exempted; a leaf with no
+declared facet is reported rather than skipped; digit-count facets are checked, not
+merely collected; the finding signature includes the path and the value; and elements
+sharing a name at different paths are resolved **by parent** — the facet table is keyed
+`(parent, name)` because `Rate` is a decimal in the payment block and a two-letter code
+in the preference block, and the code+name pairs carry their parent because
+`OriginCountryName` is half a pair inside a goods item and a lone element at shipment
+level. The sixth is the "nothing to check must fail" rule: `goods-quantity-present`,
+`fixed-width-codes`, `preference-marker`, `child-order` and `leaf-facets` all fail when
+they find no subjects.
+
+Not schema validation, and deliberately: the vendored set is 5.0.7 against a live 5.10.0
+format, and 11 §6 is explicit that it transfers as a facet dictionary and never as an
+acceptance oracle.
+
+### Where this is weakest
+
+- **The seventeen unconfirmed names and the namespace assignment**, above. Everything
+  else in the module is only as good as those.
+- **The baseline-diff half of the strategy is missing.** 04 §0 and 08 §L1-K both specify
+  that a violation counts only when the emitted document introduces one a corpus of
+  accepted files does not also exhibit. There is no corpus here, so the rules are
+  absolute. That will produce false positives against real filings on any facet drawn
+  too tightly — the facets are held to what the dossier states outright for that reason.
+- **The transport vehicle count is carried, not computed.** 03 §4.6 records the live
+  disagreement: accepted filings file 2 × the transport-means elements under road mode
+  31, the predecessor filed 1:1, and no rejection was observed either way. The adapter
+  files what it is given and takes no side.
+- **No date element is emitted today**, so the date facet is exercised only by tests. The
+  ISO rule is implemented and unused, which is a place drift can hide.
+- **The reader recovers containers structurally but the goods-location, filler and
+  contract-terms blocks still lean on assumed child names.** A real filing will read its
+  goods, parties, transport and consignment; those three may come back partly unread, and
+  they will say so rather than fail quietly.
