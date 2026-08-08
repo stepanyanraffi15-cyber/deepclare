@@ -1054,3 +1054,126 @@ same directory fails outright. The specification assumes concurrent runs bounded
 sharing a resident index; with the embedded store that bound is one. Either the runs
 serialise on the store, or it moves behind a server. Recorded rather than worked around —
 the test here used a filesystem snapshot, which is not a production answer.
+
+---
+
+## Entry 8 — M9 Classification: the layer stack and the Code Assignment graph
+
+`src/deepclare/classification/` and five prompt files. One commodity code per goods line,
+or an abstention with a stated reason.
+
+### The stack, which is five lines of code because the order is the design
+
+```
+L1  existence gate         wraps everything; does its work on the return
+L4  vendor-catalogue code  short-circuits at 0.7, always flagged
+--  Code Assignment graph  the per-line traversal, which abstains rather than guessing
+```
+
+**There is no L2 and no L3.** The specification's filed-history and legacy-history reuse
+layers are absent because customer-history reuse was removed from this product. The
+numbering is kept rather than closed up, so a reader holding the specification can see
+that two layers are missing on purpose. Nothing in this package searches anyone's prior
+filings; nomenclature search over the ATG collection is the different thing, and it is
+what the graph runs on.
+
+### The graph is declared, not wired
+
+`assignment.py` holds every node, every edge and every branch condition in one place;
+`nodes.py` holds bodies that take state and return state and never choose what runs next.
+It prints without running (`Classifier.graph.describe()`) and every run returns the step
+log each node appended to.
+
+Mis-declarations are caught at **construction**: an edge naming a node that does not
+exist, a node nothing can reach, a node whose last edge is conditional (a traversal could
+arrive with no way out), an edge declared after an unconditional one (it could never be
+taken). Four tests assert each refusal.
+
+**The retry guard is structural.** The only cycle is C7 → C1, and C7's whole job is to
+clear the printed prefix — the slot the entry branch tests *and* the slot the dead-end
+condition tests. A second pass cannot enter the fast path and cannot reach C7 again.
+Nothing counts anything. There is a visit budget inside the graph machinery, but it is a
+mis-declaration detector that raises naming the cycle; it cannot fire on this declaration.
+
+### Verified end to end against the real models
+
+`tests/check_classification_end_to_end.py` — five fictitious lines, each through
+description composition and then classification, with the real reference collection and
+real embeddings. Actual output:
+
+| Case | Outcome | Confidence | Review | Path taken |
+|---|---|---|---|---|
+| `PORTLAND CEMENT CEM I 42.5 N` | `2523290000` | 0.6836 | yes | C1 · C2 · C4 · C5 |
+| `TERMINAL BLOCK 4 MM`, invoice prints `8536.90.10.00.00` | `8536901000` | 0.9525 | no | **C0** · C4 · C5 |
+| `INDUCTIVE PROXIMITY SENSOR M18` | abstained | 0.0 | yes | C1 · C2 · C4 · C5 |
+| `CLOTHES HANGERS, 42 CM` | abstained, material split | 0.0 | yes | C1 · C2 · C4 · C5 |
+| `PE BAG 50X80`, catalogue prints `3923210000` | `3923210000` | 0.7 | yes | **L4**, no model call |
+
+The two abstentions are the interesting ones and both are actionable rather than blank:
+
+- the sensor — *"the subheadings below this level are differentiated by operating voltage
+  … the voltage is not specified"*, resolved by *"state the operating voltage of the
+  sensor"*. This is the row the specification records as unsolvable from the input
+  available, and the system says so instead of guessing;
+- the hangers — *"If they are made of wood, the correct code is 4421100000. If they are
+  made of plastic, they would be classified under 3924900009."* Both branches named with
+  their codes, which is what turns an abstention into a question an operator can answer.
+
+The fast path fired on the printed code, skipped both narrowing calls, and retrieved four
+candidates from the 6-digit subtree — one model call for the whole line.
+
+The cement line is the one to look at twice: the pick is right and the composite
+confidence is **0.6836**, just under the gate, so it is flagged. Five sibling cement codes
+retrieved at 0.673–0.695 with nothing separating them; that is what a genuinely close list
+does to the similarity term, and flagging it is the correct outcome.
+
+52 deterministic tests were added, none touching the network: code normalisation, the
+confidence blend and both halves of the review gate, the retrieval contract (dedupe by
+code keeping max similarity, descending order, no threshold, the scope applied inside the
+store as a payload-prefix filter), the existence gate's five rejection shapes, the
+vendor-catalogue layer, and the whole graph — including the dead-end retry and the fact
+that a second dead end terminates. Full suite: 372 passed.
+
+### Decisions taken where the specification was silent, or where it contradicted itself
+
+| # | Decision | Reasoning |
+|---|---|---|
+| D-20 | M9 emits `needs_review: bool` and a rationale, never a `ReviewItem` | File 10 §3 M9 says this module must not know the review vocabulary; file 03 §3.2 lists the flag as a classification output. Assembly builds the item from the flag, the rationale and the new `resolving_evidence` field |
+| D-21 | The abstention's remedy is its **own field**, not a sentence inside the rationale | 02 §10.3 records "what evidence would resolve it" as the highest-value affordance in the product. A field can be rendered as an instruction; a sentence buried in prose cannot |
+| D-22 | `subheading_menu` was added to M4, derived from the leaves' own ancestry | The tree publishes no 6-digit nodes, but every leaf's ancestry passes through one. 1,798 recoverable. M4's stated output already includes subheading menus, so computing it in M9 would have crossed a boundary |
+| D-23 | The retrieval scope ladder widens when a rung retrieves nothing, not only at the 6-digit rung | The specification names one such fallback by hand. The same reasoning holds at every rung and widening only ever *adds* candidates, so nothing can be lost by generalising it |
+| D-24 | The "terminal check" of 02 §6.2 is a named predicate on two edges, not a node | A node that returns its input unchanged looks exactly like a stub. The predicate is referenced twice and printed identically in both edges |
+| D-25 | The verifier's recorded self-contradiction is dissolved structurally | Its prompt and its output schema instruct opposite behaviour on "unsure" in the system described. Here schemas carry no prose at all, so the doctrine has exactly one home. The doctrine chosen: uncertainty about the *category* rejects, uncertainty about the *last digits* does not |
+| D-26 | C5 and C6 are given the line **without** the language tag and the sibling summary | 02 §4.3 records the asymmetry as measured; the specification's own reproduced prompt hedges with "when the goods line carries…". Withholding is the version backed by a measurement, and a rule backed by omission cannot be broken |
+| D-27 | The review gate ships with **both** halves — confidence < 0.7 **or** heading agreement < 0.5 | 02 §4.3 states the gate as both and records both as inert. Enabling only the first would leave the heading constant dead, which is the state it says to fix. It only ever adds flags |
+| D-28 | Subheading preference and verification default **off**; the printed-code fast path defaults **on** | The first two are the specification's shipped defaults and neither has been measured here; the verifier's recorded record is 1 good veto to 4 costly at the widest configuration. The fast path is measured 9/9 |
+| D-29 | An 11-digit code reaching the gate is reduced to its leaf with a recorded transform, and flagged when the national digit is not `0` | 07 §5.7: the "append 0" rule is wrong for a small number of real codes. Silently dropping a non-zero suffix and appending `0` downstream would file a different code than the one supplied |
+| D-30 | A blank rationale from the code pick raises rather than being filled in | An abstention whose reason is blank tells the operator nothing and a stand-in reason is exactly the placeholder data the build rules forbid. There is no retry |
+
+### Where this is weakest
+
+- **Nothing here is measured for accuracy.** Five lines is a demonstration, not an
+  evaluation. The specification's own ceiling is roughly 64% precision at the full code
+  and it records the deployed flow measuring *worse* than a simpler undeployed one, with
+  the cause never isolated. Treat every default in `features.py` as a starting point.
+- **The deterministic query is weak in exactly the case that uses it most.** On the fast
+  path there is no model-written query at all, so retrieval embeds
+  `<chapter title> — <heading title> — <the invoice's printed name>`. For chapter 85 the
+  chapter title alone is ~200 characters of boilerplate that every candidate in scope
+  shares, and the discriminating part is one short phrase at the end. It works because the
+  6-digit scope is tiny — but with a foreign-language invoice name it would be a foreign
+  phrase against an English index, which is the 0.63 regime.
+- **Two shortlisted headings share one top-k.** Retrieval runs one search over both, so a
+  heading with many leaves can consume the whole budget and the second heading never
+  reaches the pick. Raising k to 30 makes this much less likely and does not remove it.
+  Retrieving per heading and merging would, and is a change to the specified retrieval
+  strategy rather than an implementation detail.
+- **The subheading menu is incomplete by construction.** It exists only where the
+  authority publishes an intermediate 6-digit node; a leaf sitting directly under its
+  heading contributes none. Costs a hint and never a code, since the preference cannot
+  filter — and the feature is off by default.
+- **`llm_confidence` came back as 0.95 on every single pick.** Three different lines,
+  three different degrees of genuine difficulty, one number. The self-report is 0.3 of the
+  composite and on this evidence it is carrying no information at all. That is a
+  calibration problem in the prompt, and it is the first thing to look at if the gate ever
+  fires in the wrong direction.

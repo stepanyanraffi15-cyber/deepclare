@@ -34,6 +34,7 @@ logger = logging.getLogger(__name__)
 CHAPTER_LEVEL = 1
 HEADING_LEVEL = 2
 LEAF_LEVEL = 5
+SUBHEADING_CODE_LENGTH = 6
 LEAF_CODE_LENGTH = 10
 NATIONAL_CODE_LENGTH = 11
 CHAPTER_NOTE_BUDGET = 1500
@@ -125,7 +126,8 @@ class NomenclatureStore:
         collection: str,
         embedder: QueryEmbedder,
     ) -> None:
-        self._entries, self._headings, self._notes, self._meta = _load(Path(artifact_dir))
+        loaded = _load(Path(artifact_dir))
+        self._entries, self._headings, self._subheadings, self._notes, self._meta = loaded
         self._chapters = sorted(
             (e for e in self._entries.values() if e.level == CHAPTER_LEVEL),
             key=lambda e: e.code,
@@ -190,6 +192,26 @@ class NomenclatureStore:
             (code, title)
             for code, title in self._headings.items()
             if code[:2] in wanted
+        )
+
+    def heading_title(self, heading: str) -> str | None:
+        """One heading's title, or None if the tree has no such heading."""
+        return self._headings.get(heading)
+
+    def subheading_menu(self, headings: list[str]) -> list[tuple[str, str]]:
+        """The 6-digit subheadings of the given headings, with titles.
+
+        This tree publishes no 6-digit nodes of its own — the level exists only as an
+        intermediate step in each leaf's ancestry — so the menu is derived from that
+        ancestry. It is the harmonized level where the legal splits live: voltage classes,
+        retail versus bulk form, material thresholds, a named kind against a residual
+        "other".
+        """
+        wanted = set(headings)
+        return sorted(
+            (code, title)
+            for code, title in self._subheadings.items()
+            if code[:4] in wanted
         )
 
     def chapter_note(self, chapter: str, *, budget: int = CHAPTER_NOTE_BUDGET) -> str:
@@ -275,7 +297,9 @@ def _prefix_field(prefixes: list[str]) -> str:
     return field
 
 
-def _load(directory: Path) -> tuple[dict[str, Entry], dict[str, str], dict[str, str], dict]:
+def _load(
+    directory: Path,
+) -> tuple[dict[str, Entry], dict[str, str], dict[str, str], dict[str, str], dict]:
     entries_path = directory / "entries.jsonl"
     headings_path = directory / "headings.json"
     if not entries_path.exists() or not headings_path.exists():
@@ -285,11 +309,13 @@ def _load(directory: Path) -> tuple[dict[str, Entry], dict[str, str], dict[str, 
         )
 
     entries: dict[str, Entry] = {}
+    subheadings: dict[str, str] = {}
     with entries_path.open(encoding="utf-8") as handle:
         for line in handle:
             if not line.strip():
                 continue
             raw = json.loads(line)
+            _collect_subheadings(raw, subheadings)
             entries[raw["code"]] = Entry(
                 code=raw["code"],
                 level=raw["level"],
@@ -320,10 +346,21 @@ def _load(directory: Path) -> tuple[dict[str, Entry], dict[str, str], dict[str, 
             directory,
         )
     logger.info(
-        "reference loaded: %d entries, %d heading titles, %d chapter notes, vintage %s",
-        len(entries), len(headings), len(notes), meta.get("built_at", "unknown"),
+        "reference loaded: %d entries, %d heading titles, %d subheading titles, "
+        "%d chapter notes, vintage %s",
+        len(entries), len(headings), len(subheadings), len(notes),
+        meta.get("built_at", "unknown"),
     )
-    return entries, headings, notes, meta
+    return entries, headings, subheadings, notes, meta
+
+
+def _collect_subheadings(raw: dict, into: dict[str, str]) -> None:
+    """Record the 6-digit levels this entry passes through on its way down the tree."""
+    for ancestor in raw.get("ancestors", []):
+        code = ancestor.get("code")
+        name = ancestor.get("name_en") or ancestor.get("name_ru")
+        if code and name and len(code) == SUBHEADING_CODE_LENGTH:
+            into.setdefault(code, name)
 
 
 def _render_path(raw: dict, language: str) -> str | None:

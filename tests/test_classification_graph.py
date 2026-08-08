@@ -10,7 +10,6 @@ from pathlib import Path
 
 import pytest
 
-from deepclare.classification.features import ClassificationFeatures
 from deepclare.classification import (
     ClassificationFeatures,
     Classifier,
