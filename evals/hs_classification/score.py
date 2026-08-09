@@ -20,14 +20,22 @@ from __future__ import annotations
 
 import argparse
 import collections
+import gzip
 import json
 import pathlib
 import statistics
 
 
 def load(run_dir: pathlib.Path) -> tuple[list[dict], list[dict], dict]:
-    rows = [json.loads(line) for line in
-            (run_dir / "results.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+    # Committed runs ship compressed so the tables can be re-derived without keys.
+    plain, packed = run_dir / "results.jsonl", run_dir / "results.jsonl.gz"
+    if plain.exists():
+        text = plain.read_text(encoding="utf-8")
+    elif packed.exists():
+        text = gzip.decompress(packed.read_bytes()).decode("utf-8")
+    else:
+        raise SystemExit(f"no results.jsonl(.gz) in {run_dir}")
+    rows = [json.loads(line) for line in text.splitlines() if line.strip()]
     manifest_path = run_dir / "manifest.json"
     manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     scored = [r for r in rows if "predicted" in r]

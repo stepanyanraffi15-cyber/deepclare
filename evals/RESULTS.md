@@ -2,8 +2,8 @@
 
 Runs against `evalkit/corpus/oneToOne` (71 synthetic cases, 2,842 goods lines) at commit
 `f2861cc`, nomenclature vintage `2026-06-15`, embedding `gemini-embedding-001 @768d`.
-Raw `results.jsonl` files are gitignored (large, re-derivable); the per-run manifests and
-the paired overlap set are in `results/`.
+Every table below re-derives from `results/` with **no API calls** — the raw per-line
+output of each run is committed there, gzipped, alongside its manifest.
 
 ## Gemini vs DeepSeek on the same lines
 
@@ -88,13 +88,62 @@ committed ones. In 1,740 of 1,741 collision groups the *rendered path* the picke
 does distinguish the members, so the ambiguity is in what retrieval can rank, not in what
 the model can read.
 
-## Reproducing
+## Reproducing the tables — no keys, no API calls
+
+Everything above comes out of the committed `results/` directory:
 
 ```bash
-python -m evals.hs_classification.run --provider deepseek --workers 8 --line-workers 8 \
-       --out runs/hs_deepseek
-python -m evals.hs_classification.score runs/hs_deepseek
+# the Gemini vs DeepSeek table, exactly as printed above
+python -m evals.compare results/gemini200 results/hs_deepseek_flash_baseline \
+       --full results/hs_deepseek_flash_baseline --labels "Gemini,DeepSeek"
+
+# the per-run rows of the "All runs" table
+for r in hs_deepseek_flash_baseline hs_final hs_gemini_tenth hs_deepseek_half; do
+  python -m evals.hs_classification.score results/$r
+done
+
+# regenerate the per-line overlap file
+python -m evals.compare results/gemini200 results/hs_deepseek_flash_baseline \
+       --labels "gemini,deepseek" --dump results/overlap_gemini200_vs_deepseek.jsonl
 ```
+
+Both readers accept `results.jsonl` or `results.jsonl.gz`, so the same commands work
+against a fresh run directory under `runs/`.
+
+## Re-running the evals — needs keys
+
+The exact invocations that produced each run:
+
+```bash
+# hs_deepseek_flash_baseline — full corpus, flash tiers, reasoning on strong only
+python -m evals.hs_classification.run --provider deepseek \
+       --workers 8 --line-workers 8 --out runs/hs_deepseek_flash_baseline
+
+# hs_final — all-pro, no reasoning, the 7 selected chapters
+python -m evals.hs_classification.run --provider deepseek --all-pro \
+       --reasoning-tiers none --chapters 34,48,73,82,87,94,95 \
+       --workers 8 --line-workers 8 --out runs/hs_final
+
+# hs_deepseek_half — all-pro, reasoning everywhere, seeded random 50%
+python -m evals.hs_classification.run --provider deepseek --all-pro \
+       --reasoning-tiers cheap,standard,strong --fraction 0.5 --seed 1234 \
+       --workers 14 --line-workers 6 --out runs/hs_deepseek_half
+
+# hs_gemini_tenth — seeded random 10%, the same seed so the lines are a strict subset
+QDRANT_PATH=/tmp/qdrant_gem python -m evals.hs_classification.run --provider gemini \
+       --allow-gemini --fraction 0.1 --seed 1234 \
+       --workers 5 --line-workers 6 --out runs/hs_gemini_tenth
+
+# end to end, 3 smallest cases
+python -m evals.end_to_end.run --cases 3 --allow-gemini \
+       --qdrant-path /tmp/qdrant_gem --out runs/e2e
+```
+
+Two environment notes. Local Qdrant is **single-process**, so concurrent runs each need
+their own copy (`cp -R data/qdrant_exim /tmp/qdrant_gem && rm -f /tmp/qdrant_gem/.lock`,
+then `QDRANT_PATH=`). And re-running an LLM does not reproduce identical output, so a
+fresh run reproduces the *method* and approximately the numbers; the committed
+`results/` reproduce the tables byte for byte.
 
 Gemini is gated behind `--allow-gemini` in both pipelines: its generation tiers are
 billed to the Google account and a sweep drains it quickly. Note that retrieval embeds
