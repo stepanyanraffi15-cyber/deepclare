@@ -1,0 +1,90 @@
+/* Palette matches the extension sidepanel and the public site's design system. */
+body {
+  font-family: "Source Sans 3", "IBM Plex Sans", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 40%),
+    linear-gradient(180deg, #f4f7fd, #e9eefb);
+  color: #0f172a;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 480px;
+  margin: 48px auto;
+  padding: 28px 30px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+  letter-spacing: -0.02em;
+}
+
+.hint {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 16px 0 4px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:disabled {
+  background: #9aa0a6;
+  cursor: default;
+}
+
+#status {
+  font-size: 12px;
+  color: #059669;
+}
+
+#status.error {
+  color: #dc2626;
+}

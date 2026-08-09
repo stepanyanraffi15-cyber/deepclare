@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <section id="app-view" class="view">
+      <div class="header">
+        <img class="logo" src="../icons/logo.svg" alt="DeepClare">
+        <div class="header-text">
+          <h1>DeepClare</h1>
+          <p id="header-subtitle">Մաքսային հայտարարագրի սևագիր</p>
+        </div>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" aria-label="Փոխել թեման">🌙</button>
+          <button id="new-run-btn" class="icon-btn" type="button" hidden title="Նոր հայտարարագիր" aria-label="Նոր հայտարարագիր">+</button>
+          <button id="profile-btn" class="icon-btn" type="button" title="Դեկլարանտի տվյալներ" aria-label="Դեկլարանտի տվյալներ">👤</button>
+          <button id="settings-btn" class="icon-btn" type="button" title="Կարգավորումներ" aria-label="Կարգավորումներ">⚙</button>
+        </div>
+      </div>
+
+      <div id="connection-banner" class="connection-banner" hidden>
+        <span id="connection-banner-text"></span>
+        <button id="connection-settings-btn" class="secondary-btn" type="button">Կարգավորումներ</button>
+      </div>
+
+      <section id="profile-panel" class="overlay-panel" hidden>
+        <div class="overlay-header">
+          <button id="profile-back" class="icon-btn" type="button" aria-label="Վերադառնալ">←</button>
+          <div class="overlay-header-text">
+            <h2>Դեկլարանտի տվյալներ</h2>
+            <p>Պահվում է տեղական և ուղարկվում ամեն հայտարարագրում</p>
+          </div>
+        </div>
+        <div class="overlay-body">
+          <div class="field-grid">
+            <label class="span-2">
+              <span>Ընկերության անվանում</span>
+              <input id="profile-organization" type="text" />
+            </label>
+            <label class="span-2">
+              <span>ՀՎՀՀ</span>
+              <input id="profile-tax-code" type="text" />
+            </label>
+            <label class="span-2">
+              <span>Հասցե (փողոց, տուն)</span>
+              <input id="profile-street-house" type="text" />
+            </label>
+            <label>
+              <span>Լրացնողի ազգանուն</span>
+              <input id="profile-filler-surname" type="text" />
+            </label>
+            <label>
+              <span>Լրացնողի անուն</span>
+              <input id="profile-filler-given-name" type="text" />
+            </label>
+          </div>
+          <p class="account-note">
+            Ընկերության անվանումն ու ՀՎՀՀ-ն պարտադիր են։ Չլրացված դաշտը հայտարարագրում կմնա
+            ստուգման կարիք ունեցող։
+          </p>
+          <p id="profile-error" class="setup-error" hidden></p>
+          <button id="profile-save" class="action-btn" type="button">Պահպանել</button>
+        </div>
+      </section>
+
+      <label class="file-zone" id="file-zone" for="files">
+        <div class="file-icon">📄</div>
+        <span class="file-zone-label">Ընտրեք ֆայլերը</span>
+        <span class="file-zone-hint" id="file-hint">Վերբեռնեք հաշիվ-ապրանքագիրը (և ЦМР-ը, եթե կա — կարող է լինել նաև մեկ PDF)</span>
+        <span class="file-count" id="file-count" hidden></span>
+      </label>
+      <input id="files" type="file" multiple accept=".pdf,.png,.jpg,.jpeg,.xlsx,.xls" />
+
+      <div id="file-list" class="file-list" hidden></div>
+
+      <button class="action-btn" id="action" disabled>Սկսել</button>
+
+      <section id="progress" class="progress" hidden aria-live="polite" role="status"></section>
+
+      <section id="summary-section" class="summary-section card" hidden>
+        <h2>Ամփոփում</h2>
+        <div id="summary-grid" class="summary-grid"></div>
+        <ul id="summary-notes" class="summary-notes" hidden></ul>
+      </section>
+
+      <section id="declaration-info-section" class="declaration-info-section card" hidden>
+        <h2>Լրացված դաշտեր</h2>
+        <p class="declaration-info-hint">
+          Խմբագրելի են։ Դատարկ դաշտերը նշված են կարմիրով, ստուգման կարիք ունեցողները՝ դեղինով։
+        </p>
+        <div id="declaration-info-form" class="declaration-info-form"></div>
+      </section>
+
+      <section id="goods-section" class="goods-section card" hidden>
+        <h2>Ապրանքներ</h2>
+        <p class="goods-hint">Խմբագրեք դաշտերը, ապա ներբեռնեք։</p>
+        <div class="goods-search-bar">
+          <input id="goods-search" type="search" class="goods-search-input" autocomplete="off"
+                 placeholder="Որոնել՝ №, նկարագրություն, ԱՏԳ կոդ…" />
+          <span id="goods-search-count" class="goods-search-count" aria-live="polite"></span>
+        </div>
+        <div id="goods-list"></div>
+        <button id="add-goods" class="secondary-btn goods-add-btn" type="button">+ Ավելացնել ապրանք</button>
+        <div class="goods-actions">
+          <button id="save-goods" class="secondary-btn span-2" type="button">Պահպանել փոփոխությունները</button>
+          <button id="download-excel" class="secondary-btn" type="button">Ներբեռնել Excel</button>
+          <button id="download-xml" class="action-btn is-success" type="button">Ներբեռնել XML</button>
+        </div>
+        <p id="save-status" class="save-status" hidden>Պահպանված է</p>
+      </section>
+    </section>
+
+    <p id="extension-version" class="extension-version"></p>
+
+    <script src="../lib/xml-utils.js"></script>
+    <script src="../lib/packing-codes.js"></script>
+    <script src="../lib/country-codes.js"></script>
+    <script src="../lib/filled-fields.js"></script>
+    <script src="../lib/xlsx.full.min.js"></script>
+    <script src="../lib/excel-utils.js"></script>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

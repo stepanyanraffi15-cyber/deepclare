@@ -1,0 +1,309 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Մաքսային ձևակերպումներ՝ արհեստական բանականությամբ</span>
+      <h1>Մաքսային հայտարարագրերը՝ <em class="hl">րոպեների</em> ընթացքում</h1>
+      <p class="lead">DeepClare-ն ընթերցում է ձեր բեռնափոխադրման փաստաթղթերը՝ ինվոյս, CMR և
+      ուղեկցող փաստաթղթեր, և պատրաստում ներմուծման մաքսային հայտարարագրի նախագիծը՝ XML ֆայլ,
+      որը պատրաստ է մաքսային պորտալ ներկայացնելու համար։</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/#try">Փորձել հիմա <span class="btn-arrow">→</span></a>
+        <a class="btn btn-ghost" href="/contact">Կապ մեզ հետ</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>~15 ր</strong><span>մեկ հայտարարագիր</span></div>
+        <div class="stat"><strong>10-նիշ</strong><span>ԱՏԳ ԱԱ առաջարկ</span></div>
+        <div class="stat"><strong>XML</strong><span>պորտալի համար</span></div>
+      </div>
+      <p class="hero-note">Աշխատում է {% if site.chrome_store_url %}<a href="{{ site.chrome_store_url }}" rel="noopener">Chrome բրաուզերի ընդլայնման (extension)</a>{% else %}Chrome բրաուզերի ընդլայնման (extension){% endif %} միջոցով</p>
+    </div>
+    <div class="hero-art">
+      <div class="hero-frame">
+        <img src="/static/img/hero-customs-dark.svg" alt="Մաքսակետ․ բեռնատարի տեխնիկական գծագիր" width="960" height="400">
+      </div>
+      <div class="float-chip float-chip-1"><span class="float-ok">✓</span> ԱՏԳ ԱԱ՝ 8517130000</div>
+      <div class="float-chip float-chip-2">📄 ESADout_CU.xml՝ պատրաստ է</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="try">
+  <div class="container module">
+    <div class="module-head">
+      <span class="eyebrow">Փորձարկում</span>
+      <h2>Ընդլայնումն արդեն բաց է՝ փորձեք</h2>
+      <p class="lead">Աջ վահանակը DeepClare ընդլայնման (extension) աշխատող կրկնօրինակն է՝
+      ամբողջությամբ սեղմելի։ Վերբեռնեք ֆայլեր կամ քաշեք օրինակելի փաստաթղթերը, բացեք
+      ընտրացանկը, խմբագրեք ապրանքային տողերը և ներբեռնեք XML-ը։</p>
+    </div>
+
+    <div class="try-grid">
+      <aside class="ext-panel" id="try-panel">
+        <div class="ext-head">
+          <img src="/static/img/logo.svg" alt="" width="30" height="30">
+          <div class="ext-head-text">
+            <strong>DeepClare</strong>
+            <span id="try-subtitle">Մաքսային հայտարարագրի գեներատոր</span>
+          </div>
+          <div class="ext-head-actions">
+            <button class="icon-btn" id="try-new" type="button" title="Նոր հայտարարագիր" hidden>+</button>
+            <button class="icon-btn" id="try-menu-btn" type="button" aria-label="Ընտրացանկ">⋮</button>
+          </div>
+          <div class="ext-dropdown" id="try-menu" hidden>
+            <button type="button" class="ext-dropdown-item" data-menu="history">Պատմություն</button>
+            <button type="button" class="ext-dropdown-item" data-menu="account">Հաշիվ</button>
+            <button type="button" class="ext-dropdown-item" data-menu="contact">Հետադարձ կապ</button>
+            <button type="button" class="ext-dropdown-item ext-menu-danger" data-menu="logout">Ելք</button>
+          </div>
+        </div>
+
+        <div class="ext-body" id="try-body">
+
+          <div class="ext-overlay" id="try-overlay-history" hidden>
+            <div class="ext-overlay-head">
+              <button class="icon-btn" type="button" data-back aria-label="Վերադառնալ">←</button>
+              <strong>Պատմություն</strong>
+            </div>
+            <button class="history-entry" type="button" data-history>
+              <span>Ինվոյս №0402 · 2 ապրանք</span><span class="history-date">03.07.2026</span>
+            </button>
+            <button class="history-entry" type="button" data-history>
+              <span>Ինվոյս №0389 · 4 ապրանք</span><span class="history-date">12.06.2026</span>
+            </button>
+          </div>
+
+          <div class="ext-overlay" id="try-overlay-account" hidden>
+            <div class="ext-overlay-head">
+              <button class="icon-btn" type="button" data-back aria-label="Վերադառնալ">←</button>
+              <strong>Հաշիվ</strong>
+            </div>
+            <div class="ext-field-grid">
+              <label class="ext-field span-2"><span>Ընկերության անվանում</span><input value="«ՕՐԻՆԱԿ» ՍՊԸ"></label>
+              <label class="ext-field"><span>ՀՎՀՀ</span><input value="01234567"></label>
+              <label class="ext-field"><span>Ազգանուն</span><input value="Օրինակյան"></label>
+              <label class="ext-field"><span>Անուն</span><input value="Արամ"></label>
+            </div>
+            <button class="ext-action-btn" id="try-account-save" type="button">Պահպանել</button>
+            <p class="ext-status" id="try-account-status" hidden>Պահպանված է</p>
+          </div>
+
+          <div class="ext-overlay" id="try-overlay-contact" hidden>
+            <div class="ext-overlay-head">
+              <button class="icon-btn" type="button" data-back aria-label="Վերադառնալ">←</button>
+              <strong>Հետադարձ կապ</strong>
+            </div>
+            <p class="ext-hint">Գրեք ձեր առաջարկները կամ դիտողությունները։</p>
+            <textarea class="ext-textarea" id="try-contact-input" rows="4"></textarea>
+            <button class="ext-action-btn" id="try-contact-send" type="button">Ուղարկել</button>
+            <p class="ext-status" id="try-contact-status" hidden>Ուղարկված է, շնորհակալություն</p>
+          </div>
+
+          <div id="try-flow">
+            <label class="file-zone" id="try-drop" for="try-files">
+              <div class="file-zone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V6"/><path d="M8 10l4-4 4 4"/><path d="M4 20h16"/></svg>
+              </div>
+              <span class="file-zone-label">Ընտրեք ֆայլերը</span>
+              <span class="file-zone-hint">Վերբեռնեք հաշիվ-ապրանքագիրը (և CMR-ը, եթե կա) կամ քաշեք
+              օրինակելի փաստաթղթերը աջից</span>
+            </label>
+            <input id="try-files" type="file" multiple accept=".pdf,.png,.jpg,.jpeg,.xml" hidden>
+            <div class="file-chips" id="try-chips" hidden></div>
+
+            <div class="run-options">
+              <div class="run-options-title">Լրացուցիչ ընտրանքներ</div>
+              <label class="option-toggle">
+                <input type="checkbox" id="try-example-toggle">
+                <span class="option-icon">♻</span>
+                <span>Վերօգտագործել նմանատիպ նախկին հայտարարագիր (XML)</span>
+              </label>
+              <div class="example-xml-body" id="try-example-body" hidden>
+                <button class="example-xml-zone" id="try-example-zone" type="button">Ընտրեք XML ֆայլը</button>
+                <div class="file-chip" id="try-example-chip" hidden>📄 hayt_2026_0389.xml</div>
+              </div>
+              <label class="option-toggle">
+                <input type="checkbox" id="try-weights-toggle" checked>
+                <span class="option-icon">✦</span>
+                <span>Ստեղծել բացակայող կշիռները AI-ի միջոցով</span>
+              </label>
+            </div>
+
+            <button class="ext-action-btn" id="try-action" type="button" disabled>Սկսել</button>
+
+            <div class="ext-progress" id="try-progress-box" hidden>
+              <p class="ext-progress-status" id="try-progress-status">Մշակվում է…</p>
+              <ul class="demo-stages">
+                <li class="demo-stage"><span class="stage-dot"></span>Կարդալ փաստաթղթերը</li>
+                <li class="demo-stage"><span class="stage-dot"></span>Թարգմանել անվանումները</li>
+                <li class="demo-stage"><span class="stage-dot"></span>Որոշել ԱՏԳ կոդերը</li>
+                <li class="demo-stage"><span class="stage-dot"></span>Կազմել հայտարարագիրը</li>
+              </ul>
+              <div class="demo-progress-track"><div class="demo-progress-fill" id="try-progress"></div></div>
+            </div>
+
+            <div id="try-result" hidden>
+              <section class="ext-card">
+                <h4>DeepClare-ի լրացրած դաշտեր</h4>
+                <p class="ext-hint">Դաշտերը խմբագրելի են։ Դատարկ դաշտերը նշված են կարմիրով։</p>
+                <div class="ext-field-grid">
+                  <label class="ext-field"><span>Հայտարարագրի տեսակ</span><input value="ԵՀ 40" data-decl="type"></label>
+                  <label class="ext-field"><span>Առաքման պայմաններ</span><input value="CIP Երևան" data-decl="terms"></label>
+                  <label class="ext-field"><span>Արժույթ</span><input value="EUR" data-decl="currency"></label>
+                  <label class="ext-field"><span>Ընդհ. ֆակտուրային արժեք</span><input value="12 480" data-decl="total"></label>
+                </div>
+              </section>
+
+              <section class="ext-card">
+                <h4>Ապրանքներ</h4>
+                <p class="ext-hint">Սեղմեք տողի վրա՝ բոլոր դաշտերը բացելու համար։</p>
+                <div id="try-goods-list"></div>
+                <button class="ext-secondary-btn" id="try-add-goods" type="button">+ Ավելացնել ապրանք</button>
+                <div class="ext-btn-row">
+                  <button class="ext-secondary-btn" id="try-save" type="button">Պահպանել</button>
+                  <button class="ext-secondary-btn" id="try-excel" type="button">Ներբեռնել Excel</button>
+                </div>
+                <button class="ext-action-btn is-success" id="try-download" type="button">Ներբեռնել XML</button>
+                <p class="ext-status" id="try-save-status" hidden>Պահպանված է</p>
+              </section>
+
+              <section class="ext-card">
+                <h4>Հետադարձ կապ</h4>
+                <textarea class="ext-textarea" id="try-feedback-input" rows="2"></textarea>
+                <button class="ext-secondary-btn" id="try-feedback-send" type="button">Ուղարկել</button>
+                <p class="ext-status" id="try-feedback-status" hidden>Ուղարկված է, շնորհակալություն</p>
+              </section>
+            </div>
+          </div>
+
+          <div class="demo-toast" id="try-toast" hidden></div>
+        </div>
+      </aside>
+
+      <div class="try-docs">
+        <p class="try-docs-hint">Օրինակելի փաստաթղթեր՝ քաշեք ձախ վահանակի մեջ կամ սեղմեք</p>
+        <div class="doc-cards">
+          <div class="doc-card doc-invoice" draggable="true" data-doc="invoice">
+            <div class="doc-title">INVOICE №0417</div>
+            <div class="doc-line doc-line-60"></div>
+            <div class="doc-line doc-line-80"></div>
+            <div class="doc-line doc-line-45"></div>
+            <div class="doc-row"><span>3 ապրանք</span><strong>€ 12 480</strong></div>
+            <div class="doc-badge">PDF</div>
+            <div class="doc-check">✓</div>
+          </div>
+          <div class="doc-card doc-cmr" draggable="true" data-doc="cmr">
+            <div class="doc-title">CMR №7715</div>
+            <div class="doc-route">Warszawa → Երևան</div>
+            <div class="doc-line doc-line-70"></div>
+            <div class="doc-line doc-line-50"></div>
+            <div class="doc-row"><span>Բեռ</span><strong>1 760 կգ</strong></div>
+            <div class="doc-badge">PDF</div>
+            <div class="doc-check">✓</div>
+          </div>
+        </div>
+        <p class="try-note">Փորձնական միջավայր է․ կարող եք վերբեռնել նաև ձեր ֆայլերը, սակայն իրական
+        մշակում չի կատարվում — արդյունքը միշտ օրինակելի տվյալներով է։ Ներբեռնվող XML-ը կազմվում է
+        ձեր խմբագրած դաշտերից։ Իրական մշակման համար տեղադրեք
+        {% if site.chrome_store_url %}<a href="{{ site.chrome_store_url }}" rel="noopener">ընդլայնումը</a>{% else %}ընդլայնումը{% endif %}։</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container module">
+    <span class="eyebrow">Գործընթացը</span>
+    <h2>Ինչպես է աշխատում</h2>
+    <div class="grid grid-3 grid-steps">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17V7"/><path d="M8 11l4-4 4 4"/><path d="M4 21h16"/></svg>
+        </div>
+        <h3>Վերբեռնեք փաստաթղթերը</h3>
+        <p>Ինվոյսը, CMR-ը և ուղեկցող փաստաթղթերը՝ ուղիղ բրաուզերից, առանց լրացուցիչ ծրագրերի։</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.7 4.3L18 9l-4.3 1.7L12 15l-1.7-4.3L6 9l4.3-1.7z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z"/></svg>
+        </div>
+        <h3>AI-ն պատրաստում է հայտարարագիրը</h3>
+        <p>Ապրանքների նկարագրությունները, ԱՏԳ ԱԱ ծածկագրերը, քաշերը և արժեքները լրացվում են ավտոմատ։</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v10"/><path d="M8 13l4 4 4-4"/><path d="M4 21h16"/></svg>
+        </div>
+        <h3>Ստուգեք և ներբեռնեք</h3>
+        <p>Խմբագրեք ցանկացած դաշտ և ներբեռնեք պատրաստի XML ֆայլը՝ պորտալ ներկայացնելու համար։</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container module">
+    <span class="eyebrow">Ինչու DeepClare</span>
+    <h2>Հնարավորություններ</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+        </div>
+        <h3>Փաստաթղթերի ճշգրիտ ընթերցում</h3>
+        <p>AI-ն ընթերցում է նաև սկանավորված PDF փաստաթղթերը՝ ապրանքային տողերով և գումարներով։</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/><path d="M13 5l-2 14"/></svg>
+        </div>
+        <h3>ԱՏԳ ԱԱ դասակարգում</h3>
+        <p>10-նիշանոց ծածկագրի առաջարկ՝ ապրանքի նկարագրությունից, միջազգային անվանացանկի հիման վրա։</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Պատմության վերաօգտագործում</h3>
+        <p>Կրկնվող ապրանքների համար օգտագործվում են ձեր նախկինում հաստատած ձևակերպումներն ու ծածկագրերը։</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Անվտանգ անհատական հաշիվ</h3>
+        <p>Ձեր փաստաթղթերը և պատմությունը հասանելի են միայն ձեր կազմակերպությանը։</p>
+      </div>
+    </div>
+    <p class="disclaimer">DeepClare-ն օժանդակ գործիք է․ հայտարարագիրը ներկայացնելուց առաջ այն
+    ստուգում և հաստատում է օգտատերը։</p>
+  </div>
+</section>
+
+{% if site.chrome_store_url %}
+<section class="section">
+  <div class="container ext-band">
+    <div class="ext-band-copy">
+      <h2>Ընդլայնումը (Chrome extension) արդեն Web Store-ում է</h2>
+      <p>Տեղադրումն անվճար է և տևում է մեկ րոպե․ աշխատելու համար անհրաժեշտ են բաժանորդագրություն
+      և մուտքի տվյալներ, որոնք կստանաք վճարումից հետո։</p>
+    </div>
+    <a class="btn btn-light" href="{{ site.chrome_store_url }}" rel="noopener">Ավելացնել Chrome-ին</a>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="container module cta-band">
+    <h2>Պատրա՞ստ եք սկսել</h2>
+    <p>Փորձեք ընդլայնումն աշխատող կրկնօրինակով վերևում, կամ գրեք մեզ հարցերի դեպքում։</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/#try">Փորձել հիմա</a>
+      <a class="btn btn-ghost" href="/contact">Կապ մեզ հետ</a>
+    </div>
+  </div>
+</section>
+<script src="/static/demo.js?v={{ static_v }}" defer></script>
+{% endblock %}

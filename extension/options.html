@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>DeepClare — settings</title>
+<link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main>
+    <h1>DeepClare</h1>
+    <p class="hint">Points this extension at your running DeepClare service
+    (<code>python -m deepclare serve</code>). The token is the service's
+    <code>SERVICE_DEV_TOKEN</code>; it is held in this browser profile and sent as a bearer
+    token on every request.</p>
+
+    <label for="server-url">Server URL</label>
+    <input id="server-url" type="text" placeholder="http://127.0.0.1:8420" />
+
+    <label for="service-token">Service token</label>
+    <input id="service-token" type="password" autocomplete="off" placeholder="SERVICE_DEV_TOKEN" />
+
+    <div class="row">
+      <button id="save">Save</button>
+      <button id="test" class="secondary">Test connection</button>
+      <span id="status" role="status"></span>
+    </div>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

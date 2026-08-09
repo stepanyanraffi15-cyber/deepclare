@@ -1,0 +1,998 @@
+/* Palette matches the public site's design system (web/deepclare_web/static/styles.css):
+   light mode mirrors its white ".ext-panel" extension replica (blue primary on white),
+   dark mode mirrors its dark canvas (light blue accent on navy). */
+:root {
+  --bg: #f4f7fd;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --border-active: #2563eb;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #2563eb;
+  --accent-hover: #1e40af;
+  --accent-soft: #dbeafe;
+  --success: #059669;
+  --success-hover: #047857;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --readonly-bg: #eef2f8;
+  --warn-border: #d97706;
+  --warn-soft: #fffbeb;
+  --warn-text: #92400e;
+  --placeholder: #94a3b8;
+  --radius: 12px;
+  --ring: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* Dark theme — override the tokens; every component rule references these vars. JS sets
+   data-theme on <html> from the saved preference, falling back to the OS setting. */
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #121b33;
+  --border: rgba(165, 189, 255, 0.16);
+  --border-active: #60a5fa;
+  --text: #eef2ff;
+  --muted: #a9b7d8;
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, 0.16);
+  --success: #34d399;
+  --success-hover: #6ee7b7;
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.14);
+  --readonly-bg: #16203c;
+  --warn-border: #fbbf24;
+  --warn-soft: #2a2113;
+  --warn-text: #fcd34d;
+  --placeholder: #7f8db0;
+  --ring: 0 0 0 3px rgba(96, 165, 250, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans Armenian", sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Visible focus ring on all form fields (a11y + polish), not just a faint border tint. */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--border-active);
+  box-shadow: var(--ring);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--border-active);
+  outline-offset: 2px;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.view[hidden] {
+  display: none !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.logo {
+  /* The DeepClare mark (icons/logo.svg) — same asset as the website and the
+     extension icons; the SVG carries its own rounded blue background. */
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.header h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 2px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.icon-btn:hover {
+  border-color: var(--border-active);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.overlay-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.overlay-panel[hidden] {
+  display: none !important;
+}
+
+.overlay-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.overlay-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.overlay-header-text h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.overlay-header-text p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.overlay-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--border);
+}
+
+.setup-error {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--danger);
+  text-align: center;
+}
+
+.field-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field-grid label span {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.field-grid .span-2 {
+  grid-column: span 2;
+}
+
+.field-grid input {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.field-grid input:focus {
+  border-color: var(--border-active);
+  box-shadow: var(--ring);
+}
+
+.field-grid input::placeholder {
+  color: var(--placeholder);
+}
+
+.file-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 24px 16px;
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  text-align: center;
+}
+
+.file-zone:hover,
+.file-zone.dragover {
+  border-color: var(--border-active);
+  background: var(--accent-soft);
+}
+
+.file-zone.has-files {
+  border-style: solid;
+  border-color: var(--border-active);
+  padding: 18px 16px;
+}
+
+.file-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.file-zone-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.file-zone-hint {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.file-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+#files {
+  display: none;
+}
+
+.action-btn,
+.secondary-btn {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s, opacity 0.15s, transform 0.1s;
+}
+
+.action-btn {
+  background: linear-gradient(180deg, var(--accent), var(--accent-hover));
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.28);
+}
+
+.action-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.action-btn:focus-visible,
+.secondary-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+.action-btn:active:not(:disabled),
+.secondary-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.action-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.action-btn.is-success {
+  background: linear-gradient(180deg, var(--success), var(--success-hover));
+}
+
+.action-btn.is-success:hover:not(:disabled) {
+  background: var(--success-hover);
+}
+
+.action-btn.is-error {
+  background: var(--danger);
+}
+
+.secondary-btn {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.secondary-btn:hover:not(:disabled) {
+  border-color: var(--border-active);
+  background: var(--accent-soft);
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Each major section is its own titled card (Documents / Declaration / Goods). */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px 12px;
+}
+
+.declaration-info-section h2 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.declaration-info-hint {
+  margin: 0 0 12px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.declaration-info-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+#declaration-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.declaration-info-group h3 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.declaration-info-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.declaration-info-form label span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.declaration-info-form label.span-2 {
+  grid-column: span 2;
+}
+
+.declaration-info-form input,
+.declaration-info-form select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.declaration-info-form input:focus,
+.declaration-info-form select:focus {
+  border-color: var(--border-active);
+  box-shadow: var(--ring);
+}
+
+.goods-section h2 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.goods-hint {
+  margin: 0 0 12px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.goods-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.goods-card-flag {
+  margin: 0 0 8px;
+  padding: 6px 8px;
+  border: 1px solid var(--warn-border);
+  border-radius: 8px;
+  background: var(--warn-soft);
+  color: var(--warn-text);
+  font-size: 11px;
+}
+
+.goods-card-line-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Always-visible goods search: sticks to the top of the scroll as the cards scroll under it. */
+.goods-search-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding: 8px 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.goods-search-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+.goods-search-input:focus {
+  border-color: var(--border-active);
+}
+
+.goods-search-count {
+  flex: 0 0 auto;
+  min-width: 40px;
+  text-align: right;
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.goods-card.is-search-hit {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.goods-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.goods-card label span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.goods-card textarea,
+.goods-card input,
+.goods-card select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.goods-card textarea:focus,
+.goods-card input:focus,
+.goods-card select:focus {
+  border-color: var(--border-active);
+  box-shadow: var(--ring);
+}
+
+/* Trailer-plate control (ADR-0024): a checkbox that reveals the plate input when on. */
+.trailer-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trailer-toggle {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.trailer-toggle input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+/* Empty / unfilled fields are flagged red across the review forms. */
+.goods-card input.is-missing,
+.goods-card textarea.is-missing,
+.declaration-info-form input.is-missing,
+.declaration-info-form select.is-missing {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.goods-card input.is-missing::placeholder,
+.goods-card textarea.is-missing::placeholder,
+.declaration-info-form input.is-missing::placeholder {
+  color: var(--danger);
+}
+
+/* A value the review report flags as a placeholder, a guess, or needing review — amber, so
+   the user verifies it. Yields to .is-missing, since an empty field stays red. */
+.goods-card input.is-flagged:not(.is-missing),
+.goods-card textarea.is-flagged:not(.is-missing),
+.goods-card select.is-flagged:not(.is-missing),
+.declaration-info-form input.is-flagged:not(.is-missing),
+.declaration-info-form select.is-flagged:not(.is-missing) {
+  border-color: var(--warn-border);
+  background: var(--warn-soft);
+}
+
+.goods-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.goods-actions .span-2 {
+  grid-column: span 2;
+}
+
+.save-status {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: var(--success);
+  text-align: center;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.file-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.file-chip-name {
+  flex: 1;
+  min-width: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  color: var(--accent);
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+}
+
+.file-chip-name:hover {
+  color: var(--accent-hover);
+}
+
+.file-chip-remove {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0 4px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.file-chip-remove:hover {
+  color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.goods-delete-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 6px;
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+  background: none;
+  color: var(--danger);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.goods-delete-btn:hover {
+  background: var(--danger-soft);
+}
+
+/* In-panel confirmation modal — custom replacement for window.confirm(). The fixed, flex-centred
+   backdrop re-centres itself on panel resize, so dragging the side to resize never collapses it. */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(17, 24, 39, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: modal-fade 0.12s ease-out;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 320px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 20px;
+  animation: modal-pop 0.13s ease-out;
+}
+
+.modal-message {
+  margin: 0 0 18px;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, filter 0.15s;
+}
+
+.modal-btn-cancel {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.modal-btn-cancel:hover {
+  background: var(--readonly-bg);
+}
+
+.modal-btn-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #ffffff;
+}
+
+.modal-btn-danger:hover {
+  filter: brightness(0.93);
+}
+
+.modal-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-pop {
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.goods-add-btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.connection-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--danger);
+  border-radius: 10px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 12px;
+}
+
+.connection-banner .secondary-btn {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  font-size: 11px;
+}
+
+.summary-section h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.summary-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.summary-label {
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+.summary-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.summary-grid.is-not-filable .summary-cell:last-child {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.summary-notes {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.extension-version {
+  margin: 8px 16px 12px;
+  font-size: 10px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Progress stepper: the live pipeline stage during a run. */
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.progress-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* connector line running between the step icons */
+.progress-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 25px;
+  bottom: -5px;
+  width: 2px;
+  background: var(--border);
+}
+
+.progress-step.is-done:not(:last-child)::before {
+  background: var(--success);
+}
+
+.step-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--surface);
+  z-index: 1;
+}
+
+.progress-step.is-active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.progress-step.is-active .step-icon {
+  border-color: var(--accent);
+  border-top-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+
+.progress-step.is-done {
+  color: var(--text);
+}
+
+.progress-step.is-done .step-icon {
+  border-color: var(--success);
+  background: var(--success);
+  color: #fff;
+}
+
+.progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  transition: width 0.4s ease;
+}
+

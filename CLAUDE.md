@@ -17,6 +17,13 @@ not read it, do not copy from it, and do not reconstruct it from memory. Every t
 every evaluation in this repository is written fresh from the specification. If you find
 yourself outside this repository looking at code, stop.
 
+Exception, decided 2026-08-09: the public marketing / lead-capture web app (not the
+declaration pipeline) may reuse `mootq-ai/services/web/deepclare_web` as its starting
+point — code, templates, static assets, and its FastAPI structure may be copied in and
+adapted. This exception covers that one prior directory and that one component only. It
+does not extend to `src/mootq_agent` or any other predecessor code, and it does not
+loosen the rule for the classification/extraction/eval pipeline itself.
+
 **2. No datasets in the repository.**
 No nomenclature copy, no customer data, no sample declaration XML. `data/` is gitignored
 and holds only what was explicitly supplied: the Qdrant ATG collection and the

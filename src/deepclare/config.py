@@ -80,6 +80,14 @@ class Settings(BaseSettings):
     nomenclature_max_node_id: int = Field(default=21400, gt=0)
     nomenclature_crawl_workers: int = Field(default=14, gt=0)
 
+    # --- M15 Service Edge: dev-only, single-process ---------------------------
+    # No real auth, tenancy or quota exists yet — see the architecture artifact's
+    # delivery-layer proposal. `service_dev_token` gates every request; there is one
+    # tenant, implicit, for the life of the process.
+    service_host: str = "127.0.0.1"
+    service_port: int = Field(default=8420, gt=0, le=65535)
+    service_dev_token: str = Field(min_length=1)
+
     @field_validator("genai_api_base", "nomenclature_api_base")
     @classmethod
     def _strip_trailing_slash(cls, value: str) -> str:

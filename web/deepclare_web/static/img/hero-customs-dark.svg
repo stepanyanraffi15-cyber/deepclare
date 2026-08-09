@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-label="Մաքսակետ․ բեռնատարի տեխնիկական գծագիր">
+  <style>
+    .l1 { stroke: #a5bdff; stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .l2 { stroke: #a5bdff; stroke-width: 1.1; fill: none; opacity: 0.45; stroke-linecap: round; }
+    .l3 { stroke: #a5bdff; stroke-width: 1; fill: none; opacity: 0.22; }
+    .txt { fill: #cdd9ff; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .route { stroke: #67e8f9; stroke-width: 1.6; fill: none; stroke-dasharray: 9 9; opacity: 0.75; animation: dash 1.4s linear infinite; }
+    .contrail { stroke: #a5bdff; stroke-width: 1.4; fill: none; stroke-dasharray: 13 10; opacity: 0.4; animation: dash 1.1s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -36; } }
+    .beam { animation: scan 4.2s ease-in-out infinite; }
+    @keyframes scan { 0% { transform: translateX(0); opacity: 0; } 12% { opacity: 1; } 50% { transform: translateX(200px); } 88% { opacity: 1; } 100% { transform: translateX(0); opacity: 0; } }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+    .plane-g { animation: drift 7s ease-in-out infinite; }
+    @keyframes drift { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(14px, -8px); } }
+  </style>
+
+  <!-- technical decorations -->
+  <g class="l3">
+    <path d="M56 76 h16 M64 68 v16"/>
+    <path d="M896 288 h16 M904 280 v16"/>
+    <path d="M470 56 h14 M477 49 v14"/>
+  </g>
+  <text class="txt" x="640" y="176" font-size="9" opacity="0.4">40.1772N · 44.5035E</text>
+
+  <!-- plane + contrail -->
+  <line class="contrail" x1="470" y1="86" x2="620" y2="86"/>
+  <g class="plane-g">
+    <g class="l1">
+      <path d="M636 92 L748 92 Q766 92 772 84 Q766 76 748 78 L668 78 Q650 78 640 86 Z"/>
+      <path d="M700 78 L682 58 L696 58 L716 78"/>
+      <path d="M702 92 L680 116 L695 116 L718 92"/>
+      <path d="M646 84 L630 72 L640 72 L654 80"/>
+    </g>
+    <g fill="#a5bdff" opacity="0.6">
+      <circle cx="700" cy="85" r="1.7"/><circle cx="712" cy="85" r="1.7"/>
+      <circle cx="724" cy="85" r="1.7"/><circle cx="736" cy="85" r="1.7"/>
+    </g>
+  </g>
+
+  <!-- animated route: truck -> gate -->
+  <path class="route" d="M180 322 C 300 214, 400 206, 484 296"/>
+  <path class="l1" d="M484 296 l-10 -4 m10 4 l-3 -10" stroke="#67e8f9" opacity="0.75"/>
+
+  <!-- ground -->
+  <line class="l1" x1="36" y1="345" x2="924" y2="345"/>
+  <g class="l3">
+    <path d="M60 345 l-9 11 M108 345 l-9 11 M156 345 l-9 11 M204 345 l-9 11 M252 345 l-9 11
+             M300 345 l-9 11 M348 345 l-9 11 M396 345 l-9 11 M444 345 l-9 11 M492 345 l-9 11
+             M540 345 l-9 11 M588 345 l-9 11 M636 345 l-9 11 M684 345 l-9 11 M732 345 l-9 11
+             M780 345 l-9 11 M828 345 l-9 11 M876 345 l-9 11"/>
+  </g>
+
+  <!-- semi truck (technical side view, facing right) -->
+  <g>
+    <!-- trailer -->
+    <rect class="l1" x="90" y="175" width="240" height="130" rx="3"/>
+    <g class="l3">
+      <path d="M104 183 v114 M118 183 v114 M132 183 v114 M146 183 v114 M160 183 v114 M174 183 v114
+               M188 183 v114 M202 183 v114 M216 183 v114 M244 183 v114 M258 183 v114 M272 183 v114
+               M286 183 v114 M300 183 v114 M314 183 v114"/>
+    </g>
+    <text class="txt" x="210" y="246" font-size="17" font-weight="700" letter-spacing="3" text-anchor="middle">DEEPCLARE</text>
+    <text class="txt" x="322" y="190" font-size="8.5" text-anchor="end" opacity="0.55">BAI 451270-8</text>
+    <!-- AI scan beam over the trailer -->
+    <g class="beam">
+      <rect x="94" y="175" width="34" height="130" fill="#67e8f9" opacity="0.13"/>
+      <line x1="111" y1="175" x2="111" y2="305" stroke="#67e8f9" stroke-width="1.6" opacity="0.8"/>
+    </g>
+    <!-- chassis + tank -->
+    <line class="l1" x1="90" y1="311" x2="404" y2="311"/>
+    <rect class="l2" x="338" y="296" width="30" height="14" rx="6"/>
+    <!-- cab -->
+    <path class="l1" d="M334 305 L334 212 Q334 206 340 206 L372 206 L398 230 L404 246 L404 305"/>
+    <path class="l2" d="M342 214 L370 214 L390 232 L342 232 Z"/>
+    <line class="l2" x1="360" y1="206" x2="360" y2="305"/>
+    <path class="l2" d="M396 252 h8 M396 260 h8 M396 268 h8"/>
+    <rect class="l2" x="400" y="290" width="10" height="15" rx="2"/>
+    <path class="l1" d="M330 206 V152 h6 v54"/>
+    <path class="l2" d="M372 210 l12 -8 v10"/>
+    <!-- wheels -->
+    <g>
+      <g class="l1">
+        <circle cx="124" cy="325" r="20"/><circle cx="170" cy="325" r="20"/>
+        <circle cx="345" cy="325" r="20"/><circle cx="391" cy="325" r="20"/>
+      </g>
+      <g class="l2">
+        <circle cx="124" cy="325" r="10"/><circle cx="170" cy="325" r="10"/>
+        <circle cx="345" cy="325" r="10"/><circle cx="391" cy="325" r="10"/>
+        <path d="M124 315 v20 M114 325 h20 M170 315 v20 M160 325 h20
+                 M345 315 v20 M335 325 h20 M391 315 v20 M381 325 h20"/>
+      </g>
+    </g>
+    <!-- dimension line -->
+    <g class="l3">
+      <line x1="90" y1="372" x2="404" y2="372"/>
+      <line x1="90" y1="366" x2="90" y2="378"/>
+      <line x1="404" y1="366" x2="404" y2="378"/>
+    </g>
+    <text class="txt" x="247" y="368" font-size="9" text-anchor="middle" opacity="0.5">16.5 m</text>
+  </g>
+
+  <!-- inspection booth + barrier -->
+  <g>
+    <rect class="l1" x="474" y="258" width="8" height="87"/>
+    <g transform="rotate(-32 478 262)">
+      <rect class="l1" x="478" y="258" width="112" height="7" rx="3.5"/>
+      <path class="l2" d="M496 258 v7 M518 258 v7 M540 258 v7 M562 258 v7" stroke="#fbbf24" opacity="0.8"/>
+    </g>
+    <rect class="l1" x="502" y="250" width="56" height="95"/>
+    <path class="l1" d="M496 250 L508 238 H552 L564 250"/>
+    <rect class="l2" x="512" y="262" width="36" height="28"/>
+    <circle class="pulse" cx="556" cy="244" r="3" fill="#67e8f9"/>
+  </g>
+
+  <!-- customs house -->
+  <g>
+    <rect class="l1" x="604" y="195" width="276" height="150"/>
+    <line class="l1" x1="596" y1="195" x2="888" y2="195"/>
+    <rect class="l2" x="666" y="206" width="152" height="26"/>
+    <text class="txt" x="742" y="224" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">ՄԱՔՍԱՏՈՒՆ</text>
+    <path class="l1" d="M724 345 V292 Q724 284 732 284 H756 Q764 284 764 292 V345"/>
+    <g class="l2">
+      <rect x="622" y="244" width="34" height="26"/>
+      <rect x="668" y="244" width="34" height="26"/>
+      <rect x="782" y="244" width="34" height="26"/>
+      <rect x="828" y="244" width="34" height="26"/>
+    </g>
+    <line class="l1" x1="880" y1="195" x2="880" y2="132"/>
+    <path class="l1" d="M880 132 h38 v22 h-38"/>
+    <g opacity="0.55">
+      <rect x="881" y="133" width="36" height="6.6" fill="#d90012"/>
+      <rect x="881" y="139.6" width="36" height="6.6" fill="#0033a0"/>
+      <rect x="881" y="146.2" width="36" height="6.6" fill="#f2a800"/>
+    </g>
+  </g>
+</svg>

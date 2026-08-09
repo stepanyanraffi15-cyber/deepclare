@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}DeepClare — մաքսային հայտարարագրերի AI օգնական{% endblock %}</title>
+  <meta name="description" content="DeepClare՝ արհեստական բանականությամբ մաքսային հայտարարագրերի պատրաստում ներմուծման փաստաթղթերից։">
+  {% if site.base_url.startswith('https://') %}<link rel="canonical" href="{{ site.base_url }}{{ request.url.path }}">{% endif %}
+  <link rel="icon" type="image/svg+xml" href="/static/img/logo.svg">
+  <link rel="stylesheet" href="/static/styles.css?v={{ static_v }}">
+</head>
+<body>
+<div class="bg-canvas" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <!-- The journey: a truck drives to the customs house as the page scrolls. -->
+  <svg class="journey" viewBox="0 0 1440 130" preserveAspectRatio="xMidYMax meet">
+    <g class="j-static">
+      <line x1="0" y1="112" x2="1440" y2="112"/>
+      <g class="j-ticks">
+        <line x1="300" y1="106" x2="300" y2="112"/>
+        <line x1="560" y1="106" x2="560" y2="112"/>
+        <line x1="820" y1="106" x2="820" y2="112"/>
+        <line x1="1080" y1="106" x2="1080" y2="112"/>
+      </g>
+      <g class="j-labels">
+        <text x="300" y="100" text-anchor="middle">Ինվոյս</text>
+        <text x="560" y="100" text-anchor="middle">AI մշակում</text>
+        <text x="820" y="100" text-anchor="middle">ԱՏԳ ԱԱ</text>
+        <text x="1080" y="100" text-anchor="middle">XML</text>
+      </g>
+    </g>
+    <g class="j-house">
+      <rect x="1292" y="56" width="118" height="56"/>
+      <line x1="1284" y1="56" x2="1418" y2="56"/>
+      <rect x="1318" y="64" width="66" height="14"/>
+      <text x="1351" y="74.5" text-anchor="middle" class="j-sign">ՄԱՔՍԱՏՈՒՆ</text>
+      <path d="M1340 112 V92 q0 -4 4 -4 h14 q4 0 4 4 v20"/>
+      <line x1="1410" y1="56" x2="1410" y2="30"/>
+      <path d="M1410 30 h18 v10 h-18"/>
+      <g class="j-check">
+        <circle cx="1351" cy="36" r="11"/>
+        <path d="M1345.5 36 l4 4 7-8"/>
+      </g>
+      <!-- Risk-channel light: 3 real customs corridors (կարմիր/դեղին/կանաչ).
+           Dim throughout the journey; on arrival only green lights up — the
+           payoff for a complete, AI-checked declaration. -->
+      <g class="j-lights">
+        <circle class="j-light j-light-red" cx="1378" cy="27" r="3.4"/>
+        <circle class="j-light j-light-yellow" cx="1378" cy="36" r="3.4"/>
+        <circle class="j-light j-light-green" cx="1378" cy="45" r="3.4"/>
+      </g>
+    </g>
+    <g class="j-plane-wrap">
+      <line class="j-contrail" x1="-160" y1="24" x2="-30" y2="24"/>
+      <g class="j-plane">
+        <path d="M0 24 L44 24 Q51 24 54 21 Q51 18 44 19 L12 19 Q5 19 0 24 Z"/>
+        <path d="M24 19 L17 11 h6 l8 8"/>
+        <path d="M25 24 L16 34 h6 l9 -10"/>
+      </g>
+    </g>
+    <g class="j-truck">
+      <rect x="4" y="58" width="86" height="38"/>
+      <line x1="26" y1="62" x2="26" y2="92"/>
+      <line x1="48" y1="62" x2="48" y2="92"/>
+      <line x1="70" y1="62" x2="70" y2="92"/>
+      <path d="M90 96 V68 q0 -4 4 -4 h16 l13 14 v18"/>
+      <path d="M96 68 h12 l9 10 h-21 z" class="j-glass"/>
+      <line x1="4" y1="96" x2="123" y2="96"/>
+      <g class="j-wheel"><circle cx="26" cy="102" r="9"/><line x1="26" y1="95" x2="26" y2="109"/><line x1="19" y1="102" x2="33" y2="102"/></g>
+      <g class="j-wheel"><circle cx="52" cy="102" r="9"/><line x1="52" y1="95" x2="52" y2="109"/><line x1="45" y1="102" x2="59" y2="102"/></g>
+      <g class="j-wheel"><circle cx="108" cy="102" r="9"/><line x1="108" y1="95" x2="108" y2="109"/><line x1="101" y1="102" x2="115" y2="102"/></g>
+    </g>
+  </svg>
+</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="/static/img/logo.svg" alt="DeepClare" width="28" height="28">
+      <span class="brand-name">Deep<span>Clare</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="/" {% if request.url.path == '/' %}class="active"{% endif %}>Գլխավոր</a>
+      <a href="/#try">Փորձել</a>
+      <a href="/contact" {% if request.url.path == '/contact' %}class="active"{% endif %}>Կապ</a>
+      {% if site.chrome_store_url %}<a class="btn-store" href="{{ site.chrome_store_url }}" rel="noopener">Chrome ընդլայնում</a>{% endif %}
+    </nav>
+  </div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="brand footer-brand">
+        <img class="brand-logo" src="/static/img/logo.svg" alt="" width="24" height="24">
+        <span class="brand-name">Deep<span>Clare</span></span>
+      </div>
+      <p>Մաքսային հայտարարագրերի պատրաստում արհեստական բանականությամբ։</p>
+      {% if site.chrome_store_url %}<p><a href="{{ site.chrome_store_url }}" rel="noopener">Ընդլայնումը Chrome Web Store-ում</a></p>{% endif %}
+    </div>
+    <div class="footer-col">
+      <h3>Իրավական</h3>
+      <ul>
+        <li><a href="/terms">Ծառայության մատուցման պայմաններ</a></li>
+        <li><a href="/privacy">Գաղտնիության քաղաքականություն</a></li>
+        <li><a href="/refund">Չեղարկում և վերադարձ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Կապ</h3>
+      <ul class="contact-list">
+        <li><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></li>
+        {% if site.contact_phone %}<li><a href="tel:{{ site.contact_phone | replace(' ', '') }}">{{ site.contact_phone }}</a></li>{% endif %}
+        {% if site.telegram_link %}<li><a href="{{ site.telegram_link }}" rel="noopener">Telegram</a></li>{% endif %}
+        {% if site.company_address %}<li>{{ site.company_address }}</li>{% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <p>{{ site.company_legal_name }}{% if site.company_unn %} · ՀՎՀՀ {{ site.company_unn }}{% endif %}</p>
+    <p>© {{ current_year }} DeepClare. Բոլոր իրավունքները պաշտպանված են։</p>
+  </div>
+</footer>
+<script src="/static/site.js?v={{ static_v }}" defer></script>
+</body>
+</html>

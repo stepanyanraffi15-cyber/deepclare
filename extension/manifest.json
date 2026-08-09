@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DeepClare",
+  "version": "0.1.0",
+  "description": "Draft an EAEU / Armenia import customs declaration from shipment documents.",
+  "action": {
+    "default_title": "DeepClare"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "unlimitedStorage", "sidePanel"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"]
+}

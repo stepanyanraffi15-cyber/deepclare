@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Կապ — DeepClare{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container module">
+    <h1>Կապ</h1>
+    <p class="lead">Հարցերի, պատվերների և աջակցության համար կապվեք մեզ հետ ցանկացած հարմար եղանակով․
+    պատասխանում ենք աշխատանքային օրերին՝ 10:00–18:00։</p>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Էլ. փոստ</h3>
+        <p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
+      </div>
+      {% if site.contact_phone %}
+      <div class="card">
+        <h3>Հեռախոս</h3>
+        <p><a href="tel:{{ site.contact_phone | replace(' ', '') }}">{{ site.contact_phone }}</a></p>
+      </div>
+      {% endif %}
+      {% if site.telegram_link %}
+      <div class="card">
+        <h3>Telegram</h3>
+        <p><a href="{{ site.telegram_link }}" rel="noopener">{{ site.telegram_link | replace('https://', '') }}</a></p>
+      </div>
+      {% endif %}
+    </div>
+
+    {% if site.company_address %}
+    <p class="address-line">Հասցե՝ {{ site.company_address }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

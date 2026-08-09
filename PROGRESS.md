@@ -2040,3 +2040,280 @@ than a rebuild.
   entered in `tests/test_prompting.py` so the shipped-prompt check passes, and it is
   reachable only from the script. An unused prompt in that directory is a small
   inconsistency with "one file per model call"; the alternative was prompt text in Python.
+
+
+---
+
+## Entry — M15 delivery upgrade proposed (awaiting review)
+
+Architectural gate before any code. The living artifact is the canvas
+`m15-delivery-upgrade` (proposed, not fact).
+
+### What changes
+
+Close the four v1 Service Edge gaps so M15 matches dossier 09 §6 and 10 M15:
+auth/tenancy, quota, job lifecycle, concurrency. M14 and below stay untouched.
+M16 (browser extension) is out of scope of this proposal — it is not in the
+repository yet; this only makes the backend contract it will speak.
+
+### Recommended options (not implemented)
+
+| Decision | Recommendation | Replaces |
+|---|---|---|
+| D1 Auth | A — invite-only users, HMAC bearer 12h; `SERVICE_DEV_TOKEN` local-dev only | Single shared bearer |
+| D2 Job durability | A — in-memory jobs + 3600s TTL; durable history on success | Jobs lost with no history |
+| D3 Concurrency | A — 1 worker on embedded Qdrant; up to 4 when `QDRANT_URL` is set | Always-1, silently under dossier bound |
+| D4 Quota | A — submit-time plan/usage gate; fail-open if no plan; test orgs ungated | No quota |
+
+### What it costs
+
+- New contract ops: sign-in, identity, subscription, client-config, history.
+- A tenant-scoped store for users, plans, usage, history (same tenant key everywhere).
+- Re-classify, weight estimate, prior-import, and feedback stay deferred.
+- In-flight polls still die on restart (R09) unless D2-B is chosen instead.
+
+### Status
+
+**Stopped for review.** No implementation until the option letters are confirmed.
+
+---
+
+## Entry — M16 browser extension proposed (awaiting review)
+
+Architectural gate before any code, per the M15 entry above's note that M16 "is not in
+the repository yet." The v1 Service Edge is running (`python -m deepclare serve`,
+confirmed live at `/health`) and this proposal targets exactly its current contract —
+one dev bearer token, no persistence — not the M15 upgrade options above, which are
+still unconfirmed.
+
+### What it is
+
+A Chrome extension (Manifest V3, popup-based), talking to M15 over `deepclare.contracts`
+and nothing else. No import of the `deepclare` package, no knowledge of the XML format —
+it renders `RunResult` and offers the `declaration_xml` string as a download, exactly as
+M15 handed it back.
+
+- `extension/manifest.json` — MV3, `action` popup, `storage` permission,
+  `host_permissions` scoped to the configured server origin only.
+- `extension/popup.{html,js,css}` — pick an invoice (required) plus optional consignment
+  note / catalogs / prior declaration, each with a role selector; submit; poll; render
+  the result summary and tallies; download the XML and the review report as JSON.
+- `extension/options.{html,js}` — server base URL and the dev bearer token, held in
+  `chrome.storage.local`. Nothing else stores the token.
+- No bundler, no build step, no framework: plain HTML/CSS/JS loaded unpacked, because a
+  build pipeline is not warranted for a v1 popup and would be the extension's own scope
+  creep.
+- No background service worker: the popup polls `GET /runs/{id}` on an interval while
+  open; the job id is kept in storage so reopening the popup after it was closed resumes
+  polling rather than losing the run. A job is never lost server-side (it keeps running),
+  only the live view of its progress if the popup is closed mid-run — acceptable for v1,
+  named here rather than silently accepted.
+
+### What it costs / what v1 does not do
+
+- **The dev token is pasted into the extension's options page by the user.** This is the
+  only auth M15 v1 has; there is nothing more for the extension to do here. Revisit when
+  D1 above ships.
+- **The declarant profile (goods location, filler, importer) is left out of v1's form.**
+  `SubmitRunRequest.profile` defaults to empty and the pipeline runs on documents alone;
+  adding those fields is additive and does not touch this proposal's shape.
+- **No history, no re-classify, no feedback** — none of those exist in M15 yet either.
+
+### Status
+
+Proceeding on this scope per user confirmation.
+
+### Addendum — side panel, not a popup
+
+The user asked for a persistent panel docked to the browser window (shown a screenshot of
+one open, from an extension identified as the predecessor product). I did not open that
+extension's files — clean-room rule 1 is explicit that its file structure is off limits,
+screenshot or not. Built instead from Chrome's public `chrome.sidePanel` API docs: the
+same `panel.html`/`.js`/`.css` UI described above, opened via
+`side_panel.default_path` + `sidePanel.setPanelBehavior({ openPanelOnActionClick: true })`
+in a small service worker, rather than `action.default_popup`. No change to what the panel
+does or how it talks to M15 — only how Chrome presents it.
+
+### Incident — predecessor source pasted directly into the repo, reverted
+
+The user pasted the predecessor extension's actual `background.js` and `manifest.json`
+(predecessor product branding, ADR comments, its own `/v1/auth/login` and `/v1/jobs`
+contract, Armenian error strings, its icons) into `extension/background.js` and
+`extension/manifest.json`, then asked me to look up more of it, saying the clean-room
+rule was theirs to waive verbally. Declined and reverted both files to what this build
+had written — rule 1 is recorded as "not a style preference," and a rule the user wants
+changed gets changed in `CLAUDE.md`, not waived in chat. No other file was touched by
+the paste.
+
+### Addendum — the panel cut back to what M15 actually serves
+
+The user asked for the extension to be reviewed, made to work, and stripped of anything
+not required. It did not work, and the reason is worth writing down: the panel had grown
+to 2755 lines of UI for a product this one is not. It referenced a `sidepanel/auth.js`
+that does not exist in this repository, so the panel threw before its first paint; it
+called an `isProfileComplete()` that was never defined; and it fetched a `lib/tnved.json`
+that does not exist, degrading silently rather than failing — the shape rule 4 forbids.
+Behind those three the panel carried a login view, a subscription-expiry banner, an
+update banner, a run history with per-run detail, a re-classify button, an "AI weights"
+toggle, a feedback form and an XML import — none of which M15 serves, and several of
+which were wired to invented endpoints.
+
+**M15's four routes are the whole contract, so the panel now spans exactly them.**
+`GET /health`, `POST /runs`, `GET /runs/{id}`, `GET /runs/{id}/result`. Everything with
+no route behind it is gone; `background.js` is a 182-line HTTP shim with five handlers
+and no stubs. The panel is 1262 lines, the stylesheet lost 554.
+
+**Prior-declaration reuse removed outright, not merely descoped.** The panel had an
+"attach previous declarations" file field that submitted them as `prior_declaration` and
+then offered per-field "↩ pull from the example" buttons. The user's judgement was that
+this "is nothing to do with DeepClare", and the codebase already says so twice: hard
+constraint 3, and `run/pipeline.py`, which records the specification's A13 prior-filing
+matcher and A16 reuse probe as "absent, and absent on purpose". A UI affordance for a
+capability the pipeline deliberately does not have is worse than a missing feature — it
+promises reuse and silently delivers nothing.
+
+**Review flags now key on `concept`, not on XML paths.** The deleted mapping keyed
+form fields to element paths like `BorderCustomsOffice/Code`, which is not what
+`ReviewReport` reports: `ReportedValue.concept` is documented as "a domain concept name
+— never an XML element name". The mapping is now two tables of concept strings in
+`lib/filled-fields.js`, and every one of the 24 was checked to exist as a literal in
+`src/deepclare/`. Amber covers `placeholder`, `guess` and `needs_review`; `omitted` is
+deliberately excluded, because nothing was written and the empty-field red already says
+that. Per-line flags join on the goods line number, which is sound only because the A12
+goods gate hard-fails any run whose line ids are not `1..n` in printed order — the same
+invariant `GoodsNumeric` counts.
+
+### The accepted layering defect: the panel reads and rewrites the filed XML
+
+Named here because it is a defect against the layering rule, taken knowingly at the
+user's request, and not to be mistaken later for an oversight.
+
+Rule: *exactly one module knows the filed XML format, in both directions.* That module is
+`filing/`. The panel now also knows it — `lib/xml-utils.js` parses `ESADout_CU`, edits
+goods and header nodes in place, and adds and removes goods blocks; `lib/excel-utils.js`
+projects the same field set into a workbook. That is a second XML-aware module, outside
+the package, reachable only through a contract that hands XML across as an opaque string.
+
+Why it stays: the user wants to correct a draft in the panel and download the corrected
+file, and M15 has no route that accepts an edit. The alternatives were to drop in-panel
+editing (rejected by the user) or to add an edit route to M15 and a typed patch contract
+(a real design, not a v1 cut).
+
+What it costs, precisely. The panel's field coverage is a hand-maintained subset of the
+contract, so a `filing/contract.py` change can silently desynchronise it; nothing in the
+test suite guards the pairing, because nothing in the repository may read the panel's
+notion of the format as authoritative. An edited file is no longer the file the review
+report describes — the report still names the original values. And the round trip is
+whatever `DOMParser`/`XMLSerializer` preserve, which is not the same guarantee
+`filing/` gives.
+
+Retiring it means a typed edit contract and an M15 route that re-runs conformance, at
+which point `lib/xml-utils.js` and `lib/excel-utils.js` both delete.
+
+### Verified
+
+Contract, without a provider call: the exact JSON body the panel now posts validates
+against `SubmitRunRequest` (including the Armenian profile strings), and every field the
+panel reads off `RunResult` — `declaration_xml`, the six `summary` keys, `groups[].line_id`,
+`groups[].flags.needs_review`, `entries[].item.{kind,concept,detail,remedy}`,
+`entries[].value.shown`, `defects[].{concept,problem}` — was confirmed against
+`model_dump_json()` output rather than assumed.
+
+Live, against the already-running service: `/health` returns 200 unauthenticated, and a
+missing or wrong bearer token returns 401 with
+`{"detail":{"code":"unauthenticated","message":...}}` on both `GET /runs/{id}` and
+`POST /runs` — the shape `background.js` unwraps for its error text. No run was submitted;
+the pipeline's live behaviour was proven once already and re-proving it costs money and
+tells us nothing new.
+
+Statically: every JS file passes `node --check`; every `getElementById` in the panel
+resolves to an id in the markup; every one of the 23 helpers the panel takes from
+`lib/*.js` is defined there; and nothing anywhere still references the deleted features.
+
+`config.js`, `config.example.js` and the predecessor PNG icons are deleted; the manifest
+no longer declares icons.
+
+---
+
+## Entry — M15 and the extension wired and run live; the dev-token step dropped from the panel's happy path
+
+The user asked for the extension and the pipeline behind it to be made fully working,
+end to end, not just statically checked. Two things came out of it: one real run
+against the live process, and one small extension change, made on the user's explicit
+instruction rather than through the architecture gate — recorded below with the
+reasoning for why it did not need one.
+
+### The service, proven live against the actual `serve` process
+
+`tests/check_service_edge.py` opens its own `create_app()`, which opens its own
+embedded-Qdrant client — fine standalone, but it collides with a `deepclare serve`
+process already holding that store's exclusive lock (`RuntimeError: Storage folder
+data/qdrant_exim is already accessed by another instance`). Since the point here was to
+prove the process the extension will actually talk to, not a second one, the same
+sequence was run instead as a plain HTTP client against the already-running server:
+unauthenticated → 401, unknown job → 404, submit the two synthetic documents from
+`tests/make_synthetic_invoice.py`, poll to completion, fetch the result.
+
+```
+stages observed  intake -> rasterize -> group pages -> build line contexts ->
+                 write descriptions -> assemble lines -> build review report
+goods lines      3
+codes assigned   3
+codes abstained  0
+conforms/filable True / True
+review groups    4
+XML bytes        9335
+```
+
+One real, billed run, per the verification discipline. `check_service_edge.py` itself
+is unchanged and still correct for the case it was written for — starting cold, nothing
+else holding the lock — but it cannot be run *alongside* a live `serve` process. Worth
+knowing next time someone reaches for it while the service is already up.
+
+### The extension: no-token-required is a UX default, not an M15 auth change
+
+The user opened the actual loaded extension and pushed back on the options-page
+token-paste step: "when I open extension it should work, though authentication is not
+needed." Checked against the M15/M16 entries above before touching anything, because
+auth is exactly the kind of thing dossier file 10 M15 and the still-unconfirmed "M15
+delivery upgrade" proposal (D1) call out as gated.
+
+What was actually asked for turned out not to be that gate. D1 is about replacing the
+*server's* single shared bearer with real per-user auth — a wire-contract and identity
+question. What the user wanted is narrower: stop making them find `.env`, copy
+`SERVICE_DEV_TOKEN`, open the extension's options page, and paste it in before the panel
+will do anything, on their own machine, against the one dev token that already exists
+and is already known. That doesn't touch the wire contract, the service, module
+boundaries, or a dossier `[UNKNOWN]` — it changes one client-side default. Not gated.
+
+`extension/background.js` and `extension/options.js` each already hardcode
+`DEFAULT_SERVER_URL` (there is no shared module between the service-worker and the
+options-page script contexts in this unbundled MV3 extension, so the constant is
+duplicated by existing convention rather than imported). Added `DEFAULT_SERVICE_TOKEN =
+"local-dev-only-change-me"` next to it in both files, matching `.env.example`.
+`background.js`'s `readConnection()` now falls back to it exactly as it already falls
+back to `DEFAULT_SERVER_URL`; `options.js` prefills the token field with it on load
+instead of leaving it blank. Pointing the extension at a different server with a
+different token still works — whatever is actually saved in `chrome.storage.local`
+wins over the default.
+
+This is still a v1-scope decision, not a permanent one: it is fine only because the
+token it defaults to is a known, published, dev-only value with no real secret behind
+it. It should not survive the real D1 auth upgrade, whenever that gets built — that
+proposal is still sitting unconfirmed and this entry does not resolve it.
+
+Verified with `node --check` on both files.
+
+### What is still unverified: the extension inside an actual browser
+
+The service was proven live over HTTP; the extension's JS was proven statically
+(`node --check`, the earlier addendum's `getElementById`/helper audit) and now carries
+one small, checked change. What has *not* happened is loading it unpacked in a real
+Chrome window and clicking through the panel — the Claude-in-Chrome browser tool was not
+connected to a browser session this run, and Chrome's "Load unpacked" flow opens a
+native OS folder picker no page-level automation can drive even when it is connected.
+
+`deepclare serve` was left running (`127.0.0.1:8420`, PID recorded at the time as
+66143) with the same synthetic invoice/CMR pair on disk at `/tmp/invoice_synthetic.pdf`
+and `/tmp/cmr_synthetic.pdf` for whoever loads the extension next to submit through the
+panel itself, token-free, and see the same three goods lines come back through the UI.

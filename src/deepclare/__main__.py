@@ -90,6 +90,11 @@ def main(argv: list[str] | None = None) -> int:
         "whenever the embedding model or width changes",
     )
 
+    subcommands.add_parser(
+        "serve",
+        help="Run the M15 service edge — dev-only auth, one worker, no persistence",
+    )
+
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
@@ -104,6 +109,9 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.command == "build-index":
         return _build_index(settings, args.recreate)
+
+    if args.command == "serve":
+        return _serve(settings)
 
     if args.command == "run":
         return _run(
@@ -199,6 +207,21 @@ def _submitted(path: Path, role: "DocumentRole") -> "SubmittedFile":
     return SubmittedFile(
         file_name=path.name, content=path.read_bytes(), declared_role=role
     )
+
+
+# --- serve ------------------------------------------------------------------------------
+
+
+def _serve(settings: Settings) -> int:
+    """Run the M15 service edge. Foreground, one process — there is nothing here yet
+    that a process manager or a reverse proxy would coordinate."""
+    import uvicorn
+
+    from deepclare.service import create_app
+
+    app = create_app(settings)
+    uvicorn.run(app, host=settings.service_host, port=settings.service_port)
+    return 0
 
 
 # --- reference data -------------------------------------------------------------------

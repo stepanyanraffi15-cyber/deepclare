@@ -21,3 +21,10 @@ openpyxl==3.1.5
 # the package's runtime dependencies, so it installs in production too. Splitting a
 # dev-only list out is a packaging decision that has not been taken.
 pytest==9.1.1
+
+# M15 Service Edge. uvicorn[standard] pulls in its own extras (uvloop, httptools,
+# websockets, watchfiles); none of those are imported directly and none are pinned by
+# name here — they come along with the extra and are exercised only through uvicorn.
+fastapi==0.141.1
+uvicorn[standard]==0.52.1
+python-multipart==0.0.32
