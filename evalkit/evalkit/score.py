@@ -28,7 +28,6 @@ NUMERIC_FIELDS: tuple[str, ...] = (
     "net_weight",
     "gross_weight",
     "invoiced_cost",
-    "package_count",
 )
 
 

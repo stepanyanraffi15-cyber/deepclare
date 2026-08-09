@@ -50,23 +50,6 @@ const FILLED_SHIPMENT_GROUPS = [
     ],
   },
   {
-    id: "transport",
-    title: "Փոխադրում (ЦМР)",
-    fields: [
-      { key: "borderOffice", label: "Սահմանային մաքսակետ", span: 2 },
-      { key: "vehiclePlate", label: "Մեքենայի համարանիշ", span: 2 },
-      { key: "trailerPlate", label: "Կցորդի համարանիշ", span: 2, type: "trailer" },
-      { key: "transportQuantity", label: "Մեքենաների քանակ", span: 1 },
-      { key: "containerIndicator", label: "Կոնտեյներ", span: 1, type: "select", options: [
-        { value: "", label: "—" },
-        { value: "Այո", label: "Այո" },
-        { value: "Ոչ", label: "Ոչ" },
-      ]},
-      { key: "arrivalTransportMode", label: "Ժամանման միջոցներ", span: 1, type: "select", options: TRANSPORT_MODE_OPTIONS },
-      { key: "borderTransportMode", label: "Սահմանահատման միջոցներ", span: 1, type: "select", options: TRANSPORT_MODE_OPTIONS },
-    ],
-  },
-  {
     id: "commercial",
     title: "Պայմանագրային (հաշիվ-ապրանքագիր)",
     fields: [
@@ -92,7 +75,6 @@ const SHIPMENT_REVIEW_CONCEPTS = {
   consignorName: ["consignor name"],
   senderCountry: ["shipment origin country"],
   tradeCountry: ["trade country", "consignor country"],
-  containerIndicator: ["container indicator"],
   incoterms: ["delivery terms code"],
   incotermsPlace: ["delivery terms"],
   contractCurrency: ["contract currency"],
@@ -107,7 +89,6 @@ const GOODS_REVIEW_CONCEPTS = {
   originCountry: ["line origin country"],
   quantity: ["line supplementary quantity"],
   quantityUnit: ["line supplementary quantity", "supplementary quantity unit"],
-  packageQuantity: ["line package count"],
   packageTypeCode: ["line packaging classifier"],
 };
 
@@ -157,7 +138,6 @@ const FILLED_GOODS_LABELS = {
   grossWeight: "Համախառն քաշ (կգ)",
   invoicedCost: "Ֆակտուրային արժեք",
   originCountry: "Ծագման երկիր",
-  packageQuantity: "Փաթեթների քանակ",
   packageTypeCode: "Փաթեթավորման ծածկագիր",
   packingCode: "Փաթեթավորման կոդ",
 };

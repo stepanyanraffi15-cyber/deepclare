@@ -505,16 +505,6 @@ button:focus-visible {
   box-shadow: var(--shadow-sm);
 }
 
-.goods-card-flag {
-  margin: 0 0 8px;
-  padding: 6px 8px;
-  border: 1px solid var(--warn-border);
-  border-radius: 8px;
-  background: var(--warn-soft);
-  color: var(--warn-text);
-  font-size: 11px;
-}
-
 .goods-card-line-badge {
   display: inline-block;
   font-size: 11px;

@@ -100,7 +100,6 @@ let result = null;
 let declarationDraft = null;
 let goodsDraft = [];
 let reviewItems = [];
-let reviewFlagsByLine = new Map();
 let activeJobId = null;
 let activeFilename = null;
 let pollTimer = null;
@@ -569,7 +568,6 @@ function applyResult({ declarationXml, filename, summary, reviewReport }) {
     reviewReport: reviewReport ?? null,
   };
   reviewItems = flattenReviewItems(result.reviewReport);
-  reviewFlagsByLine = flagsByLine(result.reviewReport);
   declarationDraft = enrichDeclarationFromProfile(
     parseFilledDeclarationFromXml(result.xml),
     toFilledProfile(profile),
@@ -604,14 +602,6 @@ function flattenReviewItems(report) {
     }
   }
   return items;
-}
-
-function flagsByLine(report) {
-  const flags = new Map();
-  for (const group of report?.groups ?? []) {
-    if (group.flags) flags.set(group.line_id ?? null, group.flags);
-  }
-  return flags;
 }
 
 function renderSummary() {
@@ -702,7 +692,8 @@ function renderDeclarationInfo() {
 
       const control = createShipmentFieldControl(field, declarationDraft[field.key] ?? "");
       control.dataset.field = field.key;
-      bindMissingHighlight(control);
+      // senderCountry (dispatch country) is exempt from the empty-field red highlight.
+      if (field.key !== "senderCountry") bindMissingHighlight(control);
       if (isShipmentFieldFlagged(field.key, reviewItems)) {
         control.classList.add("is-flagged");
         control.title = shipmentFieldFlagText(field.key, reviewItems);
@@ -825,14 +816,6 @@ function renderGoodsForm() {
     badge.textContent = String(item.numeric || i + 1);
     card.append(badge);
 
-    const flags = reviewFlagsByLine.get(item.numeric);
-    if (flags?.needs_review) {
-      const note = document.createElement("p");
-      note.className = "goods-card-flag";
-      note.textContent = "Այս տողը ստուգման կարիք ունի";
-      card.append(note);
-    }
-
     appendGoodsField(card, FILLED_GOODS_LABELS.quantity, "quantity", item.quantity);
     appendGoodsField(card, FILLED_GOODS_LABELS.quantityUnit, "quantityUnit", item.quantityUnit);
     appendGoodsField(card, FILLED_GOODS_LABELS.netWeight, "netWeight", item.netWeight);
@@ -855,7 +838,6 @@ function renderGoodsForm() {
       type: "select",
       options: COUNTRY_CODE_OPTIONS,
     });
-    appendGoodsField(card, FILLED_GOODS_LABELS.packageQuantity, "packageQuantity", item.packageQuantity);
     appendGoodsField(card, FILLED_GOODS_LABELS.packageTypeCode, "packageTypeCode", item.packageTypeCode, {
       type: "select",
       options: PACKAGE_TYPE_OPTIONS,
@@ -1083,7 +1065,6 @@ function hideResult() {
   declarationDraft = null;
   goodsDraft = [];
   reviewItems = [];
-  reviewFlagsByLine = new Map();
   summarySection.hidden = true;
   summaryNotes.hidden = true;
   declarationInfoSection.hidden = true;
