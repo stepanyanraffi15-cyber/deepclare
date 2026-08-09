@@ -31,3 +31,12 @@ out/
 *.db
 build/
 dist/
+
+# Eval outputs: large, machine-specific, re-derivable from the harness.
+runs/
+*_out/
+
+# Environment files carrying real keys (kept out of the tree entirely).
+*.uu
+
+.DS_Store

@@ -1,0 +1,4 @@
+# Eval outputs are large, machine-specific and re-derivable. The harness and the
+# scorers are the artifact; the numbers get published in a report, not committed.
+*_out/
+runs/
