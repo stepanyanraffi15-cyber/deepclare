@@ -1,0 +1,18 @@
+{
+  "eval": "hs_classification",
+  "note": "run predates the manifest feature; fields reconstructed from results.jsonl",
+  "provider": "deepseek",
+  "models": {
+    "cheap": "deepseek/deepseek-v4-flash",
+    "standard": "deepseek/deepseek-v4-flash",
+    "strong": "deepseek/deepseek-v4-pro"
+  },
+  "reasoning_tiers": "strong",
+  "corpus": "evalkit/corpus/oneToOne",
+  "lines_scored": 2390,
+  "fabricated_codes_skipped": [
+    "39069090090",
+    "39100000090",
+    "39269097098"
+  ]
+}

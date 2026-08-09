@@ -50,7 +50,7 @@ from deepclare.domain import (
     Traced,
     ValueOrigin,
 )
-from deepclare.embedding import GeminiEmbedder
+from deepclare.embedding import EmbeddingError, GeminiEmbedder
 from deepclare.models import ModelError, ModelTransportError
 from deepclare.models import GenerativeModel
 from deepclare.reference.store import NomenclatureStore
@@ -72,12 +72,20 @@ _qdrant_lock = threading.Lock()
 _write_lock = threading.Lock()
 
 
+# Retrieval embeds one query per line through Gemini whatever the generation
+# provider is, so the embedding endpoint -- not the generation one -- is what a
+# high-concurrency sweep saturates first. Its 429 arrives as EmbeddingError, which
+# is not a ModelTransportError, so without listing it here a rate limit kills the
+# case instead of waiting a moment.
+RETRYABLE = (ModelTransportError, EmbeddingError)
+
+
 def backoff(what: str, fn, *args, **kwargs):
-    """Retry transport failures only. A refusal or a bad output is not transient."""
+    """Retry transient failures only. A refusal or a bad output is not transient."""
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
             return fn(*args, **kwargs)
-        except ModelTransportError as exc:
+        except RETRYABLE as exc:
             if attempt == MAX_ATTEMPTS:
                 raise
             wait = min(60.0, 2.0**attempt) + random.uniform(0, 1.5)
@@ -247,19 +255,34 @@ def main() -> None:
     ap.add_argument("--workers", type=int, default=4, help="concurrent cases")
     ap.add_argument("--line-workers", type=int, default=8, help="concurrent lines per case")
     ap.add_argument("--lines", type=int, default=0, help="cap total lines (round-robin across cases); 0 = all")
+    ap.add_argument("--fraction", type=float, default=0.0,
+                    help="random fraction of lines (0-1). Seeded, so the same "
+                         "--fraction/--seed picks the same lines across providers.")
+    ap.add_argument("--seed", type=int, default=1234)
     ap.add_argument("--chapters", default="",
                     help="comma-separated 2-digit chapters to keep. Selecting a subset by "
                          "measured performance makes the score a property of the selection: "
                          "quote it as 'precision on chapters X,Y', never as a headline.")
     ap.add_argument("--out", type=pathlib.Path, default=ROOT / "sweep_out")
     ap.add_argument("--cases", type=int, default=0, help="0 = all")
-    ap.add_argument("--provider", choices=("gemini", "deepseek"), default="gemini")
+    ap.add_argument("--provider", choices=("gemini", "deepseek"), default="deepseek")
+    ap.add_argument("--allow-gemini", action="store_true",
+                    help="required to spend Google credits. Off by default: the "
+                         "generation tiers are billed to the Google account and a "
+                         "sweep drains it quickly.")
     ap.add_argument("--all-pro", action="store_true",
                     help="deepseek only: use v4-pro for every tier, not just strong")
     ap.add_argument("--reasoning-tiers", default="strong",
                     help="deepseek only: comma-separated tiers that reason "
                          "(cheap,standard,strong | none). Measured: 21x cost, 12x latency.")
     args = ap.parse_args()
+    if args.provider == "gemini" and not args.allow_gemini:
+        raise SystemExit(
+            "REFUSING: --provider gemini spends Google credits and they are "
+            "disabled by default. Pass --allow-gemini to override.\n"
+            "Note retrieval still embeds through Gemini whatever the provider, so a "
+            "depleted Google account blocks every run, not just this one."
+        )
     global LINE_WORKERS, CHAPTERS
     LINE_WORKERS = args.line_workers
     if args.chapters:
@@ -280,7 +303,18 @@ def main() -> None:
     descs = Sink(args.out / "descriptions.jsonl")
 
     cases = sorted(p.name for p in CORPUS.glob("case-*"))
-    if args.lines:
+    if args.fraction:
+        # Seeded so the DeepSeek and Gemini arms score the *same* lines and the
+        # comparison is paired rather than two different random samples.
+        every = [f"{c}:{i + 1}"
+                 for c in cases
+                 for i in range(len(json.loads((CORPUS / c / "ir.json").read_text())["goods"]))]
+        rng = random.Random(args.seed)
+        rng.shuffle(every)
+        global ALLOWED
+        ALLOWED = set(every[: max(1, round(len(every) * args.fraction))])
+        cases = sorted({k.split(":")[0] for k in ALLOWED})
+    elif args.lines:
         # Round-robin across cases: taking the first N lines of case-001 would be one
         # product family and would not generalise.
         buckets = [[f"{c}:{i + 1}" for i in range(
@@ -292,7 +326,6 @@ def main() -> None:
                 if depth < len(bucket) and len(picked) < args.lines:
                     picked.append(bucket[depth])
             depth += 1
-        global ALLOWED
         ALLOWED = set(picked)
         cases = sorted({k.split(":")[0] for k in ALLOWED})
     if args.cases:
@@ -342,6 +375,8 @@ def main() -> None:
             "embedding": f"{store.embedding_pairing[0]}@{store.embedding_pairing[1]}",
             "fabricated_codes_skipped": sorted(FABRICATED),
             "chapters_filter": sorted(CHAPTERS) if CHAPTERS else "all",
+            "fraction": args.fraction or None,
+            "seed": args.seed if args.fraction else None,
             "chapter_selection_rule": (
                 "chapters with >=15 committed lines and >=70% exact-10 precision in "
                 "runs/hs_deepseek_flash_baseline; selected on measured performance, so "

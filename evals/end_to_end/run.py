@@ -83,6 +83,9 @@ def main() -> int:
     ap.add_argument("--out", type=pathlib.Path, default=ROOT / "runs" / "e2e")
     ap.add_argument("--timeout", type=int, default=1800, help="per-case seconds")
     ap.add_argument("--skip-score", action="store_true")
+    ap.add_argument("--allow-gemini", action="store_true",
+                    help="required: this eval runs the full product pipeline, whose "
+                         "vision and generation stages are all billed to Google.")
     ap.add_argument("--qdrant-path", default="",
                     help="point at a COPY of the collection. Local Qdrant is "
                          "single-process, so this eval cannot share data/qdrant_exim "
@@ -90,6 +93,12 @@ def main() -> int:
     args = ap.parse_args()
     # evalkit runs with cwd=evalkit/, so a relative --out would resolve there.
     args.out = args.out.resolve()
+    if not args.allow_gemini:
+        raise SystemExit(
+            "REFUSING: the end-to-end pipeline runs entirely on Gemini (vision, "
+            "reading, description, classification). Pass --allow-gemini to spend "
+            "Google credits."
+        )
 
     if args.case_ids:
         chosen = [CORPUS / c.strip() for c in args.case_ids.split(",") if c.strip()]

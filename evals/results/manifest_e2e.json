@@ -1,0 +1,25 @@
+{
+  "eval": "end_to_end",
+  "started_at": "2026-08-09T11:51:45+0400",
+  "git_commit": "34049ab34f09db16f179c0cacc25d5d4095836d5",
+  "git_dirty": true,
+  "python": "3.13.9",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "provider": "gemini",
+  "models": {
+    "cheap": "gemini-3.5-flash-lite",
+    "standard": "gemini-3.6-flash",
+    "strong": "gemini-2.5-pro"
+  },
+  "cases": [
+    "case-026",
+    "case-033",
+    "case-041"
+  ],
+  "line_counts": {
+    "case-026": 4,
+    "case-033": 4,
+    "case-041": 4
+  },
+  "scored_by": "evalkit corpus"
+}

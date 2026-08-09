@@ -1,0 +1,30 @@
+{
+  "eval": "hs_classification",
+  "started_at": "2026-08-09T12:26:16+0400",
+  "git_commit": "f2861cc02a1a00d8226e39d1a4748609ed98ffb0",
+  "git_dirty": true,
+  "python": "3.13.9",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "provider": "deepseek",
+  "models": {
+    "cheap": "deepseek/deepseek-v4-pro",
+    "standard": "deepseek/deepseek-v4-pro",
+    "strong": "deepseek/deepseek-v4-pro"
+  },
+  "reasoning_tiers": "cheap,standard,strong",
+  "workers": 14,
+  "line_workers": 6,
+  "lines_requested": "all",
+  "corpus": "evalkit/corpus/oneToOne",
+  "nomenclature_vintage": "2026-06-15T18:56:51.923392+00:00",
+  "embedding": "models/gemini-embedding-001@768",
+  "fabricated_codes_skipped": [
+    "39069090090",
+    "39100000090",
+    "39269097098"
+  ],
+  "chapters_filter": "all",
+  "fraction": 0.5,
+  "seed": 1234,
+  "chapter_selection_rule": null
+}

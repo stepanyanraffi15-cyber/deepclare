@@ -1,0 +1,36 @@
+{
+  "eval": "hs_classification",
+  "started_at": "2026-08-09T11:39:53+0400",
+  "git_commit": "34049ab34f09db16f179c0cacc25d5d4095836d5",
+  "git_dirty": true,
+  "python": "3.13.9",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "provider": "deepseek",
+  "models": {
+    "cheap": "deepseek/deepseek-v4-pro",
+    "standard": "deepseek/deepseek-v4-pro",
+    "strong": "deepseek/deepseek-v4-pro"
+  },
+  "reasoning_tiers": "none",
+  "workers": 8,
+  "line_workers": 8,
+  "lines_requested": "all",
+  "corpus": "evalkit/corpus/oneToOne",
+  "nomenclature_vintage": "2026-06-15T18:56:51.923392+00:00",
+  "embedding": "models/gemini-embedding-001@768",
+  "fabricated_codes_skipped": [
+    "39069090090",
+    "39100000090",
+    "39269097098"
+  ],
+  "chapters_filter": [
+    "34",
+    "48",
+    "73",
+    "82",
+    "87",
+    "94",
+    "95"
+  ],
+  "chapter_selection_rule": "chapters with >=15 committed lines and >=70% exact-10 precision in runs/hs_deepseek_flash_baseline; selected on measured performance, so the resulting score is in-sample for this slice"
+}
